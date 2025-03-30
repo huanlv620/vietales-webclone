@@ -241,6 +241,7 @@ p.text-details {
 
   color: var(--primary-color);
   background: var(--primary-color-100);
+  cursor: pointer;
 }
 /* End Common */
 
@@ -709,5 +710,72 @@ p.text-details {
 /* End history-grid */
 
 /*Story told */
-
+.story-told__btn {
+  width: 400px;
+  margin-top: 44px;
+}
 /* End story told */
+
+/* Main end */
+.main__end {
+  width: 100%;
+  height: 264px;
+}
+
+.main__end img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*===*/
+
+/* Footer */
+.footer {
+  background-color: #171717;
+  padding: 48px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer__logo {
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 32px 0;
+  gap: 30px;
+}
+
+.footer__social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  color: #6b13b6;
+}
+
+.footer__social svg {
+  width: 16px;
+}
+.footer__copyright {
+  margin-bottom: 42px;
+  font-family: "SVN-Basis Grotesque Pro";
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #fafafa;
+}
+.footer__desc {
+  font-family: "SVN-Basis Grotesque Pro";
+  color: #d4d4d4;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.footer__img {
+  margin: 28px 0 24px;
+}
+/* End footer */
