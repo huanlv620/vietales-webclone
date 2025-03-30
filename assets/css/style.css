@@ -172,6 +172,7 @@ h3 {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 /* reset button, textarea, input, select */
@@ -215,6 +216,12 @@ select {
 }
 
 /* Common */
+.container {
+  width: 1480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 p.text-details {
   font-size: 1.8rem;
   font-family: "SVN-Tiempos Text", sans-serif;
@@ -225,7 +232,7 @@ p.text-details {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
+  min-width: 100px;
   height: 40px;
   border-radius: 99px;
 
@@ -236,6 +243,22 @@ p.text-details {
   background: var(--primary-color-100);
 }
 /* End Common */
+
+/* Line clamp */
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
+.line-clamp.line-3 {
+  --line-clamp: 3;
+}
 
 /* Modal */
 .modal {
@@ -444,3 +467,247 @@ p.text-details {
   height: 2px;
   background: rgb(238 177 23);
 }
+/* End header */
+
+/* Vietnam-stories */
+.vietnam-stories {
+}
+
+.vietnam-stories__heading {
+  font-family: "SVN-Tiempos Fine";
+  margin: 80px 0 50px;
+  text-align: center;
+  font-size: 6.4rem;
+  color: #581192;
+}
+.vietnam-stories__body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+.vietnam-stories__item {
+  position: relative;
+  width: 100%;
+  height: 414px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.vietnam-stories__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0) 32.29%,
+      rgba(0, 0, 0, 0.2) 66.15%,
+      rgba(0, 0, 0, 0.82) 100%
+    );
+  pointer-events: none;
+}
+
+.vietnam-stories__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.vietnam-stories__title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  font-size: 3.6rem;
+  color: #fff;
+}
+/* End vietnam-stories */
+
+/* fascinating-books */
+.fascinating-books__body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 52px 28px;
+}
+
+.fascinating-book {
+  width: 100%;
+}
+
+.fascinating-book:hover .fascinating-book__img {
+  transform: scale(1.1);
+}
+
+.fascinating-book__img-wrap {
+  width: 100%;
+  height: 224px;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
+.fascinating-book__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+.fascinating-book__title {
+  margin: 16px 0;
+  font-size: 3rem;
+  font-family: "SVN-Tiempos Fine";
+  font-weight: 300;
+  line-height: 135%;
+}
+.fascinating-book__title:hover {
+  color: #581192;
+}
+.fascinating-book__desc {
+  font-size: 1.8rem;
+  font-family: "SVN-Basis Grotesque Pro";
+  line-height: 27px;
+}
+.fascinating-book__row {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+}
+.fascinating-book__viegazine {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 18px;
+}
+
+.fascinating-book__row p {
+  font-size: 1.8rem;
+  font-family: "SVN-Basis Grotesque Pro";
+  font-weight: bold;
+  color: #525252;
+}
+.fascinating-book__row > p:last-child {
+  position: relative;
+  margin-left: 20px;
+  padding-left: 25px;
+}
+.fascinating-book__row > p:last-child::after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #525252;
+}
+
+.fascinating-book__viegazine svg {
+  width: 20px;
+  height: 20px;
+}
+
+.fascinating-book__viegazine p {
+  color: #8917ee;
+}
+
+.fascinating-books__info {
+  height: 440px;
+  margin-top: 111px;
+}
+
+.fascinating-books__info img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/*End fascinating-books */
+
+/* series */
+.series {
+}
+
+.series__heading {
+  margin-bottom: 0;
+}
+
+.series__desc {
+  text-align: center;
+  margin-top: 24px;
+  color: #525252;
+  font-family: "SVN-Tiempos Headline";
+  font-size: 2rem;
+  font-weight: 300;
+  font-style: italic;
+}
+/* End series */
+
+/* Painting */
+.painting {
+  background: #8b4843;
+  padding: 52px 0 64px;
+}
+.painting__desc {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ffcc00;
+  text-align: center;
+  font-family: "SVN-Tiempos Headline";
+  font-size: 2.4rem;
+  font-style: italic;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.painting__img-wrap {
+  width: 100%;
+  height: 567px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: block;
+}
+.painting__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* End Painting */
+
+/* history-grid */
+.history-grid {
+  margin-top: 72px;
+}
+
+.history-grid__row {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 94px;
+}
+
+.history-grid__btn {
+  white-space: nowrap;
+  padding: 12px 24px;
+  height: initial;
+
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  transition: all 0.3s;
+}
+
+.history-grid__btn:hover {
+  color: #6b13b6;
+  background: #000;
+  background-color: #e9d1ff;
+  cursor: pointer;
+  scale: 1.15;
+}
+/* End history-grid */
+
+/*Story told */
+
+/* End story told */
