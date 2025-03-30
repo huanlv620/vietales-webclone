@@ -160,17 +160,14 @@ h6 {
 
 h1 {
   font-size: 5.1rem;
-  color: var(--text-white);
 }
 
 h2 {
   font-size: 6.4rem;
-  color: var(--primary-color-500);
 }
 
 h3 {
   font-size: 3rem;
-  color: var(--text-headline-color);
 }
 
 a {
@@ -188,6 +185,33 @@ select {
   background-color: transparent;
   border: none;
   outline: none;
+}
+
+/* animation */
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* end animation */
+
+.moving-element {
+  animation: moveUpDown 2s infinite ease-in-out;
 }
 
 /* Common */
@@ -212,3 +236,211 @@ p.text-details {
   background: var(--primary-color-100);
 }
 /* End Common */
+
+/* Modal */
+.modal {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity, visibility;
+  transition-duration: 0.3s;
+}
+
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal.show .modal__container {
+  transform: translateX(0);
+}
+
+.modal__container {
+  position: relative;
+  left: 0;
+  width: 400px;
+  height: 100vh;
+  background: #fff;
+  transform: translateX(-100%);
+  transition: transform 0.3s;
+}
+
+.modal__search {
+  position: relative;
+  display: flex;
+  align-content: center;
+  gap: 16px;
+  padding: 21px 0 159px;
+  border-bottom: 1px solid #e9d1ff;
+  /* animation: fadeInRight 0.3s ease-out 0.5s forwards; */
+}
+
+.modal__search svg {
+  width: 24px;
+  height: 24px;
+  margin-left: 16px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.modal__search input {
+  flex: 1;
+  padding-right: 16px;
+  font-family: "SVN-Tiempos Fine";
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #8917ee;
+  cursor: pointer;
+}
+
+.modal__search input::placeholder {
+  color: #8917ee;
+  opacity: 0.7;
+  font-family: "SVN-Tiempos Fine";
+  font-size: 1.6rem;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.5rem;
+}
+
+.modal__body {
+  padding: 48px 52px;
+}
+
+.modal__list + .modal__list {
+  margin-top: 40px;
+}
+
+.modal__link {
+  font-family: "SVN-Tiempos Fine";
+  display: block;
+  padding: 14px 0;
+  font-size: 3.6rem;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 31px;
+  color: #581192;
+  transition: transform 0.7s;
+}
+
+.modal__link:hover {
+  transform: translateX(30px);
+  color: #8917ee;
+}
+/* End modal */
+
+/* Header */
+.header__top {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  padding: 0 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__btn {
+  font-weight: 600;
+}
+
+.header__overlay-container {
+  position: relative;
+  left: 0;
+  right: 0;
+  height: calc(100vh - 66px);
+}
+
+.header__overlay-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.header__overlay-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0) 32.29%,
+      rgba(0, 0, 0, 0.2) 66.15%,
+      rgba(0, 0, 0, 0.82) 100%
+    );
+  pointer-events: none;
+}
+
+.header__body {
+  position: absolute;
+  width: 100%;
+  bottom: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.header__sub-heading {
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+}
+
+.header__heading {
+  font-size: 4.8rem;
+  line-height: 48px;
+}
+
+.header__updown {
+  margin-top: 33px;
+  width: 44px;
+  height: 44px;
+  animation: moveUpDown 2s infinite ease-in-out;
+}
+
+.header__bottom {
+  height: 49px;
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.header__item {
+}
+.header__link {
+  padding: 20px 8px;
+  display: inline-block;
+  font-family: "SVN-Tiempos Headline";
+  font-size: 24px;
+  line-height: 24px;
+  color: rgb(10, 10, 10);
+  font-weight: 300;
+  font-style: italic;
+}
+.header__link--active {
+  position: relative;
+  color: rgb(88, 17, 146);
+}
+
+.header__link--active::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: rgb(238 177 23);
+}
