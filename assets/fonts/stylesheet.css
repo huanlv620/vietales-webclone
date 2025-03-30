@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "SVN-Basis Grotesque Pro";
+  src: url("SVN-BasisGrotesquePro-Regular.woff2") format("woff2"),
+    url("SVN-BasisGrotesquePro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN-Basis Grotesque Pro Med";
+  src: url("SVN-BasisGrotesquePro-Medium.woff2") format("woff2"),
+    url("SVN-BasisGrotesquePro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("Inter-Regular.woff2") format("woff2"),
+    url("Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN-Tiempos Fine";
+  src: url("SVN-TiemposFine-Light.woff2") format("woff2"),
+    url("SVN-TiemposFine-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN-Tiempos Fine";
+  src: url("SVN-TiemposFine-LightItalic.woff2") format("woff2"),
+    url("SVN-TiemposFine-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN-Basis Grotesque Pro";
+  src: url("SVN-BasisGrotesquePro-Bold.woff2") format("woff2"),
+    url("SVN-BasisGrotesquePro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN-Basis Grotesque Pro OW";
+  src: url("SVN-BasisGrotesquePro-OffWhite.woff2") format("woff2"),
+    url("SVN-BasisGrotesquePro-OffWhite.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN-Basis Grotesque Pro";
+  src: url("SVN-BasisGrotesquePro-Regular.woff2") format("woff2"),
+    url("SVN-BasisGrotesquePro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN-Tiempos Fine";
+  src: url("SVN-TiemposFine-Medium.woff2") format("woff2"),
+    url("SVN-TiemposFine-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN-Tiempos Text";
+  src: url("SVN-TiemposText-Italic.woff2") format("woff2"),
+    url("SVN-TiemposText-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN-Tiempos Text";
+  src: url("SVN-TiemposText-SemiBoldItalic.woff2") format("woff2"),
+    url("SVN-TiemposText-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN-Tiempos Text";
+  src: url("SVN-TiemposText-Regular.woff2") format("woff2"),
+    url("SVN-TiemposText-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN-Tiempos Text";
+  src: url("SVN-TiemposText-SemiBold.woff2") format("woff2"),
+    url("SVN-TiemposText-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN-Tiempos Headline";
+  src: url("SVN-TiemposHeadline-RegularItalic.woff2") format("woff2"),
+    url("SVN-TiemposHeadline-RegularItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN-Tiempos Headline";
+  src: url("SVN-TiemposHeadline-LightItalic.woff2") format("woff2"),
+    url("SVN-TiemposHeadline-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN-Tiempos Fine";
+  src: url("SVN-TiemposFine-Regular.woff2") format("woff2"),
+    url("SVN-TiemposFine-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN-Tiempos Headline";
+  src: url("SVN-TiemposHeadline-Regular.woff2") format("woff2"),
+    url("SVN-TiemposHeadline-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
