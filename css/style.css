@@ -249,7 +249,7 @@ p.text-details {
 	border-radius: 99px;
 
 	font-family: "SVN-Basis Grotesque Pro", sans-serif;
-	font-weight: 500;
+	font-weight: 600;
 
 	color: var(--primary-color);
 	background: var(--primary-color-100);
@@ -950,6 +950,10 @@ p.text-details {
 	font-family: "SVN-Basis Grotesque Pro";
 }
 
+.form-group__input:hover {
+	border-color: var(--primary-color-500);
+}
+
 .form-group__input:focus,
 .form-group__input:not(:placeholder-shown) {
 	outline: none;
@@ -1048,7 +1052,7 @@ p.text-details {
 
 .form-group__separator span {
 	position: relative;
-	background: #fff;
+	background: #fafafa;
 	padding: 0 16px;
 	font-family: "SVN-Basis Grotesque Pro";
 	font-size: 1.4rem;
@@ -1516,17 +1520,17 @@ p.text-details {
 		padding: 0 10px;
 	}
 
-    .vietnam-stories__body {
-        gap: 44px;
-    }
+	.vietnam-stories__body {
+		gap: 44px;
+	}
 
 	.vietnam-stories__item {
 		height: 187px;
 	}
 
-    .vietnam-stories__title {
-        font-size: 3.6rem;
-    }
+	.vietnam-stories__title {
+		font-size: 3.6rem;
+	}
 
 	.story-told__btn {
 		width: 96px;
