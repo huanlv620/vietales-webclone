@@ -104,6 +104,7 @@ section {
 }
 body {
 	line-height: 1;
+	background: #fafafa;
 }
 ol,
 ul {
@@ -173,6 +174,17 @@ h3 {
 a {
 	text-decoration: none;
 	color: inherit;
+}
+
+img {
+	max-width: 100%;
+	cursor: pointer;
+}
+
+img.logo {
+	position: relative;
+	left: 50%;
+	transform: translate(-33%);
 }
 
 /* reset button, textarea, input, select */
@@ -357,36 +369,50 @@ p.text-details {
 /* End modal */
 
 /* Header */
-.header__top {
+.header {
 	position: fixed;
 	z-index: 999;
 	left: 0;
 	right: 0;
+	top: 0;
 	padding: 0 40px;
-
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-}
-.header__btn {
-	font-weight: 600;
+	height: 66px;
+	transition: background-color 0.3s ease;
+	background-color: transparent; /* Mặc định trong suốt */
 }
 
-.header__overlay-container {
+/* End header */
+
+.main {
+	padding-top: 66px; /* Same as header height */
+}
+
+.main__end img {
+	display: flex;
+}
+
+/* Hero section adjustment */
+.hero {
+	width: 100vw;
 	position: relative;
+	width: 100%;
 	left: 0;
 	right: 0;
 	height: calc(100vh - 66px);
+	margin-top: -66px; /* Negative margin to offset the padding-top of main */
 }
 
-.header__overlay-container img {
+.hero img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	display: block;
 }
 
-.header__overlay-container::before {
+.hero::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -404,7 +430,7 @@ p.text-details {
 	pointer-events: none;
 }
 
-.header__body {
+.hero__body {
 	position: absolute;
 	width: 100%;
 	bottom: 15px;
@@ -412,35 +438,41 @@ p.text-details {
 	text-align: center;
 }
 
-.header__sub-heading {
+.hero__sub-heading {
 	margin-bottom: 20px;
 	font-size: 2.4rem;
 }
 
-.header__heading {
+.hero__heading {
 	font-size: 4.8rem;
 	line-height: 48px;
 }
 
-.header__updown {
+.hero__updown {
 	margin-top: 33px;
 	width: 44px;
 	height: 44px;
 	animation: moveUpDown 2s infinite ease-in-out;
 }
 
-.header__bottom {
-	height: 49px;
+/* Navbar */
+.navbar {
+	position: sticky;
+	top: 66px;
+	z-index: 998;
+	background: #fafafa;
+	width: 100%;
+	height: 60px;
 }
-.header__menu {
+.navbar__list {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 2rem;
+	height: 49px;
 }
-.header__item {
-}
-.header__link {
+
+.navbar__link {
 	padding: 20px 8px;
 	display: inline-block;
 	font-family: "SVN-Tiempos Headline";
@@ -450,12 +482,12 @@ p.text-details {
 	font-weight: 300;
 	font-style: italic;
 }
-.header__link--active {
+.navbar__link--active {
 	position: relative;
 	color: rgb(88, 17, 146);
 }
 
-.header__link--active::after {
+.navbar__link--active::after {
 	position: absolute;
 	content: "";
 	left: 0;
@@ -464,7 +496,6 @@ p.text-details {
 	height: 2px;
 	background: rgb(238 177 23);
 }
-/* End header */
 
 /* Vietnam-stories */
 .vietnam-stories {
@@ -485,7 +516,7 @@ p.text-details {
 .vietnam-stories__item {
 	position: relative;
 	width: 100%;
-	height: 414px;
+	height: 478px;
 	border-radius: 20px;
 	overflow: hidden;
 }
@@ -528,8 +559,12 @@ p.text-details {
 /* fascinating-books */
 .fascinating-books__body {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(3, minmax(0, 1fr));
 	gap: 52px 28px;
+}
+
+.fascinating-books__info img {
+	border-radius: 16px;
 }
 
 .fascinating-book {
@@ -544,6 +579,7 @@ p.text-details {
 	width: 100%;
 	height: 224px;
 	border-radius: 20px 20px 0 0;
+	border-radius: 16px;
 	overflow: hidden;
 }
 .fascinating-book__img {
@@ -551,6 +587,7 @@ p.text-details {
 	height: 100%;
 	object-fit: cover;
 	transition: transform 0.5s;
+	border-radius: 16px;
 }
 .fascinating-book__title {
 	margin: 16px 0;
@@ -562,15 +599,19 @@ p.text-details {
 .fascinating-book__title:hover {
 	color: #581192;
 }
+
 .fascinating-book__desc {
 	font-size: 1.8rem;
 	font-family: "SVN-Basis Grotesque Pro";
 	line-height: 27px;
+	color: #525252;
 }
 .fascinating-book__row {
 	margin-top: 16px;
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
+	gap: 10px;
 }
 .fascinating-book__viegazine {
 	display: flex;
@@ -587,7 +628,6 @@ p.text-details {
 }
 .fascinating-book__row > p:last-child {
 	position: relative;
-	margin-left: 20px;
 	padding-left: 25px;
 }
 .fascinating-book__row > p:last-child::after {
@@ -664,8 +704,8 @@ p.text-details {
 }
 
 .swiper-slide img {
-	width: 100%;
-	height: 100%;
+	width: 480px;
+	height: 648px;
 	object-fit: cover;
 	transition: 0.5s;
 }
@@ -714,6 +754,7 @@ p.text-details {
 	background: #8b4843;
 	padding: 52px 0 64px;
 }
+
 .painting__desc {
 	text-align: center;
 	margin-bottom: 40px;
@@ -726,7 +767,7 @@ p.text-details {
 }
 .painting__img-wrap {
 	width: 100%;
-	height: 567px;
+	height: 438px;
 	border-radius: 20px;
 	overflow: hidden;
 	display: block;
@@ -796,9 +837,6 @@ p.text-details {
 	color: #fff;
 }
 
-.footer__logo {
-}
-
 .footer__social {
 	display: flex;
 	align-items: center;
@@ -815,6 +853,7 @@ p.text-details {
 	width: 44px;
 	border-radius: 50%;
 	color: #6b13b6;
+	background: #f3e6ff;
 }
 
 .footer__social svg {
@@ -1120,4 +1159,393 @@ p.text-details {
 
 .form-group__pasword-wrap .form-group__input {
 	padding-right: 45px;
+}
+
+/* ======== RESPONSIVE STYLES ======== */
+
+/* PC breakpoint */
+@media screen and (min-width: 992px) {
+	/* PC styles are mostly the default styles defined above */
+	/* Adjusting container width for smaller desktops */
+	.container {
+		width: 90%;
+		max-width: 1480px;
+	}
+}
+
+/* Tablet breakpoint */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+	html {
+		font-size: 58%; /* Slightly reduce base font size */
+	}
+
+	.container {
+		width: 95%;
+	}
+
+	/* Header adjustments */
+	.header {
+		padding: 0 32px;
+	}
+
+	/* Hero section */
+	.hero__heading {
+		line-height: 1.2;
+		padding: 0 20px;
+	}
+
+	/* Navigation */
+
+	.navbar__link {
+		font-size: 2.4rem;
+	}
+
+	/* Grid layouts */
+	.vietnam-stories__body {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		gap: 20px;
+	}
+
+	.vietnam-stories__item {
+		height: 250px;
+	}
+
+	.fascinating-books__body {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 30px 20px;
+	}
+
+	.fascinating-book__img-wrap {
+		height: 131px;
+	}
+
+	.fascinating-books__info {
+		height: 300px;
+		border-radius: 16px;
+	}
+
+	.fascinating-books__info img {
+		border-radius: 16px;
+		height: 275px;
+	}
+
+	.fascinating-book__row > p:last-child::after {
+		display: none;
+	}
+
+	.fascinating-book__viegazine {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.painting {
+		padding: 40px 74px;
+		height: 800px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.painting__desc {
+		font-size: 2rem;
+		margin-bottom: 64px;
+		line-height: 1.6;
+	}
+
+	.painting__img-wrap {
+		height: 614px;
+	}
+
+	.story-told__btn {
+		width: 220px;
+		height: 40px;
+		font-weight: 600;
+		font-size: 1.6rem;
+	}
+
+	/* Modal adjustments */
+	.modal__container {
+		width: 350px;
+	}
+
+	/* Login form */
+	.form-group {
+		width: 450px;
+	}
+
+	/* Footer */
+	.footer {
+		padding: 40px 20px;
+	}
+
+	/* Swiper slider */
+	.swiper-slide-active {
+		width: 320px;
+	}
+}
+
+/* Mobile breakpoint */
+@media screen and (max-width: 767.98px) {
+	html {
+		font-size: 55%; /* Further reduce base font size */
+	}
+
+	.container {
+		width: 92%;
+	}
+
+	/* Header adjustments */
+	.header {
+		padding: 0 15px;
+		height: 56px;
+	}
+
+	.logo {
+		height: 28px;
+	}
+
+	.header__btn {
+		min-width: 80px;
+		font-size: 1.4rem;
+	}
+
+	/* Main section adjustment */
+	.main {
+		padding-top: 56px; /* Match header height */
+	}
+
+	/* Hero section */
+	.hero {
+		height: calc(100vh - 56px);
+		margin-top: -56px;
+	}
+
+	.hero__sub-heading {
+		font-size: 1.8rem;
+		margin-bottom: 12px;
+	}
+
+	.hero__heading {
+		font-size: 3rem;
+		line-height: 1.2;
+		padding: 0 15px;
+	}
+
+	.hero__updown {
+		margin-top: 20px;
+		width: 36px;
+		height: 36px;
+	}
+
+	/* Navigation */
+	.navbar {
+		height: auto;
+		top: 56px;
+		overflow-x: auto;
+	}
+
+	.navbar__list {
+		height: auto;
+		padding: 10px 0;
+		justify-content: flex-start;
+		gap: 1.5rem;
+		width: max-content;
+		padding: 10px 15px;
+	}
+
+	.navbar__link {
+		font-size: 18px;
+		white-space: nowrap;
+		padding: 10px 5px;
+	}
+
+	/* Grid layouts */
+	.vietnam-stories__heading,
+	.fascinating-books__heading,
+	.series__heading {
+		font-size: 4.5rem;
+		margin: 50px 0 30px;
+	}
+
+	.vietnam-stories__body {
+		grid-template-columns: 1fr;
+		gap: 15px;
+	}
+
+	.vietnam-stories__item {
+		height: 320px;
+	}
+
+	.vietnam-stories__title {
+		font-size: 2.8rem;
+	}
+
+	.fascinating-books__body {
+		grid-template-columns: 1fr;
+		gap: 40px 0;
+	}
+
+	.fascinating-book__img-wrap {
+		height: 200px;
+	}
+
+	.fascinating-book__title {
+		font-size: 2.4rem;
+		margin: 12px 0;
+	}
+
+	/* Painting section */
+	.painting {
+		padding: 52px 56px 64px;
+	}
+
+	.painting__desc {
+		font-size: 2rem;
+	}
+
+	.painting__img-wrap {
+		height: 400px;
+	}
+
+	/* Series/Swiper */
+	.swiper-container {
+		width: 90vw;
+	}
+
+	.swiper-slide {
+		width: 150px;
+		height: 400px;
+	}
+
+	.swiper-slide-active {
+		width: 260px;
+	}
+
+	/* History grid */
+	.history-grid__row {
+		margin: 15px 0 60px;
+	}
+
+	.history-grid__btn,
+	.story-told__btn {
+		white-space: normal;
+		padding: 10px 15px;
+	}
+
+	/* Footer */
+	.footer {
+		padding: 30px 15px;
+	}
+
+	.footer__social {
+		gap: 20px;
+		margin: 25px 0;
+	}
+
+	.footer__social a:first-child svg {
+		width: 12px;
+	}
+
+	.footer__copyright {
+		margin-bottom: 30px;
+		font-size: 1.6rem;
+	}
+
+	.footer__desc {
+		font-size: 1.4rem;
+		line-height: 1.5;
+	}
+
+	/* Modal */
+	.modal__container {
+		width: 280px;
+	}
+
+	.modal__search {
+		padding: 15px 0 100px;
+	}
+
+	.modal__body {
+		padding: 30px 20px;
+	}
+
+	.modal__link {
+		font-size: 2.8rem;
+		padding: 10px 0;
+	}
+
+	/* Login form */
+	.login-form__heading {
+		font-size: 3.6rem;
+	}
+
+	.form-group {
+		width: 90%;
+		max-width: 400px;
+	}
+
+	.form-group__input {
+		height: 50px;
+	}
+
+	.form-group__social-link {
+		height: 40px;
+	}
+
+	.form-group__submit-btn {
+		margin-top: 30px;
+	}
+}
+
+/* Extra small devices */
+@media screen and (max-width: 479.98px) {
+	html {
+		font-size: 52%;
+	}
+
+	/* Header */
+	.header__btn {
+		min-width: 70px;
+		height: 32px;
+		font-size: 1.2rem;
+	}
+
+	/* Hero */
+	.hero__heading {
+		font-size: 2.6rem;
+		padding: 0 10px;
+	}
+
+    .vietnam-stories__body {
+        gap: 44px;
+    }
+
+	.vietnam-stories__item {
+		height: 187px;
+	}
+
+    .vietnam-stories__title {
+        font-size: 3.6rem;
+    }
+
+	.story-told__btn {
+		width: 96px;
+		height: 39px;
+		font-size: 1.6rem;
+		font-weight: bold;
+	}
+
+	/* Login form */
+	.login-form__heading {
+		font-size: 3.2rem;
+	}
+
+	.form-group__social-text {
+		font-size: 1.2rem;
+	}
+
+	/* Footer */
+	.footer__row img {
+		max-width: 90%;
+	}
 }
