@@ -648,6 +648,73 @@ p.text-details {
   font-weight: 300;
   font-style: italic;
 }
+/* series swiper */
+
+.swiper-container {
+  width: 60vw;
+
+  margin: 0 auto;
+}
+
+.swiper {
+  background-color: red;
+  padding: 50px 0;
+}
+
+.swiper-slide {
+  position: relative;
+  width: 200px;
+  height: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.5s;
+  user-select: none;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.swiper-slide-active {
+  width: 380px;
+}
+
+.swiper-slide-active img {
+  transform: scale(1.2);
+}
+
+.audio-icon {
+  font-size: 2rem;
+  color: white;
+}
+
+#play-pause-button {
+  position: fixed;
+  left: 3%;
+  bottom: 5%;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#play-pause-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#play-pause-button:active {
+  transform: scale(0.95);
+}
+
+.hidden {
+  display: none;
+}
+
 /* End series */
 
 /* Painting */
