@@ -181,12 +181,6 @@ img {
 	cursor: pointer;
 }
 
-img.logo {
-	position: relative;
-	left: 50%;
-	transform: translate(-33%);
-}
-
 /* reset button, textarea, input, select */
 button,
 textarea,
@@ -382,6 +376,18 @@ p.text-details {
 	height: 66px;
 	transition: background-color 0.3s ease;
 	background-color: transparent; /* Mặc định trong suốt */
+  color: #fff;
+}
+
+.logo__svg {
+  width: 228px;
+  height: 48px;
+  object-fit: cover;
+  transition: all 1s;
+}
+
+.logo__svg.logo__small {
+  scale: 0.65;
 }
 
 /* End header */
@@ -1340,14 +1346,15 @@ p.text-details {
 		height: 56px;
 	}
 
-	.logo {
-		height: 28px;
-	}
-
 	.header__btn {
 		min-width: 80px;
 		font-size: 1.4rem;
 	}
+
+  /* logo */
+  .logo__svg {
+    scale: 0.65;
+  }
 
 	/* Main section adjustment */
 	.main {
