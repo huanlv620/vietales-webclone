@@ -1,171 +1,345 @@
 <!DOCTYPE html>
 <html lang="vi">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Vietales | Chuyện Người Việt Kể</title>
-		<!-- ======== Favicon ======== -->
-		<link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
-		<link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
-		<link rel="shortcut icon" href="./favicon/favicon.ico" />
-		<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
-		<link rel="manifest" href="./favicon/site.webmanifest" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vietales | Chuyện Người Việt Kể</title>
+    <!-- ======== Favicon ======== -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
 
-		<!-- ======== Meta open graph ======== -->
-		<meta property="og:title" content="Vietales | Chuyện Người Việt Kể" />
-		<meta
-			name="description"
-			content="Đưa câu chuyện Việt Nam ra thế giới và mang câu chuyện thế giới về Việt Nam" />
-		<meta property="og:image" content="./favicon/favicon-96x96.png" />
-		<meta property="og:url" content="https://vietales.com" />
-		<meta property="og:type" content="website" />
-		<meta property="og:site_name" content="Vietales" />
-		<meta property="og:locale" content="vi_VN" />
+    <!-- ======== Meta open graph ======== -->
+    <meta property="og:title" content="Vietales | Chuyện Người Việt Kể" />
+    <meta
+      name="description"
+      content="Đưa câu chuyện Việt Nam ra thế giới và mang câu chuyện thế giới về Việt Nam"
+    />
+    <meta property="og:image" content="./favicon/favicon-96x96.png" />
+    <meta property="og:url" content="https://vietales.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Vietales" />
+    <meta property="og:locale" content="vi_VN" />
 
-		<!-- ======== CDNs Link ======== -->
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-			crossorigin="anonymous" />
+    <!-- ======== CDNs Link ======== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-		<!-- ======== Stylesheet CSS ======== -->
-		<link rel="stylesheet" href="./css/style.css" />
-		<style></style>
-	</head>
-	<body>
-		<!-- Start of Header -->
-		<!-- End of Header -->
+    <!-- ======== Stylesheet CSS ======== -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Start of wrapper -->
+    <div class="wrapper">
+      <!--  Start of Header  -->
+      <header class="header header--sign-in">
+        <a class="header__icon-search" href="#!">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <mask
+              id="mask0_6257_79142"
+              style="mask-type: alpha"
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="0"
+              width="24"
+              height="24"
+            >
+              <rect width="24" height="24" class="fill-current"></rect>
+            </mask>
+            <g mask="url(#mask0_6257_79142)">
+              <path
+                d="M1 19.5V17.5H13V19.5H1ZM1 13.5375V11.5375H9V13.5375H1ZM1 7.46249V5.46249L9 5.46249V7.46249L1 7.46249ZM21.6 18L17.75 14.15C17.35 14.4333 16.9125 14.6458 16.4375 14.7875C15.9625 14.9292 15.4833 15 15 15C13.6167 15 12.4375 14.5125 11.4625 13.5375C10.4875 12.5625 10 11.3833 10 10C10 8.61667 10.4875 7.4375 11.4625 6.4625C12.4375 5.4875 13.6167 5 15 5C16.3833 5 17.5625 5.4875 18.5375 6.4625C19.5125 7.4375 20 8.61667 20 10C20 10.4833 19.9292 10.9625 19.7875 11.4375C19.6458 11.9125 19.4333 12.35 19.15 12.75L23 16.6L21.6 18ZM15 13C15.8333 13 16.5417 12.7083 17.125 12.125C17.7083 11.5417 18 10.8333 18 10C18 9.16667 17.7083 8.45833 17.125 7.875C16.5417 7.29167 15.8333 7 15 7C14.1667 7 13.4583 7.29167 12.875 7.875C12.2917 8.45833 12 9.16667 12 10C12 10.8333 12.2917 11.5417 12.875 12.125C13.4583 12.7083 14.1667 13 15 13Z"
+                class="fill-current"
+              ></path>
+            </g>
+          </svg>
+        </a>
+        <a href="/" class="logo">
+          <svg
+            class="logo__svg logo__small"
+            width="230"
+            height="48"
+            viewBox="0 0 230 48"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_6938_173967)">
+              <path
+                d="M109.087 17.0681H115.038V10.8556H109.087V0H102.286V10.8556H97.3811V17.0681H102.286V47.0845H109.087V17.0681Z"
+                class="fill-current"
+              ></path>
+              <path
+                d="M163.757 0H156.956V47.0845H163.757V0Z"
+                class="fill-current"
+              ></path>
+              <path
+                d="M229.405 36.4251C229.405 43.5531 224.174 48 217.242 48C215.672 48 214.103 47.673 212.599 47.1499C207.402 45.3123 204.6 41.1401 204.433 35.7057H211.273C211.666 39.1756 213.51 41.7875 217.373 41.7875C220.381 41.7875 222.604 39.9564 222.604 36.8174C222.604 29.2316 206.059 33.1553 206.059 20.3379C206.059 14.1253 211.487 9.87466 217.438 9.87466C223.65 9.87466 228.424 14.1907 228.555 20.4687H221.754C221.427 17.8529 219.858 16.0872 217.111 16.0872C214.822 16.0872 212.86 17.5259 212.86 19.9455C212.86 23.1499 215.999 23.8692 218.484 24.6539C224.435 26.485 229.405 29.4278 229.405 36.4251Z"
+                class="fill-current"
+              ></path>
+              <path
+                d="M145.053 29.0354C145.053 36.0327 139.495 41.7875 132.432 41.7875C125.5 41.7875 120.073 35.8365 120.073 29.0354C120.073 21.9728 125.304 16.0872 132.498 16.0872C139.887 16.0872 145.053 21.7766 145.053 29.0354ZM144.923 47.0845H151.724V10.8556H144.923V15.9564H144.792C142.111 11.8365 137.337 9.87466 132.498 9.87466C121.511 9.87466 113.271 18.1144 113.271 29.1008C113.271 40.0218 121.642 48 132.498 48C137.468 48 142.241 45.842 144.792 41.4605H144.923V47.0845Z"
+                class="fill-current"
+              ></path>
+              <path
+                d="M58.4704 30.8665H42.2524V47.0845H58.4704V30.8665Z"
+                class="fill-current"
+              ></path>
+              <path
+                d="M91.8219 26.6812H68.4104C68.8028 20.7302 74.2306 16.0872 80.1161 16.0872C86.0017 16.0872 91.4295 20.7302 91.8219 26.6812ZM98.6229 28.5123C98.6229 18.3106 90.4486 9.87466 80.1815 9.87466C69.5875 9.87466 61.6093 18.4414 61.6093 28.9046C61.6093 39.0409 69.7183 48 80.0507 48C87.9635 48 94.6992 43.0954 97.4458 35.7057H90.6447C88.6829 39.4986 84.563 41.7875 80.3123 41.7875C74.3614 41.7875 69.7837 37.5368 68.4104 31.9128H98.4268C98.5573 30.784 98.6228 29.6486 98.6229 28.5123Z"
+                class="fill-current"
+              ></path>
+              <path
+                d="M197.108 26.6812H173.697C174.089 20.7302 179.517 16.0872 185.402 16.0872C191.288 16.0872 196.716 20.7302 197.108 26.6812ZM203.909 28.5123C203.909 18.3106 195.735 9.87466 185.468 9.87466C174.874 9.87466 166.895 18.4414 166.895 28.9046C166.895 39.0409 175.004 48 185.337 48C193.25 48 199.985 43.0954 202.732 35.7057H195.931C193.969 39.4986 189.849 41.7875 185.598 41.7875C179.647 41.7875 175.07 37.5368 173.697 31.9128H203.713C203.843 30.784 203.909 29.6486 203.909 28.5123Z"
+                class="fill-current"
+              ></path>
+              <path
+                d="M23.656 47.0845L40.8137 10.8556H33.424L20.9015 38.3215H20.7439L7.98535 10.8556H0.595703L17.9104 47.0845H23.656Z"
+                class="fill-current"
+              ></path>
+              <path
+                d="M50.3614 27.9238C55.3455 27.9238 59.386 23.8834 59.386 18.8993C59.386 13.9152 55.3455 9.87476 50.3614 9.87476C45.3773 9.87476 41.3369 13.9152 41.3369 18.8993C41.3369 23.8834 45.3773 27.9238 50.3614 27.9238Z"
+                fill="#EEB117"
+              ></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_6938_173967">
+                <rect
+                  width="228.81"
+                  height="48"
+                  class="fill-current"
+                  transform="translate(0.595703)"
+                ></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <a href="./sign-in.html" class="header__btn">Đăng nhập</a>
+      </header>
+      <!-- End of Header -->
+      <!-- Start of main -->
+      <main>
+        <section class="login-form">
+          <div class="login-form__inner">
+            <header class="login-form__header">
+              <h1 class="login-form__heading">Đăng ký</h1>
+              <p class="login-form__desc">
+                Bạn đã có tài khoản?
+                <a class="login-form__signup-text" href="./sign-in.html"
+                  >Đăng nhập</a
+                >
+              </p>
+            </header>
 
-		<!-- Start of Wrapper -->
-		<div class="wrapper">
-			<main>
-				<section class="login-form">
-					<div class="login-form__inner">
-						<header class="login-form__header">
-							<h1 class="login-form__heading">Đăng ký</h1>
-							<p class="login-form__desc">
-								Bạn đã có tài khoản?
-								<a class="login-form__signup-text" href="./sign-in.html"
-									>Đăng nhập</a
-								>
-							</p>
-						</header>
+            <form class="form-group" action="">
+              <!-- Email -->
+              <div class="form-group__email-wrap">
+                <input
+                  type="email"
+                  class="form-group__input"
+                  id="email"
+                  placeholder=" "
+                  required
+                />
+                <label for="email" class="form-group__label"> Email*</label>
+              </div>
+              <!-- Password -->
+              <div class="form-group__pasword-wrap">
+                <input
+                  type="password"
+                  class="form-group__input"
+                  id="password"
+                  placeholder=" "
+                  required
+                />
+                <label for="password" class="form-group__label">
+                  Mật khẩu*</label
+                >
+                <input
+                  type="checkbox"
+                  id="toggle-password"
+                  class="form-group__toggle-checkbox"
+                />
+                <label
+                  for="toggle-password"
+                  class="form-group__password-toggle"
+                >
+                  <img
+                    src="./images/eye.svg"
+                    alt="Hiển thị"
+                    class="form-group__eye-icon show-password"
+                  />
+                  <img
+                    src="./images/eye-off.svg"
+                    alt="Ẩn"
+                    class="form-group__eye-icon hide-password"
+                  />
+                </label>
+              </div>
 
-						<form class="form-group" action="">
-							<!-- Email -->
-							<div class="form-group__email-wrap">
-								<input
-									type="email"
-									class="form-group__input"
-									id="email"
-									placeholder=" "
-									required />
-								<label for="email" class="form-group__label"> Email*</label>
-							</div>
-							<!-- Password -->
-							<div class="form-group__pasword-wrap">
-								<input
-									type="password"
-									class="form-group__input"
-									id="password"
-									placeholder=" "
-									required />
-								<label for="password" class="form-group__label"> Mật khẩu*</label>
-								<input
-									type="checkbox"
-									id="toggle-password"
-									class="form-group__toggle-checkbox" />
-								<label for="toggle-password" class="form-group__password-toggle">
-									<img
-										src="./images/eye.svg"
-										alt="Hiển thị"
-										class="form-group__eye-icon show-password" />
-									<img
-										src="./images/eye-off.svg"
-										alt="Ẩn"
-										class="form-group__eye-icon hide-password" />
-								</label>
-							</div>
+              <!-- Confirm Password -->
+              <div class="form-group__pasword-wrap">
+                <input
+                  type="password"
+                  class="form-group__input"
+                  id="confirm-password"
+                  placeholder=" "
+                  required
+                />
+                <label for="confirm-password" class="form-group__label">
+                  Nhập lại mật khẩu*</label
+                >
+                <input
+                  type="checkbox"
+                  id="toggle-confirm-password"
+                  class="form-group__toggle-checkbox"
+                />
+                <label
+                  for="toggle-confirm-password"
+                  class="form-group__password-toggle"
+                >
+                  <img
+                    src="./images/eye.svg"
+                    alt="Hiển thị"
+                    class="form-group__eye-icon show-password"
+                  />
+                  <img
+                    src="./images/eye-off.svg"
+                    alt="Ẩn"
+                    class="form-group__eye-icon hide-password"
+                  />
+                </label>
+              </div>
 
-							<!-- Confirm Password -->
-							<div class="form-group__pasword-wrap">
-								<input
-									type="password"
-									class="form-group__input"
-									id="confirm-password"
-									placeholder=" "
-									required />
-								<label for="confirm-password" class="form-group__label">
-									Nhập lại mật khẩu*</label
-								>
-								<input
-									type="checkbox"
-									id="toggle-confirm-password"
-									class="form-group__toggle-checkbox" />
-								<label
-									for="toggle-confirm-password"
-									class="form-group__password-toggle">
-									<img
-										src="./images/eye.svg"
-										alt="Hiển thị"
-										class="form-group__eye-icon show-password" />
-									<img
-										src="./images/eye-off.svg"
-										alt="Ẩn"
-										class="form-group__eye-icon hide-password" />
-								</label>
-							</div>
+              <div class="form-group__agreement form-group__agreement--signup">
+                <p>Bằng việc đăng ký tài khoản, bạn đã đồng ý với</p>
+                <strong>THOẢ THUẬN NGƯỜI DÙNG</strong>
+                và
+                <strong>CHÍNH SÁCH BẢO MẬT</strong>
+                của Vietales
+              </div>
 
-							<div class="form-group__agreement form-group__agreement--signup">
-								<p>Bằng việc đăng ký tài khoản, bạn đã đồng ý với</p>
-								<strong>THOẢ THUẬN NGƯỜI DÙNG</strong>
-								và
-								<strong>CHÍNH SÁCH BẢO MẬT</strong>
-								của Vietales
-							</div>
+              <!-- Signup button -->
+              <button
+                class="form-group__submit-btn form-group__submit-btn--signup"
+                type="submit"
+              >
+                Đăng ký
+              </button>
 
-							<!-- Signup button -->
-							<button
-								class="form-group__submit-btn form-group__submit-btn--signup"
-								type="submit">
-								Đăng ký
-							</button>
+              <!-- Social Signup -->
+              <div class="form-group__social-login">
+                <div class="form-group__separator">
+                  <span>hoặc tiếp tục với</span>
+                </div>
+                <div class="form-group__social-icons">
+                  <a href="#!" class="form-group__social-link">
+                    <img
+                      src="./images/google.svg"
+                      alt="Google"
+                      class="form-group__social-icon"
+                    />
+                    <span class="form-group__social-text"
+                      >Tài khoản Google</span
+                    >
+                  </a>
+                  <a href="#!" class="form-group__social-link">
+                    <img
+                      src="./images/facebook.svg"
+                      alt="Facebook"
+                      class="form-group__social-icon"
+                    />
+                    <span class="form-group__social-text"
+                      >Tài khoản Facebook</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <!-- End of main -->
 
-							<!-- Social Signup -->
-							<div class="form-group__social-login">
-								<div class="form-group__separator">
-									<span>hoặc tiếp tục với</span>
-								</div>
-								<div class="form-group__social-icons">
-									<a href="#!" class="form-group__social-link">
-										<img
-											src="./images/google.svg"
-											alt="Google"
-											class="form-group__social-icon" />
-										<span class="form-group__social-text"
-											>Tài khoản Google</span
-										>
-									</a>
-									<a href="#!" class="form-group__social-link">
-										<img
-											src="./images/facebook.svg"
-											alt="Facebook"
-											class="form-group__social-icon" />
-										<span class="form-group__social-text"
-											>Tài khoản Facebook</span
-										>
-									</a>
-								</div>
-							</div>
-						</form>
-					</div>
-				</section>
-			</main>
-		</di>
-		<!-- End of Wrapper -->
-
-		<!-- Start of Footer -->
-		<!-- End of Footer -->
-	</body>
+      <!-- Start of Footer -->
+      <footer class="footer">
+        <a href="#!" class="footer__logo">
+          <img src="./images/logo-purple.svg" alt="" />
+        </a>
+        <!-- social  -->
+        <div class="footer__social">
+          <!-- fb -->
+          <a href="#!">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+              fill="currentColor"
+            >
+              <path
+                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+              />
+            </svg>
+          </a>
+          <!-- tiktok -->
+          <a href="#!">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              fill="currentColor"
+            >
+              <path
+                d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"
+              />
+            </svg>
+          </a>
+          <!-- instagram -->
+          <a href="#!">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              fill="currentColor"
+            >
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+              />
+            </svg>
+          </a>
+        </div>
+        <p class="footer__copyright">© Vietales 2023. All Rights Reserved</p>
+        <div class="footer__desc">
+          Công ty TNHH truyền thông và giải trí VIE-X
+        </div>
+        <div class="footer__desc">MSDN: 0317508603</div>
+        <div class="footer__desc">
+          Địa Chỉ: Toà nhà Redbase – 302A Nguyễn Thượng Hiền, Phường 5, Quận Phú
+          Nhuận
+        </div>
+        <div class="footer__row">
+          <img src="./images/footer__img.png" alt="" class="footer__img" />
+        </div>
+      </footer>
+      <!-- End of Footer -->
+    </div>
+    <!-- End of Wrapper -->
+  </body>
 </html>

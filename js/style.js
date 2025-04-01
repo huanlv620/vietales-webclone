@@ -32,7 +32,7 @@ window.addEventListener("scroll", () => {
   // Cập nhật header khi cuộn
   if (scrollPosition > 300) {
     header.style.color = "#8917ee";
-    header.style.background = "#fff";
+    header.style.background = "#fafafa";
     logoSvg.classList.add("logo__small");
     buttonDecorMessage.classList.add("show");
   } else {

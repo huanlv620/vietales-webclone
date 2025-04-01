@@ -194,6 +194,10 @@ select {
   outline: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* animation */
 @keyframes moveUpDown {
   0%,
@@ -447,6 +451,30 @@ p.text-details {
   transition: background-color 0.3s ease;
   background-color: transparent;
   color: #fff;
+}
+
+.header.header--sign-in {
+  color: #8917ee;
+  background: #fafafa;
+}
+
+.header__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #6b13b6;
+  background: #f3e6ff;
+  border-radius: 9999px;
+  height: 40px;
+  width: 100px;
+  font-family: "SVN-Basis Grotesque Pro";
+  font-weight: bold;
+}
+
+.header__btn:hover {
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.05),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.3);
 }
 
 .logo__svg {
