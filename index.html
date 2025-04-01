@@ -362,8 +362,69 @@
             <p class="series__desc">Chuỗi những câu chuyện cùng chủ đề</p>
 
             <!-- series__slider -->
-            <div class="series__slider"></div>
+            <div class="series__slider">
+              <div class="swiper-container">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        class="swiper-slide__img"
+                        src="./images/series-img-1.png"
+                      />
+                      <img
+                        src="./images/series-img-1-title.webp"
+                        alt=""
+                        class="swiper-slide__decor"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        class="swiper-slide__img"
+                        src="./images/series-img-2.jpg"
+                      />
+                      <img
+                        src="./images/series-img-2-title.svg"
+                        alt=""
+                        class="swiper-slide__decor"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        class="swiper-slide__img"
+                        src="./images/series-img-3.jpg"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        class="swiper-slide__img"
+                        src="./images/series-img-4.jpg"
+                      />
+                      <img
+                        src="./images/series-img-4-title.svg"
+                        alt=""
+                        class="swiper-slide__decor"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        class="swiper-slide__img"
+                        src="./images/series-img-5.jpg"
+                      />
+                      <img
+                        src="./images/series-img-5-title.webp"
+                        alt=""
+                        class="swiper-slide__decor"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
+
+          <div class="history-grid__row">
+            <button class="history-grid__btn btn">Khám phá Series</button>
+          </div>
           <!-- End of series -->
         </div>
         <!-- Start of Container -->
@@ -1219,6 +1280,25 @@
       <div class="decor-feedback__text">Phản hồi</div>
     </button>
     <!-- End of Decor -->
+
+    <div class="swiper-container">
+      <audio id="background-music" loop>
+        <source
+          src="https://github.com/ecemgo/mini-samples-great-tricks/raw/main/song-list/stranger-things-luxide-remix-no-copyright-music.mp3"
+          type="audio/mpeg"
+        />
+        Your browser does not support the audio element.
+      </audio>
+
+      <button id="play-pause-button">
+        <ion-icon class="audio-icon" id="play-music" name="play"></ion-icon>
+        <ion-icon
+          class="audio-icon hidden"
+          id="pause-music"
+          name="pause"
+        ></ion-icon>
+      </button>
+    </div>
 
     <!-- Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
