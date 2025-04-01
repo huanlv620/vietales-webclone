@@ -8,14 +8,18 @@ const playIcon = document.getElementById("play-music");
 const pauseIcon = document.getElementById("pause-music");
 let isPlaying = false;
 
-
 const header = document.querySelector(".header");
+const logo = document.querySelector(".logo");
+const logoSvg = document.querySelector(".logo__svg");
 
-iconSearch.onclick = (e) => {
+const buttonDecorMessage = document.querySelector(".decor-message");
+const buttonDecorFeedback = document.querySelector(".decor-feedback");
+
+iconSearch.onclick = () => {
 	modal.classList.add("show");
 };
 
-modalIconArrow.onclick = (e) => {
+modalIconArrow.onclick = () => {
 	modal.classList.remove("show");
 };
 
@@ -35,7 +39,6 @@ function findMissingNumber(arr) {
 	}
 
 	let sumMax = (n * (n + 1)) / 2;
-
 	return sumMax - sum;
 }
 
@@ -75,82 +78,27 @@ var swiper = new Swiper(".swiper", {
 	},
 });
 
-// particlesJS("particles-js", {
-// 	particles: {
-// 		number: {
-// 			value: 180,
-// 			density: {
-// 				enable: true,
-// 				value_area: 800,
-// 			},
-// 		},
-// 		color: {
-// 			value: "#fff",
-// 		},
-// 		shape: {
-// 			type: "circle",
-// 		},
-// 		opacity: {
-// 			value: 0.3,
-// 			random: false,
-// 			anim: {
-// 				enable: false,
-// 				speed: 4,
-// 				opacity_min: 0.1,
-// 				sync: false,
-// 			},
-// 		},
-// 		size: {
-// 			value: 4,
-// 			random: true,
-// 			anim: {
-// 				enable: true,
-// 				speed: 2,
-// 				size_min: 0.1,
-// 				sync: false,
-// 			},
-// 		},
-// 		line_linked: {
-// 			enable: false,
-// 		},
-// 		move: {
-// 			enable: true,
-// 			speed: 0.4,
-// 			direction: "right",
-// 			random: true,
-// 			straight: false,
-// 			out_mode: "none",
-// 			bounce: false,
-// 			attract: {
-// 				enable: false,
-// 				rotateX: 600,
-// 				rotateY: 1200,
-// 			},
-// 		},
-// 	},
-// 	retina_detect: true,
-// });
-
-// Call the function when the DOM is fully loaded
-
-// Add scroll event listener to change header background color
-
-
-const logo = document.querySelector(".logo")
-const logoSvg= document.querySelector(".logo__svg")
-
-console.log(logoSvg)
-
+// Gộp sự kiện scroll
 window.addEventListener("scroll", () => {
-	if (window.scrollY > 300) {
-		header.style.color ="#8917ee"
-		header.style.background ="#fff"
-		logoSvg.classList.add("logo__small")
+	const scrollPosition = window.scrollY;
+	const windowHeight = window.innerHeight;
+	const documentHeight = document.documentElement.scrollHeight;
+
+	// Cập nhật header khi cuộn
+	if (scrollPosition > 300) {
+		header.style.color = "#8917ee";
+		header.style.background = "#fff";
+		logoSvg.classList.add("logo__small");
+		buttonDecorMessage.classList.add("show");
 	} else {
-		header.style.color ="#fff"
-		header.style.background ="transparent"
-		logoSvg.classList.remove("logo__small")
+		header.style.color = "#fff";
+		header.style.background = "transparent";
+		logoSvg.classList.remove("logo__small");
+		buttonDecorMessage.classList.remove("show");
+	}
+
+	// Hiển thị feedback khi cuộn đến nửa trang
+	if (scrollPosition > (documentHeight / 2 - windowHeight)) {
+		buttonDecorFeedback.classList.add("show");
 	}
 });
-
-console.log(logo)
