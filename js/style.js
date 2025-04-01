@@ -2,6 +2,15 @@ const modal = document.querySelector("#modal");
 const iconSearch = document.querySelector(".header__icon-search");
 const modalIconArrow = document.querySelector(".modal__icon-arrow");
 
+const audio = document.getElementById("background-music");
+const playPauseButton = document.getElementById("play-pause-button");
+const playIcon = document.getElementById("play-music");
+const pauseIcon = document.getElementById("pause-music");
+let isPlaying = false;
+
+
+const header = document.querySelector(".header");
+
 iconSearch.onclick = (e) => {
 	modal.classList.add("show");
 };
@@ -30,16 +39,7 @@ function findMissingNumber(arr) {
 	return sumMax - sum;
 }
 
-console.log(findMissingNumber([3, 7, 1, 2, 8, 4, 5])); // 6
-const audio = document.getElementById("background-music");
-const playPauseButton = document.getElementById("play-pause-button");
-const playIcon = document.getElementById("play-music");
-const pauseIcon = document.getElementById("pause-music");
-
-let isPlaying = false;
-
 function togglePlayPause() {
-	console.log("Toggle function called");
 	if (isPlaying) {
 		audio.pause();
 		playIcon.classList.remove("hidden");
@@ -52,7 +52,7 @@ function togglePlayPause() {
 	isPlaying = !isPlaying;
 }
 
-playPauseButton.addEventListener("click", togglePlayPause);
+// playPauseButton.addEventListener("click", togglePlayPause);
 
 var swiper = new Swiper(".swiper", {
 	grabCursor: true,
@@ -75,97 +75,82 @@ var swiper = new Swiper(".swiper", {
 	},
 });
 
-particlesJS("particles-js", {
-	particles: {
-		number: {
-			value: 180,
-			density: {
-				enable: true,
-				value_area: 800,
-			},
-		},
-		color: {
-			value: "#fff",
-		},
-		shape: {
-			type: "circle",
-		},
-		opacity: {
-			value: 0.3,
-			random: false,
-			anim: {
-				enable: false,
-				speed: 4,
-				opacity_min: 0.1,
-				sync: false,
-			},
-		},
-		size: {
-			value: 4,
-			random: true,
-			anim: {
-				enable: true,
-				speed: 2,
-				size_min: 0.1,
-				sync: false,
-			},
-		},
-		line_linked: {
-			enable: false,
-		},
-		move: {
-			enable: true,
-			speed: 0.4,
-			direction: "right",
-			random: true,
-			straight: false,
-			out_mode: "none",
-			bounce: false,
-			attract: {
-				enable: false,
-				rotateX: 600,
-				rotateY: 1200,
-			},
-		},
-	},
-	retina_detect: true,
-});
-
-// Function to handle sticky navbar positioning
-function setupStickyNavbar() {
-	const header = document.querySelector(".header");
-	const navbar = document.querySelector(".navbar");
-	const main = document.querySelector(".main");
-
-	function updateNavbarPosition() {
-		const headerHeight = header.offsetHeight;
-		navbar.style.top = `${headerHeight}px`;
-		main.style.paddingTop = `${headerHeight}px`;
-
-		// If there's a hero section, adjust it too
-		const hero = document.querySelector(".hero");
-		if (hero) {
-			hero.style.marginTop = `-${headerHeight}px`;
-		}
-	}
-
-	// Initial setup
-	updateNavbarPosition();
-
-	// Update on window resize
-	window.addEventListener("resize", updateNavbarPosition);
-}
+// particlesJS("particles-js", {
+// 	particles: {
+// 		number: {
+// 			value: 180,
+// 			density: {
+// 				enable: true,
+// 				value_area: 800,
+// 			},
+// 		},
+// 		color: {
+// 			value: "#fff",
+// 		},
+// 		shape: {
+// 			type: "circle",
+// 		},
+// 		opacity: {
+// 			value: 0.3,
+// 			random: false,
+// 			anim: {
+// 				enable: false,
+// 				speed: 4,
+// 				opacity_min: 0.1,
+// 				sync: false,
+// 			},
+// 		},
+// 		size: {
+// 			value: 4,
+// 			random: true,
+// 			anim: {
+// 				enable: true,
+// 				speed: 2,
+// 				size_min: 0.1,
+// 				sync: false,
+// 			},
+// 		},
+// 		line_linked: {
+// 			enable: false,
+// 		},
+// 		move: {
+// 			enable: true,
+// 			speed: 0.4,
+// 			direction: "right",
+// 			random: true,
+// 			straight: false,
+// 			out_mode: "none",
+// 			bounce: false,
+// 			attract: {
+// 				enable: false,
+// 				rotateX: 600,
+// 				rotateY: 1200,
+// 			},
+// 		},
+// 	},
+// 	retina_detect: true,
+// });
 
 // Call the function when the DOM is fully loaded
-document.addEventListener("DOMContentLoaded", setupStickyNavbar);
 
 // Add scroll event listener to change header background color
-window.addEventListener("scroll", () => {
-	const header = document.querySelector(".header");
 
-	if (window.scrollY > 0) {
-		header.style.backgroundColor = "#fff";
+
+const logo = document.querySelector(".logo")
+const logoSvg= document.querySelector(".logo__svg")
+
+console.log(logoSvg)
+
+window.addEventListener("scroll", () => {
+	if (window.scrollY > 300) {
+		header.style.color ="#8917ee"
+		header.style.background ="#fff"
+		logoSvg.classList.add("logo__small")
 	} else {
-		header.style.backgroundColor = "transparent";
+		header.style.color ="#fff"
+		header.style.background ="transparent"
+		logoSvg.classList.remove("logo__small")
 	}
 });
+
+console.log(logo)
