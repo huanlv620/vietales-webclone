@@ -209,6 +209,10 @@ select {
 	outline: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* animation */
 @keyframes moveUpDown {
 	0%,
@@ -464,6 +468,30 @@ p.text-details {
 	color: #fff;
 }
 
+.header.header--sign-in {
+  color: #8917ee;
+  background: #fafafa;
+}
+
+.header__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #6b13b6;
+  background: #f3e6ff;
+  border-radius: 9999px;
+  height: 40px;
+  width: 100px;
+  font-family: "SVN-Basis Grotesque Pro";
+  font-weight: bold;
+}
+
+.header__btn:hover {
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.05),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
 .logo__svg {
 	width: 228px;
 	object-fit: cover;
@@ -478,6 +506,10 @@ p.text-details {
 
 .main {
 	padding-top: 66px; /* Same as header height */
+}
+
+.main.viegazine {
+  padding: 0;
 }
 
 .main__end img {
@@ -815,6 +847,11 @@ p.text-details {
 	width: 100%;
 	height: 60px;
 }
+
+.navbar--viegazine {
+  background: transparent;
+}
+
 .navbar__list {
 	display: flex;
 	align-items: center;
@@ -832,6 +869,10 @@ p.text-details {
 	color: rgb(10, 10, 10);
 	font-weight: 300;
 	font-style: italic;
+}
+
+.navbar__link.viegazine {
+  color: #e5e5e5;
 }
 
 .navbar__link--active {
@@ -1031,6 +1072,98 @@ p.text-details {
 
 .fascinating-book {
 	width: 100%;
+}
+
+.fascinating-books__row-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 38px;
+
+  border-bottom: 1px solid #f3e6ff;
+  margin-bottom: 50px;
+  padding-bottom: 14px;
+}
+
+.fascinating-books__more {
+  position: relative;
+  display: none;
+}
+
+.fascinating-books__more-btn {
+  display: flex;
+  align-items: center;
+  font-family: "SVN-Basis Grotesque Pro";
+  font-size: 1.6rem;
+}
+
+.fascinating-books__more-list {
+  position: absolute;
+  bottom: -180px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 8px 16px;
+  width: 134px;
+  border-radius: 24px;
+  border: 1px solid #ccc;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.fascinating-books__more-list.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.fascinating-books__more-link {
+  display: block;
+  padding: 8px 0px;
+}
+
+.fascinating-books__row-list-btn {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.fascinating-books__text {
+  font-family: "SVN-Basis Grotesque Pro";
+  font-weight: bold;
+  color: #525252;
+  opacity: 0.8;
+  padding: 7px 12px;
+}
+
+.fascinating-books__text:hover {
+  color: #6b13b6;
+  background: #f5f5f5;
+
+  border-radius: 14px;
+}
+
+.fascinating-books__text.fascinating-books__text--active {
+  color: #6b13b6;
+  background: #f5f5f5;
+  border-radius: 14px;
+}
+
+.fascinating-books__input-gr {
+  display: flex;
+  align-items: center;
+  width: 242px;
+  padding: 8px 20px;
+  background: #f5f5f5;
+  border-radius: 99px;
+}
+
+.fascinating-books__input-gr input {
+  font-family: "SVN-Tiempos Headline";
+  font-style: italic;
+  color: #a3a3a3;
+  font-size: 1.4rem;
+  flex: 1;
 }
 
 .fascinating-book:hover .fascinating-book__img {
@@ -1633,12 +1766,30 @@ p.text-details {
 
 /* PC breakpoint */
 @media screen and (min-width: 992px) {
-	/* PC styles are mostly the default styles defined above */
-	/* Adjusting container width for smaller desktops */
-	.container {
-		width: 90%;
-		max-width: 1480px;
-	}
+  /* PC styles are mostly the default styles defined above */
+  /* Adjusting container width for smaller desktops */
+  .container {
+    width: 90%;
+    max-width: 1480px;
+  }
+}
+
+/* PC breakpoint */
+@media screen and (max-width: 1200px) {
+  .fascinating-books__row-list {
+    justify-content: space-between;
+  }
+
+  .fascinating-books__row-list-btn {
+    display: none;
+  }
+  .fascinating-books__more {
+    display: block;
+  }
+
+  .fascinating-books__more-btn {
+    display: flex;
+  }
 }
 
 /* Tablet breakpoint */
