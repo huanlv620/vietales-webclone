@@ -17,6 +17,20 @@ const btnDecorItemThree = document.querySelector(
   ".reading-list-btn__item-three"
 );
 
+// viegazine
+const navbarViegazine = document.querySelector(".navbar-viegazine");
+
+// viegazine .navbar__btn-svg.navbar__btn-svg--rotate
+const moreNewList = document.querySelector(".navbar__btn-newText");
+const subMenu = document.querySelector(".navbar__sub-menu");
+const iconSvgBtnMore = document.querySelector(".navbar__btn-svg");
+
+// show new list subject
+moreNewList.onclick = () => {
+  subMenu.classList.toggle("show");
+  iconSvgBtnMore.classList.toggle("navbar__btn-svg--rotate");
+};
+
 // Modal header
 iconSearch.onclick = () => {
   modal.classList.add("show");
@@ -44,11 +58,15 @@ window.addEventListener("scroll", () => {
     header.style.background = "#fafafa";
     logoSvg.classList.add("logo__small");
     buttonDecorMessage.classList.add("show");
+
+    navbarViegazine.classList.add("navbar--viegazine");
   } else {
     header.style.color = "#fff";
     header.style.background = "transparent";
     logoSvg.classList.remove("logo__small");
     buttonDecorMessage.classList.remove("show");
+
+    navbarViegazine.classList.remove("navbar--viegazine");
   }
 
   // Hiển thị feedback khi cuộn đến nửa trang
@@ -100,6 +118,7 @@ modalDetail.onclick = () => {
   btnDecorItemThree.classList.toggle("active");
 };
 
+// loading bar
 window.addEventListener("scroll", function () {
   let scrollTop = window.scrollY; // Số pixel đã cuộn từ trên xuống
   let scrollHeight = document.documentElement.scrollHeight - window.innerHeight; // Tổng chiều cao có thể cuộn
