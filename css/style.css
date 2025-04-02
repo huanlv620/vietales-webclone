@@ -427,10 +427,6 @@ p.text-details {
   gap: 5px;
 }
 
-/* .modal-detail__gr:hover {
-  background: blue;
-} */
-
 .modal-detail__text {
   display: flex;
   flex-direction: column;
@@ -473,6 +469,20 @@ p.text-details {
 }
 
 /* End modal */
+
+/* Loading bar */
+.progress-bar {
+  position: fixed;
+  top: 66px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #8917ee;
+  z-index: 100;
+  transition: width 0.1s linear;
+}
+
+/* End loading bar */
 
 /* Decor */
 .decor-message {
