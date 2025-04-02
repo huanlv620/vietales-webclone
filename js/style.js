@@ -9,6 +9,15 @@ const logoSvg = document.querySelector(".logo__svg");
 const buttonDecorMessage = document.querySelector(".decor-message");
 const buttonDecorFeedback = document.querySelector(".decor-feedback");
 
+// modal detail// modal detail
+const btnDetailShowModal = document.querySelector(".reading-list-btn");
+const modalDetail = document.querySelector(".modal-detail");
+const btnDecorItemOne = document.querySelector(".reading-list-btn__item-one");
+const btnDecorItemThree = document.querySelector(
+  ".reading-list-btn__item-three"
+);
+
+// Modal header
 iconSearch.onclick = () => {
   modal.classList.add("show");
 };
@@ -76,4 +85,25 @@ document.querySelectorAll(".swiper-slide").forEach((slide, index) => {
   slide.addEventListener("mouseenter", () => {
     swiper.slideTo(index);
   });
+});
+
+// modal detail// modal detail
+btnDetailShowModal.onclick = () => {
+  modalDetail.classList.toggle("show");
+  btnDecorItemOne.classList.toggle("active");
+  btnDecorItemThree.classList.toggle("active");
+};
+
+modalDetail.onclick = () => {
+  modalDetail.classList.remove("show");
+  btnDecorItemOne.classList.toggle("active");
+  btnDecorItemThree.classList.toggle("active");
+};
+
+window.addEventListener("scroll", function () {
+  let scrollTop = window.scrollY; // Số pixel đã cuộn từ trên xuống
+  let scrollHeight = document.documentElement.scrollHeight - window.innerHeight; // Tổng chiều cao có thể cuộn
+  let progress = (scrollTop / scrollHeight) * 100; // Tính phần trăm
+
+  document.querySelector(".progress-bar").style.width = progress + "%";
 });
