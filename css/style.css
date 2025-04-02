@@ -1026,7 +1026,6 @@ p.text-details {
   background: #e5e5e5;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   border-radius: 50%;
-  padding: 12px 10px;
   transition: all 0.3s ease;
   cursor: pointer;
 }
@@ -1039,6 +1038,7 @@ p.text-details {
   align-items: end;
   justify-content: center;
   gap: 5px;
+  margin-right: 10px;
 }
 
 .reading-list-btn__wrap span {

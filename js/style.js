@@ -25,11 +25,11 @@ const moreNewList = document.querySelector(".navbar__btn-newText");
 const subMenu = document.querySelector(".navbar__sub-menu");
 const iconSvgBtnMore = document.querySelector(".navbar__btn-svg");
 
-// show new list subject
-moreNewList.onclick = () => {
-  subMenu.classList.toggle("show");
-  iconSvgBtnMore.classList.toggle("navbar__btn-svg--rotate");
-};
+// show new list subject viegazine
+// moreNewList.onclick = () => {
+//   subMenu.classList.toggle("show");
+//   iconSvgBtnMore.classList.toggle("navbar__btn-svg--rotate");
+// };
 
 // Modal header
 iconSearch.onclick = () => {
