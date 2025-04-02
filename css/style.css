@@ -607,10 +607,6 @@ p.text-details {
 
 /* End header */
 
-.main {
-  padding-top: 66px; /* Same as header height */
-}
-
 .main.viegazine {
   padding: 0;
 }
@@ -1085,8 +1081,12 @@ p.text-details {
   height: 60px;
 }
 
-.navbar--viegazine {
-  background: transparent;
+.navbar.navbar--viegazine {
+  background: #fafafa;
+}
+
+.navbar--viegazine .navbar__link {
+  color: #525252;
 }
 
 .navbar__list {
@@ -1137,6 +1137,57 @@ p.text-details {
   margin-bottom: 50px;
 }
 
+.navbar--bottom .navbar__btn-newText {
+  position: relative;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: "SVN-Basis Grotesque Pro";
+}
+.navbar__btn-svg {
+  transition: rotate 0.3s;
+}
+.navbar__btn-svg.navbar__btn-svg--rotate {
+  rotate: 180deg;
+}
+
+.navbar__sub-menu {
+  position: absolute;
+  z-index: 99;
+  bottom: -206px;
+  left: 16px;
+  background: #fff;
+  border: 1px solid #ccc;
+  width: 148px;
+  visibility: hidden;
+  opacity: 0;
+
+  transition: visibility 0.3s, opacity 0.3s;
+}
+
+.navbar__sub-menu.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.navbar__sub-menu ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.navbar__sub-menu a {
+  display: block;
+  text-align: start;
+  padding: 8px 0;
+}
+
+.navbar__sub-menu a:hover {
+  text-decoration: underline;
+}
+
 .navbar--bottom::after {
   content: "";
   position: absolute;
@@ -1159,6 +1210,7 @@ p.text-details {
   max-width: 260px;
   width: 100%;
   height: 40px;
+  padding: 0 16px;
   border-radius: 20px;
   background-color: #f3f3f3;
   overflow: hidden;
@@ -1167,14 +1219,16 @@ p.text-details {
 .search-form__input {
   width: 100%;
   height: 100%;
-  padding: 0 16px;
-  color: #525252;
   font-size: 1.4rem;
   font-style: italic;
+
+  font-family: "SVN-Tiempos Headline";
+  color: #a3a3a3;
 }
 
 .search-form__input::placeholder {
-  color: #525252;
+  font-family: "SVN-Tiempos Headline";
+  color: #a3a3a3;
 }
 
 .search-form__button {
@@ -1223,11 +1277,18 @@ p.text-details {
 }
 
 .navbar__link--bottom {
-  font-size: 1.6rem;
-  font-style: normal;
+  font-family: "SVN-Basis Grotesque Pro";
   padding: 7px 12px;
   border-radius: 99px;
-  font-family: "SVN-Basis Grotesque Pro", sans-serif;
+  font-size: 1.6rem;
+  color: #525252;
+  opacity: 0.8;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.navbar__link--bottom.navbar__link--bottom--active {
+  color: #6b13b6;
 }
 
 .navbar__link--bottom:hover {
@@ -2068,20 +2129,17 @@ p.text-details {
 }
 
 /* PC breakpoint */
-@media screen and (max-width: 1200px) {
-  .fascinating-books__row-list {
+@media screen and (max-width: 1280px) {
+  .navbar--bottom {
     justify-content: space-between;
   }
 
-  .fascinating-books__row-list-btn {
-    display: none;
-  }
-  .fascinating-books__more {
-    display: block;
+  .navbar--bottom .navbar__btn-newText {
+    display: flex;
   }
 
-  .fascinating-books__more-btn {
-    display: flex;
+  .navbar__list--bottom {
+    display: none;
   }
 }
 
@@ -2567,11 +2625,4 @@ p.text-details {
     width: 18px;
     height: 18px;
   }
-}
-
-/* Add universal box-sizing to ensure padding doesn't cause overflow */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
 }
