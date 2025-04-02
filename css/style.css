@@ -971,7 +971,7 @@ p.text-details {
 }
 
 .elementor-widget,
-.elementor-widget-text-editor {
+.elementor-container p {
 	color: #202020;
 	margin: 24px 0;
 	font-size: 1.8rem;
@@ -979,7 +979,7 @@ p.text-details {
 	font-family: "SVN-tiempos Headline", sans-serif;
 }
 
-.elementor-widget-text-editor:last-child {
+.elementor-container p:last-child {
 	margin-bottom: 0;
 }
 
