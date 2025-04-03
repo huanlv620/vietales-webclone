@@ -253,6 +253,10 @@ button {
 	margin-top: 300px;
 }
 
+.container__video-grid {
+    margin-top: 0;
+}
+
 p.text-details {
 	font-size: 1.8rem;
 	font-family: "SVN-Tiempos Text", sans-serif;
@@ -634,7 +638,7 @@ p.text-details {
 }
 
 .hero.hero--comic::before {
-  content: none;
+	content: none;
 }
 
 .hero img {
@@ -786,8 +790,8 @@ h2.category__heading--small {
 }
 
 .hero__sub-heading {
-	margin-bottom: 20px;
 	font-size: 2.4rem;
+	font-family: "SVN-Basis Grotesque Pro", sans-serif;
 }
 
 .hero__heading {
@@ -909,106 +913,106 @@ h2.category__heading--small {
 
 /* Start of Comic */
 .store-comic {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 28px;
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 28px;
 }
 
 .store-comic__img-wrap {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  padding-bottom: 62px;
+	position: relative;
+	width: 100%;
+	height: 400px;
+	padding-bottom: 62px;
 }
 
 .store-comic__img-wrap::after {
-  display: block;
-  content: "Giám khảo cắt máu ăn thề rồi mà trường thi vẫn dính drama!";
+	display: block;
+	content: "Giám khảo cắt máu ăn thề rồi mà trường thi vẫn dính drama!";
 
-  position: absolute;
-  left: -1.5%;
-  right: -1.5%;
+	position: absolute;
+	left: -1.5%;
+	right: -1.5%;
 
-  background: #404040;
-  border-radius: 0 0 12px 12px;
-  padding: 4px 16px;
-  font-family: "SVN-Basis Grotesque Pro";
-  font-weight: 500;
-  font-size: 1.8rem;
-  line-height: 27px;
-  color: #fafafa;
+	background: #404040;
+	border-radius: 0 0 12px 12px;
+	padding: 4px 16px;
+	font-family: "SVN-Basis Grotesque Pro";
+	font-weight: 500;
+	font-size: 1.8rem;
+	line-height: 27px;
+	color: #fafafa;
 }
 
 .store-comic__img-wrap:nth-of-type(2)::after {
-  content: "Chúa Trịnh Tùng bắt ông cậu Nguyễn Hoàng OT ná thở ";
+	content: "Chúa Trịnh Tùng bắt ông cậu Nguyễn Hoàng OT ná thở ";
 }
 
 .store-comic__img-wrap:nth-of-type(3)::after {
-  content: "Kinh thành Huế và anh thợ sửa ống nước may mắn";
+	content: "Kinh thành Huế và anh thợ sửa ống nước may mắn";
 }
 
 .store-comic__img-wrap:nth-of-type(4)::after {
-  content: "Xông pha tên đạn ta còn không sợ thì dăm ba cái răng sâu có là gì!??";
+	content: "Xông pha tên đạn ta còn không sợ thì dăm ba cái răng sâu có là gì!??";
 }
 
 .store-comic__row {
-  width: 100%;
-  margin-top: 36px;
+	width: 100%;
+	margin-top: 36px;
 }
 
 .store-comic__row--last {
-  margin: 48px 0 136px;
+	margin: 48px 0 136px;
 }
 
 .store-comic__btn {
-  margin: 0 auto;
+	margin: 0 auto;
 }
 
 .comic-main-end {
-  margin-top: 100px;
-  background: red;
-  width: 100%;
-  height: 1300px;
+	margin-top: 100px;
+	background: red;
+	width: 100%;
+	height: 1300px;
 }
 
 .hero--comic__bottom {
-  margin-top: 150px;
-  height: 1300px;
-  background-image: url("../images/comic-cover-2-high-res-1350x1080.jpg");
+	margin-top: 150px;
+	height: 1300px;
+	background-image: url("../images/comic-cover-2-high-res-1350x1080.jpg");
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .hero--comic__bottom::before {
-  background-color: #000;
-  opacity: 0.7;
+	background-color: #000;
+	opacity: 0.7;
 }
 
 .hero--comic__bottom::after {
-  content: "Chuyện sắp kể";
-  display: block;
-  position: absolute;
+	content: "Chuyện sắp kể";
+	display: block;
+	position: absolute;
 
-  top: 62px;
-  left: 50%;
-  transform: translateX(-50%);
+	top: 62px;
+	left: 50%;
+	transform: translateX(-50%);
 
-  font-family: "SVN-Tiempos Fine";
-  font-size: 5.6rem;
-  font-style: italic;
-  color: #a3a3a3;
+	font-family: "SVN-Tiempos Fine";
+	font-size: 5.6rem;
+	font-style: italic;
+	color: #a3a3a3;
 }
 
 .hero--comic__bottom img {
-  position: absolute;
-  z-index: 99;
-  height: 84%;
-  width: 70%;
-  object-fit: cover;
-  bottom: 45px;
-  border-radius: 12px;
+	position: absolute;
+	z-index: 99;
+	height: 84%;
+	width: 70%;
+	object-fit: cover;
+	bottom: 45px;
+	border-radius: 12px;
 }
 /* End of Comic */
 
@@ -1074,6 +1078,17 @@ h2.category__heading--small {
 }
 
 /* Reading */
+.elementor-title-page {
+	margin-top: 50px;
+	color: #f0f0f0;
+	font-family: "SVN-Tiempos Fine";
+	font-size: 9.6rem;
+	font-weight: 300;
+	font-style: italic;
+	line-height: 130%;
+	letter-spacing: -3px;
+}
+
 .elementor-section {
 	padding: 64px 0;
 	line-height: 1.8;
@@ -1257,26 +1272,26 @@ h2.category__heading--small {
 }
 
 .navbar-viegazine .navbar__list {
-  margin: 0 auto;
+	margin: 0 auto;
 }
 
 .navbar.navbar-viegazine--active {
-  background: #fafafa;
+	background: #fafafa;
 }
 
 .navbar-viegazine--active .navbar__link {
-  color: #525252;
+	color: #525252;
 }
 
 .navbar__list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
 }
 
 .navbar__list.navbar__list--homepage {
-  margin: 0 auto;
+	margin: 0 auto;
 }
 
 .navbar__link {
@@ -1300,13 +1315,13 @@ h2.category__heading--small {
 }
 
 .navbar__link--active::after {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: 4px;
-  width: 100%;
-  height: 2px;
-  background: rgb(238 177 23);
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 4px;
+	width: 100%;
+	height: 2px;
+	background: rgb(238 177 23);
 }
 
 /* Add this new code for navbar--bottom layout */
@@ -1452,6 +1467,17 @@ h2.category__heading--small {
 	background: #f3e6ff;
 }
 
+.video-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	padding: 10px;
+	background: #6f717088;
+}
+
 /* Vietnam-stories */
 
 .vietnam-stories__heading {
@@ -1463,15 +1489,20 @@ h2.category__heading--small {
 }
 
 .vietnam-stories__heading--comic {
-  color: #0a0a0a;
-  font-size: 5.2rem;
-  font-style: italic;
+	color: #0a0a0a;
+	font-size: 5.2rem;
+	font-style: italic;
 }
 
 .vietnam-stories__heading--large {
 	font-size: 9.6rem;
 	font-style: italic;
 }
+
+.vietnam-stories__heading--small {
+	font-size: 5.6rem;
+}
+
 .vietnam-stories__body {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -1528,36 +1559,36 @@ h2.category__heading--small {
 }
 
 .fascinating-books-comic__body {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-content: space-between;
-  gap: 28px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	justify-content: space-between;
+	gap: 28px;
 
-  max-width: 952px;
-  margin: 0 auto;
+	max-width: 952px;
+	margin: 0 auto;
 }
 
 .fascinating-books-comic__img-wrap {
-  width: 100%;
-  min-height: 693px;
+	width: 100%;
+	min-height: 693px;
 
-  border-radius: 24px;
-  overflow: hidden;
+	border-radius: 24px;
+	overflow: hidden;
 }
 
 .fascinating-books-comic__img-wrap:hover img {
-  scale: 1.1;
+	scale: 1.1;
 }
 
 .fascinating-books-comic__img-wrap img {
-  display: block;
+	display: block;
 
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 
-  transition: scale 2s;
+	transition: scale 2s;
 }
 
 .fascinating-books__info img {
@@ -1665,6 +1696,7 @@ h2.category__heading--small {
 }
 
 .fascinating-book__img-wrap {
+    position: relative;
 	width: 100%;
 	height: 224px;
 	border-radius: 20px 20px 0 0;
@@ -2368,16 +2400,16 @@ swiper-slide__decor {
 
 /* PC breakpoint */
 @media screen and (max-width: 1280px) {
-  .navbar--bottom {
-    justify-content: space-between;
-  }
+	.navbar--bottom {
+		justify-content: space-between;
+	}
 
-  .navbar--bottom .navbar__btn-newText {
-    display: flex;
-  }
-  .navbar__list--bottom {
-    display: none;
-  }
+	.navbar--bottom .navbar__btn-newText {
+		display: flex;
+	}
+	.navbar__list--bottom {
+		display: none;
+	}
 }
 
 /* Tablet breakpoint */
@@ -2590,19 +2622,19 @@ swiper-slide__decor {
 		overflow-x: auto;
 	}
 
-  .navbar--bottom {
-    flex-direction: column;
-    height: auto;
-    padding: 10px 0;
-    gap: 10px;
-  }
+	.navbar--bottom {
+		flex-direction: column;
+		height: auto;
+		padding: 10px 0;
+		gap: 10px;
+	}
 
-  .navbar-viegazine.navbar--bottom {
-    flex-direction: initial;
-  }
-  .navbar-viegazine.navbar--bottom .search-form--bottom {
-    width: auto;
-  }
+	.navbar-viegazine.navbar--bottom {
+		flex-direction: initial;
+	}
+	.navbar-viegazine.navbar--bottom .search-form--bottom {
+		width: auto;
+	}
 
 	.search-form--bottom {
 		width: 90%;
@@ -2820,28 +2852,28 @@ swiper-slide__decor {
 		gap: 10px;
 	}
 
-  .elementor-share-btn {
-    width: 44px;
-    height: 44px;
-  }
+	.elementor-share-btn {
+		width: 44px;
+		height: 44px;
+	}
 
-  /* Media COMIC */
-  .fascinating-books-comic__body {
-    grid-template-columns: 1fr;
-  }
+	/* Media COMIC */
+	.fascinating-books-comic__body {
+		grid-template-columns: 1fr;
+	}
 
-  .store-comic {
-    grid-template-columns: 1fr;
-  }
+	.store-comic {
+		grid-template-columns: 1fr;
+	}
 
-  .store-comic__img-wrap {
-    height: 740px;
-    padding-bottom: 126px;
-  }
+	.store-comic__img-wrap {
+		height: 740px;
+		padding-bottom: 126px;
+	}
 
-  .store-comic__img-wrap::after {
-    padding: 20px;
-  }
+	.store-comic__img-wrap::after {
+		padding: 20px;
+	}
 }
 
 /* Extra small devices */
