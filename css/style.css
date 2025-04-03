@@ -497,7 +497,6 @@ button {
 }
 
 /* End decor */
-
 .container {
   width: 1480px;
   margin-left: auto;
@@ -556,6 +555,10 @@ button {
 }
 
 /* End header */
+
+/* START OF ELEMENTOR =========================================================*/
+
+/* END OF ELEMENTOR ========================================================= */
 
 .main.viegazine {
   padding: 0;
