@@ -254,7 +254,7 @@ button {
 }
 
 .container__video-grid {
-    margin-top: 0;
+	margin-top: 0;
 }
 
 p.text-details {
@@ -1696,7 +1696,7 @@ h2.category__heading--small {
 }
 
 .fascinating-book__img-wrap {
-    position: relative;
+	position: relative;
 	width: 100%;
 	height: 224px;
 	border-radius: 20px 20px 0 0;
@@ -3012,10 +3012,34 @@ swiper-slide__decor {
 	}
 
 	.category-books__body--history .first-item-row .fascinating-book__img-wrap {
-		height: 224px; /* Reset to default height */
+		height: 224px;
 	}
 
 	.category-books__body--history .first-item-row .fascinating-book__title {
-		font-size: 3rem; /* Reset to default size */
+		font-size: 3rem;
+	}
+}
+
+/* Preserve normal layout for row items in mobile view */
+@media (max-width: 767px) {
+	.first-item-row,
+	.secondary-item-row {
+		width: 100%;
+	}
+
+	.category-books__body--history .first-item-row {
+		grid-column: auto;
+	}
+
+	.category-books__body--history .first-item-row .fascinating-book__img-wrap {
+		height: 224px;
+	}
+
+	.category-books__body--history .first-item-row .fascinating-book__title {
+		font-size: inherit;
+	}
+
+	.category-books__body--history .secondary-item-row {
+		width: 100%;
 	}
 }
