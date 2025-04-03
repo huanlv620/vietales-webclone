@@ -2407,6 +2407,13 @@ p.text-details {
     gap: 10px;
   }
 
+  .navbar-viegazine.navbar--bottom {
+    flex-direction: initial;
+  }
+  .navbar-viegazine.navbar--bottom .search-form--bottom {
+    width: auto;
+  }
+
   .search-form--bottom {
     width: 90%;
     max-width: 100%;
