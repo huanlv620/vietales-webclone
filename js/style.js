@@ -182,22 +182,29 @@ function handleSlideEffect() {
 }
 
 function handleSlideMobileEffect() {
-  // new Swiper(".swiper", {
-  //   effect: "cards",
-  //   loop: true,
-  //   centeredSlides: true,
-  //   centerInsufficientSlides: true,
-  //   centeredSlidesBounds: true,
-  //   parallax: true,
-  //   initialSlide: 2,
-  //   activeIndex: 3,
-  //   loopedSlides: 4,
-  //   slidesPerView: "auto",
-  //   cardsEffect: { rotate: false, perSlideOffset: 15, slideShadows: false },
-  // });
+  new Swiper(".swiper", {
+    effect: "cards",
+    loop: true,
+    centeredSlides: true,
+    centerInsufficientSlides: true,
+    centeredSlidesBounds: true,
+    parallax: true,
+    initialSlide: 2,
+    activeIndex: 3,
+    loopedSlides: 4,
+    slidesPerView: "auto",
+    cardsEffect: { rotate: false, perSlideOffset: 15, slideShadows: false },
+  });
 }
 
-document.addEventListener("DOMContentLoaded", function (event) {
-  handleSlideMobileEffect();
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.innerWidth <= 768) {
+    handleSlideMobileEffect();
+  }
   handleSlideEffect();
 });
+
+// document.addEventListener("DOMContentLoaded", function (event) {
+//   handleSlideMobileEffect();
+//   handleSlideEffect();
+// });

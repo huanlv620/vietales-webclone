@@ -1821,7 +1821,6 @@ h2.category__heading--small {
 }
 
 /* series */
-
 .series__heading {
   margin-bottom: 0;
 }
@@ -1834,6 +1833,10 @@ h2.category__heading--small {
   font-size: 2rem;
   font-weight: 300;
   font-style: italic;
+}
+
+.series__btn {
+  padding-top: 175px;
 }
 
 /* Series Content Grid Layout */
