@@ -1,469 +1,557 @@
 <!DOCTYPE html>
 <html lang="vi">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Vietales | Chuyện Người Việt Kể</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vietales | Series - Vietales</title>
 
-		<!-- Favicon -->
-		<link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
-		<link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
-		<link rel="shortcut icon" href="./favicon/favicon.ico" />
-		<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
-		<link rel="manifest" href="./favicon/site.webmanifest" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
 
-		<!-- Meta open graph -->
-		<meta property="og:title" content="Vietales | Chuyện Người Việt Kể" />
-		<meta
-			name="description"
-			content="Đưa câu chuyện Việt Nam ra thế giới và mang câu chuyện thế giới về Việt Nam" />
-		<meta property="og:image" content="./favicon/favicon-96x96.png" />
-		<meta property="og:url" content="https://vietales.com" />
-		<meta property="og:type" content="website" />
-		<meta property="og:site_name" content="Vietales" />
-		<meta property="og:locale" content="vi_VN" />
+    <!-- Meta open graph -->
+    <meta property="og:title" content="Vietales | Chuyện Người Việt Kể" />
+    <meta
+      name="description"
+      content="Đưa câu chuyện Việt Nam ra thế giới và mang câu chuyện thế giới về Việt Nam"
+    />
+    <meta property="og:image" content="./favicon/favicon-96x96.png" />
+    <meta property="og:url" content="https://vietales.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Vietales" />
+    <meta property="og:locale" content="vi_VN" />
 
-		<!-- Embed font -->
-		<link rel="stylesheet" href="./fonts/stylesheet.css" />
+    <!-- Embed font -->
+    <link rel="stylesheet" href="./fonts/stylesheet.css" />
 
-		<!-- Swiper -->
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-		<!-- Style CSS -->
-		<link rel="stylesheet" href="./css/style.css" />
-	</head>
-	<body>
-		<div class="wrapper">
-			<!--  Start of Header  -->
-			<header class="header">
-				<a class="header__icon-search" href="#!">
-					<svg
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						fill="currentColor"
-						xmlns="http://www.w3.org/2000/svg">
-						<mask
-							id="mask0_6257_79142"
-							style="mask-type: alpha"
-							maskUnits="userSpaceOnUse"
-							x="0"
-							y="0"
-							width="24"
-							height="24">
-							<rect width="24" height="24" class="fill-current"></rect>
-						</mask>
-						<g mask="url(#mask0_6257_79142)">
-							<path
-								d="M1 19.5V17.5H13V19.5H1ZM1 13.5375V11.5375H9V13.5375H1ZM1 7.46249V5.46249L9 5.46249V7.46249L1 7.46249ZM21.6 18L17.75 14.15C17.35 14.4333 16.9125 14.6458 16.4375 14.7875C15.9625 14.9292 15.4833 15 15 15C13.6167 15 12.4375 14.5125 11.4625 13.5375C10.4875 12.5625 10 11.3833 10 10C10 8.61667 10.4875 7.4375 11.4625 6.4625C12.4375 5.4875 13.6167 5 15 5C16.3833 5 17.5625 5.4875 18.5375 6.4625C19.5125 7.4375 20 8.61667 20 10C20 10.4833 19.9292 10.9625 19.7875 11.4375C19.6458 11.9125 19.4333 12.35 19.15 12.75L23 16.6L21.6 18ZM15 13C15.8333 13 16.5417 12.7083 17.125 12.125C17.7083 11.5417 18 10.8333 18 10C18 9.16667 17.7083 8.45833 17.125 7.875C16.5417 7.29167 15.8333 7 15 7C14.1667 7 13.4583 7.29167 12.875 7.875C12.2917 8.45833 12 9.16667 12 10C12 10.8333 12.2917 11.5417 12.875 12.125C13.4583 12.7083 14.1667 13 15 13Z"
-								class="fill-current"></path>
-						</g>
-					</svg>
-				</a>
-				<a href="/" class="logo">
-					<svg
-						class="logo__svg"
-						width="230"
-						height="48"
-						viewBox="0 0 230 48"
-						fill="currentColor"
-						xmlns="http://www.w3.org/2000/svg">
-						<g clip-path="url(#clip0_6938_173967)">
-							<path
-								d="M109.087 17.0681H115.038V10.8556H109.087V0H102.286V10.8556H97.3811V17.0681H102.286V47.0845H109.087V17.0681Z"
-								class="fill-current"></path>
-							<path
-								d="M163.757 0H156.956V47.0845H163.757V0Z"
-								class="fill-current"></path>
-							<path
-								d="M229.405 36.4251C229.405 43.5531 224.174 48 217.242 48C215.672 48 214.103 47.673 212.599 47.1499C207.402 45.3123 204.6 41.1401 204.433 35.7057H211.273C211.666 39.1756 213.51 41.7875 217.373 41.7875C220.381 41.7875 222.604 39.9564 222.604 36.8174C222.604 29.2316 206.059 33.1553 206.059 20.3379C206.059 14.1253 211.487 9.87466 217.438 9.87466C223.65 9.87466 228.424 14.1907 228.555 20.4687H221.754C221.427 17.8529 219.858 16.0872 217.111 16.0872C214.822 16.0872 212.86 17.5259 212.86 19.9455C212.86 23.1499 215.999 23.8692 218.484 24.6539C224.435 26.485 229.405 29.4278 229.405 36.4251Z"
-								class="fill-current"></path>
-							<path
-								d="M145.053 29.0354C145.053 36.0327 139.495 41.7875 132.432 41.7875C125.5 41.7875 120.073 35.8365 120.073 29.0354C120.073 21.9728 125.304 16.0872 132.498 16.0872C139.887 16.0872 145.053 21.7766 145.053 29.0354ZM144.923 47.0845H151.724V10.8556H144.923V15.9564H144.792C142.111 11.8365 137.337 9.87466 132.498 9.87466C121.511 9.87466 113.271 18.1144 113.271 29.1008C113.271 40.0218 121.642 48 132.498 48C137.468 48 142.241 45.842 144.792 41.4605H144.923V47.0845Z"
-								class="fill-current"></path>
-							<path
-								d="M58.4704 30.8665H42.2524V47.0845H58.4704V30.8665Z"
-								class="fill-current"></path>
-							<path
-								d="M91.8219 26.6812H68.4104C68.8028 20.7302 74.2306 16.0872 80.1161 16.0872C86.0017 16.0872 91.4295 20.7302 91.8219 26.6812ZM98.6229 28.5123C98.6229 18.3106 90.4486 9.87466 80.1815 9.87466C69.5875 9.87466 61.6093 18.4414 61.6093 28.9046C61.6093 39.0409 69.7183 48 80.0507 48C87.9635 48 94.6992 43.0954 97.4458 35.7057H90.6447C88.6829 39.4986 84.563 41.7875 80.3123 41.7875C74.3614 41.7875 69.7837 37.5368 68.4104 31.9128H98.4268C98.5573 30.784 98.6228 29.6486 98.6229 28.5123Z"
-								class="fill-current"></path>
-							<path
-								d="M197.108 26.6812H173.697C174.089 20.7302 179.517 16.0872 185.402 16.0872C191.288 16.0872 196.716 20.7302 197.108 26.6812ZM203.909 28.5123C203.909 18.3106 195.735 9.87466 185.468 9.87466C174.874 9.87466 166.895 18.4414 166.895 28.9046C166.895 39.0409 175.004 48 185.337 48C193.25 48 199.985 43.0954 202.732 35.7057H195.931C193.969 39.4986 189.849 41.7875 185.598 41.7875C179.647 41.7875 175.07 37.5368 173.697 31.9128H203.713C203.843 30.784 203.909 29.6486 203.909 28.5123Z"
-								class="fill-current"></path>
-							<path
-								d="M23.656 47.0845L40.8137 10.8556H33.424L20.9015 38.3215H20.7439L7.98535 10.8556H0.595703L17.9104 47.0845H23.656Z"
-								class="fill-current"></path>
-							<path
-								d="M50.3614 27.9238C55.3455 27.9238 59.386 23.8834 59.386 18.8993C59.386 13.9152 55.3455 9.87476 50.3614 9.87476C45.3773 9.87476 41.3369 13.9152 41.3369 18.8993C41.3369 23.8834 45.3773 27.9238 50.3614 27.9238Z"
-								fill="#EEB117"></path>
-						</g>
-						<defs>
-							<clipPath id="clip0_6938_173967">
-								<rect
-									width="228.81"
-									height="48"
-									class="fill-current"
-									transform="translate(0.595703)"></rect>
-							</clipPath>
-						</defs>
-					</svg>
-				</a>
-				<a href="./sign-in.html" class="header__btn">Đăng nhập</a>
-			</header>
-			<!-- End of Header -->
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--  Start of Header  -->
+      <header class="header">
+        <a class="header__icon-search" href="#!">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <mask
+              id="mask0_6257_79142"
+              style="mask-type: alpha"
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="0"
+              width="24"
+              height="24"
+            >
+              <rect width="24" height="24" class="fill-current"></rect>
+            </mask>
+            <g mask="url(#mask0_6257_79142)">
+              <path
+                d="M1 19.5V17.5H13V19.5H1ZM1 13.5375V11.5375H9V13.5375H1ZM1 7.46249V5.46249L9 5.46249V7.46249L1 7.46249ZM21.6 18L17.75 14.15C17.35 14.4333 16.9125 14.6458 16.4375 14.7875C15.9625 14.9292 15.4833 15 15 15C13.6167 15 12.4375 14.5125 11.4625 13.5375C10.4875 12.5625 10 11.3833 10 10C10 8.61667 10.4875 7.4375 11.4625 6.4625C12.4375 5.4875 13.6167 5 15 5C16.3833 5 17.5625 5.4875 18.5375 6.4625C19.5125 7.4375 20 8.61667 20 10C20 10.4833 19.9292 10.9625 19.7875 11.4375C19.6458 11.9125 19.4333 12.35 19.15 12.75L23 16.6L21.6 18ZM15 13C15.8333 13 16.5417 12.7083 17.125 12.125C17.7083 11.5417 18 10.8333 18 10C18 9.16667 17.7083 8.45833 17.125 7.875C16.5417 7.29167 15.8333 7 15 7C14.1667 7 13.4583 7.29167 12.875 7.875C12.2917 8.45833 12 9.16667 12 10C12 10.8333 12.2917 11.5417 12.875 12.125C13.4583 12.7083 14.1667 13 15 13Z"
+                class="fill-current"
+              ></path>
+            </g>
+          </svg>
+        </a>
+        <a href="/" class="logo">
+          <svg
+            class="logo__svg"
+            width="230"
+            height="48"
+            viewBox="0 0 230 48"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_6938_173967)">
+              <path
+                d="M109.087 17.0681H115.038V10.8556H109.087V0H102.286V10.8556H97.3811V17.0681H102.286V47.0845H109.087V17.0681Z"
+                class="fill-current"
+              ></path>
+              <path
+                d="M163.757 0H156.956V47.0845H163.757V0Z"
+                class="fill-current"
+              ></path>
+              <path
+                d="M229.405 36.4251C229.405 43.5531 224.174 48 217.242 48C215.672 48 214.103 47.673 212.599 47.1499C207.402 45.3123 204.6 41.1401 204.433 35.7057H211.273C211.666 39.1756 213.51 41.7875 217.373 41.7875C220.381 41.7875 222.604 39.9564 222.604 36.8174C222.604 29.2316 206.059 33.1553 206.059 20.3379C206.059 14.1253 211.487 9.87466 217.438 9.87466C223.65 9.87466 228.424 14.1907 228.555 20.4687H221.754C221.427 17.8529 219.858 16.0872 217.111 16.0872C214.822 16.0872 212.86 17.5259 212.86 19.9455C212.86 23.1499 215.999 23.8692 218.484 24.6539C224.435 26.485 229.405 29.4278 229.405 36.4251Z"
+                class="fill-current"
+              ></path>
+              <path
+                d="M145.053 29.0354C145.053 36.0327 139.495 41.7875 132.432 41.7875C125.5 41.7875 120.073 35.8365 120.073 29.0354C120.073 21.9728 125.304 16.0872 132.498 16.0872C139.887 16.0872 145.053 21.7766 145.053 29.0354ZM144.923 47.0845H151.724V10.8556H144.923V15.9564H144.792C142.111 11.8365 137.337 9.87466 132.498 9.87466C121.511 9.87466 113.271 18.1144 113.271 29.1008C113.271 40.0218 121.642 48 132.498 48C137.468 48 142.241 45.842 144.792 41.4605H144.923V47.0845Z"
+                class="fill-current"
+              ></path>
+              <path
+                d="M58.4704 30.8665H42.2524V47.0845H58.4704V30.8665Z"
+                class="fill-current"
+              ></path>
+              <path
+                d="M91.8219 26.6812H68.4104C68.8028 20.7302 74.2306 16.0872 80.1161 16.0872C86.0017 16.0872 91.4295 20.7302 91.8219 26.6812ZM98.6229 28.5123C98.6229 18.3106 90.4486 9.87466 80.1815 9.87466C69.5875 9.87466 61.6093 18.4414 61.6093 28.9046C61.6093 39.0409 69.7183 48 80.0507 48C87.9635 48 94.6992 43.0954 97.4458 35.7057H90.6447C88.6829 39.4986 84.563 41.7875 80.3123 41.7875C74.3614 41.7875 69.7837 37.5368 68.4104 31.9128H98.4268C98.5573 30.784 98.6228 29.6486 98.6229 28.5123Z"
+                class="fill-current"
+              ></path>
+              <path
+                d="M197.108 26.6812H173.697C174.089 20.7302 179.517 16.0872 185.402 16.0872C191.288 16.0872 196.716 20.7302 197.108 26.6812ZM203.909 28.5123C203.909 18.3106 195.735 9.87466 185.468 9.87466C174.874 9.87466 166.895 18.4414 166.895 28.9046C166.895 39.0409 175.004 48 185.337 48C193.25 48 199.985 43.0954 202.732 35.7057H195.931C193.969 39.4986 189.849 41.7875 185.598 41.7875C179.647 41.7875 175.07 37.5368 173.697 31.9128H203.713C203.843 30.784 203.909 29.6486 203.909 28.5123Z"
+                class="fill-current"
+              ></path>
+              <path
+                d="M23.656 47.0845L40.8137 10.8556H33.424L20.9015 38.3215H20.7439L7.98535 10.8556H0.595703L17.9104 47.0845H23.656Z"
+                class="fill-current"
+              ></path>
+              <path
+                d="M50.3614 27.9238C55.3455 27.9238 59.386 23.8834 59.386 18.8993C59.386 13.9152 55.3455 9.87476 50.3614 9.87476C45.3773 9.87476 41.3369 13.9152 41.3369 18.8993C41.3369 23.8834 45.3773 27.9238 50.3614 27.9238Z"
+                fill="#EEB117"
+              ></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_6938_173967">
+                <rect
+                  width="228.81"
+                  height="48"
+                  class="fill-current"
+                  transform="translate(0.595703)"
+                ></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <a href="./sign-in.html" class="header__btn">Đăng nhập</a>
+      </header>
+      <!-- End of Header -->
 
-			<!-- Start of Main -->
-			<main class="main">
-				<!-- Start of Hero -->
-				<section class="hero hero-series">
-					<div class="hero-series__container">
-						<div class="hero-series__content">
-							<img
-								src="./images/series-CuuLongQuaiSuKy_title-white.png.webp"
-								alt="" />
-							<p class="hero-series__desc line-clamp" style="--line-clamp: 3">
-								Hơn 400 năm trước, những người Việt đầu tiên đã vượt trùng khơi,
-								băng rừng rậm, đạp lên lau lách mà đi, đánh bại thú dữ mà tiến, dần
-								dần mở rộng cương vực xứ sở đến tận cùng phương Nam. Nhiều thế kỷ
-								trôi qua, vùng đất được nuôi dưỡng bởi dòng Cửu Long hùng vĩ ấy vẫn
-								còn nguyên nét bí ẩn, chờ được bóc tách và khám phá.
-							</p>
-							<a href="#!" class="btn">Xem series</a>
-						</div>
+      <!-- Start of Main -->
+      <main class="main">
+        <!-- Start of Hero -->
+        <section class="hero hero-series">
+          <div class="hero-series__container">
+            <div class="hero-series__content">
+              <img
+                src="./images/series-CuuLongQuaiSuKy_title-white.png.webp"
+                alt=""
+              />
+              <p class="hero-series__desc line-clamp" style="--line-clamp: 3">
+                Hơn 400 năm trước, những người Việt đầu tiên đã vượt trùng khơi,
+                băng rừng rậm, đạp lên lau lách mà đi, đánh bại thú dữ mà tiến,
+                dần dần mở rộng cương vực xứ sở đến tận cùng phương Nam. Nhiều
+                thế kỷ trôi qua, vùng đất được nuôi dưỡng bởi dòng Cửu Long hùng
+                vĩ ấy vẫn còn nguyên nét bí ẩn, chờ được bóc tách và khám phá.
+              </p>
+              <a href="#!" class="btn">Xem series</a>
+            </div>
 
-						<div class="hero-series__bg">
-							<img src="./images/picture-lam-gia-thai-bao.webp" alt="" />
-						</div>
-					</div>
+            <div class="hero-series__bg">
+              <img src="./images/picture-lam-gia-thai-bao.webp" alt="" />
+            </div>
+          </div>
 
-				<div class="hero-series__updown-wrapper">
-				    	<button
-    						class="hero__updown hero__updown--series"
-    						type="button"
-    						style="
-    							background-image: url('https://vietales.vn/static/images/icons/cdown.svg');
-    						"></button>
-				</div>
-				</section>
-				<!-- End of Hero -->
+          <div class="hero-series__updown-wrapper">
+            <button
+              class="hero__updown hero__updown--series"
+              type="button"
+              style="
+                background-image: url('https://vietales.vn/static/images/icons/cdown.svg');
+              "
+            ></button>
+          </div>
+        </section>
+        <!-- End of Hero -->
 
-				<!-- Start of Container -->
-				<div class="container">
-					<div class="series-content">
-						<h2 class="vietnam-stories__heading vietnam-stories__heading--large">
-							Loạt chuyện
-						</h2>
+        <!-- Start of Container -->
+        <div class="container">
+          <div class="series-content">
+            <h2
+              class="vietnam-stories__heading vietnam-stories__heading--large"
+            >
+              Loạt chuyện
+            </h2>
 
-						<div class="series-content__list">
-							<div class="series-content__item">
-								<a href="./details.html" class="series-content__link">
-									<img src="./images/series-bao-tap-tay-son-scaled.jpg" alt="" />
-									<img src="./images/title-Bao-tap-tay-son-02-2.png" alt="" />
-								</a>
-							</div>
+            <div class="series-content__list">
+              <div class="series-content__item">
+                <a href="./details.html" class="series-content__link">
+                  <img
+                    src="./images/series-bao-tap-tay-son-scaled.jpg"
+                    alt=""
+                  />
+                  <img src="./images/title-Bao-tap-tay-son-02-2.png" alt="" />
+                </a>
+              </div>
 
-							<div class="series-content__item">
-								<a href="./details.html" class="series-content__link">
-									<img src="./images/series-chuyen-sac-phong.jpg" alt="" />
-									<img src="./images/title-chuyen-sac-phong-title.svg" alt="" />
-								</a>
-							</div>
+              <div class="series-content__item">
+                <a href="./details.html" class="series-content__link">
+                  <img src="./images/series-chuyen-sac-phong.jpg" alt="" />
+                  <img src="./images/title-chuyen-sac-phong-title.svg" alt="" />
+                </a>
+              </div>
 
-							<div class="series-content__item">
-								<a href="./details.html" class="series-content__link">
-									<img src="./images/series-CLQSK_series-thumbnail.jpg" alt="" />
-									<img
-										src="./images/title-CuuLongQuaiSuKy_title-white.png.webp"
-										alt="" />
-								</a>
-							</div>
+              <div class="series-content__item">
+                <a href="./details.html" class="series-content__link">
+                  <img
+                    src="./images/series-CLQSK_series-thumbnail.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="./images/title-CuuLongQuaiSuKy_title-white.png.webp"
+                    alt=""
+                  />
+                </a>
+              </div>
 
-							<div class="series-content__item">
-								<a href="./details.html" class="series-content__link">
-									<img src="./images/series-ho-so-w.jpg" alt="" />
-									<img src="./images/title-ho-so-w-title.svg" alt="" />
-								</a>
-							</div>
+              <div class="series-content__item">
+                <a href="./details.html" class="series-content__link">
+                  <img src="./images/series-ho-so-w.jpg" alt="" />
+                  <img src="./images/title-ho-so-w-title.svg" alt="" />
+                </a>
+              </div>
 
-							<div class="series-content__item">
-								<a href="./details.html" class="series-content__link">
-									<img
-										src="./images/series-Hoa-Tuong-Poster-final-fix.jpg"
-										alt="" />
-									<img src="./images/title-hung-ca-su-viet-03.png.webp" alt="" />
-								</a>
-							</div>
+              <div class="series-content__item">
+                <a href="./details.html" class="series-content__link">
+                  <img
+                    src="./images/series-Hoa-Tuong-Poster-final-fix.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="./images/title-hung-ca-su-viet-03.png.webp"
+                    alt=""
+                  />
+                </a>
+              </div>
 
-							<div class="series-content__item">
-								<a href="./details.html" class="series-content__link">
-									<img src="./images/series-hung-trang-va-bi-thuong.jpg" alt="" />
-									<img
-										src="./images/title-hung-trang-va-bi-thuong-title.svg"
-										alt="" />
-								</a>
-							</div>
+              <div class="series-content__item">
+                <a href="./details.html" class="series-content__link">
+                  <img
+                    src="./images/series-hung-trang-va-bi-thuong.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="./images/title-hung-trang-va-bi-thuong-title.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
 
-							<div class="series-content__item">
-								<a href="./details.html" class="series-content__link">
-									<img
-										src="./images/series-khi-viet-linh-than-thoai-ky-scaled.jpg"
-										alt="" />
-									<img
-										src="./images/tittle-khi-viet-linh-than-thoai-ky-02-2.png"
-										alt="" />
-								</a>
-							</div>
+              <div class="series-content__item">
+                <a href="./details.html" class="series-content__link">
+                  <img
+                    src="./images/series-khi-viet-linh-than-thoai-ky-scaled.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="./images/tittle-khi-viet-linh-than-thoai-ky-02-2.png"
+                    alt=""
+                  />
+                </a>
+              </div>
 
-							<div class="series-content__item">
-								<a href="./details.html" class="series-content__link">
-									<img src="./images/series-loi-nguyen-dia-ly-1.jpg" alt="" />
-									<img src="./images/title-loi-nguyen-dia-ly-title.png" alt="" />
-								</a>
-							</div>
+              <div class="series-content__item">
+                <a href="./details.html" class="series-content__link">
+                  <img src="./images/series-loi-nguyen-dia-ly-1.jpg" alt="" />
+                  <img
+                    src="./images/title-loi-nguyen-dia-ly-title.png"
+                    alt=""
+                  />
+                </a>
+              </div>
 
-							<div class="series-content__item">
-								<a href="./details.html" class="series-content__link">
-									<img src="./images/series-giac-mong-ke-si-1.jpg" alt="" />
-									<img
-										src="./images/title-nghin-nam-van-hien_title-2.webp"
-										alt="" />
-								</a>
-							</div>
+              <div class="series-content__item">
+                <a href="./details.html" class="series-content__link">
+                  <img src="./images/series-giac-mong-ke-si-1.jpg" alt="" />
+                  <img
+                    src="./images/title-nghin-nam-van-hien_title-2.webp"
+                    alt=""
+                  />
+                </a>
+              </div>
 
-							<div class="series-content__item">
-								<a href="./details.html" class="series-content__link">
-									<img
-										src="./images/series-Non-song-gam-hoa_Thumbnail-1.png"
-										alt="" />
-									<img
-										src="./images/title-non-song-gam-hoa_Title-02-1.webp"
-										alt="" />
-								</a>
-							</div>
+              <div class="series-content__item">
+                <a href="./details.html" class="series-content__link">
+                  <img
+                    src="./images/series-Non-song-gam-hoa_Thumbnail-1.png"
+                    alt=""
+                  />
+                  <img
+                    src="./images/title-non-song-gam-hoa_Title-02-1.webp"
+                    alt=""
+                  />
+                </a>
+              </div>
 
-							<div class="series-content__item">
-								<a href="./details.html" class="series-content__link">
-									<img
-										src="./images/series-phong-tinh-co-luc-new_cover-3-scaled.jpg"
-										alt="" />
-									<img src="./images/title-phong-tinh-co-luc-title.svg" alt="" />
-								</a>
-							</div>
+              <div class="series-content__item">
+                <a href="./details.html" class="series-content__link">
+                  <img
+                    src="./images/series-phong-tinh-co-luc-new_cover-3-scaled.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="./images/title-phong-tinh-co-luc-title.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
 
-							<div class="series-content__item">
-								<a href="./details.html" class="series-content__link">
-									<img
-										src="./images/series-thu-choi-nguoi-viet_thumbnail-01-scaled.jpg"
-										alt="" />
-									<!-- <img src="./images/title-" alt="" /> -->
-								</a>
-							</div>
+              <div class="series-content__item">
+                <a href="./details.html" class="series-content__link">
+                  <img
+                    src="./images/series-thu-choi-nguoi-viet_thumbnail-01-scaled.jpg"
+                    alt=""
+                  />
+                  <!-- <img src="./images/title-" alt="" /> -->
+                </a>
+              </div>
 
-							<div class="series-content__item">
-								<a href="./details.html" class="series-content__link">
-									<img src="./images/series-van-vat-huu-linh.jpg" alt="" />
-									<img src="./images/title-van-vat-huu-linh-title.svg" alt="" />
-								</a>
-							</div>
+              <div class="series-content__item">
+                <a href="./details.html" class="series-content__link">
+                  <img src="./images/series-van-vat-huu-linh.jpg" alt="" />
+                  <img src="./images/title-van-vat-huu-linh-title.svg" alt="" />
+                </a>
+              </div>
 
-							<div class="series-content__item">
-								<a href="./details.html" class="series-content__link">
-									<img src="./images/series-Viet-Nam-my-vi.jpg" alt="" />
-									<!-- <img src="./images/title-Bao-tap-tay-son-02-2.png" alt="" /> -->
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</main>
-			<!-- End of Main -->
+              <div class="series-content__item">
+                <a href="./details.html" class="series-content__link">
+                  <img src="./images/series-Viet-Nam-my-vi.jpg" alt="" />
+                  <!-- <img src="./images/title-Bao-tap-tay-son-02-2.png" alt="" /> -->
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- End of Main -->
 
-			<!-- Start of Footer -->
-			<footer class="footer">
-				<a href="#!" class="footer__logo">
-					<img src="./images/logo-purple.svg" alt="" />
-				</a>
-				<!-- social  -->
-				<div class="footer__social">
-					<!-- fb -->
-					<a href="#!">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 320 512"
-							fill="currentColor">
-							<path
-								d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
-						</svg>
-					</a>
-					<!-- tiktok -->
-					<a href="#!">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 448 512"
-							fill="currentColor">
-							<path
-								d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z" />
-						</svg>
-					</a>
-					<!-- instagram -->
-					<a href="#!">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 448 512"
-							fill="currentColor">
-							<path
-								d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-						</svg>
-					</a>
-				</div>
-				<p class="footer__copyright">© Vietales 2023. All Rights Reserved</p>
-				<div class="footer__desc">Công ty TNHH truyền thông và giải trí VIE-X</div>
-				<div class="footer__desc">MSDN: 0317508603</div>
-				<div class="footer__desc">
-					Địa Chỉ: Toà nhà Redbase – 302A Nguyễn Thượng Hiền, Phường 5, Quận Phú Nhuận
-				</div>
-				<div class="footer__row">
-					<img src="./images/copyright-protection.png" alt="" class="footer__img" />
-				</div>
-			</footer>
-			<!-- End of Footer -->
-		</div>
+      <!-- Start of Footer -->
+      <footer class="footer">
+        <a href="#!" class="footer__logo">
+          <img src="./images/logo-purple.svg" alt="" />
+        </a>
+        <!-- social  -->
+        <div class="footer__social">
+          <!-- fb -->
+          <a href="#!">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+              fill="currentColor"
+            >
+              <path
+                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+              />
+            </svg>
+          </a>
+          <!-- tiktok -->
+          <a href="#!">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              fill="currentColor"
+            >
+              <path
+                d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"
+              />
+            </svg>
+          </a>
+          <!-- instagram -->
+          <a href="#!">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              fill="currentColor"
+            >
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+              />
+            </svg>
+          </a>
+        </div>
+        <p class="footer__copyright">© Vietales 2023. All Rights Reserved</p>
+        <div class="footer__desc">
+          Công ty TNHH truyền thông và giải trí VIE-X
+        </div>
+        <div class="footer__desc">MSDN: 0317508603</div>
+        <div class="footer__desc">
+          Địa Chỉ: Toà nhà Redbase – 302A Nguyễn Thượng Hiền, Phường 5, Quận Phú
+          Nhuận
+        </div>
+        <div class="footer__row">
+          <img
+            src="./images/copyright-protection.png"
+            alt=""
+            class="footer__img"
+          />
+        </div>
+      </footer>
+      <!-- End of Footer -->
+    </div>
 
-		<!-- Start of Modal -->
-		<div id="modal" class="modal">
-			<div class="modal__container">
-				<div class="modal__content">
-					<!-- Modal Search -->
-					<div class="modal__search">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 448 512"
-							fill="#581192"
-							class="modal__icon-arrow">
-							<path
-								d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
-						</svg>
-						<input type="text" placeholder="Tìm kiếm trong Viegazine" />
-					</div>
+    <!-- Start of Modal -->
+    <div id="modal" class="modal">
+      <div class="modal__container">
+        <div class="modal__content">
+          <!-- Modal Search -->
+          <div class="modal__search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              fill="#581192"
+              class="modal__icon-arrow"
+            >
+              <path
+                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+              />
+            </svg>
+            <input type="text" placeholder="Tìm kiếm trong Viegazine" />
+          </div>
 
-					<!-- Modal Body -->
-					<div class="modal__body">
-						<ul class="modal__list" x-ref="listItemMenu">
-							<li class="modal__item">
-								<a href="#!" class="modal__link">Khám phá</a>
-							</li>
-							<li class="modal__item">
-								<a href="#!" class="modal__link">Viegazine</a>
-							</li>
-							<li class="modal__item">
-								<a href="#!" class="modal__link">Comic</a>
-							</li>
-							<li class="modal__item">
-								<a href="#!" class="modal__link">Video</a>
-							</li>
-							<li class="modal__item">
-								<a href="#!" class="modal__link">Podcast</a>
-							</li>
-						</ul>
+          <!-- Modal Body -->
+          <div class="modal__body">
+            <ul class="modal__list" x-ref="listItemMenu">
+              <li class="modal__item">
+                <a href="#!" class="modal__link">Khám phá</a>
+              </li>
+              <li class="modal__item">
+                <a href="#!" class="modal__link">Viegazine</a>
+              </li>
+              <li class="modal__item">
+                <a href="#!" class="modal__link">Comic</a>
+              </li>
+              <li class="modal__item">
+                <a href="#!" class="modal__link">Video</a>
+              </li>
+              <li class="modal__item">
+                <a href="#!" class="modal__link">Podcast</a>
+              </li>
+            </ul>
 
-						<ul class="modal__list" x-ref="listItemMenu">
-							<li class="modal__item">
-								<a href="#!" class="modal__link">Khám phá</a>
-							</li>
-							<li class="modal__item">
-								<a href="#!" class="modal__link">Viegazine</a>
-							</li>
-							<li class="modal__item">
-								<a href="#!" class="modal__link">Comic</a>
-							</li>
-							<li class="modal__item">
-								<a href="#!" class="modal__link">Video</a>
-							</li>
-							<li class="modal__item">
-								<a href="#!" class="modal__link">Podcast</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End of Modal -->
+            <ul class="modal__list" x-ref="listItemMenu">
+              <li class="modal__item">
+                <a href="#!" class="modal__link">Khám phá</a>
+              </li>
+              <li class="modal__item">
+                <a href="#!" class="modal__link">Viegazine</a>
+              </li>
+              <li class="modal__item">
+                <a href="#!" class="modal__link">Comic</a>
+              </li>
+              <li class="modal__item">
+                <a href="#!" class="modal__link">Video</a>
+              </li>
+              <li class="modal__item">
+                <a href="#!" class="modal__link">Podcast</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Modal -->
 
-		<!-- Start of Decor -->
-		<button class="decor-message">
-			<svg
-				width="40"
-				height="35"
-				viewBox="0 0 40 35"
-				fill="none"
-				xmlns="http://www.w3.org/2000/svg">
-				<path
-					d="M12.0036 29.1189C14.825 32.0928 19.3716 34.0229 24.5 34.0229C26.6054 34.0229 28.6128 33.6976 30.443 33.1083L36.8205 34.9999L36.0955 29.9823C38.5247 27.8617 40 25.07 40 22.0114C40 19.8154 39.2395 17.757 37.9115 15.9858C36.9706 23.8492 28.639 29.9999 18.5 29.9999C16.2222 29.9999 14.0356 29.6895 12.0036 29.1189Z"
-					fill="#D4D4D4"
-					fill-opacity="0.68"></path>
-				<g filter="url(#filter0_b_2002_22360)">
-					<path
-						fill-rule="evenodd"
-						clip-rule="evenodd"
-						d="M5.05942 24.466L4.21124 30.4033L11.9785 28.0731L12.2584 28.1519C14.2062 28.7003 16.3071 29 18.5 29C28.9436 29 37 22.3062 37 14.5C37 6.69378 28.9436 0 18.5 0C8.05643 0 0 6.69378 0 14.5C0 18.1476 1.72752 21.5196 4.6557 24.109L5.05942 24.466Z"
-						fill="white"
-						fill-opacity="0.76"></path>
-				</g>
-				<path
-					d="M13.7921 8.14195L8 20.3721H10.4946L14.7219 11.1001H14.7751L19.0822 20.3721H21.5767L15.7317 8.14195L13.7921 8.14195Z"
-					fill="#727272"></path>
-				<path d="M27.2479 14.8972H21.773V20.3721H27.2479V14.8972Z" fill="#727272"></path>
-				<path
-					d="M24.5102 13.9038C26.1927 13.9038 27.5567 12.5398 27.5567 10.8573C27.5567 9.17475 26.1927 7.81079 24.5102 7.81079C22.8277 7.81079 21.4637 9.17475 21.4637 10.8573C21.4637 12.5398 22.8277 13.9038 24.5102 13.9038Z"
-					fill="#F0AB0A"></path>
-				<defs>
-					<filter
-						id="filter0_b_2002_22360"
-						x="-32"
-						y="-32"
-						width="101"
-						height="94.4033"
-						filterUnits="userSpaceOnUse"
-						color-interpolation-filters="sRGB">
-						<feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-						<feGaussianBlur in="BackgroundImageFix" stdDeviation="16"></feGaussianBlur>
-						<feComposite
-							in2="SourceAlpha"
-							operator="in"
-							result="effect1_backgroundBlur_2002_22360"></feComposite>
-						<feBlend
-							mode="normal"
-							in="SourceGraphic"
-							in2="effect1_backgroundBlur_2002_22360"
-							result="shape"></feBlend>
-					</filter>
-				</defs>
-			</svg>
-		</button>
+    <!-- Start of Decor -->
+    <button class="decor-message">
+      <svg
+        width="40"
+        height="35"
+        viewBox="0 0 40 35"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.0036 29.1189C14.825 32.0928 19.3716 34.0229 24.5 34.0229C26.6054 34.0229 28.6128 33.6976 30.443 33.1083L36.8205 34.9999L36.0955 29.9823C38.5247 27.8617 40 25.07 40 22.0114C40 19.8154 39.2395 17.757 37.9115 15.9858C36.9706 23.8492 28.639 29.9999 18.5 29.9999C16.2222 29.9999 14.0356 29.6895 12.0036 29.1189Z"
+          fill="#D4D4D4"
+          fill-opacity="0.68"
+        ></path>
+        <g filter="url(#filter0_b_2002_22360)">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M5.05942 24.466L4.21124 30.4033L11.9785 28.0731L12.2584 28.1519C14.2062 28.7003 16.3071 29 18.5 29C28.9436 29 37 22.3062 37 14.5C37 6.69378 28.9436 0 18.5 0C8.05643 0 0 6.69378 0 14.5C0 18.1476 1.72752 21.5196 4.6557 24.109L5.05942 24.466Z"
+            fill="white"
+            fill-opacity="0.76"
+          ></path>
+        </g>
+        <path
+          d="M13.7921 8.14195L8 20.3721H10.4946L14.7219 11.1001H14.7751L19.0822 20.3721H21.5767L15.7317 8.14195L13.7921 8.14195Z"
+          fill="#727272"
+        ></path>
+        <path
+          d="M27.2479 14.8972H21.773V20.3721H27.2479V14.8972Z"
+          fill="#727272"
+        ></path>
+        <path
+          d="M24.5102 13.9038C26.1927 13.9038 27.5567 12.5398 27.5567 10.8573C27.5567 9.17475 26.1927 7.81079 24.5102 7.81079C22.8277 7.81079 21.4637 9.17475 21.4637 10.8573C21.4637 12.5398 22.8277 13.9038 24.5102 13.9038Z"
+          fill="#F0AB0A"
+        ></path>
+        <defs>
+          <filter
+            id="filter0_b_2002_22360"
+            x="-32"
+            y="-32"
+            width="101"
+            height="94.4033"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feGaussianBlur
+              in="BackgroundImageFix"
+              stdDeviation="16"
+            ></feGaussianBlur>
+            <feComposite
+              in2="SourceAlpha"
+              operator="in"
+              result="effect1_backgroundBlur_2002_22360"
+            ></feComposite>
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="effect1_backgroundBlur_2002_22360"
+              result="shape"
+            ></feBlend>
+          </filter>
+        </defs>
+      </svg>
+    </button>
 
-		<button class="decor-feedback">
-			<div class="decor-feedback__icon">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="24"
-					height="22"
-					fill="none"
-					viewBox="0 0 24 22"
-					data-testid="icon-buddy">
-					<path
-						fill="#fdfdfe"
-						fill-rule="evenodd"
-						d="M22.362.827C21.72.5 20.88.5 19.2.5H3.3C1.755.5.983.5.575.819A1.5 1.5 0 000 1.969c-.01.517.453 1.135 1.38 2.371l1.14 1.52c.178.237.267.356.33.487a1.5 1.5 0 01.122.365C3 6.855 3 7.003 3 7.3v9.4c0 1.68 0 2.52.327 3.162a3 3 0 001.311 1.311c.642.327 1.482.327 3.162.327h11.4c1.68 0 2.52 0 3.162-.327a3 3 0 001.311-1.311C24 19.22 24 18.38 24 16.7V5.3c0-1.68 0-2.52-.327-3.162a3 3 0 00-1.31-1.311zM9.277 11.937a1.125 1.125 0 00-1.948 1.126 7.123 7.123 0 006.171 3.562 7.123 7.123 0 006.171-3.562 1.125 1.125 0 10-1.947-1.126 4.872 4.872 0 01-4.224 2.438 4.873 4.873 0 01-4.223-2.438zM10.5 8a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM18 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
-						clip-rule="evenodd"></path>
-				</svg>
-			</div>
-			<div class="decor-feedback__text">Phản hồi</div>
-		</button>
-		<!-- End of Decor -->
+    <button class="decor-feedback">
+      <div class="decor-feedback__icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="22"
+          fill="none"
+          viewBox="0 0 24 22"
+          data-testid="icon-buddy"
+        >
+          <path
+            fill="#fdfdfe"
+            fill-rule="evenodd"
+            d="M22.362.827C21.72.5 20.88.5 19.2.5H3.3C1.755.5.983.5.575.819A1.5 1.5 0 000 1.969c-.01.517.453 1.135 1.38 2.371l1.14 1.52c.178.237.267.356.33.487a1.5 1.5 0 01.122.365C3 6.855 3 7.003 3 7.3v9.4c0 1.68 0 2.52.327 3.162a3 3 0 001.311 1.311c.642.327 1.482.327 3.162.327h11.4c1.68 0 2.52 0 3.162-.327a3 3 0 001.311-1.311C24 19.22 24 18.38 24 16.7V5.3c0-1.68 0-2.52-.327-3.162a3 3 0 00-1.31-1.311zM9.277 11.937a1.125 1.125 0 00-1.948 1.126 7.123 7.123 0 006.171 3.562 7.123 7.123 0 006.171-3.562 1.125 1.125 0 10-1.947-1.126 4.872 4.872 0 01-4.224 2.438 4.873 4.873 0 01-4.223-2.438zM10.5 8a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM18 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </div>
+      <div class="decor-feedback__text">Phản hồi</div>
+    </button>
+    <!-- End of Decor -->
 
-		<!-- <div class="swiper-container">
+    <!-- <div class="swiper-container">
 			<audio id="background-music" loop>
 				<source
 					src="https://github.com/ecemgo/mini-samples-great-tricks/raw/main/song-list/stranger-things-luxide-remix-no-copyright-music.mp3"
@@ -477,8 +565,8 @@
 			</button>
 		</div> -->
 
-		<!-- Javascript -->
-		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-		<script src="./js/style.js"></script>
-	</body>
+    <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/style.js"></script>
+  </body>
 </html>

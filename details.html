@@ -1,796 +1,904 @@
 <!DOCTYPE html>
 <html lang="vi">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Vietales | Chuyện Người Việt Kể</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vietales | Chuyện Người Việt Kể</title>
 
-		<!-- Favicon -->
-		<link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
-		<link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
-		<link rel="shortcut icon" href="./favicon/favicon.ico" />
-		<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
-		<link rel="manifest" href="./favicon/site.webmanifest" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
 
-		<!-- Meta open graph -->
-		<meta property="og:title" content="Vietales | Chuyện Người Việt Kể" />
-		<meta
-			name="description"
-			content="Đưa câu chuyện Việt Nam ra thế giới và mang câu chuyện thế giới về Việt Nam" />
-		<meta property="og:image" content="./favicon/favicon-96x96.png" />
-		<meta property="og:url" content="https://vietales.com" />
-		<meta property="og:type" content="website" />
-		<meta property="og:site_name" content="Vietales" />
-		<meta property="og:locale" content="vi_VN" />
+    <!-- Meta open graph -->
+    <meta property="og:title" content="Vietales | Chuyện Người Việt Kể" />
+    <meta
+      name="description"
+      content="Đưa câu chuyện Việt Nam ra thế giới và mang câu chuyện thế giới về Việt Nam"
+    />
+    <meta property="og:image" content="./favicon/favicon-96x96.png" />
+    <meta property="og:url" content="https://vietales.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Vietales" />
+    <meta property="og:locale" content="vi_VN" />
 
-		<!-- Embed font -->
-		<link rel="stylesheet" href="./fonts/stylesheet.css" />
+    <!-- Embed font -->
+    <link rel="stylesheet" href="./fonts/stylesheet.css" />
 
-		<!-- Swiper -->
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-		<!-- Style CSS -->
-		<link rel="stylesheet" href="./css/style.css" />
-	</head>
-	<body>
-		<div class="wrapper">
-			<!--  Start of Header  -->
-			<header class="header">
-				<a class="header__icon-search" href="#!">
-					<svg
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						fill="currentColor"
-						xmlns="http://www.w3.org/2000/svg">
-						<mask
-							id="mask0_6257_79142"
-							style="mask-type: alpha"
-							maskUnits="userSpaceOnUse"
-							x="0"
-							y="0"
-							width="24"
-							height="24">
-							<rect width="24" height="24" class="fill-current"></rect>
-						</mask>
-						<g mask="url(#mask0_6257_79142)">
-							<path
-								d="M1 19.5V17.5H13V19.5H1ZM1 13.5375V11.5375H9V13.5375H1ZM1 7.46249V5.46249L9 5.46249V7.46249L1 7.46249ZM21.6 18L17.75 14.15C17.35 14.4333 16.9125 14.6458 16.4375 14.7875C15.9625 14.9292 15.4833 15 15 15C13.6167 15 12.4375 14.5125 11.4625 13.5375C10.4875 12.5625 10 11.3833 10 10C10 8.61667 10.4875 7.4375 11.4625 6.4625C12.4375 5.4875 13.6167 5 15 5C16.3833 5 17.5625 5.4875 18.5375 6.4625C19.5125 7.4375 20 8.61667 20 10C20 10.4833 19.9292 10.9625 19.7875 11.4375C19.6458 11.9125 19.4333 12.35 19.15 12.75L23 16.6L21.6 18ZM15 13C15.8333 13 16.5417 12.7083 17.125 12.125C17.7083 11.5417 18 10.8333 18 10C18 9.16667 17.7083 8.45833 17.125 7.875C16.5417 7.29167 15.8333 7 15 7C14.1667 7 13.4583 7.29167 12.875 7.875C12.2917 8.45833 12 9.16667 12 10C12 10.8333 12.2917 11.5417 12.875 12.125C13.4583 12.7083 14.1667 13 15 13Z"
-								class="fill-current"></path>
-						</g>
-					</svg>
-				</a>
-				<a href="/" class="logo">
-					<svg
-						class="logo__svg"
-						width="230"
-						height="48"
-						viewBox="0 0 230 48"
-						fill="currentColor"
-						xmlns="http://www.w3.org/2000/svg">
-						<g clip-path="url(#clip0_6938_173967)">
-							<path
-								d="M109.087 17.0681H115.038V10.8556H109.087V0H102.286V10.8556H97.3811V17.0681H102.286V47.0845H109.087V17.0681Z"
-								class="fill-current"></path>
-							<path
-								d="M163.757 0H156.956V47.0845H163.757V0Z"
-								class="fill-current"></path>
-							<path
-								d="M229.405 36.4251C229.405 43.5531 224.174 48 217.242 48C215.672 48 214.103 47.673 212.599 47.1499C207.402 45.3123 204.6 41.1401 204.433 35.7057H211.273C211.666 39.1756 213.51 41.7875 217.373 41.7875C220.381 41.7875 222.604 39.9564 222.604 36.8174C222.604 29.2316 206.059 33.1553 206.059 20.3379C206.059 14.1253 211.487 9.87466 217.438 9.87466C223.65 9.87466 228.424 14.1907 228.555 20.4687H221.754C221.427 17.8529 219.858 16.0872 217.111 16.0872C214.822 16.0872 212.86 17.5259 212.86 19.9455C212.86 23.1499 215.999 23.8692 218.484 24.6539C224.435 26.485 229.405 29.4278 229.405 36.4251Z"
-								class="fill-current"></path>
-							<path
-								d="M145.053 29.0354C145.053 36.0327 139.495 41.7875 132.432 41.7875C125.5 41.7875 120.073 35.8365 120.073 29.0354C120.073 21.9728 125.304 16.0872 132.498 16.0872C139.887 16.0872 145.053 21.7766 145.053 29.0354ZM144.923 47.0845H151.724V10.8556H144.923V15.9564H144.792C142.111 11.8365 137.337 9.87466 132.498 9.87466C121.511 9.87466 113.271 18.1144 113.271 29.1008C113.271 40.0218 121.642 48 132.498 48C137.468 48 142.241 45.842 144.792 41.4605H144.923V47.0845Z"
-								class="fill-current"></path>
-							<path
-								d="M58.4704 30.8665H42.2524V47.0845H58.4704V30.8665Z"
-								class="fill-current"></path>
-							<path
-								d="M91.8219 26.6812H68.4104C68.8028 20.7302 74.2306 16.0872 80.1161 16.0872C86.0017 16.0872 91.4295 20.7302 91.8219 26.6812ZM98.6229 28.5123C98.6229 18.3106 90.4486 9.87466 80.1815 9.87466C69.5875 9.87466 61.6093 18.4414 61.6093 28.9046C61.6093 39.0409 69.7183 48 80.0507 48C87.9635 48 94.6992 43.0954 97.4458 35.7057H90.6447C88.6829 39.4986 84.563 41.7875 80.3123 41.7875C74.3614 41.7875 69.7837 37.5368 68.4104 31.9128H98.4268C98.5573 30.784 98.6228 29.6486 98.6229 28.5123Z"
-								class="fill-current"></path>
-							<path
-								d="M197.108 26.6812H173.697C174.089 20.7302 179.517 16.0872 185.402 16.0872C191.288 16.0872 196.716 20.7302 197.108 26.6812ZM203.909 28.5123C203.909 18.3106 195.735 9.87466 185.468 9.87466C174.874 9.87466 166.895 18.4414 166.895 28.9046C166.895 39.0409 175.004 48 185.337 48C193.25 48 199.985 43.0954 202.732 35.7057H195.931C193.969 39.4986 189.849 41.7875 185.598 41.7875C179.647 41.7875 175.07 37.5368 173.697 31.9128H203.713C203.843 30.784 203.909 29.6486 203.909 28.5123Z"
-								class="fill-current"></path>
-							<path
-								d="M23.656 47.0845L40.8137 10.8556H33.424L20.9015 38.3215H20.7439L7.98535 10.8556H0.595703L17.9104 47.0845H23.656Z"
-								class="fill-current"></path>
-							<path
-								d="M50.3614 27.9238C55.3455 27.9238 59.386 23.8834 59.386 18.8993C59.386 13.9152 55.3455 9.87476 50.3614 9.87476C45.3773 9.87476 41.3369 13.9152 41.3369 18.8993C41.3369 23.8834 45.3773 27.9238 50.3614 27.9238Z"
-								fill="#EEB117"></path>
-						</g>
-						<defs>
-							<clipPath id="clip0_6938_173967">
-								<rect
-									width="228.81"
-									height="48"
-									class="fill-current"
-									transform="translate(0.595703)"></rect>
-							</clipPath>
-						</defs>
-					</svg>
-				</a>
-				<a href="./sign-in.html" class="header__btn btn">Đăng nhập</a>
-				<div class="progress-bar"></div>
-			</header>
-			<!-- End of Header -->
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--  Start of Header  -->
+      <header class="header">
+        <a class="header__icon-search" href="#!">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <mask
+              id="mask0_6257_79142"
+              style="mask-type: alpha"
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="0"
+              width="24"
+              height="24"
+            >
+              <rect width="24" height="24" class="fill-current"></rect>
+            </mask>
+            <g mask="url(#mask0_6257_79142)">
+              <path
+                d="M1 19.5V17.5H13V19.5H1ZM1 13.5375V11.5375H9V13.5375H1ZM1 7.46249V5.46249L9 5.46249V7.46249L1 7.46249ZM21.6 18L17.75 14.15C17.35 14.4333 16.9125 14.6458 16.4375 14.7875C15.9625 14.9292 15.4833 15 15 15C13.6167 15 12.4375 14.5125 11.4625 13.5375C10.4875 12.5625 10 11.3833 10 10C10 8.61667 10.4875 7.4375 11.4625 6.4625C12.4375 5.4875 13.6167 5 15 5C16.3833 5 17.5625 5.4875 18.5375 6.4625C19.5125 7.4375 20 8.61667 20 10C20 10.4833 19.9292 10.9625 19.7875 11.4375C19.6458 11.9125 19.4333 12.35 19.15 12.75L23 16.6L21.6 18ZM15 13C15.8333 13 16.5417 12.7083 17.125 12.125C17.7083 11.5417 18 10.8333 18 10C18 9.16667 17.7083 8.45833 17.125 7.875C16.5417 7.29167 15.8333 7 15 7C14.1667 7 13.4583 7.29167 12.875 7.875C12.2917 8.45833 12 9.16667 12 10C12 10.8333 12.2917 11.5417 12.875 12.125C13.4583 12.7083 14.1667 13 15 13Z"
+                class="fill-current"
+              ></path>
+            </g>
+          </svg>
+        </a>
+        <a href="/" class="logo">
+          <svg
+            class="logo__svg"
+            width="230"
+            height="48"
+            viewBox="0 0 230 48"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_6938_173967)">
+              <path
+                d="M109.087 17.0681H115.038V10.8556H109.087V0H102.286V10.8556H97.3811V17.0681H102.286V47.0845H109.087V17.0681Z"
+                class="fill-current"
+              ></path>
+              <path
+                d="M163.757 0H156.956V47.0845H163.757V0Z"
+                class="fill-current"
+              ></path>
+              <path
+                d="M229.405 36.4251C229.405 43.5531 224.174 48 217.242 48C215.672 48 214.103 47.673 212.599 47.1499C207.402 45.3123 204.6 41.1401 204.433 35.7057H211.273C211.666 39.1756 213.51 41.7875 217.373 41.7875C220.381 41.7875 222.604 39.9564 222.604 36.8174C222.604 29.2316 206.059 33.1553 206.059 20.3379C206.059 14.1253 211.487 9.87466 217.438 9.87466C223.65 9.87466 228.424 14.1907 228.555 20.4687H221.754C221.427 17.8529 219.858 16.0872 217.111 16.0872C214.822 16.0872 212.86 17.5259 212.86 19.9455C212.86 23.1499 215.999 23.8692 218.484 24.6539C224.435 26.485 229.405 29.4278 229.405 36.4251Z"
+                class="fill-current"
+              ></path>
+              <path
+                d="M145.053 29.0354C145.053 36.0327 139.495 41.7875 132.432 41.7875C125.5 41.7875 120.073 35.8365 120.073 29.0354C120.073 21.9728 125.304 16.0872 132.498 16.0872C139.887 16.0872 145.053 21.7766 145.053 29.0354ZM144.923 47.0845H151.724V10.8556H144.923V15.9564H144.792C142.111 11.8365 137.337 9.87466 132.498 9.87466C121.511 9.87466 113.271 18.1144 113.271 29.1008C113.271 40.0218 121.642 48 132.498 48C137.468 48 142.241 45.842 144.792 41.4605H144.923V47.0845Z"
+                class="fill-current"
+              ></path>
+              <path
+                d="M58.4704 30.8665H42.2524V47.0845H58.4704V30.8665Z"
+                class="fill-current"
+              ></path>
+              <path
+                d="M91.8219 26.6812H68.4104C68.8028 20.7302 74.2306 16.0872 80.1161 16.0872C86.0017 16.0872 91.4295 20.7302 91.8219 26.6812ZM98.6229 28.5123C98.6229 18.3106 90.4486 9.87466 80.1815 9.87466C69.5875 9.87466 61.6093 18.4414 61.6093 28.9046C61.6093 39.0409 69.7183 48 80.0507 48C87.9635 48 94.6992 43.0954 97.4458 35.7057H90.6447C88.6829 39.4986 84.563 41.7875 80.3123 41.7875C74.3614 41.7875 69.7837 37.5368 68.4104 31.9128H98.4268C98.5573 30.784 98.6228 29.6486 98.6229 28.5123Z"
+                class="fill-current"
+              ></path>
+              <path
+                d="M197.108 26.6812H173.697C174.089 20.7302 179.517 16.0872 185.402 16.0872C191.288 16.0872 196.716 20.7302 197.108 26.6812ZM203.909 28.5123C203.909 18.3106 195.735 9.87466 185.468 9.87466C174.874 9.87466 166.895 18.4414 166.895 28.9046C166.895 39.0409 175.004 48 185.337 48C193.25 48 199.985 43.0954 202.732 35.7057H195.931C193.969 39.4986 189.849 41.7875 185.598 41.7875C179.647 41.7875 175.07 37.5368 173.697 31.9128H203.713C203.843 30.784 203.909 29.6486 203.909 28.5123Z"
+                class="fill-current"
+              ></path>
+              <path
+                d="M23.656 47.0845L40.8137 10.8556H33.424L20.9015 38.3215H20.7439L7.98535 10.8556H0.595703L17.9104 47.0845H23.656Z"
+                class="fill-current"
+              ></path>
+              <path
+                d="M50.3614 27.9238C55.3455 27.9238 59.386 23.8834 59.386 18.8993C59.386 13.9152 55.3455 9.87476 50.3614 9.87476C45.3773 9.87476 41.3369 13.9152 41.3369 18.8993C41.3369 23.8834 45.3773 27.9238 50.3614 27.9238Z"
+                fill="#EEB117"
+              ></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_6938_173967">
+                <rect
+                  width="228.81"
+                  height="48"
+                  class="fill-current"
+                  transform="translate(0.595703)"
+                ></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <a href="./sign-in.html" class="header__btn btn">Đăng nhập</a>
+        <div class="progress-bar"></div>
+      </header>
+      <!-- End of Header -->
 
-			<!-- Start of Main -->
-			<main class="main">
-				<!-- Reading List Button -->
-				<div class="reading-list-btn">
-					<div class="reading-list-btn__wrap">
-						<span class="reading-list-btn__item reading-list-btn__item-one"></span>
-						<span class="reading-list-btn__item reading-list-btn__item-tow"></span>
-						<span class="reading-list-btn__item reading-list-btn__item-three"></span>
-					</div>
-				</div>
+      <!-- Start of Main -->
+      <main class="main">
+        <!-- Reading List Button -->
+        <div class="reading-list-btn">
+          <div class="reading-list-btn__wrap">
+            <span
+              class="reading-list-btn__item reading-list-btn__item-one"
+            ></span>
+            <span
+              class="reading-list-btn__item reading-list-btn__item-tow"
+            ></span>
+            <span
+              class="reading-list-btn__item reading-list-btn__item-three"
+            ></span>
+          </div>
+        </div>
 
-				<!-- Start of Hero -->
-				<section class="hero hero--details">
-					<img src="./images/fascinating-sac-mau-dao-giao.webp" alt="" />
-					<div class="hero__body hero__body--details">
-						<p class="hero__series">Vieseries <a href="#!">Vạn Vật Hữu Linh</a></p>
-						<h1 class="hero__heading hero__heading--details">
-							Sắc màu Đạo giáo tại chùa Chí Lý đất Nha Trang
-						</h1>
+        <!-- Start of Hero -->
+        <section class="hero hero--details">
+          <img src="./images/fascinating-sac-mau-dao-giao.webp" alt="" />
+          <div class="hero__body hero__body--details">
+            <p class="hero__series">
+              Vieseries <a href="#!">Vạn Vật Hữu Linh</a>
+            </p>
+            <h1 class="hero__heading hero__heading--details">
+              Sắc màu Đạo giáo tại chùa Chí Lý đất Nha Trang
+            </h1>
 
-						<div class="hero__action">
-							<button class="hero__action-btn">
-								<svg
-									fill="currentColor"
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 512 512">
-									<path
-										d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
-								</svg>
-							</button>
+            <div class="hero__action">
+              <button class="hero__action-btn">
+                <svg
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"
+                  />
+                </svg>
+              </button>
 
-							<button class="hero__action-btn">
-								<svg
-									fill="currentColor"
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 384 512">
-									<path
-										d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z" />
-								</svg>
-							</button>
+              <button class="hero__action-btn">
+                <svg
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                >
+                  <path
+                    d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z"
+                  />
+                </svg>
+              </button>
 
-							<button class="hero__action-btn">
-								<svg
-									fill="currentColor"
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 640 512">
-									<path
-										d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
-								</svg>
-							</button>
+              <button class="hero__action-btn">
+                <svg
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 512"
+                >
+                  <path
+                    d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"
+                  />
+                </svg>
+              </button>
 
-							<button class="hero__action-btn">
-								<svg
-									fill="currentColor"
-									version="1.1"
-									id="Capa_1"
-									xmlns="http://www.w3.org/2000/svg"
-									xmlns:xlink="http://www.w3.org/1999/xlink"
-									viewBox="0 0 481.6 481.6"
-									xml:space="preserve">
-									<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-									<g
-										id="SVGRepo_tracerCarrier"
-										stroke-linecap="round"
-										stroke-linejoin="round"></g>
-									<g id="SVGRepo_iconCarrier">
-										<g>
-											<path
-												d="M381.6,309.4c-27.7,0-52.4,13.2-68.2,33.6l-132.3-73.9c3.1-8.9,4.8-18.5,4.8-28.4c0-10-1.7-19.5-4.9-28.5l132.2-73.8 c15.7,20.5,40.5,33.8,68.3,33.8c47.4,0,86.1-38.6,86.1-86.1S429,0,381.5,0s-86.1,38.6-86.1,86.1c0,10,1.7,19.6,4.9,28.5 l-132.1,73.8c-15.7-20.6-40.5-33.8-68.3-33.8c-47.4,0-86.1,38.6-86.1,86.1s38.7,86.1,86.2,86.1c27.8,0,52.6-13.3,68.4-33.9 l132.2,73.9c-3.2,9-5,18.7-5,28.7c0,47.4,38.6,86.1,86.1,86.1s86.1-38.6,86.1-86.1S429.1,309.4,381.6,309.4z M381.6,27.1 c32.6,0,59.1,26.5,59.1,59.1s-26.5,59.1-59.1,59.1s-59.1-26.5-59.1-59.1S349.1,27.1,381.6,27.1z M100,299.8 c-32.6,0-59.1-26.5-59.1-59.1s26.5-59.1,59.1-59.1s59.1,26.5,59.1,59.1S132.5,299.8,100,299.8z M381.6,454.5 c-32.6,0-59.1-26.5-59.1-59.1c0-32.6,26.5-59.1,59.1-59.1s59.1,26.5,59.1,59.1C440.7,428,414.2,454.5,381.6,454.5z"></path>
-										</g>
-									</g>
-								</svg>
-							</button>
-						</div>
+              <button class="hero__action-btn">
+                <svg
+                  fill="currentColor"
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 481.6 481.6"
+                  xml:space="preserve"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <path
+                        d="M381.6,309.4c-27.7,0-52.4,13.2-68.2,33.6l-132.3-73.9c3.1-8.9,4.8-18.5,4.8-28.4c0-10-1.7-19.5-4.9-28.5l132.2-73.8 c15.7,20.5,40.5,33.8,68.3,33.8c47.4,0,86.1-38.6,86.1-86.1S429,0,381.5,0s-86.1,38.6-86.1,86.1c0,10,1.7,19.6,4.9,28.5 l-132.1,73.8c-15.7-20.6-40.5-33.8-68.3-33.8c-47.4,0-86.1,38.6-86.1,86.1s38.7,86.1,86.2,86.1c27.8,0,52.6-13.3,68.4-33.9 l132.2,73.9c-3.2,9-5,18.7-5,28.7c0,47.4,38.6,86.1,86.1,86.1s86.1-38.6,86.1-86.1S429.1,309.4,381.6,309.4z M381.6,27.1 c32.6,0,59.1,26.5,59.1,59.1s-26.5,59.1-59.1,59.1s-59.1-26.5-59.1-59.1S349.1,27.1,381.6,27.1z M100,299.8 c-32.6,0-59.1-26.5-59.1-59.1s26.5-59.1,59.1-59.1s59.1,26.5,59.1,59.1S132.5,299.8,100,299.8z M381.6,454.5 c-32.6,0-59.1-26.5-59.1-59.1c0-32.6,26.5-59.1,59.1-59.1s59.1,26.5,59.1,59.1C440.7,428,414.2,454.5,381.6,454.5z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+            </div>
 
-						<p class="hero__author">Tác giả <a href="#!">Võ Thùy Tiên</a></p>
+            <p class="hero__author">Tác giả <a href="#!">Võ Thùy Tiên</a></p>
 
-						<button
-							class="hero__updown"
-							type="button"
-							style="
-								background-image: url('https://vietales.vn/static/images/icons/cdown.svg');
-							"></button>
-					</div>
-				</section>
-				<!-- End of Hero -->
+            <button
+              class="hero__updown"
+              type="button"
+              style="
+                background-image: url('https://vietales.vn/static/images/icons/cdown.svg');
+              "
+            ></button>
+          </div>
+        </section>
+        <!-- End of Hero -->
 
-				<!-- Start of Reading -->
-				<section class="elementor-section">
-					<div class="elementor-container">
-						<p class="elementor-widget">
-							Một lần cùng bạn đi vãng chùa đầu năm, tôi vô tình đến được một ngôi
-							chùa có phối thờ Ngọc Hoàng, Thái thượng lão quân, Quan Thánh Đế Quân,
-							Cửu Thiên Huyền Nữ, Nữ Oa, Thiên Y A Na, và công chúa Tiên Dung. Trao
-							đổi trực tiếp, vị trụ trì chùa Chí Lý (Vĩnh Hải) đã vui vẻ hỏi tôi liệu
-							rằng đã thấy chùa nào thờ Ngọc Hoàng như ở đây chưa. Câu hỏi ấy với tôi
-							giống một lời khẳng định hơn, rằng ngôi chùa này nằm trong số những nơi
-							hiếm hoi tại Nha Trang phối thờ Ngọc Hoàng. Tôi hỏi thêm nguyên nhân vì
-							sao Chùa phối thờ nhiều vị thánh trong Đạo giáo như vậy, thì nhận được
-							khá nhiều lời giải thích lý thú:
-						</p>
+        <!-- Start of Reading -->
+        <section class="elementor-section">
+          <div class="elementor-container">
+            <p class="elementor-widget">
+              Một lần cùng bạn đi vãng chùa đầu năm, tôi vô tình đến được một
+              ngôi chùa có phối thờ Ngọc Hoàng, Thái thượng lão quân, Quan Thánh
+              Đế Quân, Cửu Thiên Huyền Nữ, Nữ Oa, Thiên Y A Na, và công chúa
+              Tiên Dung. Trao đổi trực tiếp, vị trụ trì chùa Chí Lý (Vĩnh Hải)
+              đã vui vẻ hỏi tôi liệu rằng đã thấy chùa nào thờ Ngọc Hoàng như ở
+              đây chưa. Câu hỏi ấy với tôi giống một lời khẳng định hơn, rằng
+              ngôi chùa này nằm trong số những nơi hiếm hoi tại Nha Trang phối
+              thờ Ngọc Hoàng. Tôi hỏi thêm nguyên nhân vì sao Chùa phối thờ
+              nhiều vị thánh trong Đạo giáo như vậy, thì nhận được khá nhiều lời
+              giải thích lý thú:
+            </p>
 
-						<h2 id="chapter-1" class="elementor-widget-heading">
-							1. Ngọc Hoàng được phối thờ với tượng Phật ở phần giữa chính điện:​
-						</h2>
+            <h2 id="chapter-1" class="elementor-widget-heading">
+              1. Ngọc Hoàng được phối thờ với tượng Phật ở phần giữa chính
+              điện:​
+            </h2>
 
-						<p>
-							Với các tín đồ ở đây, Ngọc Hoàng là người cầm cán cân công lý: có công
-							thì thưởng, có tội phải trừ; nói đến Ngọc Hoàng là nói đến giới luật, sự
-							công bằng; thờ Ngài là một cách nhắc nhớ tín đồ sống ngay lành, đừng
-							phạm luật.
-						</p>
+            <p>
+              Với các tín đồ ở đây, Ngọc Hoàng là người cầm cán cân công lý: có
+              công thì thưởng, có tội phải trừ; nói đến Ngọc Hoàng là nói đến
+              giới luật, sự công bằng; thờ Ngài là một cách nhắc nhớ tín đồ sống
+              ngay lành, đừng phạm luật.
+            </p>
 
-						<p>
-							Theo sách Vân Cấp Thất Thiêm – một dạng từ điển Bách Khoa của Đạo giáo
-							được đạo sĩ Trương Quân Phòng thời nhà Tống biên soạn vào khoảng năm
-							1023, phần Đạo giáo Tam Động tôn Nguyên quyển 3 có chú “Tam đại Thiên
-							Tôn là quá khứ Nguyên thuỷ Thiên Tôn, hiện tại Thái Thượng Ngọc Hoàng
-							Thiên Tôn, vị lai Kim Khuyết Ngọc Thần Thiên Tôn”.
-						</p>
+            <p>
+              Theo sách Vân Cấp Thất Thiêm – một dạng từ điển Bách Khoa của Đạo
+              giáo được đạo sĩ Trương Quân Phòng thời nhà Tống biên soạn vào
+              khoảng năm 1023, phần Đạo giáo Tam Động tôn Nguyên quyển 3 có chú
+              “Tam đại Thiên Tôn là quá khứ Nguyên thuỷ Thiên Tôn, hiện tại Thái
+              Thượng Ngọc Hoàng Thiên Tôn, vị lai Kim Khuyết Ngọc Thần Thiên
+              Tôn”.
+            </p>
 
-						<p>
-							Cũng theo sách này, Thiên tôn là một thuật ngữ Đạo giáo để biểu thị
-							những vị thần cao quý nhất. Có nhiều vị thần Đạo giáo có tên riêng được
-							gọi kèm theo hai chữ Thiên Tôn như: Ngọc Thanh Nguyên Thuỷ Thiên Tôn,
-							Thượng Thanh Linh Bảo Thiên Tôn, Thái Thanh Đạo Đức Thiên Tôn, Thái Ất
-							Cứu Khổ Thiên Tôn.
-						</p>
+            <p>
+              Cũng theo sách này, Thiên tôn là một thuật ngữ Đạo giáo để biểu
+              thị những vị thần cao quý nhất. Có nhiều vị thần Đạo giáo có tên
+              riêng được gọi kèm theo hai chữ Thiên Tôn như: Ngọc Thanh Nguyên
+              Thuỷ Thiên Tôn, Thượng Thanh Linh Bảo Thiên Tôn, Thái Thanh Đạo
+              Đức Thiên Tôn, Thái Ất Cứu Khổ Thiên Tôn.
+            </p>
 
-						<p>
-							Một ví dụ tìm thấy trong Đại Việt Sử ký Toàn thư về từ Thiên Tôn ở Việt
-							Nam vào tháng 5, năm Nguyên Phong thứ 6 (1256), Trần kỷ, quyển 5, bản kỷ
-							có chú như sau:
-						</p>
+            <p>
+              Một ví dụ tìm thấy trong Đại Việt Sử ký Toàn thư về từ Thiên Tôn ở
+              Việt Nam vào tháng 5, năm Nguyên Phong thứ 6 (1256), Trần kỷ,
+              quyển 5, bản kỷ có chú như sau:
+            </p>
 
-						<p>
-							“Mùa hạ, tháng 5, sét đánh điện Thiên An, lại đánh cung Thiên Thanh
-							(cung Thái thanh là trung tâm đạo giáo cả thời Lý và Trần), tượng Thiên
-							Tôn gãy mất một ngón tay”
-						</p>
+            <p>
+              “Mùa hạ, tháng 5, sét đánh điện Thiên An, lại đánh cung Thiên
+              Thanh (cung Thái thanh là trung tâm đạo giáo cả thời Lý và Trần),
+              tượng Thiên Tôn gãy mất một ngón tay”
+            </p>
 
-						<p>
-							Như vậy, từ Thiên Tôn trong Đại Nam nhất thống chí đã được dùng như cách
-							gọi chung của các vị thần Đạo giáo. Và trong giáo lý Đạo giáo, có khái
-							niệm
-							<b>“Ngọc Hoàng thượng đế” là “Thiên Tôn hiện tại” [1]</b>
-						</p>
+            <p>
+              Như vậy, từ Thiên Tôn trong Đại Nam nhất thống chí đã được dùng
+              như cách gọi chung của các vị thần Đạo giáo. Và trong giáo lý Đạo
+              giáo, có khái niệm
+              <b>“Ngọc Hoàng thượng đế” là “Thiên Tôn hiện tại” [1]</b>
+            </p>
 
-						<figure>
-							<img
-								src="./images/picture-tranh-ngoc-hoang-thuong-de.webp"
-								alt="Tranh Ngọc Hoàng Thượng Đế | Nguồn : Internet
-                            " />
-							<figcaption>Tranh Ngọc Hoàng Thượng Đế | Nguồn : Internet</figcaption>
-						</figure>
+            <figure>
+              <img
+                src="./images/picture-tranh-ngoc-hoang-thuong-de.webp"
+                alt="Tranh Ngọc Hoàng Thượng Đế | Nguồn : Internet
+                            "
+              />
+              <figcaption>
+                Tranh Ngọc Hoàng Thượng Đế | Nguồn : Internet
+              </figcaption>
+            </figure>
 
-						<h2 id="chapter-2" class="elementor-widget-heading">
-							2. Ban thờ Quan Thánh Đế Quân và Thái Thượng lão quân bên trái chính
-							điện:
-						</h2>
+            <h2 id="chapter-2" class="elementor-widget-heading">
+              2. Ban thờ Quan Thánh Đế Quân và Thái Thượng lão quân bên trái
+              chính điện:
+            </h2>
 
-						<p>
-							<b>Tục thờ Quan Thánh Đế Quân</b>: Quan Công được phối thờ tại các chùa
-							ở Nha Trang thường gắn với vai trò là vị phúc thần, già lam bồ tát, hộ
-							pháp, thần tài, riêng tại ngôi chùa này, bức tranh Quan Công cầm cuốn
-							sách lại ngụ ý khác.
-						</p>
+            <p>
+              <b>Tục thờ Quan Thánh Đế Quân</b>: Quan Công được phối thờ tại các
+              chùa ở Nha Trang thường gắn với vai trò là vị phúc thần, già lam
+              bồ tát, hộ pháp, thần tài, riêng tại ngôi chùa này, bức tranh Quan
+              Công cầm cuốn sách lại ngụ ý khác.
+            </p>
 
-						<p>
-							Theo tác giả Nguyễn Ngọc Thơ, Người Hoa và người Minh Hương với văn hoá
-							Hội An, hình Quan Công được hiểu nhiều hơn với vị trí một phúc thần, một
-							vị thần tài và một vị văn xương hơn là vị thần trừ ma đuổi quỷ. Trong
-							Minh Hương Tuỵ Tiên Đường, ở một khán thờ nhỏ, Quan Công được tạo dáng
-							thành hai hình ảnh khác nhau với hai chức năng khác nhau: một quan công
-							mặt đỏ tay cầm nén bạc tượng trưng cho thần tài và một Quan Công mặt nâu
-							hồng tay cầm sách tượng trưng cho lễ nghĩa học tập [2]. Như vậy, bức ảnh
-							Quan Công cầm sách biểu thị tín ngưỡng thờ Quan Công như một văn xương
-							(vị thánh phù hộ việc lễ nghĩa học tập, cho trí tuệ cộng đồng)
-						</p>
+            <p>
+              Theo tác giả Nguyễn Ngọc Thơ, Người Hoa và người Minh Hương với
+              văn hoá Hội An, hình Quan Công được hiểu nhiều hơn với vị trí một
+              phúc thần, một vị thần tài và một vị văn xương hơn là vị thần trừ
+              ma đuổi quỷ. Trong Minh Hương Tuỵ Tiên Đường, ở một khán thờ nhỏ,
+              Quan Công được tạo dáng thành hai hình ảnh khác nhau với hai chức
+              năng khác nhau: một quan công mặt đỏ tay cầm nén bạc tượng trưng
+              cho thần tài và một Quan Công mặt nâu hồng tay cầm sách tượng
+              trưng cho lễ nghĩa học tập [2]. Như vậy, bức ảnh Quan Công cầm
+              sách biểu thị tín ngưỡng thờ Quan Công như một văn xương (vị thánh
+              phù hộ việc lễ nghĩa học tập, cho trí tuệ cộng đồng)
+            </p>
 
-						<p>
-							<b>Tục thờ Thái Thượng lão quân</b>: Thái Thượng Lão Quân là một vị
-							thánh thờ tối thượng của Đạo giáo, là một trong Tam Thanh. Trong quan
-							niệm dân gian, Lão Tử là một hoá thân tại trần gian của Thái Thượng Lão
-							quân. Còn trong niềm tin của các tín đồ tại chùa, Thái Thượng Lão Quân
-							chuyên về thuốc, linh dược, luyện đơn, khi tín đồ cần khẩn nguyện về
-							thuốc thang, tìm hiểu khi bệnh tật ốm đau, đền phải qua ngài. Chùa thỉnh
-							thượng Thái Thượng Lão Quân phối thờ hơn mười mấy năm nay. Trước đó,
-							chùa thờ tranh ảnh của ngài.
-						</p>
+            <p>
+              <b>Tục thờ Thái Thượng lão quân</b>: Thái Thượng Lão Quân là một
+              vị thánh thờ tối thượng của Đạo giáo, là một trong Tam Thanh.
+              Trong quan niệm dân gian, Lão Tử là một hoá thân tại trần gian của
+              Thái Thượng Lão quân. Còn trong niềm tin của các tín đồ tại chùa,
+              Thái Thượng Lão Quân chuyên về thuốc, linh dược, luyện đơn, khi
+              tín đồ cần khẩn nguyện về thuốc thang, tìm hiểu khi bệnh tật ốm
+              đau, đền phải qua ngài. Chùa thỉnh thượng Thái Thượng Lão Quân
+              phối thờ hơn mười mấy năm nay. Trước đó, chùa thờ tranh ảnh của
+              ngài.
+            </p>
 
-						<div class="elementor-inner-section">
-							<figure>
-								<img
-									src="./images/picture-quan-cong-cam-sach.webp"
-									alt="Minh họa Quan Công cầm sách | Nguồn : Internet
-" />
-								<figcaption>
-									Minh họa Quan Công cầm sách | Nguồn : Internet
-								</figcaption>
-							</figure>
-							<figure>
-								<img
-									src="./images/picture-thai-thuong-lao-cong.webp"
-									alt="Thái Thượng Lão Quân | Nguồn : Internet
-" />
-								<figcaption>Thái Thượng Lão Quân | Nguồn : Internet</figcaption>
-							</figure>
-						</div>
+            <div class="elementor-inner-section">
+              <figure>
+                <img
+                  src="./images/picture-quan-cong-cam-sach.webp"
+                  alt="Minh họa Quan Công cầm sách | Nguồn : Internet
+"
+                />
+                <figcaption>
+                  Minh họa Quan Công cầm sách | Nguồn : Internet
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="./images/picture-thai-thuong-lao-cong.webp"
+                  alt="Thái Thượng Lão Quân | Nguồn : Internet
+"
+                />
+                <figcaption>Thái Thượng Lão Quân | Nguồn : Internet</figcaption>
+              </figure>
+            </div>
 
-						<h2 id="chapter-3" class="elementor-widget-heading">
-							3. Ban thờ Thánh Mẫu bên phải chính điện:
-						</h2>
+            <h2 id="chapter-3" class="elementor-widget-heading">
+              3. Ban thờ Thánh Mẫu bên phải chính điện:
+            </h2>
 
-						<p>
-							Cũng theo thầy trụ trì, trong 36 vị thánh mẫu, Thánh Mẫu Diêu Trì là vị
-							thánh mẫu thứ nhất, thánh mẫu Nữ Oa đội đá vá trời xếp thứ nhì. Tuy
-							nhiên, chùa chỉ thỉnh tượng thờ Nữ Oa, Cửu Thiên Huyền Nữ, Thiên Y A Na
-							và Tiên Dung dù vẫn cử hành lễ vía thánh mẫu Diêu Trì.
-						</p>
+            <p>
+              Cũng theo thầy trụ trì, trong 36 vị thánh mẫu, Thánh Mẫu Diêu Trì
+              là vị thánh mẫu thứ nhất, thánh mẫu Nữ Oa đội đá vá trời xếp thứ
+              nhì. Tuy nhiên, chùa chỉ thỉnh tượng thờ Nữ Oa, Cửu Thiên Huyền
+              Nữ, Thiên Y A Na và Tiên Dung dù vẫn cử hành lễ vía thánh mẫu Diêu
+              Trì.
+            </p>
 
-						<p>
-							<b>Tục thờ Cửu Tiên Huyền Nữ</b>: Thầy trụ trì giải thích, tương truyền,
-							xưa kia người dân chỉ biết làm nhà mái ngang, chưa biết làm nhà mái
-							xuồng/nhà hai mái, Cửu Tiên Huyền Nữ đã hiện ra, chống nạnh và chỉ cho
-							dân chúng cách làm nhà hai mái. Cảm tạ thánh nữ đã chỉ dạy, từ đó, người
-							dân thường làm lễ cúng thánh nữ vào dịp gác đòn dông và cúng thượng
-							lương để cầu cho công việc xây cất nhà được suôn sẻ. Đó là lý do Cửu
-							Tiên Huyền Nữ được thờ phụng phổ biến ở miền Trung và miền Nam.
-						</p>
+            <p>
+              <b>Tục thờ Cửu Tiên Huyền Nữ</b>: Thầy trụ trì giải thích, tương
+              truyền, xưa kia người dân chỉ biết làm nhà mái ngang, chưa biết
+              làm nhà mái xuồng/nhà hai mái, Cửu Tiên Huyền Nữ đã hiện ra, chống
+              nạnh và chỉ cho dân chúng cách làm nhà hai mái. Cảm tạ thánh nữ đã
+              chỉ dạy, từ đó, người dân thường làm lễ cúng thánh nữ vào dịp gác
+              đòn dông và cúng thượng lương để cầu cho công việc xây cất nhà
+              được suôn sẻ. Đó là lý do Cửu Tiên Huyền Nữ được thờ phụng phổ
+              biến ở miền Trung và miền Nam.
+            </p>
 
-						<p>
-							Đạo giáo ở thế kỷ 17 chiếm vai trò quan trọng. Trong bài tham luận Đạo
-							giáo thời chúa Nguyễn qua nghiên cứu chùa Thiên Tôn tại làng Đâu Kênh,
-							tỉnh Quảng Trị, TS. Onishi Kazuhiko – Viện Nghiên cứu Tôn giáo, Viện Hàn
-							lâm Khoa học xã hội Việt Nam cho biết “tín ngưỡng Cửu Thiên Huyền Nữ,
-							một vị nữ thần quân sự Đạo giáo Trung Quốc bắt đầu phát triển ở Đàng
-							Trong đặc biệt là tại hệ thống pháo đài nằm ở vùng sông Nhật lệ, Quảng
-							Bình“ [3] (Onishi Kazuhiko, Sđd, 224).
-						</p>
+            <p>
+              Đạo giáo ở thế kỷ 17 chiếm vai trò quan trọng. Trong bài tham luận
+              Đạo giáo thời chúa Nguyễn qua nghiên cứu chùa Thiên Tôn tại làng
+              Đâu Kênh, tỉnh Quảng Trị, TS. Onishi Kazuhiko – Viện Nghiên cứu
+              Tôn giáo, Viện Hàn lâm Khoa học xã hội Việt Nam cho biết “tín
+              ngưỡng Cửu Thiên Huyền Nữ, một vị nữ thần quân sự Đạo giáo Trung
+              Quốc bắt đầu phát triển ở Đàng Trong đặc biệt là tại hệ thống pháo
+              đài nằm ở vùng sông Nhật lệ, Quảng Bình“ [3] (Onishi Kazuhiko,
+              Sđd, 224).
+            </p>
 
-						<p>
-							Tác giả cũng dẫn trường hợp Chiêu Vũ hầu Nguyễn Hữu Dật (1603-1681), một
-							trong những danh tướng thời chúa Nguyễn, trước khi bắt đầu cuộc chiến
-							đấu với lực lượng nhà Trịnh, tướng quân Nguyễn hữu Dật thường xem sao và
-							việc xem sao đóng vai trò quan trọng trong nghệ thuật quân sự lúc bấy
-							giờ.
-						</p>
+            <p>
+              Tác giả cũng dẫn trường hợp Chiêu Vũ hầu Nguyễn Hữu Dật
+              (1603-1681), một trong những danh tướng thời chúa Nguyễn, trước
+              khi bắt đầu cuộc chiến đấu với lực lượng nhà Trịnh, tướng quân
+              Nguyễn hữu Dật thường xem sao và việc xem sao đóng vai trò quan
+              trọng trong nghệ thuật quân sự lúc bấy giờ.
+            </p>
 
-						<p>
-							Theo Nam triều công nghiệp diễn chí (quyển 5) và Đại nam thực lục tiền
-							biên (quyển 4), đều ghi chép là vào tháng 9, năm Đinh Dậu tức 1657, chép
-							rằng: “Ngày sau, mình đã suy toán là vào năm Quý Hợi, ngày 25, tháng
-							nay, ngôi sao Chẩn gặp mặt trời thì chắc chắn có gió lớn mưa to. Huống
-							chi lại có mây đen trùm lên vị trí của Bắc Đẩu, Cự Môn, có mây trắng
-							trùm lên ngôi cùng của sao Thần thì từ phía Tây Bắc sẽ có mưa to gió lớn
-							và nước lụt ngập tràn“. Như vậy, việc xem sao đã đóng vai trò quan trọng
-							trong nghệ thuật quân sự lúc bấy giờ (225).
-						</p>
+            <p>
+              Theo Nam triều công nghiệp diễn chí (quyển 5) và Đại nam thực lục
+              tiền biên (quyển 4), đều ghi chép là vào tháng 9, năm Đinh Dậu tức
+              1657, chép rằng: “Ngày sau, mình đã suy toán là vào năm Quý Hợi,
+              ngày 25, tháng nay, ngôi sao Chẩn gặp mặt trời thì chắc chắn có
+              gió lớn mưa to. Huống chi lại có mây đen trùm lên vị trí của Bắc
+              Đẩu, Cự Môn, có mây trắng trùm lên ngôi cùng của sao Thần thì từ
+              phía Tây Bắc sẽ có mưa to gió lớn và nước lụt ngập tràn“. Như vậy,
+              việc xem sao đã đóng vai trò quan trọng trong nghệ thuật quân sự
+              lúc bấy giờ (225).
+            </p>
 
-						<p>
-							Chính như kể trên, trước khi băng hà, chúa Hiền nằm mơ sao Hoả là hung
-							tinh và sức khoẻ bị suy yếu, nên vua nhờ thái y điều trị và đồng thời
-							lại cho đạo sĩ lập đàn và làm cúng. [5] (226) Từ những phát triển có thể
-							tạm suy luận, tục dâng sao giải hạn, tôn thờ các thần linh Đạo giáo
-							trong đó Cửu Thiên Huyền Nữ tại Bắc Trung Bộ được ghi nhận lần đầu trong
-							tài liệu là từ thế kỷ 17 tại các chiến tuyến (hệ thống pháo đài) tại
-							quanh vùng sông Nhật Lệ, Quảng Bình. Niềm tin đó vẫn tồn tại trong dân
-							gian và đến thờ hiện đại đã ghi nhận Cửu Thiên Huyền Nữ là vị thần dạy
-							dân xây nhà mái xuồng, không còn là vị thần liên quan đến quân sự và
-							chiến tranh.
-						</p>
+            <p>
+              Chính như kể trên, trước khi băng hà, chúa Hiền nằm mơ sao Hoả là
+              hung tinh và sức khoẻ bị suy yếu, nên vua nhờ thái y điều trị và
+              đồng thời lại cho đạo sĩ lập đàn và làm cúng. [5] (226) Từ những
+              phát triển có thể tạm suy luận, tục dâng sao giải hạn, tôn thờ các
+              thần linh Đạo giáo trong đó Cửu Thiên Huyền Nữ tại Bắc Trung Bộ
+              được ghi nhận lần đầu trong tài liệu là từ thế kỷ 17 tại các chiến
+              tuyến (hệ thống pháo đài) tại quanh vùng sông Nhật Lệ, Quảng Bình.
+              Niềm tin đó vẫn tồn tại trong dân gian và đến thờ hiện đại đã ghi
+              nhận Cửu Thiên Huyền Nữ là vị thần dạy dân xây nhà mái xuồng,
+              không còn là vị thần liên quan đến quân sự và chiến tranh.
+            </p>
 
-						<figure>
-							<img
-								src="./images/picture-tuc-tho-cuu-thien-huyen-nu.webp"
-								alt="Tục thờ Cửu Thiên Huyền Nữ
-                            " />
-							<figcaption>Tục thờ Cửu Thiên Huyền Nữ</figcaption>
-						</figure>
+            <figure>
+              <img
+                src="./images/picture-tuc-tho-cuu-thien-huyen-nu.webp"
+                alt="Tục thờ Cửu Thiên Huyền Nữ
+                            "
+              />
+              <figcaption>Tục thờ Cửu Thiên Huyền Nữ</figcaption>
+            </figure>
 
-						<p>
-							<b>Tục thờ công chúa Tiên Dung</b>: Khám phá thú vị nhất tại ngôi chùa
-							này là nguyên nhân tôn thờ nàng Tiên Dung. Theo thầy trụ trì, Tiên Dung
-							là công chúa, nhưng không nề hà lấy người chài lưới. Vì tin vào sự an
-							bài của trời đất, nàng không những không khinh khi gia cảnh người chồng
-							khốn khó, mà còn hòa nhập vào hoàn cảnh của gia đình chồng mà phò chồng
-							đến khi chồng thành tài. Nàng tận dụng vốn hiểu biết từ những chuyến
-							ngao du bốn bể trước đây để tìm ra công thức muối mắm ngon, cùng chồng
-							phát triển một khu chợ tự do tại bến sông.
-						</p>
+            <p>
+              <b>Tục thờ công chúa Tiên Dung</b>: Khám phá thú vị nhất tại ngôi
+              chùa này là nguyên nhân tôn thờ nàng Tiên Dung. Theo thầy trụ trì,
+              Tiên Dung là công chúa, nhưng không nề hà lấy người chài lưới. Vì
+              tin vào sự an bài của trời đất, nàng không những không khinh khi
+              gia cảnh người chồng khốn khó, mà còn hòa nhập vào hoàn cảnh của
+              gia đình chồng mà phò chồng đến khi chồng thành tài. Nàng tận dụng
+              vốn hiểu biết từ những chuyến ngao du bốn bể trước đây để tìm ra
+              công thức muối mắm ngon, cùng chồng phát triển một khu chợ tự do
+              tại bến sông.
+            </p>
 
-						<p>
-							Hôn nhân đôi khi chính là cái nghiệp cái duyên đến sóng đôi. Phụ nữ xuất
-							giá tòng phu, biết yêu thương, đồng lòng sống vuông tròn phò trợ chồng
-							thành tài từ thế mạnh của bản thân vốn là nét đẹp của phụ nữ xưa và nay.
-							Bà là tấm gương sáng để bổn đạo noi theo. Thầy cho biết quanh khu vực
-							này nhiều gia đình làm nghề chài lưới, làm nước mắm, cũng như buôn bản
-							tảo tần ở chợ. Họ nguyện thờ phụng và noi theo gương bà.
-						</p>
+            <p>
+              Hôn nhân đôi khi chính là cái nghiệp cái duyên đến sóng đôi. Phụ
+              nữ xuất giá tòng phu, biết yêu thương, đồng lòng sống vuông tròn
+              phò trợ chồng thành tài từ thế mạnh của bản thân vốn là nét đẹp
+              của phụ nữ xưa và nay. Bà là tấm gương sáng để bổn đạo noi theo.
+              Thầy cho biết quanh khu vực này nhiều gia đình làm nghề chài lưới,
+              làm nước mắm, cũng như buôn bản tảo tần ở chợ. Họ nguyện thờ phụng
+              và noi theo gương bà.
+            </p>
 
-						<figure>
-							<img
-								src="./images/picture-tuong-cong-chua-tien-dung.webp"
-								alt="Minh họa tượng Công chúa Tiên Dung
+            <figure>
+              <img
+                src="./images/picture-tuong-cong-chua-tien-dung.webp"
+                alt="Minh họa tượng Công chúa Tiên Dung
 
-                            " />
-							<figcaption>Minh họa tượng Công chúa Tiên Dung</figcaption>
-						</figure>
+                            "
+              />
+              <figcaption>Minh họa tượng Công chúa Tiên Dung</figcaption>
+            </figure>
 
-						<h2 id="chapter-4" class="elementor-widget-heading">
-							Sơ lược về hệ tôn tượng và bố trí ban thờ tại chùa Chí Lý, Vĩnh Hải, Nha
-							Trang:
-						</h2>
+            <h2 id="chapter-4" class="elementor-widget-heading">
+              Sơ lược về hệ tôn tượng và bố trí ban thờ tại chùa Chí Lý, Vĩnh
+              Hải, Nha Trang:
+            </h2>
 
-						<p>
-							Bước vào chùa có 2 am nhỏ, thờ 2 Hộ pháp, gác cổng 2 bên. Vào chính
-							điện, bên trái là bức ảnh Quan Công tay cầm sách (Châu Xương, Quan Bình
-							hầu 2 bên), dưới khung ảnh là tượng của Thái Thượng Lão quân (một tay
-							cầm cây phất trần, một tay cầm bình hồ lô đựng linh đan). Bên phải chính
-							điện: trên cùng là tranh Quan Âm Bồ Tát, ở dưới là tượng Nữ Oa ở giữa, 2
-							ảnh 2 bên là Thiên Y A Na và Tiên Dung.
-						</p>
+            <p>
+              Bước vào chùa có 2 am nhỏ, thờ 2 Hộ pháp, gác cổng 2 bên. Vào
+              chính điện, bên trái là bức ảnh Quan Công tay cầm sách (Châu
+              Xương, Quan Bình hầu 2 bên), dưới khung ảnh là tượng của Thái
+              Thượng Lão quân (một tay cầm cây phất trần, một tay cầm bình hồ lô
+              đựng linh đan). Bên phải chính điện: trên cùng là tranh Quan Âm Bồ
+              Tát, ở dưới là tượng Nữ Oa ở giữa, 2 ảnh 2 bên là Thiên Y A Na và
+              Tiên Dung.
+            </p>
 
-						<p>
-							Giữa chính điện ở trên cao nhất là Di Đà Tam Thánh đứng: tượng A Di Đà,
-							Đại Thế Chí Bồ Tát và Quan Thế Âm Bồ Tát. Kế đến là Tượng Đức Bổn Sư
-							(Thích Ca Mâu Ni Phật), kế đến là Tượng Di Lặc Bồ Tát, kế đến là Phật
-							Địa Tạng, dưới cùng là tượng Ngọc Hoàng (khổ trung) có mũ phủ che mặt
-							đầy tôn kính)
-						</p>
+            <p>
+              Giữa chính điện ở trên cao nhất là Di Đà Tam Thánh đứng: tượng A
+              Di Đà, Đại Thế Chí Bồ Tát và Quan Thế Âm Bồ Tát. Kế đến là Tượng
+              Đức Bổn Sư (Thích Ca Mâu Ni Phật), kế đến là Tượng Di Lặc Bồ Tát,
+              kế đến là Phật Địa Tạng, dưới cùng là tượng Ngọc Hoàng (khổ trung)
+              có mũ phủ che mặt đầy tôn kính)
+            </p>
 
-						<p>
-							Nói cách khác, ngay khi vào chính điện, phần giữa điện sẽ gặp ở giữa hoa
-							đăng sư, tượng Ngọc Hoàng, tượng Di lặc, tượng Địa Tạng, tượng Bổn sư và
-							Di Đà Tam Thánh. Bên trái là ban thờ Quan Thánh Đế Quân và Thái Thượng
-							Lão Quân, bên phải là ban thờ Quan Âm Bồ Tát và thánh Mẫu: gồm Nữ Oa,
-							Thiên Y Ana và Tiên Dung. Ngoài cùng hai bên là tấm bảng đề dòng chữ lớn
-							Cửu Huyền Thất Tổ (nghĩa là chín chữ Cù Lao, tổ tiên 7 đời). Đây là nơi
-							để các cư sĩ, tăng sĩ thỉnh ông bà về vào các dịp lễ vía quan trọng.
-						</p>
+            <p>
+              Nói cách khác, ngay khi vào chính điện, phần giữa điện sẽ gặp ở
+              giữa hoa đăng sư, tượng Ngọc Hoàng, tượng Di lặc, tượng Địa Tạng,
+              tượng Bổn sư và Di Đà Tam Thánh. Bên trái là ban thờ Quan Thánh Đế
+              Quân và Thái Thượng Lão Quân, bên phải là ban thờ Quan Âm Bồ Tát
+              và thánh Mẫu: gồm Nữ Oa, Thiên Y Ana và Tiên Dung. Ngoài cùng hai
+              bên là tấm bảng đề dòng chữ lớn Cửu Huyền Thất Tổ (nghĩa là chín
+              chữ Cù Lao, tổ tiên 7 đời). Đây là nơi để các cư sĩ, tăng sĩ thỉnh
+              ông bà về vào các dịp lễ vía quan trọng.
+            </p>
 
-						<p>
-							Hoa đăng sư là một tháp đèn gồm 7 tầng, tầng trên cùng là 1 ngọn đèn dầu
-							đặt trên quả địa cầu màu đỏ bordeaux, 6 tầng đèn bên dưới mỗi tầng gồm
-							nhiều ngọn đèn dầu đặt trên những các que gỗ màu xanh, toả từ thân cây
-							ra như những cánh quạt hình tròn, kích thường các tầng đèn to dần từ cao
-							xuống thấp, nên tầng thứ 2 gồm 5 chiếc đèn dầu, tầng dưới cùng là 12
-							ngọn.
-						</p>
+            <p>
+              Hoa đăng sư là một tháp đèn gồm 7 tầng, tầng trên cùng là 1 ngọn
+              đèn dầu đặt trên quả địa cầu màu đỏ bordeaux, 6 tầng đèn bên dưới
+              mỗi tầng gồm nhiều ngọn đèn dầu đặt trên những các que gỗ màu
+              xanh, toả từ thân cây ra như những cánh quạt hình tròn, kích
+              thường các tầng đèn to dần từ cao xuống thấp, nên tầng thứ 2 gồm 5
+              chiếc đèn dầu, tầng dưới cùng là 12 ngọn.
+            </p>
 
-						<p>
-							Theo vị trụ trì tại đây, hoa đăng sư dùng để tưởng nhớ đến vị tổ khai
-							sáng chùa. Còn Chín chữ cù lao, 7 đời ông bà mình. Chùa khác ký linh,
-							còn chùa mình thì có nơi để thỉnh ông bà mình về, con cháu đi tu hay làm
-							ăn xa đều có thể về nhớ đến. Như vậy, khác với bố cục chung tại các chùa
-							tại Nha Trang, chùa Chí Lý Vĩnh Hải không có khu vực thờ Tổ (các chùa
-							khác thường phối thờ Bồ Đề Đạt Ma và các vị tổ khai sơn của chùa), mà
-							thay bằng ngọn hoa đăng sư.
-						</p>
+            <p>
+              Theo vị trụ trì tại đây, hoa đăng sư dùng để tưởng nhớ đến vị tổ
+              khai sáng chùa. Còn Chín chữ cù lao, 7 đời ông bà mình. Chùa khác
+              ký linh, còn chùa mình thì có nơi để thỉnh ông bà mình về, con
+              cháu đi tu hay làm ăn xa đều có thể về nhớ đến. Như vậy, khác với
+              bố cục chung tại các chùa tại Nha Trang, chùa Chí Lý Vĩnh Hải
+              không có khu vực thờ Tổ (các chùa khác thường phối thờ Bồ Đề Đạt
+              Ma và các vị tổ khai sơn của chùa), mà thay bằng ngọn hoa đăng sư.
+            </p>
 
-						<p>
-							Chùa Chí Lý được thành lập năm 1946, đến đời trụ trì hiện tại đã là đời
-							thứ 4. Chùa theo tông phái Mật tông nên các thầy không xuống tóc, chùa
-							là nơi tu hành của các cư sĩ tại gia. Đây thật sự là một địa điểm tâm
-							linh thú vị thuộc khu vực Vĩnh Hải khu vực phía Bắc thành phố Nha Trang
-							để khách hành hương đến thăm viếng.
-						</p>
+            <p>
+              Chùa Chí Lý được thành lập năm 1946, đến đời trụ trì hiện tại đã
+              là đời thứ 4. Chùa theo tông phái Mật tông nên các thầy không
+              xuống tóc, chùa là nơi tu hành của các cư sĩ tại gia. Đây thật sự
+              là một địa điểm tâm linh thú vị thuộc khu vực Vĩnh Hải khu vực
+              phía Bắc thành phố Nha Trang để khách hành hương đến thăm viếng.
+            </p>
 
-						<p>_______________</p>
+            <p>_______________</p>
 
-						<p>Viếng chùa ngày 15.2.2024.</p>
+            <p>Viếng chùa ngày 15.2.2024.</p>
 
-						<p>
-							[1] Nguyễn Hoàng – Người mở cõi [Phan Huy Lê – Đỗ Bang, Nhà chính trị
-							quốc gia sự thật, 2023, Đạo giáo thời chúa Nguyễn qua nghiên cứu chùa
-							Thiên Tôn tại làng Đâu Kênh, tỉnh Quảng Trị – TS. Onishi Kazuhiko]
-						</p>
+            <p>
+              [1] Nguyễn Hoàng – Người mở cõi [Phan Huy Lê – Đỗ Bang, Nhà chính
+              trị quốc gia sự thật, 2023, Đạo giáo thời chúa Nguyễn qua nghiên
+              cứu chùa Thiên Tôn tại làng Đâu Kênh, tỉnh Quảng Trị – TS. Onishi
+              Kazuhiko]
+            </p>
 
-						<p>
-							* Đòn dông là thanh gỗ nằm ở vị trí cao nhất của mái nhà, có vai trò
-							quan trọng trong việc nâng đỡ toàn bộ mái nhà. Lễ gác đòn dông được thực
-							hiện vào ngày lành tháng tốt, khi công trình đã hoàn thiện phần khung
-							cột, mái ngói và các bộ phận khác.
-						</p>
+            <p>
+              * Đòn dông là thanh gỗ nằm ở vị trí cao nhất của mái nhà, có vai
+              trò quan trọng trong việc nâng đỡ toàn bộ mái nhà. Lễ gác đòn dông
+              được thực hiện vào ngày lành tháng tốt, khi công trình đã hoàn
+              thiện phần khung cột, mái ngói và các bộ phận khác.
+            </p>
 
-						<div class="elementor-widget-share-buttons">
-							<p class="elementor-heading-title">Chia sẻ câu chuyện này</p>
-							<div class="elementor-share-buttons--view-icon">
-								<a href="#!" class="elementor-share-btn">
-									<svg
-										fill="currentColor"
-										xmlns="http://www.w3.org/2000/svg"
-										viewBox="0 0 320 512">
-										<path
-											d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
-									</svg>
-								</a>
-								<a href="#!" class="elementor-share-btn">
-									<svg
-										fill="currentColor"
-										xmlns="http://www.w3.org/2000/svg"
-										viewBox="0 0 640 512">
-										<path
-											d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
-									</svg>
-								</a>
+            <div class="elementor-widget-share-buttons">
+              <p class="elementor-heading-title">Chia sẻ câu chuyện này</p>
+              <div class="elementor-share-buttons--view-icon">
+                <a href="#!" class="elementor-share-btn">
+                  <svg
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512"
+                  >
+                    <path
+                      d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+                    />
+                  </svg>
+                </a>
+                <a href="#!" class="elementor-share-btn">
+                  <svg
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512"
+                  >
+                    <path
+                      d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"
+                    />
+                  </svg>
+                </a>
 
-								<a href="#!" class="elementor-share-btn">
-									<svg
-										fill="currentColor"
-										version="1.1"
-										id="Capa_1"
-										xmlns="http://www.w3.org/2000/svg"
-										xmlns:xlink="http://www.w3.org/1999/xlink"
-										viewBox="0 0 481.6 481.6"
-										xml:space="preserve">
-										<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-										<g
-											id="SVGRepo_tracerCarrier"
-											stroke-linecap="round"
-											stroke-linejoin="round"></g>
-										<g id="SVGRepo_iconCarrier">
-											<g>
-												<path
-													d="M381.6,309.4c-27.7,0-52.4,13.2-68.2,33.6l-132.3-73.9c3.1-8.9,4.8-18.5,4.8-28.4c0-10-1.7-19.5-4.9-28.5l132.2-73.8 c15.7,20.5,40.5,33.8,68.3,33.8c47.4,0,86.1-38.6,86.1-86.1S429,0,381.5,0s-86.1,38.6-86.1,86.1c0,10,1.7,19.6,4.9,28.5 l-132.1,73.8c-15.7-20.6-40.5-33.8-68.3-33.8c-47.4,0-86.1,38.6-86.1,86.1s38.7,86.1,86.2,86.1c27.8,0,52.6-13.3,68.4-33.9 l132.2,73.9c-3.2,9-5,18.7-5,28.7c0,47.4,38.6,86.1,86.1,86.1s86.1-38.6,86.1-86.1S429.1,309.4,381.6,309.4z M381.6,27.1 c32.6,0,59.1,26.5,59.1,59.1s-26.5,59.1-59.1,59.1s-59.1-26.5-59.1-59.1S349.1,27.1,381.6,27.1z M100,299.8 c-32.6,0-59.1-26.5-59.1-59.1s26.5-59.1,59.1-59.1s59.1,26.5,59.1,59.1S132.5,299.8,100,299.8z M381.6,454.5 c-32.6,0-59.1-26.5-59.1-59.1c0-32.6,26.5-59.1,59.1-59.1s59.1,26.5,59.1,59.1C440.7,428,414.2,454.5,381.6,454.5z"></path>
-											</g>
-										</g>
-									</svg>
-								</a>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- End of Reading -->
-			</main>
-			<!-- End of Main -->
+                <a href="#!" class="elementor-share-btn">
+                  <svg
+                    fill="currentColor"
+                    version="1.1"
+                    id="Capa_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 481.6 481.6"
+                    xml:space="preserve"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <g>
+                        <path
+                          d="M381.6,309.4c-27.7,0-52.4,13.2-68.2,33.6l-132.3-73.9c3.1-8.9,4.8-18.5,4.8-28.4c0-10-1.7-19.5-4.9-28.5l132.2-73.8 c15.7,20.5,40.5,33.8,68.3,33.8c47.4,0,86.1-38.6,86.1-86.1S429,0,381.5,0s-86.1,38.6-86.1,86.1c0,10,1.7,19.6,4.9,28.5 l-132.1,73.8c-15.7-20.6-40.5-33.8-68.3-33.8c-47.4,0-86.1,38.6-86.1,86.1s38.7,86.1,86.2,86.1c27.8,0,52.6-13.3,68.4-33.9 l132.2,73.9c-3.2,9-5,18.7-5,28.7c0,47.4,38.6,86.1,86.1,86.1s86.1-38.6,86.1-86.1S429.1,309.4,381.6,309.4z M381.6,27.1 c32.6,0,59.1,26.5,59.1,59.1s-26.5,59.1-59.1,59.1s-59.1-26.5-59.1-59.1S349.1,27.1,381.6,27.1z M100,299.8 c-32.6,0-59.1-26.5-59.1-59.1s26.5-59.1,59.1-59.1s59.1,26.5,59.1,59.1S132.5,299.8,100,299.8z M381.6,454.5 c-32.6,0-59.1-26.5-59.1-59.1c0-32.6,26.5-59.1,59.1-59.1s59.1,26.5,59.1,59.1C440.7,428,414.2,454.5,381.6,454.5z"
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End of Reading -->
+      </main>
+      <!-- End of Main -->
 
-			<!-- Start of Footer -->
-			<footer class="footer">
-				<a href="#!" class="footer__logo">
-					<img src="./images/logo-purple.svg" alt="" />
-				</a>
-				<!-- social  -->
-				<div class="footer__social">
-					<!-- fb -->
-					<a href="#!">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 320 512"
-							fill="currentColor">
-							<path
-								d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
-						</svg>
-					</a>
-					<!-- tiktok -->
-					<a href="#!">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 448 512"
-							fill="currentColor">
-							<path
-								d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z" />
-						</svg>
-					</a>
-					<!-- instagram -->
-					<a href="#!">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 448 512"
-							fill="currentColor">
-							<path
-								d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-						</svg>
-					</a>
-				</div>
-				<p class="footer__copyright">© Vietales 2023. All Rights Reserved</p>
-				<div class="footer__desc">Công ty TNHH truyền thông và giải trí VIE-X</div>
-				<div class="footer__desc">MSDN: 0317508603</div>
-				<div class="footer__desc">
-					Địa Chỉ: Toà nhà Redbase – 302A Nguyễn Thượng Hiền, Phường 5, Quận Phú Nhuận
-				</div>
-				<div class="footer__row">
-					<img src="./images/copyright-protection.png" alt="" class="footer__img" />
-				</div>
-			</footer>
-			<!-- End of Footer -->
-		</div>
+      <!-- Start of Footer -->
+      <footer class="footer">
+        <a href="#!" class="footer__logo">
+          <img src="./images/logo-purple.svg" alt="" />
+        </a>
+        <!-- social  -->
+        <div class="footer__social">
+          <!-- fb -->
+          <a href="#!">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+              fill="currentColor"
+            >
+              <path
+                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+              />
+            </svg>
+          </a>
+          <!-- tiktok -->
+          <a href="#!">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              fill="currentColor"
+            >
+              <path
+                d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"
+              />
+            </svg>
+          </a>
+          <!-- instagram -->
+          <a href="#!">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              fill="currentColor"
+            >
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+              />
+            </svg>
+          </a>
+        </div>
+        <p class="footer__copyright">© Vietales 2023. All Rights Reserved</p>
+        <div class="footer__desc">
+          Công ty TNHH truyền thông và giải trí VIE-X
+        </div>
+        <div class="footer__desc">MSDN: 0317508603</div>
+        <div class="footer__desc">
+          Địa Chỉ: Toà nhà Redbase – 302A Nguyễn Thượng Hiền, Phường 5, Quận Phú
+          Nhuận
+        </div>
+        <div class="footer__row">
+          <img
+            src="./images/copyright-protection.png"
+            alt=""
+            class="footer__img"
+          />
+        </div>
+      </footer>
+      <!-- End of Footer -->
+    </div>
 
-		<!-- Start of Modal -->
-		<!-- Start of modal header -->
-		<div id="modal" class="modal">
-			<div class="modal__container">
-				<div class="modal__content">
-					<!-- Modal Search -->
-					<div class="modal__search">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 448 512"
-							fill="#581192"
-							class="modal__icon-arrow">
-							<path
-								d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
-						</svg>
-						<input type="text" placeholder="Tìm kiếm trong Viegazine" />
-					</div>
+    <!-- Start of Modal -->
+    <!-- Start of modal header -->
+    <div id="modal" class="modal">
+      <div class="modal__container">
+        <div class="modal__content">
+          <!-- Modal Search -->
+          <div class="modal__search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              fill="#581192"
+              class="modal__icon-arrow"
+            >
+              <path
+                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+              />
+            </svg>
+            <input type="text" placeholder="Tìm kiếm trong Viegazine" />
+          </div>
 
-					<!-- Modal Body -->
-					<div class="modal__body">
-						<ul class="modal__list" x-ref="listItemMenu">
-							<li class="modal__item">
-								<a href="#!" class="modal__link">Khám phá</a>
-							</li>
-							<li class="modal__item">
-								<a href="#!" class="modal__link">Viegazine</a>
-							</li>
-							<li class="modal__item">
-								<a href="#!" class="modal__link">Comic</a>
-							</li>
-							<li class="modal__item">
-								<a href="#!" class="modal__link">Video</a>
-							</li>
-							<li class="modal__item">
-								<a href="#!" class="modal__link">Podcast</a>
-							</li>
-						</ul>
+          <!-- Modal Body -->
+          <div class="modal__body">
+            <ul class="modal__list" x-ref="listItemMenu">
+              <li class="modal__item">
+                <a href="/" class="modal__link">Khám phá</a>
+              </li>
+              <li class="modal__item">
+                <a href="./viegazine.html" class="modal__link">Viegazine</a>
+              </li>
+              <li class="modal__item">
+                <a href="/comic.html" class="modal__link">Comic</a>
+              </li>
+              <li class="modal__item">
+                <a href="/video.html" class="modal__link">Video</a>
+              </li>
+              <li class="modal__item">
+                <a href="/podcast.html" class="modal__link">Podcast</a>
+              </li>
+            </ul>
 
-						<ul class="modal__list" x-ref="listItemMenu">
-							<li class="modal__item">
-								<a href="#!" class="modal__link">Khám phá</a>
-							</li>
-							<li class="modal__item">
-								<a href="#!" class="modal__link">Viegazine</a>
-							</li>
-							<li class="modal__item">
-								<a href="#!" class="modal__link">Comic</a>
-							</li>
-							<li class="modal__item">
-								<a href="#!" class="modal__link">Video</a>
-							</li>
-							<li class="modal__item">
-								<a href="#!" class="modal__link">Podcast</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End of modal header -->
+            <ul class="modal__list" x-ref="listItemMenu">
+              <li class="modal__item">
+                <a href="/series.html" class="modal__link">Loạt chuyện</a>
+              </li>
+              <li class="modal__item">
+                <a href="/category-history.html" class="modal__link">Lịch sử</a>
+              </li>
+              <li class="modal__item">
+                <a href="/category-creation.html" class="modal__link"
+                  >Văn hóa</a
+                >
+              </li>
+              <li class="modal__item">
+                <a href="/category-geography.html" class="modal__link"
+                  >Địa lý</a
+                >
+              </li>
+              <li class="modal__item">
+                <a href="/category-culture.html" class="modal__link"
+                  >Sáng tác</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of modal header -->
 
-		<!-- Start of modal detail -->
-		<div class="modal-detail">
-			<div class="modal-detail__container">
-				<div class="modal-detail__content">
-					<div class="modal-detail__body">
-						<!-- Chapter 1 -->
-						<a href="#chapter-1" class="modal-detail__gr">
-							<div class="modal-detail__text">
-								<span>Chương</span>
-								<p>1. Lịch sử đảo Long Sơn</p>
-							</div>
-							<div class="modal-detail__num">1</div>
-							<div class="modal-detail__line"></div>
-						</a>
+    <!-- Start of modal detail -->
+    <div class="modal-detail">
+      <div class="modal-detail__container">
+        <div class="modal-detail__content">
+          <div class="modal-detail__body">
+            <!-- Chapter 1 -->
+            <a href="#chapter-1" class="modal-detail__gr">
+              <div class="modal-detail__text">
+                <span>Chương</span>
+                <p>1. Lịch sử đảo Long Sơn</p>
+              </div>
+              <div class="modal-detail__num">1</div>
+              <div class="modal-detail__line"></div>
+            </a>
 
-						<!-- Chapter 2 -->
-						<a href="#chapter-2" class="modal-detail__gr">
-							<div class="modal-detail__text">
-								<span>Chương</span>
-								<p>2. Đạo Ông Trần - một tín ngưỡng bản địa độc nhất vô nhị</p>
-							</div>
-							<div class="modal-detail__num">2</div>
-							<div class="modal-detail__line modal-detail__line--two"></div>
-						</a>
+            <!-- Chapter 2 -->
+            <a href="#chapter-2" class="modal-detail__gr">
+              <div class="modal-detail__text">
+                <span>Chương</span>
+                <p>2. Đạo Ông Trần - một tín ngưỡng bản địa độc nhất vô nhị</p>
+              </div>
+              <div class="modal-detail__num">2</div>
+              <div class="modal-detail__line modal-detail__line--two"></div>
+            </a>
 
-						<!-- Chapter 3 -->
-						<a href="#chapter-3" class="modal-detail__gr">
-							<div class="modal-detail__text">
-								<span>Chương</span>
-								<p>3. Ban thờ Thánh Mẫu bên phải chính điện</p>
-							</div>
-							<div class="modal-detail__num">3</div>
-							<div class="modal-detail__line modal-detail__line--two"></div>
-						</a>
+            <!-- Chapter 3 -->
+            <a href="#chapter-3" class="modal-detail__gr">
+              <div class="modal-detail__text">
+                <span>Chương</span>
+                <p>3. Ban thờ Thánh Mẫu bên phải chính điện</p>
+              </div>
+              <div class="modal-detail__num">3</div>
+              <div class="modal-detail__line modal-detail__line--two"></div>
+            </a>
 
-						<!-- Chapter 4 -->
-						<a href="#chapter-4" class="modal-detail__gr">
-							<div class="modal-detail__text">
-								<span>Chương</span>
-								<p>
-									4. Sơ lược về hệ tôn tượng và bố trí ban thờ tại chùa Chí Lý,
-									Vĩnh Hải, Nha Trang
-								</p>
-							</div>
-							<div class="modal-detail__num">4</div>
-							<div class="modal-detail__line modal-detail__line--two"></div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End of modal detail -->
-		<!-- End of Modal -->
+            <!-- Chapter 4 -->
+            <a href="#chapter-4" class="modal-detail__gr">
+              <div class="modal-detail__text">
+                <span>Chương</span>
+                <p>
+                  4. Sơ lược về hệ tôn tượng và bố trí ban thờ tại chùa Chí Lý,
+                  Vĩnh Hải, Nha Trang
+                </p>
+              </div>
+              <div class="modal-detail__num">4</div>
+              <div class="modal-detail__line modal-detail__line--two"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of modal detail -->
+    <!-- End of Modal -->
 
-		<!-- Start of Decor -->
-		<button class="decor-message">
-			<svg
-				width="40"
-				height="35"
-				viewBox="0 0 40 35"
-				fill="none"
-				xmlns="http://www.w3.org/2000/svg">
-				<path
-					d="M12.0036 29.1189C14.825 32.0928 19.3716 34.0229 24.5 34.0229C26.6054 34.0229 28.6128 33.6976 30.443 33.1083L36.8205 34.9999L36.0955 29.9823C38.5247 27.8617 40 25.07 40 22.0114C40 19.8154 39.2395 17.757 37.9115 15.9858C36.9706 23.8492 28.639 29.9999 18.5 29.9999C16.2222 29.9999 14.0356 29.6895 12.0036 29.1189Z"
-					fill="#D4D4D4"
-					fill-opacity="0.68"></path>
-				<g filter="url(#filter0_b_2002_22360)">
-					<path
-						fill-rule="evenodd"
-						clip-rule="evenodd"
-						d="M5.05942 24.466L4.21124 30.4033L11.9785 28.0731L12.2584 28.1519C14.2062 28.7003 16.3071 29 18.5 29C28.9436 29 37 22.3062 37 14.5C37 6.69378 28.9436 0 18.5 0C8.05643 0 0 6.69378 0 14.5C0 18.1476 1.72752 21.5196 4.6557 24.109L5.05942 24.466Z"
-						fill="white"
-						fill-opacity="0.76"></path>
-				</g>
-				<path
-					d="M13.7921 8.14195L8 20.3721H10.4946L14.7219 11.1001H14.7751L19.0822 20.3721H21.5767L15.7317 8.14195L13.7921 8.14195Z"
-					fill="#727272"></path>
-				<path d="M27.2479 14.8972H21.773V20.3721H27.2479V14.8972Z" fill="#727272"></path>
-				<path
-					d="M24.5102 13.9038C26.1927 13.9038 27.5567 12.5398 27.5567 10.8573C27.5567 9.17475 26.1927 7.81079 24.5102 7.81079C22.8277 7.81079 21.4637 9.17475 21.4637 10.8573C21.4637 12.5398 22.8277 13.9038 24.5102 13.9038Z"
-					fill="#F0AB0A"></path>
-				<defs>
-					<filter
-						id="filter0_b_2002_22360"
-						x="-32"
-						y="-32"
-						width="101"
-						height="94.4033"
-						filterUnits="userSpaceOnUse"
-						color-interpolation-filters="sRGB">
-						<feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-						<feGaussianBlur in="BackgroundImageFix" stdDeviation="16"></feGaussianBlur>
-						<feComposite
-							in2="SourceAlpha"
-							operator="in"
-							result="effect1_backgroundBlur_2002_22360"></feComposite>
-						<feBlend
-							mode="normal"
-							in="SourceGraphic"
-							in2="effect1_backgroundBlur_2002_22360"
-							result="shape"></feBlend>
-					</filter>
-				</defs>
-			</svg>
-		</button>
+    <!-- Start of Decor -->
+    <button class="decor-message">
+      <svg
+        width="40"
+        height="35"
+        viewBox="0 0 40 35"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.0036 29.1189C14.825 32.0928 19.3716 34.0229 24.5 34.0229C26.6054 34.0229 28.6128 33.6976 30.443 33.1083L36.8205 34.9999L36.0955 29.9823C38.5247 27.8617 40 25.07 40 22.0114C40 19.8154 39.2395 17.757 37.9115 15.9858C36.9706 23.8492 28.639 29.9999 18.5 29.9999C16.2222 29.9999 14.0356 29.6895 12.0036 29.1189Z"
+          fill="#D4D4D4"
+          fill-opacity="0.68"
+        ></path>
+        <g filter="url(#filter0_b_2002_22360)">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M5.05942 24.466L4.21124 30.4033L11.9785 28.0731L12.2584 28.1519C14.2062 28.7003 16.3071 29 18.5 29C28.9436 29 37 22.3062 37 14.5C37 6.69378 28.9436 0 18.5 0C8.05643 0 0 6.69378 0 14.5C0 18.1476 1.72752 21.5196 4.6557 24.109L5.05942 24.466Z"
+            fill="white"
+            fill-opacity="0.76"
+          ></path>
+        </g>
+        <path
+          d="M13.7921 8.14195L8 20.3721H10.4946L14.7219 11.1001H14.7751L19.0822 20.3721H21.5767L15.7317 8.14195L13.7921 8.14195Z"
+          fill="#727272"
+        ></path>
+        <path
+          d="M27.2479 14.8972H21.773V20.3721H27.2479V14.8972Z"
+          fill="#727272"
+        ></path>
+        <path
+          d="M24.5102 13.9038C26.1927 13.9038 27.5567 12.5398 27.5567 10.8573C27.5567 9.17475 26.1927 7.81079 24.5102 7.81079C22.8277 7.81079 21.4637 9.17475 21.4637 10.8573C21.4637 12.5398 22.8277 13.9038 24.5102 13.9038Z"
+          fill="#F0AB0A"
+        ></path>
+        <defs>
+          <filter
+            id="filter0_b_2002_22360"
+            x="-32"
+            y="-32"
+            width="101"
+            height="94.4033"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feGaussianBlur
+              in="BackgroundImageFix"
+              stdDeviation="16"
+            ></feGaussianBlur>
+            <feComposite
+              in2="SourceAlpha"
+              operator="in"
+              result="effect1_backgroundBlur_2002_22360"
+            ></feComposite>
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="effect1_backgroundBlur_2002_22360"
+              result="shape"
+            ></feBlend>
+          </filter>
+        </defs>
+      </svg>
+    </button>
 
-		<button class="decor-feedback">
-			<div class="decor-feedback__icon">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="24"
-					height="22"
-					fill="none"
-					viewBox="0 0 24 22"
-					data-testid="icon-buddy">
-					<path
-						fill="#fdfdfe"
-						fill-rule="evenodd"
-						d="M22.362.827C21.72.5 20.88.5 19.2.5H3.3C1.755.5.983.5.575.819A1.5 1.5 0 000 1.969c-.01.517.453 1.135 1.38 2.371l1.14 1.52c.178.237.267.356.33.487a1.5 1.5 0 01.122.365C3 6.855 3 7.003 3 7.3v9.4c0 1.68 0 2.52.327 3.162a3 3 0 001.311 1.311c.642.327 1.482.327 3.162.327h11.4c1.68 0 2.52 0 3.162-.327a3 3 0 001.311-1.311C24 19.22 24 18.38 24 16.7V5.3c0-1.68 0-2.52-.327-3.162a3 3 0 00-1.31-1.311zM9.277 11.937a1.125 1.125 0 00-1.948 1.126 7.123 7.123 0 006.171 3.562 7.123 7.123 0 006.171-3.562 1.125 1.125 0 10-1.947-1.126 4.872 4.872 0 01-4.224 2.438 4.873 4.873 0 01-4.223-2.438zM10.5 8a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM18 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
-						clip-rule="evenodd"></path>
-				</svg>
-			</div>
-			<!-- <div class="decor-feedback__text">Phản hồi</div> -->
-		</button>
-		<!-- End of Decor -->
-		<!-- 
+    <button class="decor-feedback">
+      <div class="decor-feedback__icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="22"
+          fill="none"
+          viewBox="0 0 24 22"
+          data-testid="icon-buddy"
+        >
+          <path
+            fill="#fdfdfe"
+            fill-rule="evenodd"
+            d="M22.362.827C21.72.5 20.88.5 19.2.5H3.3C1.755.5.983.5.575.819A1.5 1.5 0 000 1.969c-.01.517.453 1.135 1.38 2.371l1.14 1.52c.178.237.267.356.33.487a1.5 1.5 0 01.122.365C3 6.855 3 7.003 3 7.3v9.4c0 1.68 0 2.52.327 3.162a3 3 0 001.311 1.311c.642.327 1.482.327 3.162.327h11.4c1.68 0 2.52 0 3.162-.327a3 3 0 001.311-1.311C24 19.22 24 18.38 24 16.7V5.3c0-1.68 0-2.52-.327-3.162a3 3 0 00-1.31-1.311zM9.277 11.937a1.125 1.125 0 00-1.948 1.126 7.123 7.123 0 006.171 3.562 7.123 7.123 0 006.171-3.562 1.125 1.125 0 10-1.947-1.126 4.872 4.872 0 01-4.224 2.438 4.873 4.873 0 01-4.223-2.438zM10.5 8a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM18 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </div>
+      <!-- <div class="decor-feedback__text">Phản hồi</div> -->
+    </button>
+    <!-- End of Decor -->
+    <!-- 
 		<div class="swiper-container">
 			<audio id="background-music" loop>
 				<source
@@ -805,8 +913,8 @@
 			</button>
 		</div> -->
 
-		<!-- Javascript -->
-		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-		<script src="./js/style.js"></script>
-	</body>
+    <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/style.js"></script>
+  </body>
 </html>
