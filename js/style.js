@@ -44,8 +44,6 @@ const subMenu = getElement(".navbar__sub-menu");
 const iconSvgBtnMore = getElement(".navbar__btn-svg");
 const progressBar = getElement(".progress-bar");
 
-console.log(navbarViegazine);
-
 // Event Handlers
 addEventListenerIfExists(iconSearch, "click", () =>
   modal?.classList.add("show")
@@ -75,7 +73,11 @@ addEventListenerIfExists(modalDetail, "click", () => {
 
 // Click anywhere to close subMenu
 window.addEventListener("click", (e) => {
-  if (!subMenu.contains(e.target) && !moreNewList.contains(e.target)) {
+  if (
+    subMenu &&
+    !subMenu.contains(e.target) &&
+    !moreNewList.contains(e.target)
+  ) {
     removeClassIfExists(subMenu, "show");
     removeClassIfExists(iconSvgBtnMore, "navbar__btn-svg--rotate");
   }
@@ -117,34 +119,85 @@ window.addEventListener("scroll", () => {
 // Initialize Swiper
 function handleSwiper() {
   if (typeof Swiper !== "undefined") {
-    var swiper = new Swiper(".swiper", {
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      initialSlide: 2,
-      speed: 600,
-      preventClicks: true,
-      slidesPerView: "auto",
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 80,
-        depth: 350,
-        modifier: 1,
-        slideShadows: true,
-      },
-      on: {
-        click(event) {
-          swiper.slideTo(this.clickedIndex);
-        },
-      },
-    });
-
-    document.querySelectorAll(".swiper-slide").forEach((slide, index) => {
-      slide.addEventListener("mouseenter", () => {
-        swiper.slideTo(index);
-      });
-    });
+    // var swiper = new Swiper(".swiper", {
+    //   effect: "coverflow",
+    //   grabCursor: true,
+    //   centeredSlides: true,
+    //   initialSlide: 2,
+    //   speed: 600,
+    //   preventClicks: true,
+    //   slidesPerView: "auto",
+    //   coverflowEffect: {
+    //     rotate: 0,
+    //     stretch: 80,
+    //     depth: 350,
+    //     modifier: 1,
+    //     slideShadows: true,
+    //   },
+    // });
   }
 }
 
-handleSwiper();
+// handleSwiper();
+
+const items = document.querySelectorAll(".swiper-slide");
+
+function handleSlideEffect() {
+  items.forEach((item, index) => {
+    item.addEventListener("mouseover", () => {
+      // const index = +item.getAttribute("data-swiper-slide-index");
+
+      items.forEach((i, currentIndex) => {
+        // const currentIndex = +i.getAttribute("data-swiper-slide-index");
+        const gap = Math.abs(currentIndex - index);
+
+        i.style.zIndex = 10 - gap;
+
+        if (gap === 0) {
+          i.classList.add("swiper-slide-active");
+          i.style.transform = "translate3d(0,0,0) scale3d(1, 1, 1)";
+        } else {
+          i.classList.remove("swiper-slide-active");
+
+          const scale = [];
+          scale[0] = 1 - gap * 0.1;
+          scale[1] = 1 - gap * 0.1;
+          scale[2] = 1 - gap * 0.1;
+
+          const translate = [];
+          translate[0] = 0;
+          translate[1] = 0;
+          translate[2] = 0;
+
+          const delta = 37;
+          const sign = currentIndex < index ? 1 : -1;
+
+          translate[0] = sign * (gap / 4) * delta;
+
+          i.style.transform = `translate3d(${translate[0]}px, ${translate[1]}px, ${translate[2]}px) scale3d(${scale[0]}, ${scale[1]}, ${scale[2]})`;
+        }
+      });
+    });
+  });
+}
+
+function handleSlideMobileEffect() {
+  // new Swiper(".swiper", {
+  //   effect: "cards",
+  //   loop: true,
+  //   centeredSlides: true,
+  //   centerInsufficientSlides: true,
+  //   centeredSlidesBounds: true,
+  //   parallax: true,
+  //   initialSlide: 2,
+  //   activeIndex: 3,
+  //   loopedSlides: 4,
+  //   slidesPerView: "auto",
+  //   cardsEffect: { rotate: false, perSlideOffset: 15, slideShadows: false },
+  // });
+}
+
+document.addEventListener("DOMContentLoaded", function (event) {
+  handleSlideMobileEffect();
+  handleSlideEffect();
+});

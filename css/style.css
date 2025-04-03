@@ -1913,14 +1913,41 @@ h2.category__heading--small {
 }
 .swiper {
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 50px 0;
 }
 
+.swiper-wrapper {
+  display: flex;
+  height: 454px;
+  margin: 0 auto;
+  position: relative;
+  width: calc(100% - 226px);
+  transform: translateX(0) !important;
+}
+
 .swiper-slide {
-  width: 441px;
+  flex-shrink: initial;
+  position: relative;
+  max-width: 432px;
+  width: calc(100% - 48px);
   height: 648px;
   border-radius: 24px;
-  overflow: hidden;
+  overflow: visible !important;
+  will-change: transform;
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0s,
+    -webkit-transform 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0s !important;
+}
+
+.swiper-slide a {
+  position: absolute;
+  top: 0;
+  left: -113px;
+
+  display: block;
+  width: calc(100% + 226px);
+  height: 100%;
 }
 
 .swiper-slide__img,
