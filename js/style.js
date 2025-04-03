@@ -1,175 +1,203 @@
-// Helper Functions
-const getElement = (selector) => document.querySelector(selector);
-const addEventListenerIfExists = (element, event, callback) => {
-  element?.addEventListener(event, callback);
-};
-const toggleClassIfExists = (element, className) => {
-  element?.classList.toggle(className);
-};
-const removeClassIfExists = (element, className) => {
-  element?.classList.remove(className);
-};
-const setStyleIfExists = (element, styleProp, value) => {
-  element?.style && (element.style[styleProp] = value);
-};
+function getElement(selector) {
+  return document.querySelector(selector);
+}
+
+function addEventListenerIfExists(element, event, callback) {
+  if (element) {
+    element.addEventListener(event, callback);
+  }
+}
+
+function toggleClassIfExists(element, className) {
+  if (element) {
+    element.classList.toggle(className);
+  }
+}
+
+function removeClassIfExists(element, className) {
+  if (element) {
+    element.classList.remove(className);
+  }
+}
+
+function setStyleIfExists(element, styleProp, value) {
+  if (element) {
+    element.style[styleProp] = value;
+  }
+}
 
 // Elements
-const elements = {
-  modal: getElement("#modal"),
-  iconSearch: getElement(".header__icon-search"),
-  modalIconArrow: getElement(".modal__icon-arrow"),
-  header: getElement(".header"),
-  logoSvg: getElement(".logo__svg"),
-  btnDecorMessage: getElement(".decor-message"),
-  btnDecorFeedback: getElement(".decor-feedback"),
-  btnDetailShowModal: getElement(".reading-list-btn"),
-  modalDetail: getElement(".modal-detail"),
-  btnDecorItemOne: getElement(".reading-list-btn__item-one"),
-  btnDecorItemThree: getElement(".reading-list-btn__item-three"),
-  navbarViegazine: getElement(".navbar-viegazine"),
-  moreNewList: getElement(".navbar__btn-newText"),
-  subMenu: getElement(".navbar__sub-menu"),
-  iconSvgBtnMore: getElement(".navbar__btn-svg"),
-  progressBar: getElement(".progress-bar"),
-};
+const modal = getElement("#modal");
+const iconSearch = getElement(".header__icon-search");
+const modalIconArrow = getElement(".modal__icon-arrow");
+const header = getElement(".header");
+const logoSvg = getElement(".logo__svg");
+const buttonDecorMessage = getElement(".decor-message");
+const buttonDecorFeedback = getElement(".decor-feedback");
+const btnDetailShowModal = getElement(".reading-list-btn");
+const modalDetail = getElement(".modal-detail");
+const btnDecorItemOne = getElement(".reading-list-btn__item-one");
+const btnDecorItemThree = getElement(".reading-list-btn__item-three");
+const navbarViegazine = getElement(".navbar-viegazine");
+const moreNewList = getElement(".navbar__btn-newText");
+const subMenu = getElement(".navbar__sub-menu");
+const iconSvgBtnMore = getElement(".navbar__btn-svg");
+const progressBar = getElement(".progress-bar");
 
 // Event Handlers
-addEventListenerIfExists(elements.iconSearch, "click", () =>
-  elements.modal?.classList.add("show")
+addEventListenerIfExists(iconSearch, "click", () =>
+  modal?.classList.add("show")
 );
-addEventListenerIfExists(elements.modalIconArrow, "click", () =>
-  elements.modal?.classList.remove("show")
+addEventListenerIfExists(modalIconArrow, "click", () =>
+  modal?.classList.remove("show")
 );
-addEventListenerIfExists(elements.moreNewList, "click", () => {
-  toggleClassIfExists(elements.subMenu, "show");
-  toggleClassIfExists(elements.iconSvgBtnMore, "navbar__btn-svg--rotate");
+addEventListenerIfExists(moreNewList, "click", () => {
+  toggleClassIfExists(subMenu, "show");
+  toggleClassIfExists(iconSvgBtnMore, "navbar__btn-svg--rotate");
 });
-addEventListenerIfExists(elements.modal, "click", (e) => {
-  if (e.target === elements.modal) elements.modal.classList.remove("show");
+addEventListenerIfExists(modal, "click", (e) => {
+  if (e.target === modal) {
+    modal.classList.remove("show");
+  }
 });
-addEventListenerIfExists(elements.btnDetailShowModal, "click", () => {
-  toggleClassIfExists(elements.modalDetail, "show");
-  toggleClassIfExists(elements.btnDecorItemOne, "active");
-  toggleClassIfExists(elements.btnDecorItemThree, "active");
+addEventListenerIfExists(btnDetailShowModal, "click", () => {
+  toggleClassIfExists(modalDetail, "show");
+  toggleClassIfExists(btnDecorItemOne, "active");
+  toggleClassIfExists(btnDecorItemThree, "active");
 });
-addEventListenerIfExists(elements.modalDetail, "click", () => {
-  elements.modalDetail.classList.remove("show");
-  toggleClassIfExists(elements.btnDecorItemOne, "active");
-  toggleClassIfExists(elements.btnDecorItemThree, "active");
+addEventListenerIfExists(modalDetail, "click", () => {
+  modalDetail.classList.remove("show");
+  toggleClassIfExists(btnDecorItemOne, "active");
+  toggleClassIfExists(btnDecorItemThree, "active");
 });
 
 // Click anywhere to close subMenu
 window.addEventListener("click", (e) => {
   if (
-    !elements.subMenu.contains(e.target) &&
-    !elements.moreNewList.contains(e.target)
+    subMenu &&
+    !subMenu.contains(e.target) &&
+    !moreNewList.contains(e.target)
   ) {
-    removeClassIfExists(elements.subMenu, "show");
-    removeClassIfExists(elements.iconSvgBtnMore, "navbar__btn-svg--rotate");
+    removeClassIfExists(subMenu, "show");
+    removeClassIfExists(iconSvgBtnMore, "navbar__btn-svg--rotate");
   }
 });
 
 // Scroll Event
 window.addEventListener("scroll", () => {
-  const { scrollY, innerHeight } = window;
-  const { scrollHeight } = document.documentElement;
+  const scrollPosition = window.scrollY;
+  const windowHeight = window.innerHeight;
+  const documentHeight = document.documentElement.scrollHeight;
 
   // Header updates
-  const isScrolled = scrollY > 300;
-  setStyleIfExists(elements.header, "color", isScrolled ? "#8917ee" : "#fff");
-  setStyleIfExists(
-    elements.header,
-    "background",
-    isScrolled ? "#fafafa" : "transparent"
-  );
-  elements.logoSvg?.classList.toggle("logo__small", isScrolled);
-  elements.btnDecorMessage?.classList.toggle("show", isScrolled);
-  elements.navbarViegazine?.classList.toggle(
-    "navbar-viegazine--active",
-    isScrolled
-  );
+  if (scrollPosition > 300) {
+    setStyleIfExists(header, "color", "#8917ee");
+    setStyleIfExists(header, "background", "#fafafa");
+    logoSvg?.classList.add("logo__small");
+    buttonDecorMessage?.classList.add("show");
+    navbarViegazine?.classList.add("navbar-viegazine--active");
+  } else {
+    setStyleIfExists(header, "color", "#fff");
+    setStyleIfExists(header, "background", "transparent");
+    logoSvg?.classList.remove("logo__small");
+    buttonDecorMessage?.classList.remove("show");
+    navbarViegazine?.classList.remove("navbar-viegazine--active");
+  }
 
   // Feedback button
-  elements.btnDecorFeedback?.classList.toggle(
-    "show",
-    scrollY > scrollHeight / 2 - innerHeight
-  );
+  if (scrollPosition > documentHeight / 2 - windowHeight) {
+    buttonDecorFeedback?.classList.add("show");
+  }
 
   // Loading bar
-  if (elements.progressBar) {
-    elements.progressBar.style.width = `${
-      (scrollY / (scrollHeight - innerHeight)) * 100
-    }%`;
+  if (progressBar) {
+    let progress = (scrollPosition / (documentHeight - windowHeight)) * 100;
+    progressBar.style.width = progress + "%";
   }
 });
 
-// Lazy Load Options
-window.lazyLoadOptions = [
-  {
-    elements_selector:
-      "img[data-lazy-src], .rocket-lazyload, iframe[data-lazy-src]",
-    data_src: "lazy-src",
-    data_srcset: "lazy-srcset",
-    data_sizes: "lazy-sizes",
-    class_loading: "lazyloading",
-    class_loaded: "lazyloaded",
-    threshold: 300,
-    callback_loaded: (element) => {
-      if (
-        element.tagName === "IFRAME" &&
-        element.dataset.rocketLazyload === "fitvidscompatible"
-      ) {
-        if (
-          element.classList.contains("lazyloaded") &&
-          window.jQuery?.fn?.fitVids
-        ) {
-          jQuery(element).parent().fitVids();
+// Initialize Swiper
+function handleSwiper() {
+  if (typeof Swiper !== "undefined") {
+    // var swiper = new Swiper(".swiper", {
+    //   effect: "coverflow",
+    //   grabCursor: true,
+    //   centeredSlides: true,
+    //   initialSlide: 2,
+    //   speed: 600,
+    //   preventClicks: true,
+    //   slidesPerView: "auto",
+    //   coverflowEffect: {
+    //     rotate: 0,
+    //     stretch: 80,
+    //     depth: 350,
+    //     modifier: 1,
+    //     slideShadows: true,
+    //   },
+    // });
+  }
+}
+
+// handleSwiper();
+
+const items = document.querySelectorAll(".swiper-slide");
+
+function handleSlideEffect() {
+  items.forEach((item, index) => {
+    item.addEventListener("mouseover", () => {
+      // const index = +item.getAttribute("data-swiper-slide-index");
+
+      items.forEach((i, currentIndex) => {
+        // const currentIndex = +i.getAttribute("data-swiper-slide-index");
+        const gap = Math.abs(currentIndex - index);
+
+        i.style.zIndex = 10 - gap;
+
+        if (gap === 0) {
+          i.classList.add("swiper-slide-active");
+          i.style.transform = "translate3d(0,0,0) scale3d(1, 1, 1)";
+        } else {
+          i.classList.remove("swiper-slide-active");
+
+          const scale = [];
+          scale[0] = 1 - gap * 0.1;
+          scale[1] = 1 - gap * 0.1;
+          scale[2] = 1 - gap * 0.1;
+
+          const translate = [];
+          translate[0] = 0;
+          translate[1] = 0;
+          translate[2] = 0;
+
+          const delta = 37;
+          const sign = currentIndex < index ? 1 : -1;
+
+          translate[0] = sign * (gap / 4) * delta;
+
+          i.style.transform = `translate3d(${translate[0]}px, ${translate[1]}px, ${translate[2]}px) scale3d(${scale[0]}, ${scale[1]}, ${scale[2]})`;
         }
-      }
-    },
-  },
-  {
-    elements_selector: ".rocket-lazyload",
-    data_src: "lazy-src",
-    data_srcset: "lazy-srcset",
-    data_sizes: "lazy-sizes",
-    class_loading: "lazyloading",
-    class_loaded: "lazyloaded",
-    threshold: 300,
-  },
-];
-
-window.addEventListener("LazyLoad::Initialized", (e) => {
-  const lazyLoadInstance = e.detail.instance;
-
-  if (window.MutationObserver) {
-    const observer = new MutationObserver((mutations) => {
-      let imageCount = 0,
-        iframeCount = 0,
-        rocketLazyCount = 0;
-
-      mutations.forEach(({ addedNodes }) => {
-        addedNodes.forEach((node) => {
-          if (typeof node.getElementsByTagName !== "function") return;
-          if (typeof node.getElementsByClassName !== "function") return;
-
-          imageCount +=
-            node.getElementsByTagName("img").length +
-            (node.tagName === "IMG" ? 1 : 0);
-          iframeCount +=
-            node.getElementsByTagName("iframe").length +
-            (node.tagName === "IFRAME" ? 1 : 0);
-          rocketLazyCount +=
-            node.getElementsByClassName("rocket-lazyload").length;
-        });
       });
-
-      if (imageCount || iframeCount || rocketLazyCount)
-        lazyLoadInstance.update();
     });
+  });
+}
 
-    observer.observe(document.body, { childList: true, subtree: true });
-  }
+function handleSlideMobileEffect() {
+  // new Swiper(".swiper", {
+  //   effect: "cards",
+  //   loop: true,
+  //   centeredSlides: true,
+  //   centerInsufficientSlides: true,
+  //   centeredSlidesBounds: true,
+  //   parallax: true,
+  //   initialSlide: 2,
+  //   activeIndex: 3,
+  //   loopedSlides: 4,
+  //   slidesPerView: "auto",
+  //   cardsEffect: { rotate: false, perSlideOffset: 15, slideShadows: false },
+  // });
+}
+
+document.addEventListener("DOMContentLoaded", function (event) {
+  handleSlideMobileEffect();
+  handleSlideEffect();
 });
-
-// =====================

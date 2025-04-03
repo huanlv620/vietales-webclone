@@ -28,7 +28,7 @@
       content="Đưa câu chuyện Việt Nam ra thế giới và mang câu chuyện thế giới về Việt Nam"
     />
     <meta property="og:image" content="./favicon/favicon-96x96.png" />
-    <meta property="og:url" content="/" />
+    <meta property="og:url" content="https://vietales.com" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Vietales" />
     <meta property="og:locale" content="vi_VN" />
@@ -37,10 +37,14 @@
     <link rel="stylesheet" href="./fonts/stylesheet.css" />
 
     <!-- Swiper -->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    /> -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11.2.6/modules/effect-cards.min.css"
+    /> -->
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -153,7 +157,9 @@
               <button
                 class="hero__updown"
                 type="button"
-                style="background-image: url(' /static/images/icons/cdown.svg')"
+                style="
+                  background-image: url('https://vietales.vn/static/images/icons/cdown.svg');
+                "
               ></button>
             </div>
           </a>
@@ -376,7 +382,14 @@
               <div class="swiper-container">
                 <div class="swiper">
                   <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                    <div
+                      class="swiper-slide"
+                      style="
+                        transform: translate3d(-46.2296px, 0px, 0px)
+                          scale3d(0.780278, 0.780278, 1);
+                        z-index: 8;
+                      "
+                    >
                       <a href="./details.html">
                         <img
                           class="swiper-slide__img"
@@ -389,7 +402,14 @@
                         />
                       </a>
                     </div>
-                    <div class="swiper-slide">
+                    <div
+                      class="swiper-slide"
+                      style="
+                        transform: translate3d(-38.7902px, 0px, 0px)
+                          scale3d(0.861371, 0.861371, 1);
+                        z-index: 9;
+                      "
+                    >
                       <a href="./details.html">
                         <img
                           class="swiper-slide__img"
@@ -402,14 +422,27 @@
                         />
                       </a>
                     </div>
-                    <div class="swiper-slide">
+                    <div
+                      class="swiper-slide"
+                      style="
+                        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
+                        z-index: 10;
+                      "
+                    >
                       <a href="./details.html"
                         ><img
                           class="swiper-slide__img"
                           src="./images/series-img-3.jpg"
                       /></a>
                     </div>
-                    <div class="swiper-slide">
+                    <div
+                      class="swiper-slide"
+                      style="
+                        transform: translate3d(38.7902px, 0px, 0px)
+                          scale3d(0.861371, 0.861371, 1);
+                        z-index: 9;
+                      "
+                    >
                       <a href="./details.html"
                         ><img
                           class="swiper-slide__img"
@@ -420,7 +453,14 @@
                           class="swiper-slide__decor"
                       /></a>
                     </div>
-                    <div class="swiper-slide">
+                    <div
+                      class="swiper-slide"
+                      style="
+                        transform: translate3d(46.2296px, 0px, 0px)
+                          scale3d(0.780278, 0.780278, 1);
+                        z-index: 8;
+                      "
+                    >
                       <a href="./details.html"
                         ><img
                           class="swiper-slide__img"
@@ -437,7 +477,7 @@
             </div>
           </section>
 
-          <div class="history-grid__row">
+          <div class="history-grid__row series__btn">
             <button class="history-grid__btn btn">Khám phá Series</button>
           </div>
           <!-- End of series -->
@@ -1143,6 +1183,13 @@
           Địa Chỉ: Toà nhà Redbase – 302A Nguyễn Thượng Hiền, Phường 5, Quận Phú
           Nhuận
         </div>
+        <div class="footer__row">
+          <img
+            src="./images/copyright-protection.png"
+            alt=""
+            class="footer__img"
+          />
+        </div>
       </footer>
       <!-- End of Footer -->
     </div>
@@ -1304,7 +1351,7 @@
     <!-- End of Decor -->
 
     <!-- Javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://vietales.vn/static/js/swiper-bundle.min.js?ver=6.5"></script>
     <script src="./js/style.js"></script>
   </body>
 </html>

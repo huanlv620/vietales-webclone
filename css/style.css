@@ -214,6 +214,70 @@ select {
 button {
   cursor: pointer;
 }
+
+/* animation */
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* end animation */
+
+.moving-element {
+  animation: moveUpDown 2s infinite ease-in-out;
+}
+
+/* Common */
+.container {
+  width: 1480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container__history-grid {
+  margin-top: 300px;
+}
+
+.container__video-grid {
+  margin-top: 0;
+}
+
+p.text-details {
+  font-size: 1.8rem;
+  font-family: "SVN-Tiempos Text", sans-serif;
+  color: var(--text-details-color);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  height: 40px;
+  border-radius: 99px;
+
+  font-family: "SVN-Basis Grotesque Pro", sans-serif;
+  font-weight: 600;
+
+  color: var(--primary-color);
+  background: var(--primary-color-100);
+  cursor: pointer;
+}
 /* End Common */
 
 /* Line clamp */
@@ -497,11 +561,6 @@ button {
 }
 
 /* End decor */
-.container {
-  width: 1480px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 /* Header */
 .header {
@@ -555,10 +614,6 @@ button {
 }
 
 /* End header */
-
-/* START OF ELEMENTOR =========================================================*/
-
-/* END OF ELEMENTOR ========================================================= */
 
 .main.viegazine {
   padding: 0;
@@ -1033,6 +1088,127 @@ h2.category__heading--small {
 }
 
 /* Reading */
+.elementor-title-page {
+  margin-top: 50px;
+  color: #f0f0f0;
+  font-family: "SVN-Tiempos Fine";
+  font-size: 9.6rem;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 130%;
+  letter-spacing: -3px;
+}
+
+.elementor-section {
+  padding: 64px 0;
+  line-height: 1.8;
+  background: url("../images/background-white-parttern-1.jpg");
+  overflow-x: hidden; /* Prevent horizontal scrolling in the reading section */
+}
+
+.elementor-container {
+  width: 680px;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.elementor-widget-heading {
+  margin-top: 28px;
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.elementor-widget,
+.elementor-container p {
+  color: #202020;
+  margin: 24px 0;
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: "SVN-tiempos Headline", sans-serif;
+}
+
+.elementor-container p:last-child {
+  margin-bottom: 0;
+}
+
+.elementor-widget {
+  font-size: 1.6rem;
+}
+
+.elementor-section figure {
+  margin: 32px 0;
+}
+
+.elementor-inner-section {
+  display: flex;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  padding: 0 40px;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.elementor-inner-section figure {
+  flex: 1;
+  max-width: 50%;
+  margin: 0;
+}
+
+.elementor-inner-section img {
+  display: flex;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.elementor-widget-share-buttons {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.elementor-heading-title {
+  font-family: "SVN-Basis Grotesque Pro", sans-serif;
+  font-size: 2rem;
+  color: #202020;
+  margin-bottom: 16px;
+}
+
+.elementor-share-buttons--view-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.elementor-share-btn {
+  width: 48px;
+  height: 48px;
+  backdrop-filter: blur(4px);
+  box-shadow: rgba(32, 32, 32, 0.18) 0px 4px 4px 0px !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 12px;
+  background: #dbd6cf;
+  transition: transform 0.3s;
+}
+
+.elementor-share-btn:hover {
+  transform: translateY(-3px);
+}
+
+.elementor-share-btn svg {
+  width: 20px;
+  height: 20px;
+  color: #525252;
+}
 
 /* Reading List Button */
 .reading-list-btn {
@@ -1317,6 +1493,7 @@ h2.category__heading--small {
 }
 
 /* Vietnam-stories */
+
 .vietnam-stories__heading {
   font-family: "SVN-Tiempos Fine";
   margin: 80px 0 50px;
@@ -1640,7 +1817,11 @@ h2.category__heading--small {
   height: 100%;
 }
 
-/* Start of Series */
+.category-books__img {
+}
+
+/* series */
+
 .series__heading {
   margin-bottom: 0;
 }
@@ -1653,6 +1834,10 @@ h2.category__heading--small {
   font-size: 2rem;
   font-weight: 300;
   font-style: italic;
+}
+
+.series__btn {
+  padding-top: 176px;
 }
 
 /* Series Content Grid Layout */
@@ -1724,7 +1909,7 @@ h2.category__heading--small {
   border-radius: 28px;
 }
 
-/* Start OF Series swiper */
+/* Series swiper */
 .swiper-container {
   width: 100%;
   margin-left: auto;
@@ -1732,18 +1917,45 @@ h2.category__heading--small {
 }
 .swiper {
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 50px 0;
 }
 
+.swiper-wrapper {
+  display: flex;
+  height: 454px;
+  margin: 0 auto;
+  position: relative;
+  width: calc(100% - 226px);
+  transform: translateX(0) !important;
+}
+
 .swiper-slide {
-  width: 441px;
+  flex-shrink: initial;
+  position: relative;
+  max-width: 432px;
+  width: calc(100% - 48px);
   height: 648px;
   border-radius: 24px;
-  overflow: hidden;
+  overflow: visible !important;
+  will-change: transform;
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0s,
+    -webkit-transform 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0s !important;
+}
+
+.swiper-slide a {
+  position: absolute;
+  top: 0;
+  left: -113px;
+
+  display: block;
+  width: calc(100% + 226px);
+  height: 100%;
 }
 
 .swiper-slide__img,
-.swiper-slide__decor {
+swiper-slide__decor {
   width: 100%;
   position: absolute;
   object-fit: cover;
@@ -1763,7 +1975,7 @@ h2.category__heading--small {
 }
 /* End series */
 
-/*Start of Painting */
+/* Painting */
 .painting {
   background: #8b4843;
   padding: 52px 0 64px;
@@ -1853,11 +2065,6 @@ h2.category__heading--small {
   padding: 48px;
   text-align: center;
   color: #fff;
-}
-
-.footer__logo {
-  display: flex;
-  justify-content: center;
 }
 
 .footer__social {
@@ -2671,6 +2878,35 @@ h2.category__heading--small {
 
   .reading figure {
     margin: 24px 0;
+  }
+
+  .elementor-inner-section {
+    flex-direction: column;
+    padding: 0 20px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .elementor-inner-section figure {
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .reading__end {
+    margin-top: 40px;
+  }
+
+  .reading__end-title {
+    font-size: 1.8rem;
+  }
+
+  .reading__socials-group {
+    gap: 10px;
+  }
+
+  .elementor-share-btn {
+    width: 44px;
+    height: 44px;
   }
 
   /* Media COMIC */
