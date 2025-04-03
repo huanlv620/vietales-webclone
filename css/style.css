@@ -630,6 +630,10 @@ p.text-details {
   height: 100vh;
 }
 
+.hero.hero--comic::before {
+  content: none;
+}
+
 .hero img {
   width: 100%;
   height: 100%;
@@ -891,6 +895,111 @@ p.text-details {
   transform: scale(1.1);
   filter: brightness(1.2);
 }
+
+/* Start of Comic */
+.store-comic {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.store-comic__img-wrap {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  padding-bottom: 62px;
+}
+
+.store-comic__img-wrap::after {
+  display: block;
+  content: "Giám khảo cắt máu ăn thề rồi mà trường thi vẫn dính drama!";
+
+  position: absolute;
+  left: -1.5%;
+  right: -1.5%;
+
+  background: #404040;
+  border-radius: 0 0 12px 12px;
+  padding: 4px 16px;
+  font-family: "SVN-Basis Grotesque Pro";
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 27px;
+  color: #fafafa;
+}
+
+.store-comic__img-wrap:nth-of-type(2)::after {
+  content: "Chúa Trịnh Tùng bắt ông cậu Nguyễn Hoàng OT ná thở ";
+}
+
+.store-comic__img-wrap:nth-of-type(3)::after {
+  content: "Kinh thành Huế và anh thợ sửa ống nước may mắn";
+}
+
+.store-comic__img-wrap:nth-of-type(4)::after {
+  content: "Xông pha tên đạn ta còn không sợ thì dăm ba cái răng sâu có là gì!??";
+}
+
+.store-comic__row {
+  width: 100%;
+  margin-top: 36px;
+}
+
+.store-comic__row--last {
+  margin: 48px 0 136px;
+}
+
+.store-comic__btn {
+  margin: 0 auto;
+}
+
+.comic-main-end {
+  margin-top: 100px;
+  background: red;
+  width: 100%;
+  height: 1300px;
+}
+
+.hero--comic__bottom {
+  margin-top: 150px;
+  height: 1300px;
+  background-image: url("../images/comic-cover-2-high-res-1350x1080.jpg");
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero--comic__bottom::before {
+  background-color: #000;
+  opacity: 0.7;
+}
+
+.hero--comic__bottom::after {
+  content: "Chuyện sắp kể";
+  display: block;
+  position: absolute;
+
+  top: 62px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-family: "SVN-Tiempos Fine";
+  font-size: 5.6rem;
+  font-style: italic;
+  color: #a3a3a3;
+}
+
+.hero--comic__bottom img {
+  position: absolute;
+  z-index: 99;
+  height: 84%;
+  width: 70%;
+  object-fit: cover;
+  bottom: 45px;
+  border-radius: 12px;
+}
+/* End of Comic */
 
 @media screen and (max-width: 768px) {
   .hero-series {
@@ -1343,6 +1452,12 @@ p.text-details {
   color: #581192;
 }
 
+.vietnam-stories__heading--comic {
+  color: #0a0a0a;
+  font-size: 5.2rem;
+  font-style: italic;
+}
+
 .vietnam-stories__heading--large {
   font-size: 9.6rem;
   font-style: italic;
@@ -1404,6 +1519,39 @@ p.text-details {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 52px 28px;
+}
+
+.fascinating-books-comic__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+
+  max-width: 952px;
+  margin: 0 auto;
+}
+
+.fascinating-books-comic__img-wrap {
+  width: 100%;
+  min-height: 693px;
+
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.fascinating-books-comic__img-wrap:hover img {
+  scale: 1.1;
+}
+
+.fascinating-books-comic__img-wrap img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: scale 2s;
 }
 
 .fascinating-books__info img {
@@ -2613,6 +2761,24 @@ p.text-details {
   .elementor-share-btn {
     width: 44px;
     height: 44px;
+  }
+
+  /* Media COMIC */
+  .fascinating-books-comic__body {
+    grid-template-columns: 1fr;
+  }
+
+  .store-comic {
+    grid-template-columns: 1fr;
+  }
+
+  .store-comic__img-wrap {
+    height: 740px;
+    padding-bottom: 126px;
+  }
+
+  .store-comic__img-wrap::after {
+    padding: 20px;
   }
 }
 
