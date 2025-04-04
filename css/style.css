@@ -708,6 +708,11 @@ h2.category__heading--small {
   );
 }
 
+.hero.hero--detail {
+  height: 100vh;
+  margin-top: 0;
+}
+
 .hero__body {
   position: absolute;
   width: 100%;
@@ -1088,127 +1093,6 @@ h2.category__heading--small {
 }
 
 /* Reading */
-.elementor-title-page {
-  margin-top: 50px;
-  color: #f0f0f0;
-  font-family: "SVN-Tiempos Fine";
-  font-size: 9.6rem;
-  font-weight: 300;
-  font-style: italic;
-  line-height: 130%;
-  letter-spacing: -3px;
-}
-
-.elementor-section {
-  padding: 64px 0;
-  line-height: 1.8;
-  background: url("../images/background-white-parttern-1.jpg");
-  overflow-x: hidden; /* Prevent horizontal scrolling in the reading section */
-}
-
-.elementor-container {
-  width: 680px;
-  max-width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.elementor-widget-heading {
-  margin-top: 28px;
-  font-size: 2.8rem;
-  font-weight: 500;
-  line-height: 1.4;
-}
-
-.elementor-widget,
-.elementor-container p {
-  color: #202020;
-  margin: 24px 0;
-  font-size: 1.8rem;
-  font-weight: 400;
-  font-family: "SVN-tiempos Headline", sans-serif;
-}
-
-.elementor-container p:last-child {
-  margin-bottom: 0;
-}
-
-.elementor-widget {
-  font-size: 1.6rem;
-}
-
-.elementor-section figure {
-  margin: 32px 0;
-}
-
-.elementor-inner-section {
-  display: flex;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  box-sizing: border-box;
-  padding: 0 40px;
-  justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.elementor-inner-section figure {
-  flex: 1;
-  max-width: 50%;
-  margin: 0;
-}
-
-.elementor-inner-section img {
-  display: flex;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.elementor-widget-share-buttons {
-  margin-top: 50px;
-  text-align: center;
-}
-
-.elementor-heading-title {
-  font-family: "SVN-Basis Grotesque Pro", sans-serif;
-  font-size: 2rem;
-  color: #202020;
-  margin-bottom: 16px;
-}
-
-.elementor-share-buttons--view-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-}
-
-.elementor-share-btn {
-  width: 48px;
-  height: 48px;
-  backdrop-filter: blur(4px);
-  box-shadow: rgba(32, 32, 32, 0.18) 0px 4px 4px 0px !important;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-radius: 12px;
-  background: #dbd6cf;
-  transition: transform 0.3s;
-}
-
-.elementor-share-btn:hover {
-  transform: translateY(-3px);
-}
-
-.elementor-share-btn svg {
-  width: 20px;
-  height: 20px;
-  color: #525252;
-}
 
 /* Reading List Button */
 .reading-list-btn {
@@ -1493,7 +1377,6 @@ h2.category__heading--small {
 }
 
 /* Vietnam-stories */
-
 .vietnam-stories__heading {
   font-family: "SVN-Tiempos Fine";
   margin: 80px 0 50px;
@@ -2058,6 +1941,10 @@ swiper-slide__decor {
   object-fit: cover;
 }
 /*===*/
+
+/* Start of detail */
+
+/* End of detail */
 
 /* Footer */
 .footer {
@@ -3065,4 +2952,111 @@ swiper-slide__decor {
   .category-books__body--history .first-item-row .fascinating-book__title {
     font-size: 3rem;
   }
+}
+
+.reader {
+  margin: 0 auto;
+  padding-top: 64px;
+
+  font-size: 1.8rem;
+  line-height: 1.7;
+  letter-spacing: -0.18px;
+  color: #202020;
+  font-family: "SVN-Tiempos Text";
+}
+
+.container__inner {
+  max-width: 744px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.elementor-37359 .elementor-element.elementor-element-6f679e5 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: initial;
+  flex-grow: 0;
+  align-self: initial;
+  transition: 0.3s;
+}
+.elementor-widget-container {
+  margin: 24px 0px 0px 0px;
+}
+.elementor-heading-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  font-family: "SVN-Tiempos Headline";
+  color: #202020;
+}
+
+.reader p {
+  margin: 24px 0;
+}
+
+.reader p i {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  letter-spacing: -0.18px;
+  color: #202020;
+  font-style: italic;
+
+  font-family: "SVN-Tiempos Text";
+}
+
+.elementor-element.elementor-element-c7ffa02 img {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  display: block;
+}
+
+.elementor-37359
+  .elementor-element.elementor-element-192e8cd
+  > .elementor-widget-container {
+  border-style: solid;
+  border-width: 1px 0px 0px 0px;
+}
+
+.elementor-37359 .elementor-element.elementor-element-192e8cd p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.reader strong {
+  font-weight: bold;
+}
+
+.detail__desc {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #0a0a0a;
+
+  padding-top: 48px;
+
+  font-family: "SVN-Basis Grotesque Pro";
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.detail__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.detail__row button {
+  width: 48px;
+  height: 48px;
+  padding: 7px 12px;
+
+  background-color: #3b5998;
+  color: #fafafa;
+  border: 1px solid #3b5998;
+  box-shadow: 0px 4px 4px 0px rgba(32, 32, 32, 0.18) !important;
+  border-radius: 12px;
 }
