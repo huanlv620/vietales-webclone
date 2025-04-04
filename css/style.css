@@ -1389,6 +1389,11 @@ h2.category__heading--small {
 	color: #581192;
 }
 
+.vietnam-stories__heading--homepage {
+	font-weight: 300;
+    font-style: italic;
+}
+
 .vietnam-stories__heading--comic {
 	color: #0a0a0a;
 	font-size: 5.2rem;

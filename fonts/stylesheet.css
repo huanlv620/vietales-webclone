@@ -1,782 +1,794 @@
+/* Start of font SVN-Basis Grotesque Pro*/
 @font-face {
-	font-family: "SVN-Basis Grotesque Pro Med";
-	src: url("./fonts/SVN-BasisGrotesquePro-MediumItalic.woff2") format("woff2"),
-		url("./fonts/SVN-BasisGrotesquePro-MediumItalic.woff") format("woff");
-	font-weight: 500;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Basis Grotesque Pro';
+    src: url('SVN-BasisGrotesquePro-Medium.woff2') format('woff2'),
+        url('SVN-BasisGrotesquePro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Basis Grotesque Pro Lt";
-	src: url("./fonts/SVN-BasisGrotesquePro-LightItalic.woff2") format("woff2"),
-		url("./fonts/SVN-BasisGrotesquePro-LightItalic.woff") format("woff");
-	font-weight: 300;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Basis Grotesque Pro';
+    src: url('SVN-BasisGrotesquePro-LightItalic.woff2') format('woff2'),
+        url('SVN-BasisGrotesquePro-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Basis Grotesque Pro Med";
-	src: url("./fonts/SVN-BasisGrotesquePro-Medium.woff2") format("woff2"),
-		url("./fonts/SVN-BasisGrotesquePro-Medium.woff") format("woff");
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Basis Grotesque Pro';
+    src: url('SVN-BasisGrotesquePro-LightItalic.woff2') format('woff2'),
+        url('SVN-BasisGrotesquePro-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Basis Grotesque Pro OW";
-	src: url("./fonts/SVN-BasisGrotesquePro-OffWhite.woff2") format("woff2"),
-		url("./fonts/SVN-BasisGrotesquePro-OffWhite.woff") format("woff");
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Basis Grotesque Pro';
+    src: url('SVN-BasisGrotesquePro-OffWhite.woff2') format('woff2'),
+        url('SVN-BasisGrotesquePro-OffWhite.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Basis Grotesque Pro Med";
-	src: url("./fonts/SVN-BasisGrotesquePro-MediumItalic.woff2") format("woff2"),
-		url("./fonts/SVN-BasisGrotesquePro-MediumItalic.woff") format("woff");
-	font-weight: 500;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Basis Grotesque Pro';
+    src: url('SVN-BasisGrotesquePro-Medium.woff2') format('woff2'),
+        url('SVN-BasisGrotesquePro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Basis Grotesque Pro Lt";
-	src: url("./fonts/SVN-BasisGrotesquePro-LightItalic.woff2") format("woff2"),
-		url("./fonts/SVN-BasisGrotesquePro-LightItalic.woff") format("woff");
-	font-weight: 300;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Basis Grotesque Pro';
+    src: url('SVN-BasisGrotesquePro-OffWhite.woff2') format('woff2'),
+        url('SVN-BasisGrotesquePro-OffWhite.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Basis Grotesque Pro Med";
-	src: url("./fonts/SVN-BasisGrotesquePro-Medium.woff2") format("woff2"),
-		url("./fonts/SVN-BasisGrotesquePro-Medium.woff") format("woff");
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Basis Grotesque Pro';
+    src: url('SVN-BasisGrotesquePro-MediumItalic.woff2') format('woff2'),
+        url('SVN-BasisGrotesquePro-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Basis Grotesque Pro OW";
-	src: url("./fonts/SVN-BasisGrotesquePro-OffWhite.woff2") format("woff2"),
-		url("./fonts/SVN-BasisGrotesquePro-OffWhite.woff") format("woff");
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Basis Grotesque Pro';
+    src: url('SVN-BasisGrotesquePro-OffWhiteItalic.woff2') format('woff2'),
+        url('SVN-BasisGrotesquePro-OffWhiteItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Basis Grotesque Pro OW";
-	src: url("./fonts/SVN-BasisGrotesquePro-OffWhiteItalic.woff2") format("woff2"),
-		url("./fonts/SVN-BasisGrotesquePro-OffWhiteItalic.woff") format("woff");
-	font-weight: normal;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Basis Grotesque Pro';
+    src: url('SVN-BasisGrotesquePro-MediumItalic.woff2') format('woff2'),
+        url('SVN-BasisGrotesquePro-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Basis Grotesque Pro OW";
-	src: url("./fonts/SVN-BasisGrotesquePro-OffWhiteItalic.woff2") format("woff2"),
-		url("./fonts/SVN-BasisGrotesquePro-OffWhiteItalic.woff") format("woff");
-	font-weight: normal;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Basis Grotesque Pro';
+    src: url('SVN-BasisGrotesquePro-Regular.woff2') format('woff2'),
+        url('SVN-BasisGrotesquePro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Basis Grotesque Pro";
-	src: url("./fonts/SVN-BasisGrotesquePro-Regular.woff2") format("woff2"),
-		url("./fonts/SVN-BasisGrotesquePro-Regular.woff") format("woff");
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Basis Grotesque Pro';
+    src: url('SVN-BasisGrotesquePro-Regular.woff2') format('woff2'),
+        url('SVN-BasisGrotesquePro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Basis Grotesque Pro";
-	src: url("./fonts/SVN-BasisGrotesquePro-Regular.woff2") format("woff2"),
-		url("./fonts/SVN-BasisGrotesquePro-Regular.woff") format("woff");
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Basis Grotesque Pro';
+    src: url('SVN-BasisGrotesquePro-OffWhiteItalic.woff2') format('woff2'),
+        url('SVN-BasisGrotesquePro-OffWhiteItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Basis Grotesque Pro Bl";
-	src: url("./fonts/SVN-BasisGrotesquePro-Black.woff2") format("woff2"),
-		url("./fonts/SVN-BasisGrotesquePro-Black.woff") format("woff");
-	font-weight: 900;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Basis Grotesque Pro Bl';
+    src: url('SVN-BasisGrotesquePro-Black.woff2') format('woff2'),
+        url('SVN-BasisGrotesquePro-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Basis Grotesque Pro";
-	src: url("./fonts/SVN-BasisGrotesquePro-Bold.woff2") format("woff2"),
-		url("./fonts/SVN-BasisGrotesquePro-Bold.woff") format("woff");
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Basis Grotesque Pro Bl';
+    src: url('SVN-BasisGrotesquePro-Black.woff2') format('woff2'),
+        url('SVN-BasisGrotesquePro-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Basis Grotesque Pro";
-	src: url("./fonts/SVN-BasisGrotesquePro-Bold.woff2") format("woff2"),
-		url("./fonts/SVN-BasisGrotesquePro-Bold.woff") format("woff");
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Basis Grotesque Pro';
+    src: url('SVN-BasisGrotesquePro-BoldItalic.woff2') format('woff2'),
+        url('SVN-BasisGrotesquePro-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Basis Grotesque Pro Bl";
-	src: url("./fonts/SVN-BasisGrotesquePro-BlackItalic.woff2") format("woff2"),
-		url("./fonts/SVN-BasisGrotesquePro-BlackItalic.woff") format("woff");
-	font-weight: 900;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Basis Grotesque Pro Bl';
+    src: url('SVN-BasisGrotesquePro-BlackItalic.woff2') format('woff2'),
+        url('SVN-BasisGrotesquePro-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Basis Grotesque Pro Bl";
-	src: url("./fonts/SVN-BasisGrotesquePro-Black.woff2") format("woff2"),
-		url("./fonts/SVN-BasisGrotesquePro-Black.woff") format("woff");
-	font-weight: 900;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Basis Grotesque Pro';
+    src: url('SVN-BasisGrotesquePro-BoldItalic.woff2') format('woff2'),
+        url('SVN-BasisGrotesquePro-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Basis Grotesque Pro";
-	src: url("./fonts/SVN-BasisGrotesquePro-Italic.woff2") format("woff2"),
-		url("./fonts/SVN-BasisGrotesquePro-Italic.woff") format("woff");
-	font-weight: normal;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Basis Grotesque Pro';
+    src: url('SVN-BasisGrotesquePro-Bold.woff2') format('woff2'),
+        url('SVN-BasisGrotesquePro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Basis Grotesque Pro Lt";
-	src: url("./fonts/SVN-BasisGrotesquePro-Light.woff2") format("woff2"),
-		url("./fonts/SVN-BasisGrotesquePro-Light.woff") format("woff");
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Basis Grotesque Pro';
+    src: url('SVN-BasisGrotesquePro-Bold.woff2') format('woff2'),
+        url('SVN-BasisGrotesquePro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Basis Grotesque Pro";
-	src: url("./fonts/SVN-BasisGrotesquePro-BoldItalic.woff2") format("woff2"),
-		url("./fonts/SVN-BasisGrotesquePro-BoldItalic.woff") format("woff");
-	font-weight: bold;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Basis Grotesque Pro';
+    src: url('SVN-BasisGrotesquePro-Italic.woff2') format('woff2'),
+        url('SVN-BasisGrotesquePro-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Basis Grotesque Pro Lt";
-	src: url("./fonts/SVN-BasisGrotesquePro-Light.woff2") format("woff2"),
-		url("./fonts/SVN-BasisGrotesquePro-Light.woff") format("woff");
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Basis Grotesque Pro';
+    src: url('SVN-BasisGrotesquePro-Light.woff2') format('woff2'),
+        url('SVN-BasisGrotesquePro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Basis Grotesque Pro";
-	src: url("./fonts/SVN-BasisGrotesquePro-Italic.woff2") format("woff2"),
-		url("./fonts/SVN-BasisGrotesquePro-Italic.woff") format("woff");
-	font-weight: normal;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Basis Grotesque Pro';
+    src: url('SVN-BasisGrotesquePro-Italic.woff2') format('woff2'),
+        url('SVN-BasisGrotesquePro-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Basis Grotesque Pro";
-	src: url("./fonts/SVN-BasisGrotesquePro-BoldItalic.woff2") format("woff2"),
-		url("./fonts/SVN-BasisGrotesquePro-BoldItalic.woff") format("woff");
-	font-weight: bold;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Basis Grotesque Pro';
+    src: url('SVN-BasisGrotesquePro-Light.woff2') format('woff2'),
+        url('SVN-BasisGrotesquePro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
+/* End of font SVN-Basis Grotesque Pro*/
 
+/* Start of font SVN-Tiempos Fine */
 @font-face {
-	font-family: "SVN-Tiempos Fine";
-	src: url("./fonts/SVN-TiemposFine-Bold.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposFine-Bold.woff") format("woff");
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Fine';
+    src: url('SVN-TiemposFine-Black.woff2') format('woff2'),
+        url('SVN-TiemposFine-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Fine";
-	src: url("./fonts/SVN-TiemposFine-BoldItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposFine-BoldItalic.woff") format("woff");
-	font-weight: bold;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Fine';
+    src: url('SVN-TiemposFine-Black.woff2') format('woff2'),
+        url('SVN-TiemposFine-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Fine";
-	src: url("./fonts/SVN-TiemposFine-Black.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposFine-Black.woff") format("woff");
-	font-weight: 900;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Fine';
+    src: url('SVN-TiemposFine-LightItalic.woff2') format('woff2'),
+        url('SVN-TiemposFine-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Fine";
-	src: url("./fonts/SVN-TiemposFine-BoldItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposFine-BoldItalic.woff") format("woff");
-	font-weight: bold;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Fine';
+    src: url('SVN-TiemposFine-Light.woff2') format('woff2'),
+        url('SVN-TiemposFine-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Fine";
-	src: url("./fonts/SVN-TiemposFine-BlackItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposFine-BlackItalic.woff") format("woff");
-	font-weight: 900;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Fine';
+    src: url('SVN-TiemposFine-BlackItalic.woff2') format('woff2'),
+        url('SVN-TiemposFine-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Fine";
-	src: url("./fonts/SVN-TiemposFine-Bold.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposFine-Bold.woff") format("woff");
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Fine';
+    src: url('SVN-TiemposFine-BoldItalic.woff2') format('woff2'),
+        url('SVN-TiemposFine-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Fine";
-	src: url("./fonts/SVN-TiemposFine-BlackItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposFine-BlackItalic.woff") format("woff");
-	font-weight: 900;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Fine';
+    src: url('SVN-TiemposFine-BlackItalic.woff2') format('woff2'),
+        url('SVN-TiemposFine-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Fine";
-	src: url("./fonts/SVN-TiemposFine-Italic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposFine-Italic.woff") format("woff");
-	font-weight: normal;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Fine';
+    src: url('SVN-TiemposFine-Italic.woff2') format('woff2'),
+        url('SVN-TiemposFine-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Fine";
-	src: url("./fonts/SVN-TiemposFine-Black.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposFine-Black.woff") format("woff");
-	font-weight: 900;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Fine';
+    src: url('SVN-TiemposFine-BoldItalic.woff2') format('woff2'),
+        url('SVN-TiemposFine-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Fine";
-	src: url("./fonts/SVN-TiemposFine-LightItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposFine-LightItalic.woff") format("woff");
-	font-weight: 300;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Fine';
+    src: url('SVN-TiemposFine-Italic.woff2') format('woff2'),
+        url('SVN-TiemposFine-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Fine";
-	src: url("./fonts/SVN-TiemposFine-Light.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposFine-Light.woff") format("woff");
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Fine';
+    src: url('SVN-TiemposFine-Light.woff2') format('woff2'),
+        url('SVN-TiemposFine-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Fine";
-	src: url("./fonts/SVN-TiemposFine-LightItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposFine-LightItalic.woff") format("woff");
-	font-weight: 300;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Fine';
+    src: url('SVN-TiemposFine-Bold.woff2') format('woff2'),
+        url('SVN-TiemposFine-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Fine";
-	src: url("./fonts/SVN-TiemposFine-Italic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposFine-Italic.woff") format("woff");
-	font-weight: normal;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Fine';
+    src: url('SVN-TiemposFine-Bold.woff2') format('woff2'),
+        url('SVN-TiemposFine-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Fine";
-	src: url("./fonts/SVN-TiemposFine-Light.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposFine-Light.woff") format("woff");
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Fine';
+    src: url('SVN-TiemposFine-Regular.woff2') format('woff2'),
+        url('SVN-TiemposFine-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Fine";
-	src: url("./fonts/SVN-TiemposFine-Regular.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposFine-Regular.woff") format("woff");
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Fine';
+    src: url('SVN-TiemposFine-Medium.woff2') format('woff2'),
+        url('SVN-TiemposFine-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Fine";
-	src: url("./fonts/SVN-TiemposFine-Medium.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposFine-Medium.woff") format("woff");
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Fine';
+    src: url('SVN-TiemposFine-SemiBoldItalic.woff2') format('woff2'),
+        url('SVN-TiemposFine-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Fine";
-	src: url("./fonts/SVN-TiemposFine-MediumItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposFine-MediumItalic.woff") format("woff");
-	font-weight: 500;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Fine';
+    src: url('SVN-TiemposFine-LightItalic.woff2') format('woff2'),
+        url('SVN-TiemposFine-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Fine";
-	src: url("./fonts/SVN-TiemposFine-SemiBoldItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposFine-SemiBoldItalic.woff") format("woff");
-	font-weight: 600;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Fine';
+    src: url('SVN-TiemposFine-Medium.woff2') format('woff2'),
+        url('SVN-TiemposFine-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Fine";
-	src: url("./fonts/SVN-TiemposFine-SemiBold.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposFine-SemiBold.woff") format("woff");
-	font-weight: 600;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Fine';
+    src: url('SVN-TiemposFine-SemiBold.woff2') format('woff2'),
+        url('SVN-TiemposFine-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Fine";
-	src: url("./fonts/SVN-TiemposFine-MediumItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposFine-MediumItalic.woff") format("woff");
-	font-weight: 500;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Fine';
+    src: url('SVN-TiemposFine-SemiBold.woff2') format('woff2'),
+        url('SVN-TiemposFine-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Fine";
-	src: url("./fonts/SVN-TiemposFine-Regular.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposFine-Regular.woff") format("woff");
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Fine';
+    src: url('SVN-TiemposFine-Regular.woff2') format('woff2'),
+        url('SVN-TiemposFine-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Fine";
-	src: url("./fonts/SVN-TiemposFine-Medium.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposFine-Medium.woff") format("woff");
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Fine';
+    src: url('SVN-TiemposFine-MediumItalic.woff2') format('woff2'),
+        url('SVN-TiemposFine-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Fine";
-	src: url("./fonts/SVN-TiemposFine-SemiBold.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposFine-SemiBold.woff") format("woff");
-	font-weight: 600;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Fine';
+    src: url('SVN-TiemposFine-MediumItalic.woff2') format('woff2'),
+        url('SVN-TiemposFine-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Fine";
-	src: url("./fonts/SVN-TiemposFine-SemiBoldItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposFine-SemiBoldItalic.woff") format("woff");
-	font-weight: 600;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Fine';
+    src: url('SVN-TiemposFine-SemiBoldItalic.woff2') format('woff2'),
+        url('SVN-TiemposFine-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
 }
 
+
+
+/* End of font SVN-Tiempos Fine */
+
+/* Start of font SVN-Tiempos Headline */
 @font-face {
-	font-family: "SVN-Tiempos Text";
-	src: url("./fonts/SVN-TiemposText-Bold.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposText-Bold.woff") format("woff");
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Headline';
+    src: url('SVN-TiemposHeadline-Bold.woff2') format('woff2'),
+        url('SVN-TiemposHeadline-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Text";
-	src: url("./fonts/SVN-TiemposText-Italic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposText-Italic.woff") format("woff");
-	font-weight: normal;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Headline';
+    src: url('SVN-TiemposHeadline-BlackItalic.woff2') format('woff2'),
+        url('SVN-TiemposHeadline-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Text";
-	src: url("./fonts/SVN-TiemposText-Italic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposText-Italic.woff") format("woff");
-	font-weight: normal;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Headline';
+    src: url('SVN-TiemposHeadline-Black.woff2') format('woff2'),
+        url('SVN-TiemposHeadline-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Text";
-	src: url("./fonts/SVN-TiemposText-Bold.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposText-Bold.woff") format("woff");
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Headline';
+    src: url('SVN-TiemposHeadline-BlackItalic.woff2') format('woff2'),
+        url('SVN-TiemposHeadline-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Text";
-	src: url("./fonts/SVN-TiemposText-BoldItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposText-BoldItalic.woff") format("woff");
-	font-weight: bold;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Headline';
+    src: url('SVN-TiemposHeadline-Black.woff2') format('woff2'),
+        url('SVN-TiemposHeadline-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Text";
-	src: url("./fonts/SVN-TiemposText-Medium.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposText-Medium.woff") format("woff");
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Headline';
+    src: url('SVN-TiemposHeadline-Light.woff2') format('woff2'),
+        url('SVN-TiemposHeadline-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Text";
-	src: url("./fonts/SVN-TiemposText-MediumItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposText-MediumItalic.woff") format("woff");
-	font-weight: 500;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Headline';
+    src: url('SVN-TiemposHeadline-Medium.woff2') format('woff2'),
+        url('SVN-TiemposHeadline-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Text";
-	src: url("./fonts/SVN-TiemposText-BoldItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposText-BoldItalic.woff") format("woff");
-	font-weight: bold;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Headline';
+    src: url('SVN-TiemposHeadline-Medium.woff2') format('woff2'),
+        url('SVN-TiemposHeadline-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Text";
-	src: url("./fonts/SVN-TiemposText-Medium.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposText-Medium.woff") format("woff");
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Headline';
+    src: url('SVN-TiemposHeadline-Light.woff2') format('woff2'),
+        url('SVN-TiemposHeadline-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Text";
-	src: url("./fonts/SVN-TiemposText-MediumItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposText-MediumItalic.woff") format("woff");
-	font-weight: 500;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Headline';
+    src: url('SVN-TiemposHeadline-BoldItalic.woff2') format('woff2'),
+        url('SVN-TiemposHeadline-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Text";
-	src: url("./fonts/SVN-TiemposText-SemiBold.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposText-SemiBold.woff") format("woff");
-	font-weight: 600;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Headline';
+    src: url('SVN-TiemposHeadline-LightItalic.woff2') format('woff2'),
+        url('SVN-TiemposHeadline-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Text";
-	src: url("./fonts/SVN-TiemposText-Regular.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposText-Regular.woff") format("woff");
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Headline';
+    src: url('SVN-TiemposHeadline-LightItalic.woff2') format('woff2'),
+        url('SVN-TiemposHeadline-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Text";
-	src: url("./fonts/SVN-TiemposText-Regular.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposText-Regular.woff") format("woff");
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Headline';
+    src: url('SVN-TiemposHeadline-BoldItalic.woff2') format('woff2'),
+        url('SVN-TiemposHeadline-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Text";
-	src: url("./fonts/SVN-TiemposText-SemiBoldItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposText-SemiBoldItalic.woff") format("woff");
-	font-weight: 600;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Headline';
+    src: url('SVN-TiemposHeadline-Bold.woff2') format('woff2'),
+        url('SVN-TiemposHeadline-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Text";
-	src: url("./fonts/SVN-TiemposText-SemiBold.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposText-SemiBold.woff") format("woff");
-	font-weight: 600;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Headline';
+    src: url('SVN-TiemposHeadline-MediumItalic.woff2') format('woff2'),
+        url('SVN-TiemposHeadline-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Text";
-	src: url("./fonts/SVN-TiemposText-SemiBoldItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposText-SemiBoldItalic.woff") format("woff");
-	font-weight: 600;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Headline';
+    src: url('SVN-TiemposHeadline-SemiBold.woff2') format('woff2'),
+        url('SVN-TiemposHeadline-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Headline";
-	src: url("./fonts/SVN-TiemposHeadline-Medium.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposHeadline-Medium.woff") format("woff");
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Headline';
+    src: url('SVN-TiemposHeadline-MediumItalic.woff2') format('woff2'),
+        url('SVN-TiemposHeadline-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Headline";
-	src: url("./fonts/SVN-TiemposHeadline-MediumItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposHeadline-MediumItalic.woff") format("woff");
-	font-weight: 500;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Headline';
+    src: url('SVN-TiemposHeadline-Regular.woff2') format('woff2'),
+        url('SVN-TiemposHeadline-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Headline";
-	src: url("./fonts/SVN-TiemposHeadline-Medium.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposHeadline-Medium.woff") format("woff");
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Headline';
+    src: url('SVN-TiemposHeadline-RegularItalic.woff2') format('woff2'),
+        url('SVN-TiemposHeadline-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Headline";
-	src: url("./fonts/SVN-TiemposHeadline-RegularItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposHeadline-RegularItalic.woff") format("woff");
-	font-weight: normal;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Headline';
+    src: url('SVN-TiemposHeadline-RegularItalic.woff2') format('woff2'),
+        url('SVN-TiemposHeadline-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Headline";
-	src: url("./fonts/SVN-TiemposHeadline-SemiBold.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposHeadline-SemiBold.woff") format("woff");
-	font-weight: 600;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Headline';
+    src: url('SVN-TiemposHeadline-Regular.woff2') format('woff2'),
+        url('SVN-TiemposHeadline-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Headline";
-	src: url("./fonts/SVN-TiemposHeadline-SemiboldItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposHeadline-SemiboldItalic.woff") format("woff");
-	font-weight: 600;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Headline';
+    src: url('SVN-TiemposHeadline-SemiboldItalic.woff2') format('woff2'),
+        url('SVN-TiemposHeadline-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Headline";
-	src: url("./fonts/SVN-TiemposHeadline-SemiboldItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposHeadline-SemiboldItalic.woff") format("woff");
-	font-weight: 600;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Headline';
+    src: url('SVN-TiemposHeadline-SemiBold.woff2') format('woff2'),
+        url('SVN-TiemposHeadline-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Headline";
-	src: url("./fonts/SVN-TiemposHeadline-SemiBold.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposHeadline-SemiBold.woff") format("woff");
-	font-weight: 600;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Headline';
+    src: url('SVN-TiemposHeadline-SemiboldItalic.woff2') format('woff2'),
+        url('SVN-TiemposHeadline-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
 }
+/* End of font SVN-Tiempos Headline */
 
+/* Start of font SVN-Tiempos Text */
 @font-face {
-	font-family: "SVN-Tiempos Headline";
-	src: url("./fonts/SVN-TiemposHeadline-Regular.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposHeadline-Regular.woff") format("woff");
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Text';
+    src: url('SVN-TiemposText-Bold.woff2') format('woff2'),
+        url('SVN-TiemposText-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Headline";
-	src: url("./fonts/SVN-TiemposHeadline-MediumItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposHeadline-MediumItalic.woff") format("woff");
-	font-weight: 500;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Text';
+    src: url('SVN-TiemposText-BoldItalic.woff2') format('woff2'),
+        url('SVN-TiemposText-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Headline";
-	src: url("./fonts/SVN-TiemposHeadline-Regular.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposHeadline-Regular.woff") format("woff");
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Text';
+    src: url('SVN-TiemposText-Italic.woff2') format('woff2'),
+        url('SVN-TiemposText-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Headline";
-	src: url("./fonts/SVN-TiemposHeadline-RegularItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposHeadline-RegularItalic.woff") format("woff");
-	font-weight: normal;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Text';
+    src: url('SVN-TiemposText-Italic.woff2') format('woff2'),
+        url('SVN-TiemposText-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Headline";
-	src: url("./fonts/SVN-TiemposHeadline-Black.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposHeadline-Black.woff") format("woff");
-	font-weight: 900;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Text';
+    src: url('SVN-TiemposText-MediumItalic.woff2') format('woff2'),
+        url('SVN-TiemposText-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Headline";
-	src: url("./fonts/SVN-TiemposHeadline-BlackItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposHeadline-BlackItalic.woff") format("woff");
-	font-weight: 900;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Text';
+    src: url('SVN-TiemposText-Medium.woff2') format('woff2'),
+        url('SVN-TiemposText-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Headline";
-	src: url("./fonts/SVN-TiemposHeadline-Black.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposHeadline-Black.woff") format("woff");
-	font-weight: 900;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Text';
+    src: url('SVN-TiemposText-BoldItalic.woff2') format('woff2'),
+        url('SVN-TiemposText-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Headline";
-	src: url("./fonts/SVN-TiemposHeadline-BlackItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposHeadline-BlackItalic.woff") format("woff");
-	font-weight: 900;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Text';
+    src: url('SVN-TiemposText-Medium.woff2') format('woff2'),
+        url('SVN-TiemposText-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Headline";
-	src: url("./fonts/SVN-TiemposHeadline-Bold.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposHeadline-Bold.woff") format("woff");
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Text';
+    src: url('SVN-TiemposText-Bold.woff2') format('woff2'),
+        url('SVN-TiemposText-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Headline";
-	src: url("./fonts/SVN-TiemposHeadline-BoldItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposHeadline-BoldItalic.woff") format("woff");
-	font-weight: bold;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Text';
+    src: url('SVN-TiemposText-SemiBoldItalic.woff2') format('woff2'),
+        url('SVN-TiemposText-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Headline";
-	src: url("./fonts/SVN-TiemposHeadline-LightItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposHeadline-LightItalic.woff") format("woff");
-	font-weight: 300;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Text';
+    src: url('SVN-TiemposText-Regular.woff2') format('woff2'),
+        url('SVN-TiemposText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Headline";
-	src: url("./fonts/SVN-TiemposHeadline-BoldItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposHeadline-BoldItalic.woff") format("woff");
-	font-weight: bold;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Text';
+    src: url('SVN-TiemposText-Regular.woff2') format('woff2'),
+        url('SVN-TiemposText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Headline";
-	src: url("./fonts/SVN-TiemposHeadline-Light.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposHeadline-Light.woff") format("woff");
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Text';
+    src: url('SVN-TiemposText-MediumItalic.woff2') format('woff2'),
+        url('SVN-TiemposText-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Headline";
-	src: url("./fonts/SVN-TiemposHeadline-Bold.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposHeadline-Bold.woff") format("woff");
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Text';
+    src: url('SVN-TiemposText-SemiBold.woff2') format('woff2'),
+        url('SVN-TiemposText-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Headline";
-	src: url("./fonts/SVN-TiemposHeadline-LightItalic.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposHeadline-LightItalic.woff") format("woff");
-	font-weight: 300;
-	font-style: italic;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Text';
+    src: url('SVN-TiemposText-SemiBold.woff2') format('woff2'),
+        url('SVN-TiemposText-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: "SVN-Tiempos Headline";
-	src: url("./fonts/SVN-TiemposHeadline-Light.woff2") format("woff2"),
-		url("./fonts/SVN-TiemposHeadline-Light.woff") format("woff");
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'SVN-Tiempos Text';
+    src: url('SVN-TiemposText-SemiBoldItalic.woff2') format('woff2'),
+        url('SVN-TiemposText-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
 }
+/* End of font SVN-Tiempos Text */
+
