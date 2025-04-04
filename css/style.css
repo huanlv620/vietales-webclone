@@ -631,7 +631,6 @@ p.text-details {
   left: 0;
   right: 0;
   height: calc(100vh - 66px);
-  margin-top: -66px; /* Negative margin to offset the padding-top of main */
 }
 
 .hero--details {
@@ -651,6 +650,10 @@ p.text-details {
 
 .hero--others {
   height: 80vh;
+}
+
+.hero--viegazine, .hero--comic, .hero--video, .hero--category {
+  margin-top: -66px;
 }
 
 .hero--others .hero__heading {
@@ -1228,6 +1231,10 @@ h2.category__heading--small {
   margin-bottom: 50px;
 }
 
+.navbar-viegazine .navbar__list--bottom {
+  margin: initial;
+}
+
 .navbar--bottom .navbar__btn-newText {
   position: relative;
   display: none;
@@ -1309,7 +1316,7 @@ h2.category__heading--small {
 .search-form__input {
   width: 100%;
   height: 100%;
-  padding: 0 16px;
+  padding: 0 4px 0 16px;
   color: #525252;
   font-size: 1.4rem;
   font-style: italic;
