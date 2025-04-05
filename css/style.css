@@ -580,6 +580,16 @@ p.text-details {
   color: #fff;
 }
 
+.header.header--comic-series {
+  color: #8917ee !important;
+  background: #fafafa !important;
+  height: 56px;
+}
+
+.header.header--comic-series .logo__svg {
+  width: 148px;
+}
+
 .header.header--sign-in {
   color: #8917ee;
   background: #fafafa;
@@ -1082,6 +1092,117 @@ h2.category__heading--small {
 }
 /* End of Comic */
 
+/* Start of comic-series */
+.comic-series {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.comic-series__img-title-wrap {
+  width: 400px;
+  height: 191px;
+}
+
+.comic-series__img-title-wrap .comic-series__img-title {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.comic-series__list {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.comic-series__item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  background: #f3e6ff;
+  color: #6b13b6;
+  border-radius: 9999px;
+  font-family: "SVN-Basis Grotesque Pro";
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.comic-series__item-only-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e5e5e5;
+  border-radius: 50%;
+  width: 40px;
+  height: 42px;
+}
+
+.comic-series__desc {
+  width: 660px;
+  margin: 24px 0;
+  font-family: "SVN-Basis Grotesque Pro";
+  line-height: 24px;
+  color: #0a0a0a;
+}
+
+.comic-series__text-update {
+  font-family: "SVN-Basis Grotesque Pro";
+  font-size: 1.4rem;
+  color: #525252;
+}
+
+.comic-series__list-story-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comic-series__num-story {
+  font-family: "SVN-Basis Grotesque Pro";
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.comic-series__arrange {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.comic-series__new {
+  font-family: "SVN-Basis Grotesque Pro";
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.comic-series__arrange-text {
+  font-family: "SVN-Tiempos Headline";
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.comic-series__new {
+  display: flex;
+  align-items: center;
+}
+
+.comic-series__grid-store {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  margin: 24px 0;
+}
+
+.comic-series__btn {
+  margin: 40px 0 90px 0;
+}
+
+/* End of comic-series */
+
 @media screen and (max-width: 768px) {
   .hero-series {
     flex-direction: column;
@@ -1412,7 +1533,6 @@ h2.category__heading--small {
 
 .navbar__link--bottom {
   font-size: 1.6rem;
-  font-style: normal;
   padding: 7px 12px;
   border-radius: 99px;
   font-family: "SVN-Basis Grotesque Pro";
@@ -2819,7 +2939,6 @@ h2.category__heading--small {
 
   .history-grid__btn,
   .story-told__btn {
-    white-space: normal;
     padding: 10px 15px;
   }
 
