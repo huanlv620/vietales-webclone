@@ -656,7 +656,7 @@ p.text-details {
 	height: 0;
 }
 
-.hero.hero--comic {
+.hero.hero--comic-series {
 	margin-top: 56px;
 	height: auto;
 }
@@ -700,6 +700,9 @@ p.text-details {
 .hero--video__text {
 	font-style: italic;
 	margin-top: 48px;
+    font-size: 9.6rem;
+    font-family: "SVN-Tiempos Fine";
+    font-weight: 300;
 }
 
 h2.category__heading {
