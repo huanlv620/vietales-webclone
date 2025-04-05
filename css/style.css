@@ -590,6 +590,7 @@ button {
 .elementor :after,
 .elementor :before {
 	box-sizing: border-box;
+	font-size: 1.8rem;
 }
 .elementor a {
 	box-shadow: none;
@@ -6363,7 +6364,7 @@ body.elementor-page .elementor-widget-menu-anchor {
 	--e-global-typography-f27df42-font-size: 14px;
 	--e-global-typography-f27df42-font-weight: 400;
 	--e-global-typography-ecfe90a-font-family: "SVN-Tiempos Headline";
-	--e-global-typography-ecfe90a-font-size: 2.75rem;
+	--e-global-typography-ecfe90a-font-size: 2.8rem;
 	--e-global-typography-ecfe90a-font-weight: 500;
 	--e-global-typography-ecfe90a-line-height: 130%;
 	--e-global-typography-1f96d86-font-family: "SVN-Tiempos Headline";
@@ -6372,7 +6373,7 @@ body.elementor-page .elementor-widget-menu-anchor {
 	--e-global-typography-1f96d86-line-height: 160%;
 	--e-global-typography-1f96d86-letter-spacing: 0.2px;
 	--e-global-typography-238bb21-font-family: "SVN-Basis Grotesque Pro";
-	--e-global-typography-238bb21-font-size: 14px;
+	--e-global-typography-238bb21-font-size: 12px;
 	--e-global-typography-238bb21-font-weight: 400;
 	--e-global-typography-238bb21-font-style: normal;
 	--e-global-typography-238bb21-line-height: 150%;
@@ -6426,7 +6427,7 @@ h1.entry-title {
 @media (min-width: 1920px) {
 	.elementor-kit-5 {
 		--e-global-typography-1f96d86-font-size: 18px;
-		--e-global-typography-238bb21-font-size: 14px;
+		--e-global-typography-238bb21-font-size: 12px;
 		--e-global-typography-238bb21-line-height: 150%;
 		--e-global-typography-b0489ba-font-size: 24px;
 		--e-global-typography-b0489ba-line-height: 150%;
@@ -6448,7 +6449,7 @@ h1.entry-title {
 @media (max-width: 1919px) {
 	.elementor-kit-5 {
 		--e-global-typography-1f96d86-font-size: 18px;
-		--e-global-typography-238bb21-font-size: 14px;
+		--e-global-typography-238bb21-font-size: 12px;
 		--e-global-typography-238bb21-line-height: 150%;
 		--e-global-typography-b0489ba-font-size: 24px;
 		--e-global-typography-b0489ba-line-height: 150%;
@@ -6679,7 +6680,7 @@ h1.entry-title {
 @media (min-width: 1920px) {
 	.elementor-kit-5 {
 		--e-global-typography-1f96d86-font-size: 18px;
-		--e-global-typography-238bb21-font-size: 14px;
+		--e-global-typography-238bb21-font-size: 12px;
 		--e-global-typography-238bb21-line-height: 150%;
 		--e-global-typography-b0489ba-font-size: 24px;
 		--e-global-typography-b0489ba-line-height: 150%;
@@ -6698,7 +6699,7 @@ h1.entry-title {
 @media (max-width: 1919px) {
 	.elementor-kit-5 {
 		--e-global-typography-1f96d86-font-size: 18px;
-		--e-global-typography-238bb21-font-size: 14px;
+		--e-global-typography-238bb21-font-size: 12px;
 		--e-global-typography-238bb21-line-height: 150%;
 		--e-global-typography-b0489ba-font-size: 24px;
 		--e-global-typography-b0489ba-line-height: 150%;
@@ -6778,6 +6779,7 @@ h1.entry-title {
 }
 .elementor-31948 .elementor-element.elementor-element-60c2109 .elementor-heading-title {
 	color: #202020;
+	font-style: normal;
 	font-family: var(--e-global-typography-ecfe90a-font-family);
 	font-size: var(--e-global-typography-ecfe90a-font-size);
 	font-weight: var(--e-global-typography-ecfe90a-font-weight);
@@ -6806,6 +6808,7 @@ h1.entry-title {
 }
 .elementor-31948 .elementor-element.elementor-element-22242b4 .elementor-heading-title {
 	color: #202020;
+	font-style: normal;
 	font-family: var(--e-global-typography-ecfe90a-font-family);
 	font-size: var(--e-global-typography-ecfe90a-font-size);
 	font-weight: var(--e-global-typography-ecfe90a-font-weight);
@@ -6849,6 +6852,7 @@ h1.entry-title {
 	margin: 0px 0px 0px 0px;
 }
 .elementor-31948 .elementor-element.elementor-element-c4c009e .elementor-heading-title {
+	font-style: normal;
 	color: #202020;
 	font-family: var(--e-global-typography-ecfe90a-font-family);
 	font-size: var(--e-global-typography-ecfe90a-font-size);
@@ -7011,6 +7015,7 @@ h1.entry-title {
 	}
 	.elementor-31948 .elementor-element.elementor-element-22242b4 .elementor-heading-title {
 		font-size: var(--e-global-typography-ecfe90a-font-size);
+		font-style: normal;
 		line-height: var(--e-global-typography-ecfe90a-line-height);
 		letter-spacing: var(--e-global-typography-ecfe90a-letter-spacing);
 		word-spacing: var(--e-global-typography-ecfe90a-word-spacing);
@@ -7028,6 +7033,7 @@ h1.entry-title {
 		word-spacing: var(--e-global-typography-238bb21-word-spacing);
 	}
 	.elementor-31948 .elementor-element.elementor-element-c4c009e .elementor-heading-title {
+		font-style: normal;
 		font-size: var(--e-global-typography-ecfe90a-font-size);
 		line-height: var(--e-global-typography-ecfe90a-line-height);
 		letter-spacing: var(--e-global-typography-ecfe90a-letter-spacing);
@@ -7106,6 +7112,7 @@ h1.entry-title {
 	}
 	.elementor-31948 .elementor-element.elementor-element-22242b4 .elementor-heading-title {
 		font-size: var(--e-global-typography-ecfe90a-font-size);
+		font-style: normal;
 		line-height: var(--e-global-typography-ecfe90a-line-height);
 		letter-spacing: var(--e-global-typography-ecfe90a-letter-spacing);
 		word-spacing: var(--e-global-typography-ecfe90a-word-spacing);
@@ -7129,6 +7136,7 @@ h1.entry-title {
 		margin: 0px 0px 0px 0px;
 	}
 	.elementor-31948 .elementor-element.elementor-element-c4c009e .elementor-heading-title {
+		font-style: normal;
 		font-size: var(--e-global-typography-ecfe90a-font-size);
 		line-height: var(--e-global-typography-ecfe90a-line-height);
 		letter-spacing: var(--e-global-typography-ecfe90a-letter-spacing);
@@ -7229,6 +7237,7 @@ h1.entry-title {
 	}
 	.elementor-31948 .elementor-element.elementor-element-22242b4 .elementor-heading-title {
 		font-size: var(--e-global-typography-ecfe90a-font-size);
+		font-style: normal;
 		line-height: var(--e-global-typography-ecfe90a-line-height);
 		letter-spacing: var(--e-global-typography-ecfe90a-letter-spacing);
 		word-spacing: var(--e-global-typography-ecfe90a-word-spacing);
@@ -7254,6 +7263,7 @@ h1.entry-title {
 		margin: 0px 0px 0px 0px;
 	}
 	.elementor-31948 .elementor-element.elementor-element-c4c009e .elementor-heading-title {
+		font-style: normal;
 		font-size: var(--e-global-typography-ecfe90a-font-size);
 		line-height: var(--e-global-typography-ecfe90a-line-height);
 		letter-spacing: var(--e-global-typography-ecfe90a-letter-spacing);
@@ -7426,6 +7436,7 @@ h1.entry-title {
 	}
 	.elementor-31948 .elementor-element.elementor-element-22242b4 .elementor-heading-title {
 		font-size: var(--e-global-typography-ecfe90a-font-size);
+		font-style: normal;
 		line-height: var(--e-global-typography-ecfe90a-line-height);
 		letter-spacing: var(--e-global-typography-ecfe90a-letter-spacing);
 		word-spacing: var(--e-global-typography-ecfe90a-word-spacing);
@@ -7454,6 +7465,7 @@ h1.entry-title {
 		margin: 0px 0px 0px 0px;
 	}
 	.elementor-31948 .elementor-element.elementor-element-c4c009e .elementor-heading-title {
+		font-style: normal;
 		font-size: var(--e-global-typography-ecfe90a-font-size);
 		line-height: var(--e-global-typography-ecfe90a-line-height);
 		letter-spacing: var(--e-global-typography-ecfe90a-letter-spacing);
@@ -14093,8 +14105,7 @@ video {
 .elementor-heading-title {
 	font-family: SVN-Tiempos Fine;
 	font-weight: 300;
-    font-size: 9.6rem;
-    font-style: italic;
+	font-size: 9.6rem;
 }
 
 h1.elementor-heading-title {
@@ -16927,8 +16938,8 @@ body {
 	padding: 64px 0;
 }
 .reader p {
-	margin-top: 1.5rem;
-	margin-bottom: 1.5rem;
+	margin-top: 24px;
+	margin-bottom: 24px;
 }
 .reader blockquote p {
 	margin-top: 0;
@@ -16957,6 +16968,7 @@ body {
 .reader b,
 .reader strong {
 	font-weight: 600;
+	font-size: 1.8rem;
 }
 
 .elementor-kit-5 {
@@ -16984,7 +16996,7 @@ body {
 	--e-global-typography-f27df42-font-size: 14px;
 	--e-global-typography-f27df42-font-weight: 400;
 	--e-global-typography-ecfe90a-font-family: "SVN-Tiempos Headline";
-	--e-global-typography-ecfe90a-font-size: 2.75rem;
+	--e-global-typography-ecfe90a-font-size: 2.8rem;
 	--e-global-typography-ecfe90a-font-weight: 500;
 	--e-global-typography-ecfe90a-line-height: 130%;
 	--e-global-typography-1f96d86-font-family: "SVN-Tiempos Headline";
@@ -16993,7 +17005,7 @@ body {
 	--e-global-typography-1f96d86-line-height: 160%;
 	--e-global-typography-1f96d86-letter-spacing: 0.2px;
 	--e-global-typography-238bb21-font-family: "SVN-Basis Grotesque Pro";
-	--e-global-typography-238bb21-font-size: 14px;
+	--e-global-typography-238bb21-font-size: 12px;
 	--e-global-typography-238bb21-font-weight: 400;
 	--e-global-typography-238bb21-font-style: normal;
 	--e-global-typography-238bb21-line-height: 150%;
@@ -17484,6 +17496,10 @@ p.text-details {
 
 .hero--video {
 	height: 101vh;
+}
+
+.hero--video__text {
+	font-style: italic;
 }
 
 h2.category__heading {
@@ -19260,6 +19276,10 @@ h2.category__heading--small {
 		gap: 30px 20px;
 	}
 
+	.fascinating-book__row > p:last-child {
+		padding-left: 0;
+	}
+
 	.category-books__body {
 		display: grid;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -19396,7 +19416,7 @@ h2.category__heading--small {
 
 	/* Hero section */
 	.hero {
-		height: calc(100vh - 56px);
+        height: 100vh;
 		margin-top: -56px;
 	}
 
@@ -19467,6 +19487,11 @@ h2.category__heading--small {
 	.series__heading {
 		font-size: 4.5rem;
 		margin: 50px 0 30px;
+	}
+
+	.vietnam-stories__heading {
+		font-size: 4rem;
+		margin-top: 80px;
 	}
 
 	.vietnam-stories__body {
@@ -19712,7 +19737,7 @@ h2.category__heading--small {
 	}
 
 	.story-told__btn {
-		width: 30%;
+		width: 32%;
 		height: 39px;
 		font-size: 1.6rem;
 		font-weight: bold;
