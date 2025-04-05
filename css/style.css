@@ -6363,7 +6363,7 @@ body.elementor-page .elementor-widget-menu-anchor {
 	--e-global-typography-f27df42-font-size: 14px;
 	--e-global-typography-f27df42-font-weight: 400;
 	--e-global-typography-ecfe90a-font-family: "SVN-Tiempos Headline";
-	--e-global-typography-ecfe90a-font-size: 1.75rem;
+	--e-global-typography-ecfe90a-font-size: 2.75rem;
 	--e-global-typography-ecfe90a-font-weight: 500;
 	--e-global-typography-ecfe90a-line-height: 130%;
 	--e-global-typography-1f96d86-font-family: "SVN-Tiempos Headline";
@@ -6587,7 +6587,7 @@ h1.entry-title {
 .elementor-207 .elementor-element.elementor-element-f171cc4 .elementor-heading-title {
 	color: #202020;
 	font-family: "SVN-Tiempos Fine";
-	font-size: 1.75rem;
+	font-size: 2.75rem;
 	font-weight: 500;
 	line-height: 130%;
 }
@@ -11612,7 +11612,7 @@ video {
 }
 
 .pb-7 {
-	padding-bottom: 1.75rem;
+	padding-bottom: 2.75rem;
 }
 
 .pb-\[10px\] {
@@ -14092,7 +14092,9 @@ video {
 
 .elementor-heading-title {
 	font-family: SVN-Tiempos Fine;
-	font-weight: 500;
+	font-weight: 300;
+    font-size: 9.6rem;
+    font-style: italic;
 }
 
 h1.elementor-heading-title {
@@ -16918,10 +16920,11 @@ body {
 	}
 }
 .reader {
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	line-height: 1.7;
 	letter-spacing: -0.18px;
 	color: #202020;
+	padding: 64px 0;
 }
 .reader p {
 	margin-top: 1.5rem;
@@ -16981,7 +16984,7 @@ body {
 	--e-global-typography-f27df42-font-size: 14px;
 	--e-global-typography-f27df42-font-weight: 400;
 	--e-global-typography-ecfe90a-font-family: "SVN-Tiempos Headline";
-	--e-global-typography-ecfe90a-font-size: 1.75rem;
+	--e-global-typography-ecfe90a-font-size: 2.75rem;
 	--e-global-typography-ecfe90a-font-weight: 500;
 	--e-global-typography-ecfe90a-line-height: 130%;
 	--e-global-typography-1f96d86-font-family: "SVN-Tiempos Headline";
@@ -17408,6 +17411,8 @@ p.text-details {
 }
 
 .logo__svg {
+	position: relative;
+	left: 10%;
 	width: 228px;
 	object-fit: cover;
 	transition: all 1s;
@@ -17452,6 +17457,10 @@ p.text-details {
 	display: block;
 }
 
+.hero--main img {
+	height: 100vh;
+}
+
 .hero--others {
 	height: 80vh;
 }
@@ -17474,7 +17483,7 @@ p.text-details {
 }
 
 .hero--video {
-	height: 100vh;
+	height: 101vh;
 }
 
 h2.category__heading {
@@ -17501,6 +17510,45 @@ h2.category__heading--small {
 			rgba(0, 0, 0, 0.82) 100%
 		);
 	pointer-events: none;
+}
+
+.detail__desc {
+	margin-bottom: 20px;
+	text-align: center;
+	color: #0a0a0a;
+
+	padding-top: 48px;
+
+	font-family: "SVN-Basis Grotesque Pro";
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+.detail__row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 14px;
+}
+
+.detail__row button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 48px;
+	height: 48px;
+	padding: 7px 12px;
+
+	background-color: #cfcdc8;
+	color: #525252;
+	border: 1px solid #cfcdc8;
+	box-shadow: 0px 4px 4px 0px rgba(32, 32, 32, 0.18) !important;
+	border-radius: 12px;
+}
+
+.detail__row button svg {
+	width: 20px;
+	height: 20px;
 }
 
 /* Add this new rule for the details page gradient */
@@ -18810,7 +18858,7 @@ h2.category__heading--small {
 }
 
 .footer__img {
-	margin: 28px 0 24px;
+	margin: 20px auto 0;
 }
 /* End footer */
 
@@ -18854,10 +18902,7 @@ h2.category__heading--small {
 .login-form__inner {
 	flex-basis: 100%;
 	max-width: 480px;
-
 }
-
-
 
 .form-group__email-wrap,
 .form-group__pasword-wrap {
@@ -19326,6 +19371,12 @@ h2.category__heading--small {
 @media screen and (max-width: 767.98px) {
 	.container {
 		width: 92%;
+	}
+
+	.login-form__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	/* Header adjustments */
