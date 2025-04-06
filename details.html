@@ -1,1349 +1,1210 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vietales | Chuyện Người Việt Kể</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vietales | Chuyện Người Việt Kể</title>
 
-    <!-- Favicon -->
-    <link
-      rel="icon"
-      type="image/png"
-      href="./favicon/favicon-96x96.png"
-      sizes="96x96"
-    />
-    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
-    <link rel="shortcut icon" href="./favicon/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./favicon/apple-touch-icon.png"
-    />
-    <link rel="manifest" href="./favicon/site.webmanifest" />
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+		<link rel="shortcut icon" href="./favicon/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+		<link rel="manifest" href="./favicon/site.webmanifest" />
 
-    <!-- Meta open graph -->
-    <meta property="og:title" content="Vietales | Chuyện Người Việt Kể" />
-    <meta
-      name="description"
-      content="Đưa câu chuyện Việt Nam ra thế giới và mang câu chuyện thế giới về Việt Nam"
-    />
-    <meta property="og:image" content="./favicon/favicon-96x96.png" />
-    <meta property="og:url" content="https://vietales.com" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Vietales" />
-    <meta property="og:locale" content="vi_VN" />
+		<!-- Meta open graph -->
+		<meta property="og:title" content="Vietales | Chuyện Người Việt Kể" />
+		<meta
+			name="description"
+			content="Đưa câu chuyện Việt Nam ra thế giới và mang câu chuyện thế giới về Việt Nam" />
+		<meta property="og:image" content="./favicon/favicon-96x96.png" />
+		<meta property="og:url" content="https://vietales.com" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Vietales" />
+		<meta property="og:locale" content="vi_VN" />
 
-    <!-- Embed font -->
-    <link rel="stylesheet" href="./fonts/stylesheet.css" />
+		<!-- Embed font -->
+		<link rel="stylesheet" href="./fonts/stylesheet.css" />
 
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="./css/vietales.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <!--  Start of Header  -->
-      <header class="header">
-        <a class="header__icon-search" href="#!">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <mask
-              id="mask0_6257_79142"
-              style="mask-type: alpha"
-              maskUnits="userSpaceOnUse"
-              x="0"
-              y="0"
-              width="24"
-              height="24"
-            >
-              <rect width="24" height="24" class="fill-current"></rect>
-            </mask>
-            <g mask="url(#mask0_6257_79142)">
-              <path
-                d="M1 19.5V17.5H13V19.5H1ZM1 13.5375V11.5375H9V13.5375H1ZM1 7.46249V5.46249L9 5.46249V7.46249L1 7.46249ZM21.6 18L17.75 14.15C17.35 14.4333 16.9125 14.6458 16.4375 14.7875C15.9625 14.9292 15.4833 15 15 15C13.6167 15 12.4375 14.5125 11.4625 13.5375C10.4875 12.5625 10 11.3833 10 10C10 8.61667 10.4875 7.4375 11.4625 6.4625C12.4375 5.4875 13.6167 5 15 5C16.3833 5 17.5625 5.4875 18.5375 6.4625C19.5125 7.4375 20 8.61667 20 10C20 10.4833 19.9292 10.9625 19.7875 11.4375C19.6458 11.9125 19.4333 12.35 19.15 12.75L23 16.6L21.6 18ZM15 13C15.8333 13 16.5417 12.7083 17.125 12.125C17.7083 11.5417 18 10.8333 18 10C18 9.16667 17.7083 8.45833 17.125 7.875C16.5417 7.29167 15.8333 7 15 7C14.1667 7 13.4583 7.29167 12.875 7.875C12.2917 8.45833 12 9.16667 12 10C12 10.8333 12.2917 11.5417 12.875 12.125C13.4583 12.7083 14.1667 13 15 13Z"
-                class="fill-current"
-              ></path>
-            </g>
-          </svg>
-        </a>
-        <a href="/" class="logo">
-          <svg
-            class="logo__svg"
-            width="230"
-            height="48"
-            viewBox="0 0 230 48"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g clip-path="url(#clip0_6938_173967)">
-              <path
-                d="M109.087 17.0681H115.038V10.8556H109.087V0H102.286V10.8556H97.3811V17.0681H102.286V47.0845H109.087V17.0681Z"
-                class="fill-current"
-              ></path>
-              <path
-                d="M163.757 0H156.956V47.0845H163.757V0Z"
-                class="fill-current"
-              ></path>
-              <path
-                d="M229.405 36.4251C22g9.405 43.5531 224.174 48 217.242 48C215.672 48 214.103 47.673 212.599 47.1499C207.402 45.3123 204.6 41.1401 204.433 35.7057H211.273C211.666 39.1756 213.51 41.7875 217.373 41.7875C220.381 41.7875 222.604 39.9564 222.604 36.8174C222.604 29.2316 206.059 33.1553 206.059 20.3379C206.059 14.1253 211.487 9.87466 217.438 9.87466C223.65 9.87466 228.424 14.1907 228.555 20.4687H221.754C221.427 17.8529 219.858 16.0872 217.111 16.0872C214.822 16.0872 212.86 17.5259 212.86 19.9455C212.86 23.1499 215.999 23.8692 218.484 24.6539C224.435 26.485 229.405 29.4278 229.405 36.4251Z"
-                class="fill-current"
-              ></path>
-              <path
-                d="M145.053 29.0354C145.053 36.0327 139.495 41.7875 132.432 41.7875C125.5 41.7875 120.073 35.8365 120.073 29.0354C120.073 21.9728 125.304 16.0872 132.498 16.0872C139.887 16.0872 145.053 21.7766 145.053 29.0354ZM144.923 47.0845H151.724V10.8556H144.923V15.9564H144.792C142.111 11.8365 137.337 9.87466 132.498 9.87466C121.511 9.87466 113.271 18.1144 113.271 29.1008C113.271 40.0218 121.642 48 132.498 48C137.468 48 142.241 45.842 144.792 41.4605H144.923V47.0845Z"
-                class="fill-current"
-              ></path>
-              <path
-                d="M58.4704 30.8665H42.2524V47.0845H58.4704V30.8665Z"
-                class="fill-current"
-              ></path>
-              <path
-                d="M91.8219 26.6812H68.4104C68.8028 20.7302 74.2306 16.0872 80.1161 16.0872C86.0017 16.0872 91.4295 20.7302 91.8219 26.6812ZM98.6229 28.5123C98.6229 18.3106 90.4486 9.87466 80.1815 9.87466C69.5875 9.87466 61.6093 18.4414 61.6093 28.9046C61.6093 39.0409 69.7183 48 80.0507 48C87.9635 48 94.6992 43.0954 97.4458 35.7057H90.6447C88.6829 39.4986 84.563 41.7875 80.3123 41.7875C74.3614 41.7875 69.7837 37.5368 68.4104 31.9128H98.4268C98.5573 30.784 98.6228 29.6486 98.6229 28.5123Z"
-                class="fill-current"
-              ></path>
-              <path
-                d="M197.108 26.6812H173.697C174.089 20.7302 179.517 16.0872 185.402 16.0872C191.288 16.0872 196.716 20.7302 197.108 26.6812ZM203.909 28.5123C203.909 18.3106 195.735 9.87466 185.468 9.87466C174.874 9.87466 166.895 18.4414 166.895 28.9046C166.895 39.0409 175.004 48 185.337 48C193.25 48 199.985 43.0954 202.732 35.7057H195.931C193.969 39.4986 189.849 41.7875 185.598 41.7875C179.647 41.7875 175.07 37.5368 173.697 31.9128H203.713C203.843 30.784 203.909 29.6486 203.909 28.5123Z"
-                class="fill-current"
-              ></path>
-              <path
-                d="M23.656 47.0845L40.8137 10.8556H33.424L20.9015 38.3215H20.7439L7.98535 10.8556H0.595703L17.9104 47.0845H23.656Z"
-                class="fill-current"
-              ></path>
-              <path
-                d="M50.3614 27.9238C55.3455 27.9238 59.386 23.8834 59.386 18.8993C59.386 13.9152 55.3455 9.87476 50.3614 9.87476C45.3773 9.87476 41.3369 13.9152 41.3369 18.8993C41.3369 23.8834 45.3773 27.9238 50.3614 27.9238Z"
-                fill="#EEB117"
-              ></path>
-            </g>
-            <defs>
-              <clipPath id="clip0_6938_173967">
-                <rect
-                  width="228.81"
-                  height="48"
-                  class="fill-current"
-                  transform="translate(0.595703)"
-                ></rect>
-              </clipPath>
-            </defs>
-          </svg>
-        </a>
-        <a href="./sign-in.html" class="header__btn btn">Đăng nhập</a>
-        <div class="progress-bar"></div>
-      </header>
-      <!-- End of Header -->
+		<!-- Style CSS -->
+		<link rel="stylesheet" href="./css/custom-frontend.css" />
+		<link rel="stylesheet" href="./css/post-5.css" />
+		<link rel="stylesheet" href="./css/post-31948.css" />
+		<link rel="stylesheet" href="./css/video-js-89.css" />
+		<link rel="stylesheet" href="./css/style-details.css" />
+		<link rel="stylesheet" href="./css/reader-2.css" />
+		<link rel="stylesheet" href="./css/style-internal.css" />
+		<link rel="stylesheet" href="./css/post-207.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<!--  Start of Header  -->
+			<header class="header">
+				<a class="header__icon-search" href="#!">
+					<svg
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="currentColor"
+						xmlns="http://www.w3.org/2000/svg">
+						<mask
+							id="mask0_6257_79142"
+							style="mask-type: alpha"
+							maskUnits="userSpaceOnUse"
+							x="0"
+							y="0"
+							width="24"
+							height="24">
+							<rect width="24" height="24" class="fill-current"></rect>
+						</mask>
+						<g mask="url(#mask0_6257_79142)">
+							<path
+								d="M1 19.5V17.5H13V19.5H1ZM1 13.5375V11.5375H9V13.5375H1ZM1 7.46249V5.46249L9 5.46249V7.46249L1 7.46249ZM21.6 18L17.75 14.15C17.35 14.4333 16.9125 14.6458 16.4375 14.7875C15.9625 14.9292 15.4833 15 15 15C13.6167 15 12.4375 14.5125 11.4625 13.5375C10.4875 12.5625 10 11.3833 10 10C10 8.61667 10.4875 7.4375 11.4625 6.4625C12.4375 5.4875 13.6167 5 15 5C16.3833 5 17.5625 5.4875 18.5375 6.4625C19.5125 7.4375 20 8.61667 20 10C20 10.4833 19.9292 10.9625 19.7875 11.4375C19.6458 11.9125 19.4333 12.35 19.15 12.75L23 16.6L21.6 18ZM15 13C15.8333 13 16.5417 12.7083 17.125 12.125C17.7083 11.5417 18 10.8333 18 10C18 9.16667 17.7083 8.45833 17.125 7.875C16.5417 7.29167 15.8333 7 15 7C14.1667 7 13.4583 7.29167 12.875 7.875C12.2917 8.45833 12 9.16667 12 10C12 10.8333 12.2917 11.5417 12.875 12.125C13.4583 12.7083 14.1667 13 15 13Z"
+								class="fill-current"></path>
+						</g>
+					</svg>
+				</a>
+				<a href="/" class="logo">
+					<svg
+						class="logo__svg"
+						width="230"
+						height="48"
+						viewBox="0 0 230 48"
+						fill="currentColor"
+						xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_6938_173967)">
+							<path
+								d="M109.087 17.0681H115.038V10.8556H109.087V0H102.286V10.8556H97.3811V17.0681H102.286V47.0845H109.087V17.0681Z"
+								class="fill-current"></path>
+							<path
+								d="M163.757 0H156.956V47.0845H163.757V0Z"
+								class="fill-current"></path>
+							<path
+								d="M229.405 36.4251C22g9.405 43.5531 224.174 48 217.242 48C215.672 48 214.103 47.673 212.599 47.1499C207.402 45.3123 204.6 41.1401 204.433 35.7057H211.273C211.666 39.1756 213.51 41.7875 217.373 41.7875C220.381 41.7875 222.604 39.9564 222.604 36.8174C222.604 29.2316 206.059 33.1553 206.059 20.3379C206.059 14.1253 211.487 9.87466 217.438 9.87466C223.65 9.87466 228.424 14.1907 228.555 20.4687H221.754C221.427 17.8529 219.858 16.0872 217.111 16.0872C214.822 16.0872 212.86 17.5259 212.86 19.9455C212.86 23.1499 215.999 23.8692 218.484 24.6539C224.435 26.485 229.405 29.4278 229.405 36.4251Z"
+								class="fill-current"></path>
+							<path
+								d="M145.053 29.0354C145.053 36.0327 139.495 41.7875 132.432 41.7875C125.5 41.7875 120.073 35.8365 120.073 29.0354C120.073 21.9728 125.304 16.0872 132.498 16.0872C139.887 16.0872 145.053 21.7766 145.053 29.0354ZM144.923 47.0845H151.724V10.8556H144.923V15.9564H144.792C142.111 11.8365 137.337 9.87466 132.498 9.87466C121.511 9.87466 113.271 18.1144 113.271 29.1008C113.271 40.0218 121.642 48 132.498 48C137.468 48 142.241 45.842 144.792 41.4605H144.923V47.0845Z"
+								class="fill-current"></path>
+							<path
+								d="M58.4704 30.8665H42.2524V47.0845H58.4704V30.8665Z"
+								class="fill-current"></path>
+							<path
+								d="M91.8219 26.6812H68.4104C68.8028 20.7302 74.2306 16.0872 80.1161 16.0872C86.0017 16.0872 91.4295 20.7302 91.8219 26.6812ZM98.6229 28.5123C98.6229 18.3106 90.4486 9.87466 80.1815 9.87466C69.5875 9.87466 61.6093 18.4414 61.6093 28.9046C61.6093 39.0409 69.7183 48 80.0507 48C87.9635 48 94.6992 43.0954 97.4458 35.7057H90.6447C88.6829 39.4986 84.563 41.7875 80.3123 41.7875C74.3614 41.7875 69.7837 37.5368 68.4104 31.9128H98.4268C98.5573 30.784 98.6228 29.6486 98.6229 28.5123Z"
+								class="fill-current"></path>
+							<path
+								d="M197.108 26.6812H173.697C174.089 20.7302 179.517 16.0872 185.402 16.0872C191.288 16.0872 196.716 20.7302 197.108 26.6812ZM203.909 28.5123C203.909 18.3106 195.735 9.87466 185.468 9.87466C174.874 9.87466 166.895 18.4414 166.895 28.9046C166.895 39.0409 175.004 48 185.337 48C193.25 48 199.985 43.0954 202.732 35.7057H195.931C193.969 39.4986 189.849 41.7875 185.598 41.7875C179.647 41.7875 175.07 37.5368 173.697 31.9128H203.713C203.843 30.784 203.909 29.6486 203.909 28.5123Z"
+								class="fill-current"></path>
+							<path
+								d="M23.656 47.0845L40.8137 10.8556H33.424L20.9015 38.3215H20.7439L7.98535 10.8556H0.595703L17.9104 47.0845H23.656Z"
+								class="fill-current"></path>
+							<path
+								d="M50.3614 27.9238C55.3455 27.9238 59.386 23.8834 59.386 18.8993C59.386 13.9152 55.3455 9.87476 50.3614 9.87476C45.3773 9.87476 41.3369 13.9152 41.3369 18.8993C41.3369 23.8834 45.3773 27.9238 50.3614 27.9238Z"
+								fill="#EEB117"></path>
+						</g>
+						<defs>
+							<clipPath id="clip0_6938_173967">
+								<rect
+									width="228.81"
+									height="48"
+									class="fill-current"
+									transform="translate(0.595703)"></rect>
+							</clipPath>
+						</defs>
+					</svg>
+				</a>
+				<a href="./sign-in.html" class="header__btn btn">Đăng nhập</a>
+				<div class="progress-bar"></div>
+			</header>
+			<!-- End of Header -->
 
-      <!-- Start of Main -->
-      <main class="main">
-        <div class="reading-list-btn">
-          <div class="reading-list-btn__wrap">
-            <span
-              class="reading-list-btn__item reading-list-btn__item-one"
-            ></span>
-            <span
-              class="reading-list-btn__item reading-list-btn__item-tow"
-            ></span>
-            <span
-              class="reading-list-btn__item reading-list-btn__item-three"
-            ></span>
-          </div>
-        </div>
-        <!-- Start of Hero -->
-        <section class="hero hero--detail">
-          <a href="./details.html">
-            <img src="./images/detail-cover-CaVoi3.webp" alt="" />
-            <div class="hero__body">
-              <h3 class="hero__sub-heading">Vạn Vật Hữu Linh</h3>
-              <h1 class="hero__heading">
-                Cá Voi – Đức Ông Nam Hải ở xứ vạn chài
-              </h1>
-              <button class="hero__updown" type="button">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="49"
-                  height="48"
-                  viewBox="0 0 49 48"
-                  fill="none"
-                >
-                  <mask
-                    id="mask0_1190_664"
-                    style="mask-type: alpha"
-                    maskUnits="userSpaceOnUse"
-                    x="0"
-                    y="0"
-                    width="49"
-                    height="48"
-                  >
-                    <rect x="0.5" width="48" height="48" fill="#D9D9D9" />
-                  </mask>
-                  <g mask="url(#mask0_1190_664)">
-                    <path
-                      d="M24.5 29.8922L32.5345 21.8577L30.9038 20.2769L24.5 26.6808L18.0961 20.2769L16.4654 21.8577L24.5 29.8922ZM24.5033 42.9999C21.8959 42.9999 19.4393 42.5012 17.1335 41.5039C14.8276 40.5066 12.8111 39.1447 11.084 37.4184C9.35687 35.692 7.99442 33.6764 6.99665 31.3716C5.99888 29.0667 5.5 26.6106 5.5 24.0033C5.5 21.3754 5.99867 18.9054 6.996 16.5931C7.99333 14.2808 9.35517 12.2694 11.0815 10.559C12.8079 8.84854 14.8235 7.49442 17.1283 6.49665C19.4332 5.49889 21.8893 5 24.4966 5C27.1245 5 29.5945 5.49867 31.9068 6.496C34.2191 7.49334 36.2305 8.84683 37.9409 10.5565C39.6514 12.2662 41.0055 14.2767 42.0033 16.588C43.001 18.8992 43.4999 21.3687 43.4999 23.9966C43.4999 26.604 43.0012 29.0606 42.0039 31.3665C41.0066 33.6723 39.6531 35.6888 37.9434 37.4159C36.2337 39.143 34.2232 40.5055 31.912 41.5033C29.6007 42.501 27.1312 42.9999 24.5033 42.9999ZM24.5 40.7307C29.1564 40.7307 33.1089 39.1012 36.3577 35.8423C39.6064 32.5833 41.2307 28.6359 41.2307 24C41.2307 19.3436 39.6064 15.391 36.3577 12.1423C33.1089 8.89355 29.1564 7.2692 24.5 7.2692C19.864 7.2692 15.9166 8.89355 12.6577 12.1423C9.39868 15.391 7.7692 19.3436 7.7692 24C7.7692 28.6359 9.39868 32.5833 12.6577 35.8423C15.9166 39.1012 19.864 40.7307 24.5 40.7307Z"
-                      fill="white"
-                    />
-                  </g>
-                </svg>
-              </button>
-            </div>
-          </a>
-        </section>
-        <!-- End of Hero -->
+			<!-- Start of Main -->
+			<main class="main">
+				<div class="reading-list-btn">
+					<div class="reading-list-btn__wrap">
+						<span class="reading-list-btn__item reading-list-btn__item-one"></span>
+						<span class="reading-list-btn__item reading-list-btn__item-tow"></span>
+						<span class="reading-list-btn__item reading-list-btn__item-three"></span>
+					</div>
+				</div>
+				<!-- Start of Hero -->
+				<section class="hero hero--detail">
+					<a href="./details.html">
+						<img src="./images/detail-cover-CaVoi3.webp" alt="" />
+						<div class="hero__body">
+							<h3 class="hero__sub-heading">Vạn Vật Hữu Linh</h3>
+							<h1 class="hero__heading">Cá Voi – Đức Ông Nam Hải ở xứ vạn chài</h1>
+							<button class="hero__updown" type="button">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="49"
+									height="48"
+									viewBox="0 0 49 48"
+									fill="none">
+									<mask
+										id="mask0_1190_664"
+										style="mask-type: alpha"
+										maskUnits="userSpaceOnUse"
+										x="0"
+										y="0"
+										width="49"
+										height="48">
+										<rect x="0.5" width="48" height="48" fill="#D9D9D9" />
+									</mask>
+									<g mask="url(#mask0_1190_664)">
+										<path
+											d="M24.5 29.8922L32.5345 21.8577L30.9038 20.2769L24.5 26.6808L18.0961 20.2769L16.4654 21.8577L24.5 29.8922ZM24.5033 42.9999C21.8959 42.9999 19.4393 42.5012 17.1335 41.5039C14.8276 40.5066 12.8111 39.1447 11.084 37.4184C9.35687 35.692 7.99442 33.6764 6.99665 31.3716C5.99888 29.0667 5.5 26.6106 5.5 24.0033C5.5 21.3754 5.99867 18.9054 6.996 16.5931C7.99333 14.2808 9.35517 12.2694 11.0815 10.559C12.8079 8.84854 14.8235 7.49442 17.1283 6.49665C19.4332 5.49889 21.8893 5 24.4966 5C27.1245 5 29.5945 5.49867 31.9068 6.496C34.2191 7.49334 36.2305 8.84683 37.9409 10.5565C39.6514 12.2662 41.0055 14.2767 42.0033 16.588C43.001 18.8992 43.4999 21.3687 43.4999 23.9966C43.4999 26.604 43.0012 29.0606 42.0039 31.3665C41.0066 33.6723 39.6531 35.6888 37.9434 37.4159C36.2337 39.143 34.2232 40.5055 31.912 41.5033C29.6007 42.501 27.1312 42.9999 24.5033 42.9999ZM24.5 40.7307C29.1564 40.7307 33.1089 39.1012 36.3577 35.8423C39.6064 32.5833 41.2307 28.6359 41.2307 24C41.2307 19.3436 39.6064 15.391 36.3577 12.1423C33.1089 8.89355 29.1564 7.2692 24.5 7.2692C19.864 7.2692 15.9166 8.89355 12.6577 12.1423C9.39868 15.391 7.7692 19.3436 7.7692 24C7.7692 28.6359 9.39868 32.5833 12.6577 35.8423C15.9166 39.1012 19.864 40.7307 24.5 40.7307Z"
+											fill="white" />
+									</g>
+								</svg>
+							</button>
+						</div>
+					</a>
+				</section>
+				<!-- End of Hero -->
 
-        <!-- Start of Elementor -->
-        <div class="font-TiemposText pt-16 reader z-30 relative">
-          <div
-            data-elementor-type="wp-post"
-            data-elementor-id="31948"
-            class="elementor elementor-31948"
-          >
-            <div
-              class="elementor-element elementor-element-6f21c84 e-flex e-con-boxed e-con e-parent"
-              data-id="6f21c84"
-              data-element_type="container"
-              data-core-v316-plus="true"
-            >
-              <div class="e-con-inner">
-                <div
-                  class="elementor-element elementor-element-b55bae6 elementor-widget elementor-widget-text-editor"
-                  data-id="b55bae6"
-                  data-element_type="widget"
-                  data-widget_type="text-editor.default"
-                >
-                  <div class="elementor-widget-container">
-                    <p>
-                      <b
-                        >Lịch sử hơn ngàn năm của nền kỹ nghệ Việt Nam đã chứng
-                        kiến không ít những kỹ thuật gia công kim khí độc đáo.
-                        Trong đó, <i>khảm tam khí</i> là một trong những kỹ
-                        thuật chế tác đặc sắc nhất.&nbsp;</b
-                      >
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-60c2109 elementor-widget elementor-widget-heading"
-                  data-id="60c2109"
-                  data-element_type="widget"
-                  data-widget_type="heading.default"
-                >
-                  <div class="elementor-widget-container">
-                    <h2
-                      class="elementor-heading-title elementor-size-large elementor-kit-5 elementor-kit-5"
-                    >
-                      Nguồn gốc
-                    </h2>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-813c4cb elementor-widget elementor-widget-text-editor"
-                  data-id="813c4cb"
-                  data-element_type="widget"
-                  data-widget_type="text-editor.default"
-                >
-                  <div class="elementor-widget-container">
-                    <p>
-                      <i>Khảm tam khí</i
-                      ><span>
-                        là một kỹ thuật gia công kim khí. Thời điểm ra đời của
-                        nó từng được xác định rơi vào khoảng giữa thời Nguyễn.
-                        Những nghệ nhân làm đồ đồng ở Bắc Ninh được cho là đã
-                        phát triển kỹ thuật khảm tam khí. Tuy nhiên, trong những
-                        năm gần đây, các nhà khảo cổ đã phát hiện một số di vật
-                        từ
-                        <a href="#!">thời Trần</a>
-                        mang dấu tích của loại hình kỹ thuật này. Một số hiện
-                        vật khảm tam khí khác vào
-                        <a href="#!">thời Lê</a>
-                        cũng được công bố không lâu sau đó.</span
-                      >
-                    </p>
-                    <p>
-                      <span
-                        >Điều này cho thấy khảm tam khí đã là một kỹ nghệ có
-                        lịch sử lâu đời của người Việt. Trong tiến trình phát
-                        triển, do những biến cố thăng trầm của thời đại mà kỹ
-                        thuật này có thời điểm bị thất truyền. Sang đến
-                        <a href="#!">thời Nguyễn</a>, nghề khảm tam khí dần được
-                        khôi phục và phát triển đến ngày nay.</span
-                      >
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-8ac04b6 elementor-widget elementor-widget-image"
-                  data-id="8ac04b6"
-                  data-element_type="widget"
-                  data-widget_type="image.default"
-                >
-                  <div class="elementor-widget-container">
-                    <figure class="wp-caption">
-                      <picture
-                        fetchpriority="high"
-                        decoding="async"
-                        class="attachment-full size-full wp-image-31966"
-                      >
-                        <img
-                          fetchpriority="high"
-                          decoding="async"
-                          width="736"
-                          height="519"
-                          src="./images/picture-lam-gia-thai-bao.webp"
-                          alt=""
-                          data-lazy-src=""
-                        />
-                      </picture>
-                      <noscript
-                        ><picture
-                          fetchpriority="high"
-                          decoding="async"
-                          class="attachment-full size-full wp-image-31966"
-                        >
-                          <img
-                            fetchpriority="high"
-                            decoding="async"
-                            width="736"
-                            height="519"
-                            src=""
-                            alt=""
-                          />
-                        </picture>
-                      </noscript>
-                      <figcaption
-                        class="widget-image-caption wp-caption-text elementor-kit-5"
-                      >
-                        Nghệ nhân khảm tam khí thời Nguyễn
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-22242b4 elementor-widget elementor-widget-heading"
-                  data-id="22242b4"
-                  data-element_type="widget"
-                  data-widget_type="heading.default"
-                >
-                  <div class="elementor-widget-container">
-                    <h2
-                      id="chapter-1"
-                      class="elementor-heading-title elementor-size-large elementor-kit-5"
-                    >
-                      Tiến trình phát triển
-                    </h2>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-75d0e68 elementor-widget elementor-widget-text-editor"
-                  data-id="75d0e68"
-                  data-element_type="widget"
-                  data-widget_type="text-editor.default"
-                >
-                  <div class="elementor-widget-container">
-                    <p>
-                      <span
-                        ><i
-                          style="
-                            text-align: var(--text-align);
-                            font-size: 1.8rem;
-                            letter-spacing: -0.18px;
-                            font-style: italic;
-                          "
-                          >Khảm tam khí</i
-                        >
-                        có xuất phát điểm lâu đời như nhiều loại hình trang trí
-                        sử dụng kỹ thuật khảm khác. Tùy theo bối cảnh địa lý và
-                        không gian văn hóa, ở các nơi sẽ sinh ra các nghề khảm
-                        khác nhau. Chẳng hạn, môi trường ven biển, nguồn lâm
-                        &#8211; thổ sản dồi dào là điều kiện lý tưởng cho sự ra
-                        đời của nghề <em>khảm trai</em>. Nơi có nguồn đất sét
-                        phong phú, chất men đa dạng,
-                        <a href="#!">nghề gốm sứ</a>
-                        phát triển là lý tưởng cho sự ra đời của nghề
-                        <em>khảm sành sứ</em>. Theo lẽ đó, nghề khảm tam khí
-                        cũng có xuất phát tương tự. Kỹ thuật này phải được hình
-                        thành từ một xã hội có nền tảng sử dụng lẫn chế tác kim
-                        khí tiên tiến và phát triển.</span
-                      >
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-92b7f49 elementor-widget elementor-widget-image"
-                  data-id="92b7f49"
-                  data-element_type="widget"
-                  data-widget_type="image.default"
-                >
-                  <div class="elementor-widget-container">
-                    <figure class="wp-caption">
-                      <picture
-                        decoding="async"
-                        class="attachment-full size-full wp-image-31961"
-                      >
-                        <img
-                          decoding="async"
-                          width="1280"
-                          height="854"
-                          src="./images/picture-thai-thuong-lao-cong.webp"
-                          alt=""
-                          data-lazy-src=""
-                        />
-                      </picture>
-                      <noscript
-                        ><picture
-                          decoding="async"
-                          class="attachment-full size-full wp-image-31961"
-                        >
-                          <img
-                            decoding="async"
-                            width="1280"
-                            height="854"
-                            src=""
-                          />
-                        </picture>
-                      </noscript>
-                      <figcaption
-                        class="widget-image-caption wp-caption-text elementor-kit-5"
-                      >
-                        Đao khảm tam khí thời Trần
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-8f3442f elementor-widget elementor-widget-text-editor"
-                  data-id="8f3442f"
-                  data-element_type="widget"
-                  data-widget_type="text-editor.default"
-                >
-                  <div class="elementor-widget-container">
-                    <p>
-                      <span style="font-weight: 400"
-                        >Kỹ thuật khảm tam khí còn có tên gọi khác là
-                        <em>tượng khảm</em>, vốn có nguồn gốc từ
-                        <a href="#!">Trung Hoa</a>. Kỹ thuật này du nhập vào
-                        Việt Nam và phát triển từ khoảng hậu kỳ Bắc thuộc. Hiện
-                        vật xưa nhất sử dụng kỹ thuật khảm tam khí được phát
-                        hiện ở Việt Nam là một thanh đoản đao
-                        <a href="#!">thời Trần</a>. Hiện vật được phát hiện vào
-                        năm 2002 tại khu di chỉ khảo cổ Hoàng thành Thăng Long.
-                      </span>
-                    </p>
-                    <p>
-                      <span style="font-weight: 400"
-                        >Thanh đao dài 83,4cm, bề rộng mặt đao nhỏ nhưng được
-                        khảm rất nhiều hoa văn từ tam khí vàng, bạc, đồng. Đồ án
-                        hoa văn chi tiết, phức tạp và mang phong cách đặc trưng
-                        thời <a href="#!">Lý &#8211; Trần</a>. Các chuyên gia
-                        khảo cổ đánh giá rằng đây là một tuyệt tác bởi những nét
-                        khảm rất nhỏ, mảnh và sâu. Điều phản ánh sự khéo léo lẫn
-                        trình độ mỹ thuật bậc thầy của nghệ nhân đương thời.
-                        Chứng tỏ người thời Trần đã nắm vững kỹ thuật khảm tam
-                        khí này.
-                      </span>
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-70e0412 elementor-widget elementor-widget-image"
-                  data-id="70e0412"
-                  data-element_type="widget"
-                  data-widget_type="image.default"
-                >
-                  <div class="elementor-widget-container">
-                    <figure class="wp-caption">
-                      <picture
-                        decoding="async"
-                        class="attachment-full size-full wp-image-31960"
-                      >
-                        <img
-                          decoding="async"
-                          width="1172"
-                          height="791"
-                          src="./images/picture-quan-cong-cam-sach.webp"
-                          alt=""
-                          data-lazy-src=""
-                        />
-                      </picture>
-                      <noscript
-                        ><picture
-                          loading="lazy"
-                          decoding="async"
-                          class="attachment-full size-full wp-image-31960"
-                        >
-                          <img
-                            loading="lazy"
-                            decoding="async"
-                            width="1172"
-                            height="791"
-                            src=""
-                          />
-                        </picture>
-                      </noscript>
-                      <figcaption
-                        class="widget-image-caption wp-caption-text elementor-kit-5"
-                      >
-                        Bề mặt đao được khảm tam khí tinh xảo
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-9e5394c elementor-widget elementor-widget-text-editor"
-                  data-id="9e5394c"
-                  data-element_type="widget"
-                  data-widget_type="text-editor.default"
-                >
-                  <div class="elementor-widget-container">
-                    <p>
-                      <span style="font-weight: 400"
-                        >Khảm tam khí tiếp tục phát triển vào các thời kỳ sau.
-                        Dưới thời <a href="#!">Lê trung hưng</a>, kỹ thuật khảm
-                        tam khí được sử dụng phổ biến trên các đồ gia dụng, binh
-                        khí, nghi trượng của tầng lớp quý tộc. Kỹ thuật này từng
-                        bị suy thoái vào khoảng cuối thế kỷ 18 do những biến
-                        động của thời cuộc. Sang đến thời Nguyễn kỹ thuật này
-                        dần được phục hưng và lưu truyền đến tận ngày nay.</span
-                      >
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-c4c009e elementor-widget elementor-widget-heading"
-                  data-id="c4c009e"
-                  data-element_type="widget"
-                  data-widget_type="heading.default"
-                >
-                  <div class="elementor-widget-container">
-                    <h2
-                      id="chapter-2"
-                      class="elementor-heading-title elementor-size-large elementor-kit-5"
-                    >
-                      Tính chất
-                    </h2>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-fe8d19d elementor-widget elementor-widget-text-editor"
-                  data-id="fe8d19d"
-                  data-element_type="widget"
-                  data-widget_type="text-editor.default"
-                >
-                  <div class="elementor-widget-container">
-                    <p>
-                      <span
-                        >Như đã nói, <em>khảm tam khí</em> hay
-                        <em>cẩn tam khí</em> hay <em>tượng khảm</em> là một kỹ
-                        thuật dùng để gia công trang trí trên các đồ dùng kim
-                        loại, thường là đồ đồng. Theo đó, sau khi phôi sản phẩm
-                        được hoàn thành, những người thợ sẽ tiến hành tạo các
-                        rãnh hoa văn trên bề mặt phôi. Tiếp đến, người thợ sẽ
-                        tiến hành khảm những chi tiết hoa văn bằng các thứ kim
-                        loại màu như vàng, bạc, đồng đen,&#8230; Đây là một quá
-                        trình phức tạp và đòi hỏi sự khéo léo cùng tay nghề rất
-                        cao từ người thợ. Khi sản phẩm được hoàn thành, bề mặt
-                        trang trí sẽ lấp lánh những đồ án hoa văn vàng bạc được
-                        lắp ghép khéo léo.
-                      </span>
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-d19ab5a elementor-widget elementor-widget-image"
-                  data-id="d19ab5a"
-                  data-element_type="widget"
-                  data-widget_type="image.default"
-                >
-                  <div class="elementor-widget-container">
-                    <figure class="wp-caption">
-                      <img
-                        decoding="async"
-                        width="2048"
-                        height="1536"
-                        src="./images/picture-tranh-ngoc-hoang-thuong-de.webp"
-                        class="attachment-full size-full wp-image-31968"
-                        alt=""
-                        data-lazy-src=""
-                      /><noscript> </noscript>
-                      <figcaption
-                        class="widget-image-caption wp-caption-text elementor-kit-5"
-                      >
-                        Hộp đồng khảm tam khí thời Nguyễn. Nguồn: Thuở vàng son
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-da6e457 elementor-widget elementor-widget-text-editor"
-                  data-id="da6e457"
-                  data-element_type="widget"
-                  data-widget_type="text-editor.default"
-                >
-                  <div class="elementor-widget-container">
-                    <p>
-                      <span style="font-weight: 400"
-                        >Mấu chốt của kỹ thuật này nằm ở việc thợ thủ công phải
-                        tinh tế trong việc lựa chọn đồ án hoa văn và kim loại
-                        khảm phù hợp. Cùng với đó, bản thân thợ thủ công cũng
-                        cần phải khéo léo và nhạy bén trong việc gia công tạo
-                        rãnh lẫn khi tiến hành khảm kim loại. Ngoài ra, do các
-                        loại kim loại khảm thường là kim loại quý nên người chế
-                        tác cần tính toán hợp lý để tránh sự lãng phí.
-                      </span>
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-da44003 elementor-widget elementor-widget-image"
-                  data-id="da44003"
-                  data-element_type="widget"
-                  data-widget_type="image.default"
-                >
-                  <div class="elementor-widget-container">
-                    <figure class="wp-caption">
-                      <picture
-                        decoding="async"
-                        class="attachment-full size-full wp-image-31969"
-                      >
-                        <img
-                          decoding="async"
-                          width="1868"
-                          height="2048"
-                          src="./images/picture-tuc-tho-cuu-thien-huyen-nu.webp"
-                          alt=""
-                          data-lazy-src=""
-                        />
-                      </picture>
-                      <noscript
-                        ><picture
-                          loading="lazy"
-                          decoding="async"
-                          class="attachment-full size-full wp-image-31969"
-                        >
-                          <img
-                            loading="lazy"
-                            decoding="async"
-                            width="1868"
-                            height="2048"
-                            src=""
-                          />
-                        </picture>
-                      </noscript>
-                      <figcaption
-                        class="widget-image-caption wp-caption-text elementor-kit-5"
-                      >
-                        Mâm khảm tam khí thời Nguyễn. Nguồn: Thuở vàng son
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-7233bf5 elementor-widget elementor-widget-heading"
-                  data-id="7233bf5"
-                  data-element_type="widget"
-                  data-widget_type="heading.default"
-                >
-                  <div class="elementor-widget-container">
-                    <h2
-                      id="chapter-3"
-                      class="elementor-heading-title elementor-size-large elementor-kit-5"
-                    >
-                      Thẩm mỹ
-                    </h2>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-1749426 elementor-widget elementor-widget-text-editor"
-                  data-id="1749426"
-                  data-element_type="widget"
-                  data-widget_type="text-editor.default"
-                >
-                  <div class="elementor-widget-container">
-                    <p>
-                      <span
-                        >Vẻ đẹp của khảm tam khí chủ yếu nằm ở sự phối hợp hài
-                        hòa các màu sắc kim loại trên bề mặt hoa văn. Sở dĩ loại
-                        hình này có tên gọi khảm tam khí là bởi người thợ thủ
-                        công khi xưa chủ yếu sử dụng 3 loại kim khí là vàng, bạc
-                        và đồng làm nguyên liệu chính để khảm hoa văn. Sản phẩm
-                        làm ra vì lẽ đó chủ yếu chỉ có 4 màu là vàng kim của
-                        vàng, bạc kim của bạc cùng với đó là màu nâu đỏ hoặc đen
-                        của đồng. Tính thẩm mỹ của sản phẩm vì lẽ đó sẽ thiên về
-                        phong cách thanh lịch, sang trọng thay vì phong cách sặc
-                        sỡ, đa dạng màu sắc.</span
-                      >
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-83d87d8 elementor-widget elementor-widget-image"
-                  data-id="83d87d8"
-                  data-element_type="widget"
-                  data-widget_type="image.default"
-                >
-                  <div class="elementor-widget-container">
-                    <figure class="wp-caption">
-                      <img
-                        decoding="async"
-                        width="2048"
-                        height="1906"
-                        src="./images/picture-lam-gia-thai-bao.webp"
-                        class="attachment-full size-full wp-image-31975"
-                        alt=""
-                        data-lazy-src=""
-                      /><noscript
-                        ><img
-                          loading="lazy"
-                          decoding="async"
-                          width="2048"
-                          height="1906"
-                          src=""
-                          class="attachment-full size-full wp-image-31975"
-                          alt=""
-                        />
-                      </noscript>
-                      <figcaption
-                        class="widget-image-caption wp-caption-text elementor-kit-5"
-                      >
-                        Hộp tam khí thời Nguyễn. Nguồn: Thuở vàng son
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-ff6b1c6 elementor-widget elementor-widget-text-editor"
-                  data-id="ff6b1c6"
-                  data-element_type="widget"
-                  data-widget_type="text-editor.default"
-                >
-                  <div class="elementor-widget-container">
-                    <p>
-                      <span style="font-weight: 400"
-                        >Mặc dù không có sự đa dạng trong gam màu nhưng không vì
-                        thế mà đồ dùng khảm tam khí trở nên nhàm chán trong con
-                        mắt đại chúng. Ngược lại, đồ dùng khảm tam khí lại rất
-                        đa dạng về kiểu dáng, mẫu mã và chủng loại. Kỹ thuật
-                        khảm tam khí có thể áp dụng trên rất nhiều vật dụng sinh
-                        hoạt hằng ngày. Từ những thứ vật dụng đơn giản như bình
-                        nước, ống điếu, khay trầu cho đến những món đồ trang
-                        trọng như chân đèn, đỉnh thờ, lư hương, hầu hết đều có
-                        thể áp dụng kỹ thuật khảm tam khí.
-                      </span>
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-615fc85 elementor-widget elementor-widget-image"
-                  data-id="615fc85"
-                  data-element_type="widget"
-                  data-widget_type="image.default"
-                >
-                  <div class="elementor-widget-container">
-                    <figure class="wp-caption">
-                      <picture
-                        decoding="async"
-                        class="attachment-full size-full wp-image-31980"
-                      >
-                        <img
-                          decoding="async"
-                          width="1284"
-                          height="1758"
-                          src="./images/picture-thai-thuong-lao-cong.webp"
-                          alt=""
-                          data-lazy-src=""
-                        />
-                      </picture>
-                      <noscript
-                        ><picture
-                          loading="lazy"
-                          decoding="async"
-                          class="attachment-full size-full wp-image-31980"
-                        >
-                          <img
-                            loading="lazy"
-                            decoding="async"
-                            width="1284"
-                            height="1758"
-                            src=""
-                          />
-                        </picture>
-                      </noscript>
-                      <figcaption
-                        class="widget-image-caption wp-caption-text elementor-kit-5"
-                      >
-                        Đỉnh Tam Long khảm tam khí. Nguồn: Thuở vàng son
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-2d85f38 elementor-widget elementor-widget-text-editor"
-                  data-id="2d85f38"
-                  data-element_type="widget"
-                  data-widget_type="text-editor.default"
-                >
-                  <div class="elementor-widget-container">
-                    <p>
-                      <span style="font-weight: 400"
-                        >Với phong cách thanh lịch và sang trọng, đồng thời do
-                        được chế tác bằng các kim loại quý nên đồ khảm tam khí
-                        thường có giá thành rất cao. Trong xã hội Việt Nam xưa,
-                        chỉ có tầng lớp thượng lưu Việt Nam, thường là quý tộc,
-                        <a href="#!">hoàng gia</a>
-                        hoặc thương gia giàu có mới có thể sở hữu đồ dùng khảm
-                        tam khí. Và thực tế cũng cho thấy, khảm tam khí là một
-                        trong những phong cách trang trí phổ biến nhất trên các
-                        vật dụng hoàng gia nhà Nguyễn.
-                      </span>
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-dfbfc84 elementor-widget elementor-widget-image"
-                  data-id="dfbfc84"
-                  data-element_type="widget"
-                  data-widget_type="image.default"
-                >
-                  <div class="elementor-widget-container">
-                    <figure class="wp-caption">
-                      <picture
-                        decoding="async"
-                        class="attachment-full size-full wp-image-31977"
-                      >
-                        <img
-                          decoding="async"
-                          width="2048"
-                          height="1846"
-                          src="./images/picture-tuong-cong-chua-tien-dung.webp"
-                          alt=""
-                          data-lazy-src=""
-                        />
-                      </picture>
-                      <noscript
-                        ><picture
-                          loading="lazy"
-                          decoding="async"
-                          class="attachment-full size-full wp-image-31977"
-                        >
-                          <img
-                            loading="lazy"
-                            decoding="async"
-                            width="2048"
-                            height="1846"
-                            src=""
-                          />
-                        </picture>
-                      </noscript>
-                      <figcaption
-                        class="widget-image-caption wp-caption-text elementor-kit-5"
-                      >
-                        Hộp đựng ấn khảm tam khí. Nguồn: Thuở vàng son
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-243db78 elementor-widget elementor-widget-heading"
-                  data-id="243db78"
-                  data-element_type="widget"
-                  data-widget_type="heading.default"
-                >
-                  <div class="elementor-widget-container">
-                    <h2
-                      id="chapter-4"
-                      class="elementor-heading-title elementor-size-large elementor-kit-5"
-                    >
-                      Trong buổi đương đại
-                    </h2>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-fe4ef85 elementor-widget elementor-widget-text-editor"
-                  data-id="fe4ef85"
-                  data-element_type="widget"
-                  data-widget_type="text-editor.default"
-                >
-                  <div class="elementor-widget-container">
-                    <p>
-                      <span
-                        >Xã hội luôn không ngừng phát triển, những nhu cầu mới
-                        sẽ dần được phát sinh theo thời gian. Từ kỹ thuật khảm
-                        tam khí ban đầu với những màu sắc cơ bản của vàng, bạc
-                        và đồng, người nghệ nhân bắt đầu sáng tạo và dung nạp
-                        thêm nhiều màu sắc kim loại mới. Loại hình khảm ngũ khí
-                        hay khảm ngũ sắc được ra đời dựa trên nền tảng của kỹ
-                        nghệ khảm tam khí truyền thống. Hiện nay, khảm ngũ sắc
-                        đang là một trong những phong cách trang trí đồ kim khí
-                        cao cấp ưa chuộng ở <a href="#!">Việt Nam</a>.
-                      </span>
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-45e1328 elementor-widget elementor-widget-image"
-                  data-id="45e1328"
-                  data-element_type="widget"
-                  data-widget_type="image.default"
-                >
-                  <div class="elementor-widget-container">
-                    <figure class="wp-caption">
-                      <img
-                        decoding="async"
-                        width="2048"
-                        height="1536"
-                        src="./images/picture-tranh-ngoc-hoang-thuong-de.webp"
-                        alt=""
-                        data-lazy-src=""
-                      /><noscript
-                        ><img
-                          loading="lazy"
-                          decoding="async"
-                          width="2048"
-                          height="1536"
-                          src=""
-                          class="attachment-full size-full wp-image-31967"
-                          alt=""
-                        />
-                      </noscript>
-                      <figcaption
-                        class="widget-image-caption wp-caption-text elementor-kit-5"
-                      >
-                        Một bộ sưu tập đồ tam khí. Nguồn: Thuở vàng son
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-e18b986 elementor-widget elementor-widget-text-editor"
-                  data-id="e18b986"
-                  data-element_type="widget"
-                  data-widget_type="text-editor.default"
-                >
-                  <div class="elementor-widget-container">
-                    <p>
-                      <span style="font-weight: 400"
-                        >Bên cạnh sự ra đời và phát triển của những biến thể
-                        mới. Nhiều cá nhân lại có xu hướng tìm về các giá trị
-                        xưa cũ. Những vật dụng, đồ vật được chế tác theo phong
-                        cách khảm tam khí truyền thống đang là một trong những
-                        dòng cổ vật được giới sưu tập ưa thích và săn tìm. Có
-                        không ít các cá nhân sẵn sàng bỏ ra con số lên đến hàng
-                        tỷ đồng để được sở hữu những món đồ khảm tam khí của
-                        hoàng gia. Điều này càng khẳng định cho các giá trị vật
-                        chất lẫn tinh thần mà kỹ nghệ khảm tam khí mang
-                        lại.</span
-                      >
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-cc9bf1b elementor-widget elementor-widget-image"
-                  data-id="cc9bf1b"
-                  data-element_type="widget"
-                  data-widget_type="image.default"
-                >
-                  <div class="elementor-widget-container">
-                    <figure class="wp-caption">
-                      <img
-                        decoding="async"
-                        width="960"
-                        height="613"
-                        src="./images/picture-thai-thuong-lao-cong.webp"
-                        class="attachment-full size-full wp-image-31979"
-                        alt=""
-                        data-lazy-src=""
-                      /><noscript
-                        ><img
-                          loading="lazy"
-                          decoding="async"
-                          width="960"
-                          height="613"
-                          src=""
-                          class="attachment-full size-full wp-image-31979"
-                          alt=""
-                      /></noscript>
-                      <figcaption
-                        class="widget-image-caption wp-caption-text elementor-kit-5"
-                      >
-                        Đồ dùng khảm tam khí. Nguồn: Thuở vàng son
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-db88218 elementor-widget elementor-widget-text-editor"
-                  data-id="db88218"
-                  data-element_type="widget"
-                  data-widget_type="text-editor.default"
-                >
-                  <div class="elementor-widget-container">
-                    <p>
-                      <span style="font-weight: 400"
-                        >So với những làng nghề truyền thống khác dần trở nên
-                        lỗi thời và mai một trong xã hội hiện đại. Nghề khảm tam
-                        khí vẫn tồn tại và phát triển ổn định trong xã hội hiện
-                        đại. Từ đó, tạo thành cầu nối truyền tải những giá trị
-                        xưa cũ vào nhịp sống hiện đại.</span
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="e-con-inner">
-            <div class="elementor-element">
-              <div class="elementor-widget-container">
-                <p class="detail__desc">Chia sẻ nội dung chuyện này</p>
-                <div class="detail__row">
-                  <button>
-                    <svg
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 320 512"
-                    >
-                      <path
-                        d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
-                      />
-                    </svg>
-                  </button>
-                  <button>
-                    <svg
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"
-                      />
-                    </svg>
-                  </button>
-                  <button>
-                    <svg
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 640 512"
-                    >
-                      <path
-                        d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"
-                      />
-                    </svg>
-                  </button>
-                  <button>
-                    <svg
-                      fill="currentColor"
-                      version="1.1"
-                      id="Capa_1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      viewBox="0 0 481.6 481.6"
-                      xml:space="preserve"
-                    >
-                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                      <g
-                        id="SVGRepo_tracerCarrier"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></g>
-                      <g id="SVGRepo_iconCarrier">
-                        <g>
-                          <path
-                            d="M381.6,309.4c-27.7,0-52.4,13.2-68.2,33.6l-132.3-73.9c3.1-8.9,4.8-18.5,4.8-28.4c0-10-1.7-19.5-4.9-28.5l132.2-73.8 c15.7,20.5,40.5,33.8,68.3,33.8c47.4,0,86.1-38.6,86.1-86.1S429,0,381.5,0s-86.1,38.6-86.1,86.1c0,10,1.7,19.6,4.9,28.5 l-132.1,73.8c-15.7-20.6-40.5-33.8-68.3-33.8c-47.4,0-86.1,38.6-86.1,86.1s38.7,86.1,86.2,86.1c27.8,0,52.6-13.3,68.4-33.9 l132.2,73.9c-3.2,9-5,18.7-5,28.7c0,47.4,38.6,86.1,86.1,86.1s86.1-38.6,86.1-86.1S429.1,309.4,381.6,309.4z M381.6,27.1 c32.6,0,59.1,26.5,59.1,59.1s-26.5,59.1-59.1,59.1s-59.1-26.5-59.1-59.1S349.1,27.1,381.6,27.1z M100,299.8 c-32.6,0-59.1-26.5-59.1-59.1s26.5-59.1,59.1-59.1s59.1,26.5,59.1,59.1S132.5,299.8,100,299.8z M381.6,454.5 c-32.6,0-59.1-26.5-59.1-59.1c0-32.6,26.5-59.1,59.1-59.1s59.1,26.5,59.1,59.1C440.7,428,414.2,454.5,381.6,454.5z"
-                          ></path>
-                        </g>
-                      </g>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+				<!-- Start of Elementor -->
+				<div class="font-TiemposText pt-16 reader z-30 relative">
+					<div
+						data-elementor-type="wp-post"
+						data-elementor-id="31948"
+						class="elementor elementor-31948">
+						<div
+							class="elementor-element elementor-element-6f21c84 e-flex e-con-boxed e-con e-parent"
+							data-id="6f21c84"
+							data-element_type="container"
+							data-core-v316-plus="true">
+							<div class="e-con-inner">
+								<div
+									class="elementor-element elementor-element-b55bae6 elementor-widget elementor-widget-text-editor"
+									data-id="b55bae6"
+									data-element_type="widget"
+									data-widget_type="text-editor.default">
+									<div class="elementor-widget-container">
+										<p>
+											<b
+												>Lịch sử hơn ngàn năm của nền kỹ nghệ Việt Nam đã
+												chứng kiến không ít những kỹ thuật gia công kim khí
+												độc đáo. Trong đó, <i>khảm tam khí</i> là một trong
+												những kỹ thuật chế tác đặc sắc nhất.&nbsp;</b
+											>
+										</p>
+									</div>
+								</div>
+								<div
+									class="elementor-element elementor-element-60c2109 elementor-widget elementor-widget-heading"
+									data-id="60c2109"
+									data-element_type="widget"
+									data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+										<h2
+											class="elementor-heading-title elementor-size-large elementor-kit-5 elementor-kit-5">
+											Nguồn gốc
+										</h2>
+									</div>
+								</div>
+								<div
+									class="elementor-element elementor-element-813c4cb elementor-widget elementor-widget-text-editor"
+									data-id="813c4cb"
+									data-element_type="widget"
+									data-widget_type="text-editor.default">
+									<div class="elementor-widget-container">
+										<p>
+											<i>Khảm tam khí</i
+											><span>
+												là một kỹ thuật gia công kim khí. Thời điểm ra đời
+												của nó từng được xác định rơi vào khoảng giữa thời
+												Nguyễn. Những nghệ nhân làm đồ đồng ở Bắc Ninh được
+												cho là đã phát triển kỹ thuật khảm tam khí. Tuy
+												nhiên, trong những năm gần đây, các nhà khảo cổ đã
+												phát hiện một số di vật từ
+												<a href="#!">thời Trần</a>
+												mang dấu tích của loại hình kỹ thuật này. Một số
+												hiện vật khảm tam khí khác vào
+												<a href="#!">thời Lê</a>
+												cũng được công bố không lâu sau đó.</span
+											>
+										</p>
+										<p>
+											<span
+												>Điều này cho thấy khảm tam khí đã là một kỹ nghệ có
+												lịch sử lâu đời của người Việt. Trong tiến trình
+												phát triển, do những biến cố thăng trầm của thời đại
+												mà kỹ thuật này có thời điểm bị thất truyền. Sang
+												đến <a href="#!">thời Nguyễn</a>, nghề khảm tam khí
+												dần được khôi phục và phát triển đến ngày nay.</span
+											>
+										</p>
+									</div>
+								</div>
+								<div
+									class="elementor-element elementor-element-8ac04b6 elementor-widget elementor-widget-image"
+									data-id="8ac04b6"
+									data-element_type="widget"
+									data-widget_type="image.default">
+									<div class="elementor-widget-container">
+										<figure class="wp-caption">
+											<picture
+												fetchpriority="high"
+												decoding="async"
+												class="attachment-full size-full wp-image-31966">
+												<img
+													fetchpriority="high"
+													decoding="async"
+													width="736"
+													height="519"
+													src="./images/picture-lam-gia-thai-bao.webp"
+													alt=""
+													data-lazy-src="" />
+											</picture>
+											<noscript
+												><picture
+													fetchpriority="high"
+													decoding="async"
+													class="attachment-full size-full wp-image-31966">
+													<img
+														fetchpriority="high"
+														decoding="async"
+														width="736"
+														height="519"
+														src=""
+														alt="" />
+												</picture>
+											</noscript>
+											<figcaption
+												class="widget-image-caption wp-caption-text elementor-kit-5">
+												Nghệ nhân khảm tam khí thời Nguyễn
+											</figcaption>
+										</figure>
+									</div>
+								</div>
+								<div
+									class="elementor-element elementor-element-22242b4 elementor-widget elementor-widget-heading"
+									data-id="22242b4"
+									data-element_type="widget"
+									data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+										<h2
+											id="chapter-1"
+											class="elementor-heading-title elementor-size-large elementor-kit-5">
+											Tiến trình phát triển
+										</h2>
+									</div>
+								</div>
+								<div
+									class="elementor-element elementor-element-75d0e68 elementor-widget elementor-widget-text-editor"
+									data-id="75d0e68"
+									data-element_type="widget"
+									data-widget_type="text-editor.default">
+									<div class="elementor-widget-container">
+										<p>
+											<span
+												><i
+													style="
+														text-align: var(--text-align);
+														font-size: 1.8rem;
+														letter-spacing: -0.18px;
+														font-style: italic;
+													"
+													>Khảm tam khí</i
+												>
+												có xuất phát điểm lâu đời như nhiều loại hình trang
+												trí sử dụng kỹ thuật khảm khác. Tùy theo bối cảnh
+												địa lý và không gian văn hóa, ở các nơi sẽ sinh ra
+												các nghề khảm khác nhau. Chẳng hạn, môi trường ven
+												biển, nguồn lâm &#8211; thổ sản dồi dào là điều kiện
+												lý tưởng cho sự ra đời của nghề <em>khảm trai</em>.
+												Nơi có nguồn đất sét phong phú, chất men đa dạng,
+												<a href="#!">nghề gốm sứ</a>
+												phát triển là lý tưởng cho sự ra đời của nghề
+												<em>khảm sành sứ</em>. Theo lẽ đó, nghề khảm tam khí
+												cũng có xuất phát tương tự. Kỹ thuật này phải được
+												hình thành từ một xã hội có nền tảng sử dụng lẫn chế
+												tác kim khí tiên tiến và phát triển.</span
+											>
+										</p>
+									</div>
+								</div>
+								<div
+									class="elementor-element elementor-element-92b7f49 elementor-widget elementor-widget-image"
+									data-id="92b7f49"
+									data-element_type="widget"
+									data-widget_type="image.default">
+									<div class="elementor-widget-container">
+										<figure class="wp-caption">
+											<picture
+												decoding="async"
+												class="attachment-full size-full wp-image-31961">
+												<img
+													decoding="async"
+													width="1280"
+													height="854"
+													src="./images/picture-thai-thuong-lao-cong.webp"
+													alt=""
+													data-lazy-src="" />
+											</picture>
+											<noscript
+												><picture
+													decoding="async"
+													class="attachment-full size-full wp-image-31961">
+													<img
+														decoding="async"
+														width="1280"
+														height="854"
+														src="" />
+												</picture>
+											</noscript>
+											<figcaption
+												class="widget-image-caption wp-caption-text elementor-kit-5">
+												Đao khảm tam khí thời Trần
+											</figcaption>
+										</figure>
+									</div>
+								</div>
+								<div
+									class="elementor-element elementor-element-8f3442f elementor-widget elementor-widget-text-editor"
+									data-id="8f3442f"
+									data-element_type="widget"
+									data-widget_type="text-editor.default">
+									<div class="elementor-widget-container">
+										<p>
+											<span style="font-weight: 400"
+												>Kỹ thuật khảm tam khí còn có tên gọi khác là
+												<em>tượng khảm</em>, vốn có nguồn gốc từ
+												<a href="#!">Trung Hoa</a>. Kỹ thuật này du nhập vào
+												Việt Nam và phát triển từ khoảng hậu kỳ Bắc thuộc.
+												Hiện vật xưa nhất sử dụng kỹ thuật khảm tam khí được
+												phát hiện ở Việt Nam là một thanh đoản đao
+												<a href="#!">thời Trần</a>. Hiện vật được phát hiện
+												vào năm 2002 tại khu di chỉ khảo cổ Hoàng thành
+												Thăng Long.
+											</span>
+										</p>
+										<p>
+											<span style="font-weight: 400"
+												>Thanh đao dài 83,4cm, bề rộng mặt đao nhỏ nhưng
+												được khảm rất nhiều hoa văn từ tam khí vàng, bạc,
+												đồng. Đồ án hoa văn chi tiết, phức tạp và mang phong
+												cách đặc trưng thời
+												<a href="#!">Lý &#8211; Trần</a>. Các chuyên gia
+												khảo cổ đánh giá rằng đây là một tuyệt tác bởi những
+												nét khảm rất nhỏ, mảnh và sâu. Điều phản ánh sự khéo
+												léo lẫn trình độ mỹ thuật bậc thầy của nghệ nhân
+												đương thời. Chứng tỏ người thời Trần đã nắm vững kỹ
+												thuật khảm tam khí này.
+											</span>
+										</p>
+									</div>
+								</div>
+								<div
+									class="elementor-element elementor-element-70e0412 elementor-widget elementor-widget-image"
+									data-id="70e0412"
+									data-element_type="widget"
+									data-widget_type="image.default">
+									<div class="elementor-widget-container">
+										<figure class="wp-caption">
+											<picture
+												decoding="async"
+												class="attachment-full size-full wp-image-31960">
+												<img
+													decoding="async"
+													width="1172"
+													height="791"
+													src="./images/picture-quan-cong-cam-sach.webp"
+													alt=""
+													data-lazy-src="" />
+											</picture>
+											<noscript
+												><picture
+													loading="lazy"
+													decoding="async"
+													class="attachment-full size-full wp-image-31960">
+													<img
+														loading="lazy"
+														decoding="async"
+														width="1172"
+														height="791"
+														src="" />
+												</picture>
+											</noscript>
+											<figcaption
+												class="widget-image-caption wp-caption-text elementor-kit-5">
+												Bề mặt đao được khảm tam khí tinh xảo
+											</figcaption>
+										</figure>
+									</div>
+								</div>
+								<div
+									class="elementor-element elementor-element-9e5394c elementor-widget elementor-widget-text-editor"
+									data-id="9e5394c"
+									data-element_type="widget"
+									data-widget_type="text-editor.default">
+									<div class="elementor-widget-container">
+										<p>
+											<span style="font-weight: 400"
+												>Khảm tam khí tiếp tục phát triển vào các thời kỳ
+												sau. Dưới thời <a href="#!">Lê trung hưng</a>, kỹ
+												thuật khảm tam khí được sử dụng phổ biến trên các đồ
+												gia dụng, binh khí, nghi trượng của tầng lớp quý
+												tộc. Kỹ thuật này từng bị suy thoái vào khoảng cuối
+												thế kỷ 18 do những biến động của thời cuộc. Sang đến
+												thời Nguyễn kỹ thuật này dần được phục hưng và lưu
+												truyền đến tận ngày nay.</span
+											>
+										</p>
+									</div>
+								</div>
+								<div
+									class="elementor-element elementor-element-c4c009e elementor-widget elementor-widget-heading"
+									data-id="c4c009e"
+									data-element_type="widget"
+									data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+										<h2
+											id="chapter-2"
+											class="elementor-heading-title elementor-size-large elementor-kit-5">
+											Tính chất
+										</h2>
+									</div>
+								</div>
+								<div
+									class="elementor-element elementor-element-fe8d19d elementor-widget elementor-widget-text-editor"
+									data-id="fe8d19d"
+									data-element_type="widget"
+									data-widget_type="text-editor.default">
+									<div class="elementor-widget-container">
+										<p>
+											<span
+												>Như đã nói, <em>khảm tam khí</em> hay
+												<em>cẩn tam khí</em> hay <em>tượng khảm</em> là một
+												kỹ thuật dùng để gia công trang trí trên các đồ dùng
+												kim loại, thường là đồ đồng. Theo đó, sau khi phôi
+												sản phẩm được hoàn thành, những người thợ sẽ tiến
+												hành tạo các rãnh hoa văn trên bề mặt phôi. Tiếp
+												đến, người thợ sẽ tiến hành khảm những chi tiết hoa
+												văn bằng các thứ kim loại màu như vàng, bạc, đồng
+												đen,&#8230; Đây là một quá trình phức tạp và đòi hỏi
+												sự khéo léo cùng tay nghề rất cao từ người thợ. Khi
+												sản phẩm được hoàn thành, bề mặt trang trí sẽ lấp
+												lánh những đồ án hoa văn vàng bạc được lắp ghép khéo
+												léo.
+											</span>
+										</p>
+									</div>
+								</div>
+								<div
+									class="elementor-element elementor-element-d19ab5a elementor-widget elementor-widget-image"
+									data-id="d19ab5a"
+									data-element_type="widget"
+									data-widget_type="image.default">
+									<div class="elementor-widget-container">
+										<figure class="wp-caption">
+											<img
+												decoding="async"
+												width="2048"
+												height="1536"
+												src="./images/picture-tranh-ngoc-hoang-thuong-de.webp"
+												class="attachment-full size-full wp-image-31968"
+												alt=""
+												data-lazy-src="" /><noscript> </noscript>
+											<figcaption
+												class="widget-image-caption wp-caption-text elementor-kit-5">
+												Hộp đồng khảm tam khí thời Nguyễn. Nguồn: Thuở vàng
+												son
+											</figcaption>
+										</figure>
+									</div>
+								</div>
+								<div
+									class="elementor-element elementor-element-da6e457 elementor-widget elementor-widget-text-editor"
+									data-id="da6e457"
+									data-element_type="widget"
+									data-widget_type="text-editor.default">
+									<div class="elementor-widget-container">
+										<p>
+											<span style="font-weight: 400"
+												>Mấu chốt của kỹ thuật này nằm ở việc thợ thủ công
+												phải tinh tế trong việc lựa chọn đồ án hoa văn và
+												kim loại khảm phù hợp. Cùng với đó, bản thân thợ thủ
+												công cũng cần phải khéo léo và nhạy bén trong việc
+												gia công tạo rãnh lẫn khi tiến hành khảm kim loại.
+												Ngoài ra, do các loại kim loại khảm thường là kim
+												loại quý nên người chế tác cần tính toán hợp lý để
+												tránh sự lãng phí.
+											</span>
+										</p>
+									</div>
+								</div>
+								<div
+									class="elementor-element elementor-element-da44003 elementor-widget elementor-widget-image"
+									data-id="da44003"
+									data-element_type="widget"
+									data-widget_type="image.default">
+									<div class="elementor-widget-container">
+										<figure class="wp-caption">
+											<picture
+												decoding="async"
+												class="attachment-full size-full wp-image-31969">
+												<img
+													decoding="async"
+													width="1868"
+													height="2048"
+													src="./images/picture-tuc-tho-cuu-thien-huyen-nu.webp"
+													alt=""
+													data-lazy-src="" />
+											</picture>
+											<noscript
+												><picture
+													loading="lazy"
+													decoding="async"
+													class="attachment-full size-full wp-image-31969">
+													<img
+														loading="lazy"
+														decoding="async"
+														width="1868"
+														height="2048"
+														src="" />
+												</picture>
+											</noscript>
+											<figcaption
+												class="widget-image-caption wp-caption-text elementor-kit-5">
+												Mâm khảm tam khí thời Nguyễn. Nguồn: Thuở vàng son
+											</figcaption>
+										</figure>
+									</div>
+								</div>
+								<div
+									class="elementor-element elementor-element-7233bf5 elementor-widget elementor-widget-heading"
+									data-id="7233bf5"
+									data-element_type="widget"
+									data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+										<h2
+											id="chapter-3"
+											class="elementor-heading-title elementor-size-large elementor-kit-5">
+											Thẩm mỹ
+										</h2>
+									</div>
+								</div>
+								<div
+									class="elementor-element elementor-element-1749426 elementor-widget elementor-widget-text-editor"
+									data-id="1749426"
+									data-element_type="widget"
+									data-widget_type="text-editor.default">
+									<div class="elementor-widget-container">
+										<p>
+											<span
+												>Vẻ đẹp của khảm tam khí chủ yếu nằm ở sự phối hợp
+												hài hòa các màu sắc kim loại trên bề mặt hoa văn. Sở
+												dĩ loại hình này có tên gọi khảm tam khí là bởi
+												người thợ thủ công khi xưa chủ yếu sử dụng 3 loại
+												kim khí là vàng, bạc và đồng làm nguyên liệu chính
+												để khảm hoa văn. Sản phẩm làm ra vì lẽ đó chủ yếu
+												chỉ có 4 màu là vàng kim của vàng, bạc kim của bạc
+												cùng với đó là màu nâu đỏ hoặc đen của đồng. Tính
+												thẩm mỹ của sản phẩm vì lẽ đó sẽ thiên về phong cách
+												thanh lịch, sang trọng thay vì phong cách sặc sỡ, đa
+												dạng màu sắc.</span
+											>
+										</p>
+									</div>
+								</div>
+								<div
+									class="elementor-element elementor-element-83d87d8 elementor-widget elementor-widget-image"
+									data-id="83d87d8"
+									data-element_type="widget"
+									data-widget_type="image.default">
+									<div class="elementor-widget-container">
+										<figure class="wp-caption">
+											<img
+												decoding="async"
+												width="2048"
+												height="1906"
+												src="./images/picture-lam-gia-thai-bao.webp"
+												class="attachment-full size-full wp-image-31975"
+												alt=""
+												data-lazy-src="" /><noscript
+												><img
+													loading="lazy"
+													decoding="async"
+													width="2048"
+													height="1906"
+													src=""
+													class="attachment-full size-full wp-image-31975"
+													alt="" />
+											</noscript>
+											<figcaption
+												class="widget-image-caption wp-caption-text elementor-kit-5">
+												Hộp tam khí thời Nguyễn. Nguồn: Thuở vàng son
+											</figcaption>
+										</figure>
+									</div>
+								</div>
+								<div
+									class="elementor-element elementor-element-ff6b1c6 elementor-widget elementor-widget-text-editor"
+									data-id="ff6b1c6"
+									data-element_type="widget"
+									data-widget_type="text-editor.default">
+									<div class="elementor-widget-container">
+										<p>
+											<span style="font-weight: 400"
+												>Mặc dù không có sự đa dạng trong gam màu nhưng
+												không vì thế mà đồ dùng khảm tam khí trở nên nhàm
+												chán trong con mắt đại chúng. Ngược lại, đồ dùng
+												khảm tam khí lại rất đa dạng về kiểu dáng, mẫu mã và
+												chủng loại. Kỹ thuật khảm tam khí có thể áp dụng
+												trên rất nhiều vật dụng sinh hoạt hằng ngày. Từ
+												những thứ vật dụng đơn giản như bình nước, ống điếu,
+												khay trầu cho đến những món đồ trang trọng như chân
+												đèn, đỉnh thờ, lư hương, hầu hết đều có thể áp dụng
+												kỹ thuật khảm tam khí.
+											</span>
+										</p>
+									</div>
+								</div>
+								<div
+									class="elementor-element elementor-element-615fc85 elementor-widget elementor-widget-image"
+									data-id="615fc85"
+									data-element_type="widget"
+									data-widget_type="image.default">
+									<div class="elementor-widget-container">
+										<figure class="wp-caption">
+											<picture
+												decoding="async"
+												class="attachment-full size-full wp-image-31980">
+												<img
+													decoding="async"
+													width="1284"
+													height="1758"
+													src="./images/picture-thai-thuong-lao-cong.webp"
+													alt=""
+													data-lazy-src="" />
+											</picture>
+											<noscript
+												><picture
+													loading="lazy"
+													decoding="async"
+													class="attachment-full size-full wp-image-31980">
+													<img
+														loading="lazy"
+														decoding="async"
+														width="1284"
+														height="1758"
+														src="" />
+												</picture>
+											</noscript>
+											<figcaption
+												class="widget-image-caption wp-caption-text elementor-kit-5">
+												Đỉnh Tam Long khảm tam khí. Nguồn: Thuở vàng son
+											</figcaption>
+										</figure>
+									</div>
+								</div>
+								<div
+									class="elementor-element elementor-element-2d85f38 elementor-widget elementor-widget-text-editor"
+									data-id="2d85f38"
+									data-element_type="widget"
+									data-widget_type="text-editor.default">
+									<div class="elementor-widget-container">
+										<p>
+											<span style="font-weight: 400"
+												>Với phong cách thanh lịch và sang trọng, đồng thời
+												do được chế tác bằng các kim loại quý nên đồ khảm
+												tam khí thường có giá thành rất cao. Trong xã hội
+												Việt Nam xưa, chỉ có tầng lớp thượng lưu Việt Nam,
+												thường là quý tộc,
+												<a href="#!">hoàng gia</a>
+												hoặc thương gia giàu có mới có thể sở hữu đồ dùng
+												khảm tam khí. Và thực tế cũng cho thấy, khảm tam khí
+												là một trong những phong cách trang trí phổ biến
+												nhất trên các vật dụng hoàng gia nhà Nguyễn.
+											</span>
+										</p>
+									</div>
+								</div>
+								<div
+									class="elementor-element elementor-element-dfbfc84 elementor-widget elementor-widget-image"
+									data-id="dfbfc84"
+									data-element_type="widget"
+									data-widget_type="image.default">
+									<div class="elementor-widget-container">
+										<figure class="wp-caption">
+											<picture
+												decoding="async"
+												class="attachment-full size-full wp-image-31977">
+												<img
+													decoding="async"
+													width="2048"
+													height="1846"
+													src="./images/picture-tuong-cong-chua-tien-dung.webp"
+													alt=""
+													data-lazy-src="" />
+											</picture>
+											<noscript
+												><picture
+													loading="lazy"
+													decoding="async"
+													class="attachment-full size-full wp-image-31977">
+													<img
+														loading="lazy"
+														decoding="async"
+														width="2048"
+														height="1846"
+														src="" />
+												</picture>
+											</noscript>
+											<figcaption
+												class="widget-image-caption wp-caption-text elementor-kit-5">
+												Hộp đựng ấn khảm tam khí. Nguồn: Thuở vàng son
+											</figcaption>
+										</figure>
+									</div>
+								</div>
+								<div
+									class="elementor-element elementor-element-243db78 elementor-widget elementor-widget-heading"
+									data-id="243db78"
+									data-element_type="widget"
+									data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+										<h2
+											id="chapter-4"
+											class="elementor-heading-title elementor-size-large elementor-kit-5">
+											Trong buổi đương đại
+										</h2>
+									</div>
+								</div>
+								<div
+									class="elementor-element elementor-element-fe4ef85 elementor-widget elementor-widget-text-editor"
+									data-id="fe4ef85"
+									data-element_type="widget"
+									data-widget_type="text-editor.default">
+									<div class="elementor-widget-container">
+										<p>
+											<span
+												>Xã hội luôn không ngừng phát triển, những nhu cầu
+												mới sẽ dần được phát sinh theo thời gian. Từ kỹ
+												thuật khảm tam khí ban đầu với những màu sắc cơ bản
+												của vàng, bạc và đồng, người nghệ nhân bắt đầu sáng
+												tạo và dung nạp thêm nhiều màu sắc kim loại mới.
+												Loại hình khảm ngũ khí hay khảm ngũ sắc được ra đời
+												dựa trên nền tảng của kỹ nghệ khảm tam khí truyền
+												thống. Hiện nay, khảm ngũ sắc đang là một trong
+												những phong cách trang trí đồ kim khí cao cấp ưa
+												chuộng ở <a href="#!">Việt Nam</a>.
+											</span>
+										</p>
+									</div>
+								</div>
+								<div
+									class="elementor-element elementor-element-45e1328 elementor-widget elementor-widget-image"
+									data-id="45e1328"
+									data-element_type="widget"
+									data-widget_type="image.default">
+									<div class="elementor-widget-container">
+										<figure class="wp-caption">
+											<img
+												decoding="async"
+												width="2048"
+												height="1536"
+												src="./images/picture-tranh-ngoc-hoang-thuong-de.webp"
+												alt=""
+												data-lazy-src="" /><noscript
+												><img
+													loading="lazy"
+													decoding="async"
+													width="2048"
+													height="1536"
+													src=""
+													class="attachment-full size-full wp-image-31967"
+													alt="" />
+											</noscript>
+											<figcaption
+												class="widget-image-caption wp-caption-text elementor-kit-5">
+												Một bộ sưu tập đồ tam khí. Nguồn: Thuở vàng son
+											</figcaption>
+										</figure>
+									</div>
+								</div>
+								<div
+									class="elementor-element elementor-element-e18b986 elementor-widget elementor-widget-text-editor"
+									data-id="e18b986"
+									data-element_type="widget"
+									data-widget_type="text-editor.default">
+									<div class="elementor-widget-container">
+										<p>
+											<span style="font-weight: 400"
+												>Bên cạnh sự ra đời và phát triển của những biến thể
+												mới. Nhiều cá nhân lại có xu hướng tìm về các giá
+												trị xưa cũ. Những vật dụng, đồ vật được chế tác theo
+												phong cách khảm tam khí truyền thống đang là một
+												trong những dòng cổ vật được giới sưu tập ưa thích
+												và săn tìm. Có không ít các cá nhân sẵn sàng bỏ ra
+												con số lên đến hàng tỷ đồng để được sở hữu những món
+												đồ khảm tam khí của hoàng gia. Điều này càng khẳng
+												định cho các giá trị vật chất lẫn tinh thần mà kỹ
+												nghệ khảm tam khí mang lại.</span
+											>
+										</p>
+									</div>
+								</div>
+								<div
+									class="elementor-element elementor-element-cc9bf1b elementor-widget elementor-widget-image"
+									data-id="cc9bf1b"
+									data-element_type="widget"
+									data-widget_type="image.default">
+									<div class="elementor-widget-container">
+										<figure class="wp-caption">
+											<img
+												decoding="async"
+												width="960"
+												height="613"
+												src="./images/picture-thai-thuong-lao-cong.webp"
+												class="attachment-full size-full wp-image-31979"
+												alt=""
+												data-lazy-src="" /><noscript
+												><img
+													loading="lazy"
+													decoding="async"
+													width="960"
+													height="613"
+													src=""
+													class="attachment-full size-full wp-image-31979"
+													alt=""
+											/></noscript>
+											<figcaption
+												class="widget-image-caption wp-caption-text elementor-kit-5">
+												Đồ dùng khảm tam khí. Nguồn: Thuở vàng son
+											</figcaption>
+										</figure>
+									</div>
+								</div>
+								<div
+									class="elementor-element elementor-element-db88218 elementor-widget elementor-widget-text-editor"
+									data-id="db88218"
+									data-element_type="widget"
+									data-widget_type="text-editor.default">
+									<div class="elementor-widget-container">
+										<p>
+											<span style="font-weight: 400"
+												>So với những làng nghề truyền thống khác dần trở
+												nên lỗi thời và mai một trong xã hội hiện đại. Nghề
+												khảm tam khí vẫn tồn tại và phát triển ổn định trong
+												xã hội hiện đại. Từ đó, tạo thành cầu nối truyền tải
+												những giá trị xưa cũ vào nhịp sống hiện đại.</span
+											>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="e-con-inner">
+						<div class="elementor-element">
+							<div class="elementor-widget-container">
+								<p class="detail__desc">Chia sẻ nội dung chuyện này</p>
+								<div class="detail__row">
+									<button>
+										<svg
+											fill="currentColor"
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 320 512">
+											<path
+												d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+										</svg>
+									</button>
+									<button>
+										<svg
+											fill="currentColor"
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 512 512">
+											<path
+												d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z" />
+										</svg>
+									</button>
+									<button>
+										<svg
+											fill="currentColor"
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 640 512">
+											<path
+												d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
+										</svg>
+									</button>
+									<button>
+										<svg
+											fill="currentColor"
+											version="1.1"
+											id="Capa_1"
+											xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink"
+											viewBox="0 0 481.6 481.6"
+											xml:space="preserve">
+											<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+											<g
+												id="SVGRepo_tracerCarrier"
+												stroke-linecap="round"
+												stroke-linejoin="round"></g>
+											<g id="SVGRepo_iconCarrier">
+												<g>
+													<path
+														d="M381.6,309.4c-27.7,0-52.4,13.2-68.2,33.6l-132.3-73.9c3.1-8.9,4.8-18.5,4.8-28.4c0-10-1.7-19.5-4.9-28.5l132.2-73.8 c15.7,20.5,40.5,33.8,68.3,33.8c47.4,0,86.1-38.6,86.1-86.1S429,0,381.5,0s-86.1,38.6-86.1,86.1c0,10,1.7,19.6,4.9,28.5 l-132.1,73.8c-15.7-20.6-40.5-33.8-68.3-33.8c-47.4,0-86.1,38.6-86.1,86.1s38.7,86.1,86.2,86.1c27.8,0,52.6-13.3,68.4-33.9 l132.2,73.9c-3.2,9-5,18.7-5,28.7c0,47.4,38.6,86.1,86.1,86.1s86.1-38.6,86.1-86.1S429.1,309.4,381.6,309.4z M381.6,27.1 c32.6,0,59.1,26.5,59.1,59.1s-26.5,59.1-59.1,59.1s-59.1-26.5-59.1-59.1S349.1,27.1,381.6,27.1z M100,299.8 c-32.6,0-59.1-26.5-59.1-59.1s26.5-59.1,59.1-59.1s59.1,26.5,59.1,59.1S132.5,299.8,100,299.8z M381.6,454.5 c-32.6,0-59.1-26.5-59.1-59.1c0-32.6,26.5-59.1,59.1-59.1s59.1,26.5,59.1,59.1C440.7,428,414.2,454.5,381.6,454.5z"></path>
+												</g>
+											</g>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-        <!-- End of Elementor -->
+				<!-- End of Elementor -->
 
-        <!-- End of main-end -->
-      </main>
-      <!-- End of Main -->
+				<!-- End of main-end -->
+			</main>
+			<!-- End of Main -->
 
-      <!-- Start of Footer -->
-      <footer class="footer">
-        <a href="#!" class="footer__logo">
-          <img src="./images/logo-purple.svg" alt="" />
-        </a>
-        <!-- social  -->
-        <div class="footer__social">
-          <!-- fb -->
-          <a href="#!">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 320 512"
-              fill="currentColor"
-            >
-              <path
-                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
-              />
-            </svg>
-          </a>
-          <!-- tiktok -->
-          <a href="#!">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-              fill="currentColor"
-            >
-              <path
-                d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"
-              />
-            </svg>
-          </a>
-          <!-- instagram -->
-          <a href="#!">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-              fill="currentColor"
-            >
-              <path
-                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-              />
-            </svg>
-          </a>
-        </div>
-        <p class="footer__copyright">© Vietales 2023. All Rights Reserved</p>
-        <div class="footer__desc">
-          Công ty TNHH truyền thông và giải trí VIE-X
-        </div>
-        <div class="footer__desc">MSDN: 0317508603</div>
-        <div class="footer__desc">
-          Địa Chỉ: Toà nhà Redbase – 302A Nguyễn Thượng Hiền, Phường 5, Quận Phú
-          Nhuận
-        </div>
-        <div class="footer__row">
-          <img
-            src="./images/copyright-protection.png"
-            alt=""
-            class="footer__img"
-          />
-        </div>
-      </footer>
-      <!-- End of Footer -->
-    </div>
+			<!-- Start of Footer -->
+			<footer class="footer">
+				<a href="#!" class="footer__logo">
+					<img src="./images/logo-purple.svg" alt="" />
+				</a>
+				<!-- social  -->
+				<div class="footer__social">
+					<!-- fb -->
+					<a href="#!">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 320 512"
+							fill="currentColor">
+							<path
+								d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+						</svg>
+					</a>
+					<!-- tiktok -->
+					<a href="#!">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512"
+							fill="currentColor">
+							<path
+								d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z" />
+						</svg>
+					</a>
+					<!-- instagram -->
+					<a href="#!">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512"
+							fill="currentColor">
+							<path
+								d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+						</svg>
+					</a>
+				</div>
+				<p class="footer__copyright">© Vietales 2023. All Rights Reserved</p>
+				<div class="footer__desc">Công ty TNHH truyền thông và giải trí VIE-X</div>
+				<div class="footer__desc">MSDN: 0317508603</div>
+				<div class="footer__desc">
+					Địa Chỉ: Toà nhà Redbase – 302A Nguyễn Thượng Hiền, Phường 5, Quận Phú Nhuận
+				</div>
+				<div class="footer__row">
+					<img src="./images/copyright-protection.png" alt="" class="footer__img" />
+				</div>
+			</footer>
+			<!-- End of Footer -->
+		</div>
 
-    <!-- Start of Modal -->
-    <div id="modal" class="menu-modal">
-      <div class="modal__container">
-        <div class="modal__content">
-          <!-- Modal Search -->
-          <div class="modal__search">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-              fill="#581192"
-              class="modal__icon-arrow"
-            >
-              <path
-                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
-              />
-            </svg>
-            <input type="text" placeholder="Tìm kiếm trong Viegazine" />
-          </div>
+		<!-- Start of Modal -->
+		<div id="modal" class="menu-modal">
+			<div class="modal__container">
+				<div class="modal__content">
+					<!-- Modal Search -->
+					<div class="modal__search">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512"
+							fill="#581192"
+							class="modal__icon-arrow">
+							<path
+								d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+						</svg>
+						<input type="text" placeholder="Tìm kiếm trong Viegazine" />
+					</div>
 
-          <!-- Modal Body -->
-          <div class="modal__body">
-            <ul class="modal__list" x-ref="listItemMenu">
-              <li class="modal__item">
-                <a href="/" class="modal__link">Khám phá</a>
-              </li>
-              <li class="modal__item">
-                <a href="./viegazine.html" class="modal__link">Viegazine</a>
-              </li>
-              <li class="modal__item">
-                <a href="/comic.html" class="modal__link">Comic</a>
-              </li>
-              <li class="modal__item">
-                <a href="/video.html" class="modal__link">Video</a>
-              </li>
-              <li class="modal__item">
-                <a href="/podcast.html" class="modal__link">Podcast</a>
-              </li>
-            </ul>
+					<!-- Modal Body -->
+					<div class="modal__body">
+						<ul class="modal__list" x-ref="listItemMenu">
+							<li class="modal__item">
+								<a href="/" class="modal__link">Khám phá</a>
+							</li>
+							<li class="modal__item">
+								<a href="./viegazine.html" class="modal__link">Viegazine</a>
+							</li>
+							<li class="modal__item">
+								<a href="/comic.html" class="modal__link">Comic</a>
+							</li>
+							<li class="modal__item">
+								<a href="/video.html" class="modal__link">Video</a>
+							</li>
+							<li class="modal__item">
+								<a href="/podcast.html" class="modal__link">Podcast</a>
+							</li>
+						</ul>
 
-            <ul class="modal__list" x-ref="listItemMenu">
-              <li class="modal__item">
-                <a href="/series.html" class="modal__link">Loạt chuyện</a>
-              </li>
-              <li class="modal__item">
-                <a href="/category-history.html" class="modal__link">Lịch sử</a>
-              </li>
-              <li class="modal__item">
-                <a href="/category-creation.html" class="modal__link"
-                  >Văn hóa</a
-                >
-              </li>
-              <li class="modal__item">
-                <a href="/category-geography.html" class="modal__link"
-                  >Địa lý</a
-                >
-              </li>
-              <li class="modal__item">
-                <a href="/category-culture.html" class="modal__link"
-                  >Sáng tác</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End of Modal -->
+						<ul class="modal__list" x-ref="listItemMenu">
+							<li class="modal__item">
+								<a href="/series.html" class="modal__link">Loạt chuyện</a>
+							</li>
+							<li class="modal__item">
+								<a href="/category-history.html" class="modal__link">Lịch sử</a>
+							</li>
+							<li class="modal__item">
+								<a href="/category-creation.html" class="modal__link">Văn hóa</a>
+							</li>
+							<li class="modal__item">
+								<a href="/category-geography.html" class="modal__link">Địa lý</a>
+							</li>
+							<li class="modal__item">
+								<a href="/category-culture.html" class="modal__link">Sáng tác</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of Modal -->
 
-    <!-- Start of modal detail -->
-    <div class="modal-detail">
-      <div class="modal-detail__container">
-        <div class="modal-detail__content">
-          <div class="modal-detail__body">
-            <!-- Chapter 1 -->
-            <a href="#chapter-1" class="modal-detail__gr">
-              <div class="modal-detail__text">
-                <span>Chương</span>
-                <p>1. Lịch sử đảo Long Sơn</p>
-              </div>
-              <div class="modal-detail__num">1</div>
-              <div class="modal-detail__line"></div>
-            </a>
+		<!-- Start of modal detail -->
+		<div class="modal-detail">
+			<div class="modal-detail__container">
+				<div class="modal-detail__content">
+					<div class="modal-detail__body">
+						<!-- Chapter 1 -->
+						<a href="#chapter-1" class="modal-detail__gr">
+							<div class="modal-detail__text">
+								<span>Chương</span>
+								<p>1. Lịch sử đảo Long Sơn</p>
+							</div>
+							<div class="modal-detail__num">1</div>
+							<div class="modal-detail__line"></div>
+						</a>
 
-            <!-- Chapter 2 -->
-            <a href="#chapter-2" class="modal-detail__gr">
-              <div class="modal-detail__text">
-                <span>Chương</span>
-                <p>2. Đạo Ông Trần - một tín ngưỡng bản địa độc nhất vô nhị</p>
-              </div>
-              <div class="modal-detail__num">2</div>
-              <div class="modal-detail__line modal-detail__line--two"></div>
-            </a>
+						<!-- Chapter 2 -->
+						<a href="#chapter-2" class="modal-detail__gr">
+							<div class="modal-detail__text">
+								<span>Chương</span>
+								<p>2. Đạo Ông Trần - một tín ngưỡng bản địa độc nhất vô nhị</p>
+							</div>
+							<div class="modal-detail__num">2</div>
+							<div class="modal-detail__line modal-detail__line--two"></div>
+						</a>
 
-            <!-- Chapter 3 -->
-            <a href="#chapter-3" class="modal-detail__gr">
-              <div class="modal-detail__text">
-                <span>Chương</span>
-                <p>3. Ban thờ Thánh Mẫu bên phải chính điện</p>
-              </div>
-              <div class="modal-detail__num">3</div>
-              <div class="modal-detail__line modal-detail__line--two"></div>
-            </a>
+						<!-- Chapter 3 -->
+						<a href="#chapter-3" class="modal-detail__gr">
+							<div class="modal-detail__text">
+								<span>Chương</span>
+								<p>3. Ban thờ Thánh Mẫu bên phải chính điện</p>
+							</div>
+							<div class="modal-detail__num">3</div>
+							<div class="modal-detail__line modal-detail__line--two"></div>
+						</a>
 
-            <!-- Chapter 4 -->
-            <a href="#chapter-4" class="modal-detail__gr">
-              <div class="modal-detail__text">
-                <span>Chương</span>
-                <p>
-                  4. Sơ lược về hệ tôn tượng và bố trí ban thờ tại chùa Chí Lý,
-                  Vĩnh Hải, Nha Trang
-                </p>
-              </div>
-              <div class="modal-detail__num">4</div>
-              <div class="modal-detail__line modal-detail__line--two"></div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End of modal detail -->
+						<!-- Chapter 4 -->
+						<a href="#chapter-4" class="modal-detail__gr">
+							<div class="modal-detail__text">
+								<span>Chương</span>
+								<p>
+									4. Sơ lược về hệ tôn tượng và bố trí ban thờ tại chùa Chí Lý,
+									Vĩnh Hải, Nha Trang
+								</p>
+							</div>
+							<div class="modal-detail__num">4</div>
+							<div class="modal-detail__line modal-detail__line--two"></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of modal detail -->
 
-    <!-- Start of Decor -->
-    <button class="decor-message">
-      <svg
-        width="40"
-        height="35"
-        viewBox="0 0 40 35"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M12.0036 29.1189C14.825 32.0928 19.3716 34.0229 24.5 34.0229C26.6054 34.0229 28.6128 33.6976 30.443 33.1083L36.8205 34.9999L36.0955 29.9823C38.5247 27.8617 40 25.07 40 22.0114C40 19.8154 39.2395 17.757 37.9115 15.9858C36.9706 23.8492 28.639 29.9999 18.5 29.9999C16.2222 29.9999 14.0356 29.6895 12.0036 29.1189Z"
-          fill="#D4D4D4"
-          fill-opacity="0.68"
-        ></path>
-        <g filter="url(#filter0_b_2002_22360)">
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M5.05942 24.466L4.21124 30.4033L11.9785 28.0731L12.2584 28.1519C14.2062 28.7003 16.3071 29 18.5 29C28.9436 29 37 22.3062 37 14.5C37 6.69378 28.9436 0 18.5 0C8.05643 0 0 6.69378 0 14.5C0 18.1476 1.72752 21.5196 4.6557 24.109L5.05942 24.466Z"
-            fill="white"
-            fill-opacity="0.76"
-          ></path>
-        </g>
-        <path
-          d="M13.7921 8.14195L8 20.3721H10.4946L14.7219 11.1001H14.7751L19.0822 20.3721H21.5767L15.7317 8.14195L13.7921 8.14195Z"
-          fill="#727272"
-        ></path>
-        <path
-          d="M27.2479 14.8972H21.773V20.3721H27.2479V14.8972Z"
-          fill="#727272"
-        ></path>
-        <path
-          d="M24.5102 13.9038C26.1927 13.9038 27.5567 12.5398 27.5567 10.8573C27.5567 9.17475 26.1927 7.81079 24.5102 7.81079C22.8277 7.81079 21.4637 9.17475 21.4637 10.8573C21.4637 12.5398 22.8277 13.9038 24.5102 13.9038Z"
-          fill="#F0AB0A"
-        ></path>
-        <defs>
-          <filter
-            id="filter0_b_2002_22360"
-            x="-32"
-            y="-32"
-            width="101"
-            height="94.4033"
-            filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-            <feGaussianBlur
-              in="BackgroundImageFix"
-              stdDeviation="16"
-            ></feGaussianBlur>
-            <feComposite
-              in2="SourceAlpha"
-              operator="in"
-              result="effect1_backgroundBlur_2002_22360"
-            ></feComposite>
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="effect1_backgroundBlur_2002_22360"
-              result="shape"
-            ></feBlend>
-          </filter>
-        </defs>
-      </svg>
-    </button>
+		<!-- Start of Decor -->
+		<button class="decor-message">
+			<svg
+				width="40"
+				height="35"
+				viewBox="0 0 40 35"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M12.0036 29.1189C14.825 32.0928 19.3716 34.0229 24.5 34.0229C26.6054 34.0229 28.6128 33.6976 30.443 33.1083L36.8205 34.9999L36.0955 29.9823C38.5247 27.8617 40 25.07 40 22.0114C40 19.8154 39.2395 17.757 37.9115 15.9858C36.9706 23.8492 28.639 29.9999 18.5 29.9999C16.2222 29.9999 14.0356 29.6895 12.0036 29.1189Z"
+					fill="#D4D4D4"
+					fill-opacity="0.68"></path>
+				<g filter="url(#filter0_b_2002_22360)">
+					<path
+						fill-rule="evenodd"
+						clip-rule="evenodd"
+						d="M5.05942 24.466L4.21124 30.4033L11.9785 28.0731L12.2584 28.1519C14.2062 28.7003 16.3071 29 18.5 29C28.9436 29 37 22.3062 37 14.5C37 6.69378 28.9436 0 18.5 0C8.05643 0 0 6.69378 0 14.5C0 18.1476 1.72752 21.5196 4.6557 24.109L5.05942 24.466Z"
+						fill="white"
+						fill-opacity="0.76"></path>
+				</g>
+				<path
+					d="M13.7921 8.14195L8 20.3721H10.4946L14.7219 11.1001H14.7751L19.0822 20.3721H21.5767L15.7317 8.14195L13.7921 8.14195Z"
+					fill="#727272"></path>
+				<path d="M27.2479 14.8972H21.773V20.3721H27.2479V14.8972Z" fill="#727272"></path>
+				<path
+					d="M24.5102 13.9038C26.1927 13.9038 27.5567 12.5398 27.5567 10.8573C27.5567 9.17475 26.1927 7.81079 24.5102 7.81079C22.8277 7.81079 21.4637 9.17475 21.4637 10.8573C21.4637 12.5398 22.8277 13.9038 24.5102 13.9038Z"
+					fill="#F0AB0A"></path>
+				<defs>
+					<filter
+						id="filter0_b_2002_22360"
+						x="-32"
+						y="-32"
+						width="101"
+						height="94.4033"
+						filterUnits="userSpaceOnUse"
+						color-interpolation-filters="sRGB">
+						<feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+						<feGaussianBlur in="BackgroundImageFix" stdDeviation="16"></feGaussianBlur>
+						<feComposite
+							in2="SourceAlpha"
+							operator="in"
+							result="effect1_backgroundBlur_2002_22360"></feComposite>
+						<feBlend
+							mode="normal"
+							in="SourceGraphic"
+							in2="effect1_backgroundBlur_2002_22360"
+							result="shape"></feBlend>
+					</filter>
+				</defs>
+			</svg>
+		</button>
 
-    <button class="decor-feedback">
-      <div class="decor-feedback__icon">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="22"
-          fill="none"
-          viewBox="0 0 24 22"
-          data-testid="icon-buddy"
-        >
-          <path
-            fill="#fdfdfe"
-            fill-rule="evenodd"
-            d="M22.362.827C21.72.5 20.88.5 19.2.5H3.3C1.755.5.983.5.575.819A1.5 1.5 0 000 1.969c-.01.517.453 1.135 1.38 2.371l1.14 1.52c.178.237.267.356.33.487a1.5 1.5 0 01.122.365C3 6.855 3 7.003 3 7.3v9.4c0 1.68 0 2.52.327 3.162a3 3 0 001.311 1.311c.642.327 1.482.327 3.162.327h11.4c1.68 0 2.52 0 3.162-.327a3 3 0 001.311-1.311C24 19.22 24 18.38 24 16.7V5.3c0-1.68 0-2.52-.327-3.162a3 3 0 00-1.31-1.311zM9.277 11.937a1.125 1.125 0 00-1.948 1.126 7.123 7.123 0 006.171 3.562 7.123 7.123 0 006.171-3.562 1.125 1.125 0 10-1.947-1.126 4.872 4.872 0 01-4.224 2.438 4.873 4.873 0 01-4.223-2.438zM10.5 8a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM18 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </div>
-      <div class="decor-feedback__text">Phản hồi</div>
-    </button>
-    <!-- End of Decor -->
+		<button class="decor-feedback">
+			<div class="decor-feedback__icon">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="22"
+					fill="none"
+					viewBox="0 0 24 22"
+					data-testid="icon-buddy">
+					<path
+						fill="#fdfdfe"
+						fill-rule="evenodd"
+						d="M22.362.827C21.72.5 20.88.5 19.2.5H3.3C1.755.5.983.5.575.819A1.5 1.5 0 000 1.969c-.01.517.453 1.135 1.38 2.371l1.14 1.52c.178.237.267.356.33.487a1.5 1.5 0 01.122.365C3 6.855 3 7.003 3 7.3v9.4c0 1.68 0 2.52.327 3.162a3 3 0 001.311 1.311c.642.327 1.482.327 3.162.327h11.4c1.68 0 2.52 0 3.162-.327a3 3 0 001.311-1.311C24 19.22 24 18.38 24 16.7V5.3c0-1.68 0-2.52-.327-3.162a3 3 0 00-1.31-1.311zM9.277 11.937a1.125 1.125 0 00-1.948 1.126 7.123 7.123 0 006.171 3.562 7.123 7.123 0 006.171-3.562 1.125 1.125 0 10-1.947-1.126 4.872 4.872 0 01-4.224 2.438 4.873 4.873 0 01-4.223-2.438zM10.5 8a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM18 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+						clip-rule="evenodd"></path>
+				</svg>
+			</div>
+			<div class="decor-feedback__text">Phản hồi</div>
+		</button>
+		<!-- End of Decor -->
 
-    <!-- Embed jQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+		<!-- Embed jQuery -->
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-    <!-- Javascript -->
-    <script src="https://vietales.vn/static/js/swiper-bundle.min.js?ver=6.5"></script>
-    <script src="./js/style.js"></script>
-  </body>
+		<!-- Javascript -->
+		<script src="https://vietales.vn/static/js/swiper-bundle.min.js?ver=6.5"></script>
+		<script src="./js/style.js"></script>
+	</body>
 </html>
