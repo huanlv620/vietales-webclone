@@ -269,9 +269,10 @@ p.text-details {
   min-width: 100px;
   height: 40px;
   border-radius: 99px;
+  font-size: 1.6rem;
 
   font-family: "SVN-Basis Grotesque Pro", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 
   color: var(--primary-color);
   background: var(--primary-color-100);
@@ -593,7 +594,7 @@ p.text-details {
   background: #fafafa;
 }
 
-.header__btn {
+.header__btn btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -604,10 +605,9 @@ p.text-details {
   height: 40px;
   width: 100px;
   font-family: "SVN-Basis Grotesque Pro";
-  font-weight: bold;
 }
 
-.header__btn:hover {
+.header__btn btn:hover {
   box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.05),
     0px 1px 2px 0px rgba(0, 0, 0, 0.3);
 }
@@ -2851,7 +2851,7 @@ h2.category__heading--small {
     padding: 0 15px;
   }
 
-  .header__btn {
+  .header__btn btn {
     min-width: 80px;
     font-size: 1.4rem;
   }
@@ -3154,7 +3154,7 @@ h2.category__heading--small {
 /* Extra small devices */
 @media screen and (max-width: 479.98px) {
   /* Header */
-  .header__btn {
+  .header__btn btn {
     min-width: 70px;
     height: 32px;
     font-size: 1.2rem;

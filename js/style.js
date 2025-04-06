@@ -1,203 +1,130 @@
-function getElement(selector) {
-  return document.querySelector(selector);
-}
+$(document).ready(function () {
+  // Elements
+  const $modal = $("#modal");
+  const $iconSearch = $(".header__icon-search");
+  const $modalIconArrow = $(".modal__icon-arrow");
+  const $header = $(".header");
+  const $logoSvg = $(".logo__svg");
+  const $buttonDecorMessage = $(".decor-message");
+  const $buttonDecorFeedback = $(".decor-feedback");
+  const $btnDetailShowModal = $(".reading-list-btn");
+  const $modalDetail = $(".modal-detail");
+  const $btnDecorItemOne = $(".reading-list-btn__item-one");
+  const $btnDecorItemThree = $(".reading-list-btn__item-three");
+  const $navbarViegazine = $(".navbar-viegazine");
+  const $moreNewList = $(".navbar__btn-newText");
+  const $subMenu = $(".navbar__sub-menu");
+  const $iconSvgBtnMore = $(".navbar__btn-svg");
+  const $progressBar = $(".progress-bar");
 
-function addEventListenerIfExists(element, event, callback) {
-  if (element) {
-    element.addEventListener(event, callback);
-  }
-}
+  // Events
+  $iconSearch.on("click", function () {
+    $modal.addClass("show");
+  });
 
-function toggleClassIfExists(element, className) {
-  if (element) {
-    element.classList.toggle(className);
-  }
-}
+  $modalIconArrow.on("click", function () {
+    $modal.removeClass("show");
+  });
 
-function removeClassIfExists(element, className) {
-  if (element) {
-    element.classList.remove(className);
-  }
-}
+  $moreNewList.on("click", function (e) {
+    e.stopPropagation();
+    $subMenu.toggleClass("show");
+    $iconSvgBtnMore.toggleClass("navbar__btn-svg--rotate");
+  });
 
-function setStyleIfExists(element, styleProp, value) {
-  if (element) {
-    element.style[styleProp] = value;
-  }
-}
+  $modal.on("click", function (e) {
+    if (e.target === this) {
+      $modal.removeClass("show");
+    }
+  });
 
-// Elements
-const modal = getElement("#modal");
-const iconSearch = getElement(".header__icon-search");
-const modalIconArrow = getElement(".modal__icon-arrow");
-const header = getElement(".header");
-const logoSvg = getElement(".logo__svg");
-const buttonDecorMessage = getElement(".decor-message");
-const buttonDecorFeedback = getElement(".decor-feedback");
-const btnDetailShowModal = getElement(".reading-list-btn");
-const modalDetail = getElement(".modal-detail");
-const btnDecorItemOne = getElement(".reading-list-btn__item-one");
-const btnDecorItemThree = getElement(".reading-list-btn__item-three");
-const navbarViegazine = getElement(".navbar-viegazine");
-const moreNewList = getElement(".navbar__btn-newText");
-const subMenu = getElement(".navbar__sub-menu");
-const iconSvgBtnMore = getElement(".navbar__btn-svg");
-const progressBar = getElement(".progress-bar");
+  $btnDetailShowModal.on("click", function () {
+    $modalDetail.toggleClass("show");
+    $btnDecorItemOne.toggleClass("active");
+    $btnDecorItemThree.toggleClass("active");
+  });
 
-// Event Handlers
-addEventListenerIfExists(iconSearch, "click", () =>
-  modal?.classList.add("show")
-);
-addEventListenerIfExists(modalIconArrow, "click", () =>
-  modal?.classList.remove("show")
-);
-addEventListenerIfExists(moreNewList, "click", () => {
-  toggleClassIfExists(subMenu, "show");
-  toggleClassIfExists(iconSvgBtnMore, "navbar__btn-svg--rotate");
-});
-addEventListenerIfExists(modal, "click", (e) => {
-  if (e.target === modal) {
-    modal.classList.remove("show");
-  }
-});
-addEventListenerIfExists(btnDetailShowModal, "click", () => {
-  toggleClassIfExists(modalDetail, "show");
-  toggleClassIfExists(btnDecorItemOne, "active");
-  toggleClassIfExists(btnDecorItemThree, "active");
-});
-addEventListenerIfExists(modalDetail, "click", () => {
-  modalDetail.classList.remove("show");
-  toggleClassIfExists(btnDecorItemOne, "active");
-  toggleClassIfExists(btnDecorItemThree, "active");
-});
+  $modalDetail.on("click", function () {
+    $modalDetail.removeClass("show");
+    $btnDecorItemOne.toggleClass("active");
+    $btnDecorItemThree.toggleClass("active");
+  });
 
-// Click anywhere to close subMenu
-window.addEventListener("click", (e) => {
-  if (
-    subMenu &&
-    !subMenu.contains(e.target) &&
-    !moreNewList.contains(e.target)
-  ) {
-    removeClassIfExists(subMenu, "show");
-    removeClassIfExists(iconSvgBtnMore, "navbar__btn-svg--rotate");
-  }
-});
+  // Click anywhere to close subMenu
+  $(window).on("click", function (e) {
+    if (
+      !$subMenu.is(e.target) &&
+      $subMenu.has(e.target).length === 0 &&
+      !$moreNewList.is(e.target) &&
+      $moreNewList.has(e.target).length === 0
+    ) {
+      $subMenu.removeClass("show");
+      $iconSvgBtnMore.removeClass("navbar__btn-svg--rotate");
+    }
+  });
 
-// Scroll Event
-window.addEventListener("scroll", () => {
-  const scrollPosition = window.scrollY;
-  const windowHeight = window.innerHeight;
-  const documentHeight = document.documentElement.scrollHeight;
+  // Scroll Event
+  $(window).on("scroll", function () {
+    const scrollPosition = $(this).scrollTop();
+    const windowHeight = $(window).height();
+    const documentHeight = $(document).height();
 
-  // Header updates
-  if (scrollPosition > 300) {
-    setStyleIfExists(header, "color", "#8917ee");
-    setStyleIfExists(header, "background", "#fafafa");
-    logoSvg?.classList.add("logo__small");
-    buttonDecorMessage?.classList.add("show");
-    navbarViegazine?.classList.add("navbar-viegazine--active");
-  } else {
-    setStyleIfExists(header, "color", "#fff");
-    setStyleIfExists(header, "background", "transparent");
-    logoSvg?.classList.remove("logo__small");
-    buttonDecorMessage?.classList.remove("show");
-    navbarViegazine?.classList.remove("navbar-viegazine--active");
-  }
+    if (scrollPosition > 300) {
+      $header.css({ color: "#8917ee", background: "#fafafa" });
+      $logoSvg.addClass("logo__small");
+      $buttonDecorMessage.addClass("show");
+      $navbarViegazine.addClass("navbar-viegazine--active");
+    } else {
+      $header.css({ color: "#fff", background: "transparent" });
+      $logoSvg.removeClass("logo__small");
+      $buttonDecorMessage.removeClass("show");
+      $navbarViegazine.removeClass("navbar-viegazine--active");
+    }
 
-  // Feedback button
-  if (scrollPosition > documentHeight / 2 - windowHeight) {
-    buttonDecorFeedback?.classList.add("show");
-  }
+    if (scrollPosition > documentHeight / 2 - windowHeight) {
+      $buttonDecorFeedback.addClass("show");
+    }
 
-  // Loading bar
-  if (progressBar) {
-    let progress = (scrollPosition / (documentHeight - windowHeight)) * 100;
-    progressBar.style.width = progress + "%";
-  }
-});
+    if ($progressBar.length) {
+      let progress = (scrollPosition / (documentHeight - windowHeight)) * 100;
+      $progressBar.css("width", progress + "%");
+    }
+  });
 
-// Initialize Swiper
-function handleSwiper() {
-  if (typeof Swiper !== "undefined") {
-    // var swiper = new Swiper(".swiper", {
-    //   effect: "coverflow",
-    //   grabCursor: true,
-    //   centeredSlides: true,
-    //   initialSlide: 2,
-    //   speed: 600,
-    //   preventClicks: true,
-    //   slidesPerView: "auto",
-    //   coverflowEffect: {
-    //     rotate: 0,
-    //     stretch: 80,
-    //     depth: 350,
-    //     modifier: 1,
-    //     slideShadows: true,
-    //   },
-    // });
-  }
-}
+  // Swiper Slide Hover Effect
+  $(".swiper-slide").on("mouseover", function () {
+    const $items = $(".swiper-slide");
+    const index = $items.index(this);
 
-// handleSwiper();
+    $items.each(function (i) {
+      const gap = Math.abs(i - index);
+      const $el = $(this);
 
-const items = document.querySelectorAll(".swiper-slide");
+      $el.css("z-index", 10 - gap);
 
-function handleSlideEffect() {
-  items.forEach((item, index) => {
-    item.addEventListener("mouseover", () => {
-      // const index = +item.getAttribute("data-swiper-slide-index");
+      if (gap === 0) {
+        $el.addClass("swiper-slide-active").css({
+          transform: "translate3d(0,0,0) scale3d(1, 1, 1)",
+        });
+      } else {
+        $el.removeClass("swiper-slide-active");
 
-      items.forEach((i, currentIndex) => {
-        // const currentIndex = +i.getAttribute("data-swiper-slide-index");
-        const gap = Math.abs(currentIndex - index);
+        const scale = 1 - gap * 0.1;
+        const delta = 37;
+        const sign = i < index ? 1 : -1;
+        const translateX = sign * (gap / 4) * delta;
 
-        i.style.zIndex = 10 - gap;
-
-        if (gap === 0) {
-          i.classList.add("swiper-slide-active");
-          i.style.transform = "translate3d(0,0,0) scale3d(1, 1, 1)";
-        } else {
-          i.classList.remove("swiper-slide-active");
-
-          const scale = [];
-          scale[0] = 1 - gap * 0.1;
-          scale[1] = 1 - gap * 0.1;
-          scale[2] = 1 - gap * 0.1;
-
-          const translate = [];
-          translate[0] = 0;
-          translate[1] = 0;
-          translate[2] = 0;
-
-          const delta = 37;
-          const sign = currentIndex < index ? 1 : -1;
-
-          translate[0] = sign * (gap / 4) * delta;
-
-          i.style.transform = `translate3d(${translate[0]}px, ${translate[1]}px, ${translate[2]}px) scale3d(${scale[0]}, ${scale[1]}, ${scale[2]})`;
-        }
-      });
+        $el.css({
+          transform: `translate3d(${translateX}px, 0, 0) scale3d(${scale}, ${scale}, ${scale})`,
+        });
+      }
     });
   });
-}
 
-function handleSlideMobileEffect() {
-  // new Swiper(".swiper", {
-  //   effect: "cards",
-  //   loop: true,
-  //   centeredSlides: true,
-  //   centerInsufficientSlides: true,
-  //   centeredSlidesBounds: true,
-  //   parallax: true,
-  //   initialSlide: 2,
-  //   activeIndex: 3,
-  //   loopedSlides: 4,
-  //   slidesPerView: "auto",
-  //   cardsEffect: { rotate: false, perSlideOffset: 15, slideShadows: false },
-  // });
-}
+  // Mobile Swiper effect placeholder
+  function handleSlideMobileEffect() {
+    // Nếu muốn dùng Swiper cho mobile thì khởi tạo ở đây
+  }
 
-document.addEventListener("DOMContentLoaded", function (event) {
   handleSlideMobileEffect();
-  handleSlideEffect();
 });
