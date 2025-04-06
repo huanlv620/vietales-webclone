@@ -269,13 +269,13 @@ p.text-details {
   min-width: 100px;
   height: 40px;
   border-radius: 99px;
-  font-size: 1.6rem;
+  font-size: 1.6rem !important;
 
   font-family: "SVN-Basis Grotesque Pro", sans-serif;
   font-weight: 500;
 
-  color: var(--primary-color);
-  background: var(--primary-color-100);
+  color: #6b13b6 !important;
+  background: var(--primary-color-100) !important;
   cursor: pointer;
 }
 /* End Common */
@@ -297,7 +297,7 @@ p.text-details {
 }
 
 /* Modal */
-.modal {
+.menu-modal {
   position: fixed;
   z-index: 9999;
   inset: 0;
@@ -308,12 +308,12 @@ p.text-details {
   transition-duration: 0.3s;
 }
 
-.modal.show {
+.menu-modal.show {
   opacity: 1;
   visibility: visible;
 }
 
-.modal.show .modal__container {
+.menu-modal.show .modal__container {
   transform: translateX(0);
 }
 

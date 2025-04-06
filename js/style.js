@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // Elements
-  const $modal = $("#modal");
+  const $modal = $(".menu-modal");
   const $iconSearch = $(".header__icon-search");
   const $modalIconArrow = $(".modal__icon-arrow");
   const $header = $(".header");
