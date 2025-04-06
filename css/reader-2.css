@@ -1,0 +1,71 @@
+.reader .e-con-boxed,
+.reader .widget-image-caption.wp-caption-text {
+	margin-left: auto;
+	margin-right: auto;
+}
+.reader .e-con-boxed {
+	max-width: 744px !important;
+}
+.reader .widget-image-caption.wp-caption-text {
+	max-width: 744px;
+}
+.reader .widget-image-caption.wp-caption-text {
+	font-family: var(--e-global-typography-238bb21-font-family, inherit);
+	font-size: var(--e-global-typography-238bb21-font-size, inherit);
+	line-height: var(--e-global-typography-238bb21-line-height, inherit);
+}
+@media (max-width: 639px) {
+	.reader .widget-image-caption.wp-caption-text {
+		max-width: 100%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+@media screen and (min-width: 1920px) {
+	.reader .e-con-boxed {
+		max-width: 760px !important;
+	}
+	.reader .widget-image-caption.wp-caption-text {
+		max-width: 760px;
+	}
+}
+.reader {
+	font-size: 1.6rem;
+	line-height: 1.7;
+	letter-spacing: -0.18px;
+	color: #202020;
+	padding: 64px 0;
+}
+.reader p {
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+.reader blockquote p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.reader blockquote p:first-child,
+.reader blockquote p:last-child {
+	margin-top: 0;
+}
+.reader .elementor-widget.sticky,
+.reader .elementor-element.sticky {
+	position: sticky;
+	top: 88px;
+}
+.progress-bar-container {
+	width: 100%;
+	height: 0;
+	background-color: #f2f2f2;
+	z-index: 60;
+}
+.progress-bar {
+	width: 0;
+	background-color: #8917ee;
+	border-radius: inherit;
+}
+.reader b,
+.reader strong {
+	font-weight: 600;
+	font-size: 1.8rem;
+}
