@@ -2810,8 +2810,7 @@ h2.category__heading--small {
   position: relative;
   width: 100%;
   min-height: 460px;
-  background: red;
-  background-image: url("https://vietales.vn/static/images/cover-profile.png");
+  background-image: url("../images/cover-profile.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2867,7 +2866,7 @@ h2.category__heading--small {
   gap: 6px;
   border: 1px solid transparent;
   border-radius: 9999px;
-  transition: background 1s;
+  transition: "background" 1s;
 }
 
 .page-love__setting:hover {
@@ -2997,6 +2996,62 @@ h2.category__heading--small {
 }
 
 /* End of love-page */
+
+/* Start of user-profile */
+.user-profile__wrap {
+  padding-bottom: 100px;
+}
+
+.user-profile {
+  max-width: 560px;
+  margin: 0 auto;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.user-profile__title {
+  font-family: "SVN-Tiempos Fine";
+  font-size: 2.4rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.form-group__label-user-profile {
+  opacity: 1;
+}
+
+.user-profile__info-body textarea.form-group__input {
+  height: 108px;
+}
+
+.user-profile__info-body label.form-group__label-user-info {
+  top: 27%;
+}
+
+.user-profile__row {
+  display: flex;
+  gap: 20px;
+}
+
+.user-profile__row .form-group__email-wrap {
+  flex: 1;
+}
+
+.form-group__sex-user-profile {
+  margin-top: 28px;
+  width: 264px;
+  height: 56px;
+  padding: 0 16px;
+  border: 1px solid #6b13b6;
+  border-radius: 12px;
+}
+
+.form-group__sex-user-profile select {
+  width: 100%;
+  height: 100%;
+}
+
+/* End of user-profile */
 
 /* ======== RESPONSIVE STYLES ======== */
 
