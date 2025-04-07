@@ -3020,12 +3020,51 @@ h2.category__heading--small {
   opacity: 1;
 }
 
+.form-group__sub-user-profile {
+  position: relative;
+  margin-top: 28px;
+}
+
+.form-group__sub-user-profile input {
+  width: 100%;
+  height: 56px;
+  padding: 0 16px;
+  font-family: "SVN-Basis Grotesque Pro";
+  border-radius: 14px;
+  border: 1px solid #79747e;
+  background: transparent;
+  transition: all 0.3s;
+}
+
+.form-group__sub-user-profile:hover input {
+  border: 2px solid #e9d1ff;
+}
+
+.form-group__sub-user-profile label {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translate(17px, -45px);
+
+  font-family: SVN-Tiempos Headline;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 24px;
+  color: #525252;
+  background: #fff;
+  padding: 0 8px;
+}
+
 .user-profile__info-body textarea.form-group__input {
   height: 108px;
 }
 
 .user-profile__info-body label.form-group__label-user-info {
   top: 27%;
+}
+
+.user-profile__info-body textarea#intro {
+  padding: 16px;
 }
 
 .user-profile__row {
@@ -3049,6 +3088,49 @@ h2.category__heading--small {
 .form-group__sex-user-profile select {
   width: 100%;
   height: 100%;
+}
+
+.user-profile__action {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+
+.user-profile__btn-cancel {
+  padding: 8px 12px;
+
+  border-radius: 9999px;
+
+  font-family: "SVN-Basis Grotesque Pro";
+  font-size: 1.4rem;
+  font-weight: 500;
+  background: transparent;
+  transition: background 0.3s;
+}
+
+.user-profile__btn-cancel:hover {
+  background: #e9d1ff;
+}
+
+.user-profile__btn-save {
+  width: 155px;
+  height: 40px;
+  padding: 0 16px;
+
+  background: #404040;
+  color: #fff;
+
+  border-radius: 9999px;
+
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "SVN-Basis Grotesque Pro";
+
+  transition: background 0.4s;
+}
+
+.user-profile__btn-save:hover {
+  background: #6b13b6;
 }
 
 /* End of user-profile */
