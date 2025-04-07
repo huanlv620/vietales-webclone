@@ -2801,6 +2801,203 @@ h2.category__heading--small {
   padding-right: 45px;
 }
 
+/* Start of love-page */
+.container-fluid {
+  padding: 0;
+}
+
+.page-love__info {
+  position: relative;
+  width: 100%;
+  min-height: 460px;
+  background: red;
+  background-image: url("https://vietales.vn/static/images/cover-profile.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page-love__info img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.page-love__user {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 109px;
+}
+
+.page-love__avatar-wrap {
+  position: absolute;
+  left: 50%;
+  bottom: -93px;
+  transform: translateX(-50%);
+
+  width: 186px;
+  height: 186px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.page-love__avatar-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.page-love__sub {
+  font-family: "SVN-Tiempos Headline";
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 300;
+  color: #171717;
+}
+
+.page-love__setting {
+  display: flex;
+  align-items: center;
+  padding: 7px 12px;
+  margin-top: 3px;
+  height: 40px;
+  gap: 6px;
+  border: 1px solid transparent;
+  border-radius: 9999px;
+  transition: background 1s;
+}
+
+.page-love__setting:hover {
+  background: #f3e6ff;
+}
+
+.page-love__setting:hover .page-love__setting-text {
+  color: #6b13b6;
+}
+
+.page-love__setting-text {
+  color: #525252;
+  font-family: "SVN-Basis Grotesque Pro";
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.page-love__nav-list-wrap {
+  margin: 40px auto 0;
+  width: min(1480px, 100%);
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f3e6ff;
+}
+
+.page-love__nav-drop-down {
+  position: relative;
+
+  display: none;
+  align-items: center;
+  gap: 10px;
+}
+
+.page-love__nav-drop-down p {
+  font-family: "SVN-Basis Grotesque Pro";
+  font-size: 1.6rem;
+}
+
+.page-love__nav-drop-content {
+  position: absolute;
+  bottom: -172px;
+  padding: 0 16px;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  border: 1px solid #e5e7eb;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.page-love__nav-drop-content.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.page-love__nav-drop-content a {
+  display: block;
+  padding: 8px 0;
+  line-height: 24px;
+}
+
+.page-love__nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-love__nav-link {
+  display: block;
+  padding: 6px 22px;
+  font-family: "SVN-Basis Grotesque Pro";
+  font-size: 1.6rem;
+  color: #000;
+  transition: color 0.3s;
+}
+
+.page-love__nav-link:hover {
+  color: #6b13b6;
+  text-shadow: 0.8px 0 0 #6b13b6;
+}
+
+.page-love__nav-link--active {
+  color: #6b13b6;
+  text-shadow: 0.8px 0 0 #6b13b6;
+}
+
+.page-love__body-content {
+  height: 100%;
+}
+
+.page-love__item-content {
+  padding: 48px 0;
+  width: min(1480px, 100%);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-love__heading-text {
+  font-family: "SVN-Tiempos Fine";
+  font-size: 5.2rem;
+  font-style: italic;
+  font-weight: 300;
+  color: #000;
+  margin-bottom: 60px;
+}
+
+.page-love__desc-text {
+  font-family: "SVN-Basis Grotesque Pro";
+  font-size: 1.6rem;
+  color: #000;
+  margin-bottom: 60px;
+}
+
+.row > * {
+  padding: 0;
+}
+
+/* Responsive of page-love */
+@media screen and (max-width: 1281px) {
+  .page-love__nav-list {
+    display: none;
+  }
+
+  .page-love__nav-drop-down {
+    display: flex;
+  }
+}
+
+/* End of love-page */
+
 /* ======== RESPONSIVE STYLES ======== */
 
 /* PC breakpoint */
