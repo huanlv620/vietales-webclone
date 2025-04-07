@@ -17,6 +17,14 @@ $(document).ready(function () {
   const $iconSvgBtnMore = $(".navbar__btn-svg");
   const $progressBar = $(".progress-bar");
 
+  // page-love__nav-drop-down
+  const $loveNavDropdown = $(".page-love__nav-drop-down");
+  const $loveNavDropdownContent = $(".page-love__nav-drop-content");
+
+  $loveNavDropdown.on("click", function () {
+    $loveNavDropdownContent.toggleClass("show");
+  });
+
   // Events
   $iconSearch.on("click", function () {
     $modal.addClass("show");
