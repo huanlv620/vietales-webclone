@@ -262,7 +262,7 @@
             <div class="col-12">
               <div class="page-love__nav-list-wrap">
                 <div class="page-love__nav-drop-down">
-                  <p>Đã lưu</p>
+                  <p>Bài viết của bạn</p>
                   <span>
                     <svg
                       :class="{'rotate-180': opened === true}"
@@ -309,7 +309,9 @@
                 </div>
                 <ul class="page-love__nav-list">
                   <li class="page-love__nav-item">
-                    <a href="/user-page.html" class="page-love__nav-link"
+                    <a
+                      href="/user-page.html"
+                      class="page-love__nav-link page-love__nav-link--active"
                       >Bài viết của bạn</a
                     >
                   </li>
@@ -319,9 +321,7 @@
                     >
                   </li>
                   <li class="page-love__nav-item">
-                    <a
-                      href="/save-page.html"
-                      class="page-love__nav-link page-love__nav-link--active"
+                    <a href="/save-page.html" class="page-love__nav-link"
                       >Đã lưu</a
                     >
                   </li>
@@ -340,9 +340,297 @@
               <div class="page-love__body-content">
                 <div class="page-love__item-content">
                   <h2 class="page-love__heading-text">Bài viết</h2>
-                  <p class="page-love__desc-text">
-                    Không tìm thấy nội dung phù hợp
-                  </p>
+                  <div class="page-love__list-content">
+                    <div class="fascinating-books__body">
+                      <!-- item 1 -->
+                      <a href="./details.html">
+                        <article class="fascinating-book">
+                          <div
+                            class="fascinating-book__img-wrap user-page__img-wrap"
+                          >
+                            <img
+                              src="./images/fascinating-sac-mau-dao-giao.webp"
+                              alt=""
+                              class="fascinating-book__img"
+                            />
+                          </div>
+                          <h3 class="fascinating-book__title user-page__title">
+                            Sắc màu Đạo giáo tại chùa Chí Lý đất Nha Trang
+                          </h3>
+                          <p
+                            class="fascinating-book__desc user-page__desc line-clamp line-3"
+                          >
+                            Một lần cùng bạn đi vãng chùa đầu năm, tôi vô tình
+                            đến được một ngôi chùa có phối thờ Ngọc Hoàng, Thái
+                            thượng lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền
+                            Nữ, Nữ Oa, Thiên Y A Na, và công chúa Tiên Dung.
+                            Trao đổi trực tiếp, vị trụ trì chùa Chí Lý […] đến
+                            được một ngôi chùa có phối thờ Ngọc Hoàng, Thái
+                            thượng lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền
+                            Nữ, Nữ Oa, Thiên Y A Na, và công chúa Tiên Dung.
+                            Trao đổi trực tiếp, vị trụ trì chùa Chí Lý […]
+                          </p>
+                          <div class="fascinating-book__row">
+                            <div class="fascinating-book__viegazine">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"
+                                fill="#8917ee"
+                              >
+                                <path
+                                  d="M432 64L208 64c-8.8 0-16 7.2-16 16l0 16-64 0 0-16c0-44.2 35.8-80 80-80L432 0c44.2 0 80 35.8 80 80l0 224c0 44.2-35.8 80-80 80l-16 0 0-64 16 0c8.8 0 16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zM0 192c0-35.3 28.7-64 64-64l256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 192zm64 32c0 17.7 14.3 32 32 32l192 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 192c-17.7 0-32 14.3-32 32z"
+                                ></path>
+                              </svg>
+
+                              <p>Viegazine</p>
+                            </div>
+                            <p>Văn hóa</p>
+                            <p>Võ Thủy Tiên</p>
+                          </div>
+                        </article>
+                      </a>
+
+                      <!-- item 2 -->
+                      <a href="./details.html">
+                        <article class="fascinating-book">
+                          <div
+                            class="fascinating-book__img-wrap user-page__img-wrap"
+                          >
+                            <img
+                              src="./images/fascinating-sac-mau-dao-giao.webp"
+                              alt=""
+                              class="fascinating-book__img"
+                            />
+                          </div>
+                          <h3 class="fascinating-book__title user-page__title">
+                            Sắc màu Đạo giáo tại chùa Chí Lý đất Nha Trang
+                          </h3>
+                          <p
+                            class="fascinating-book__desc user-page__desc line-clamp line-3"
+                          >
+                            Một lần cùng bạn đi vãng chùa đầu năm, tôi vô tình
+                            đến được một ngôi chùa có phối thờ Ngọc Hoàng, Thái
+                            thượng lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền
+                            Nữ, Nữ Oa, Thiên Y A Na, và công chúa Tiên Dung.
+                            Trao đổi trực tiếp, vị trụ trì chùa Chí Lý […] đến
+                            được một ngôi chùa có phối thờ Ngọc Hoàng, Thái
+                            thượng lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền
+                            Nữ, Nữ Oa, Thiên Y A Na, và công chúa Tiên Dung.
+                            Trao đổi trực tiếp, vị trụ trì chùa Chí Lý […]
+                          </p>
+                          <div class="fascinating-book__row">
+                            <div class="fascinating-book__viegazine">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"
+                                fill="#8917ee"
+                              >
+                                <path
+                                  d="M432 64L208 64c-8.8 0-16 7.2-16 16l0 16-64 0 0-16c0-44.2 35.8-80 80-80L432 0c44.2 0 80 35.8 80 80l0 224c0 44.2-35.8 80-80 80l-16 0 0-64 16 0c8.8 0 16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zM0 192c0-35.3 28.7-64 64-64l256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 192zm64 32c0 17.7 14.3 32 32 32l192 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 192c-17.7 0-32 14.3-32 32z"
+                                ></path>
+                              </svg>
+
+                              <p>Viegazine</p>
+                            </div>
+                            <p>Văn hóa</p>
+                            <p>Võ Thủy Tiên</p>
+                          </div>
+                        </article>
+                      </a>
+
+                      <!-- item 3 -->
+                      <a href="./details.html">
+                        <article class="fascinating-book">
+                          <div
+                            class="fascinating-book__img-wrap user-page__img-wrap"
+                          >
+                            <img
+                              src="./images/fascinating-sac-mau-dao-giao.webp"
+                              alt=""
+                              class="fascinating-book__img"
+                            />
+                          </div>
+                          <h3 class="fascinating-book__title user-page__title">
+                            Sắc màu Đạo giáo tại chùa Chí Lý đất Nha Trang
+                          </h3>
+                          <p
+                            class="fascinating-book__desc user-page__desc line-clamp line-3"
+                          >
+                            Một lần cùng bạn đi vãng chùa đầu năm, tôi vô tình
+                            đến được một ngôi chùa có phối thờ Ngọc Hoàng, Thái
+                            thượng lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền
+                            Nữ, Nữ Oa, Thiên Y A Na, và công chúa Tiên Dung.
+                            Trao đổi trực tiếp, vị trụ trì chùa Chí Lý […] đến
+                            được một ngôi chùa có phối thờ Ngọc Hoàng, Thái
+                            thượng lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền
+                            Nữ, Nữ Oa, Thiên Y A Na, và công chúa Tiên Dung.
+                            Trao đổi trực tiếp, vị trụ trì chùa Chí Lý […]
+                          </p>
+                          <div class="fascinating-book__row">
+                            <div class="fascinating-book__viegazine">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"
+                                fill="#8917ee"
+                              >
+                                <path
+                                  d="M432 64L208 64c-8.8 0-16 7.2-16 16l0 16-64 0 0-16c0-44.2 35.8-80 80-80L432 0c44.2 0 80 35.8 80 80l0 224c0 44.2-35.8 80-80 80l-16 0 0-64 16 0c8.8 0 16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zM0 192c0-35.3 28.7-64 64-64l256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 192zm64 32c0 17.7 14.3 32 32 32l192 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 192c-17.7 0-32 14.3-32 32z"
+                                ></path>
+                              </svg>
+
+                              <p>Viegazine</p>
+                            </div>
+                            <p>Văn hóa</p>
+                            <p>Võ Thủy Tiên</p>
+                          </div>
+                        </article>
+                      </a>
+
+                      <!-- item 1 -->
+                      <a href="./details.html">
+                        <article class="fascinating-book">
+                          <div
+                            class="fascinating-book__img-wrap user-page__img-wrap"
+                          >
+                            <img
+                              src="./images/fascinating-sac-mau-dao-giao.webp"
+                              alt=""
+                              class="fascinating-book__img"
+                            />
+                          </div>
+                          <h3 class="fascinating-book__title user-page__title">
+                            Sắc màu Đạo giáo tại chùa Chí Lý đất Nha Trang
+                          </h3>
+                          <p
+                            class="fascinating-book__desc user-page__desc line-clamp line-3"
+                          >
+                            Một lần cùng bạn đi vãng chùa đầu năm, tôi vô tình
+                            đến được một ngôi chùa có phối thờ Ngọc Hoàng, Thái
+                            thượng lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền
+                            Nữ, Nữ Oa, Thiên Y A Na, và công chúa Tiên Dung.
+                            Trao đổi trực tiếp, vị trụ trì chùa Chí Lý […] đến
+                            được một ngôi chùa có phối thờ Ngọc Hoàng, Thái
+                            thượng lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền
+                            Nữ, Nữ Oa, Thiên Y A Na, và công chúa Tiên Dung.
+                            Trao đổi trực tiếp, vị trụ trì chùa Chí Lý […]
+                          </p>
+                          <div class="fascinating-book__row">
+                            <div class="fascinating-book__viegazine">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"
+                                fill="#8917ee"
+                              >
+                                <path
+                                  d="M432 64L208 64c-8.8 0-16 7.2-16 16l0 16-64 0 0-16c0-44.2 35.8-80 80-80L432 0c44.2 0 80 35.8 80 80l0 224c0 44.2-35.8 80-80 80l-16 0 0-64 16 0c8.8 0 16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zM0 192c0-35.3 28.7-64 64-64l256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 192zm64 32c0 17.7 14.3 32 32 32l192 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 192c-17.7 0-32 14.3-32 32z"
+                                ></path>
+                              </svg>
+
+                              <p>Viegazine</p>
+                            </div>
+                            <p>Văn hóa</p>
+                            <p>Võ Thủy Tiên</p>
+                          </div>
+                        </article>
+                      </a>
+
+                      <!-- item 2 -->
+                      <a href="./details.html">
+                        <article class="fascinating-book">
+                          <div
+                            class="fascinating-book__img-wrap user-page__img-wrap"
+                          >
+                            <img
+                              src="./images/fascinating-sac-mau-dao-giao.webp"
+                              alt=""
+                              class="fascinating-book__img"
+                            />
+                          </div>
+                          <h3 class="fascinating-book__title user-page__title">
+                            Sắc màu Đạo giáo tại chùa Chí Lý đất Nha Trang
+                          </h3>
+                          <p
+                            class="fascinating-book__desc user-page__desc line-clamp line-3"
+                          >
+                            Một lần cùng bạn đi vãng chùa đầu năm, tôi vô tình
+                            đến được một ngôi chùa có phối thờ Ngọc Hoàng, Thái
+                            thượng lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền
+                            Nữ, Nữ Oa, Thiên Y A Na, và công chúa Tiên Dung.
+                            Trao đổi trực tiếp, vị trụ trì chùa Chí Lý […] đến
+                            được một ngôi chùa có phối thờ Ngọc Hoàng, Thái
+                            thượng lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền
+                            Nữ, Nữ Oa, Thiên Y A Na, và công chúa Tiên Dung.
+                            Trao đổi trực tiếp, vị trụ trì chùa Chí Lý […]
+                          </p>
+                          <div class="fascinating-book__row">
+                            <div class="fascinating-book__viegazine">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"
+                                fill="#8917ee"
+                              >
+                                <path
+                                  d="M432 64L208 64c-8.8 0-16 7.2-16 16l0 16-64 0 0-16c0-44.2 35.8-80 80-80L432 0c44.2 0 80 35.8 80 80l0 224c0 44.2-35.8 80-80 80l-16 0 0-64 16 0c8.8 0 16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zM0 192c0-35.3 28.7-64 64-64l256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 192zm64 32c0 17.7 14.3 32 32 32l192 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 192c-17.7 0-32 14.3-32 32z"
+                                ></path>
+                              </svg>
+
+                              <p>Viegazine</p>
+                            </div>
+                            <p>Văn hóa</p>
+                            <p>Võ Thủy Tiên</p>
+                          </div>
+                        </article>
+                      </a>
+
+                      <!-- item 3 -->
+                      <a href="./details.html">
+                        <article class="fascinating-book">
+                          <div
+                            class="fascinating-book__img-wrap user-page__img-wrap"
+                          >
+                            <img
+                              src="./images/fascinating-sac-mau-dao-giao.webp"
+                              alt=""
+                              class="fascinating-book__img"
+                            />
+                          </div>
+                          <h3 class="fascinating-book__title user-page__title">
+                            Sắc màu Đạo giáo tại chùa Chí Lý đất Nha Trang
+                          </h3>
+                          <p
+                            class="fascinating-book__desc user-page__desc line-clamp line-3"
+                          >
+                            Một lần cùng bạn đi vãng chùa đầu năm, tôi vô tình
+                            đến được một ngôi chùa có phối thờ Ngọc Hoàng, Thái
+                            thượng lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền
+                            Nữ, Nữ Oa, Thiên Y A Na, và công chúa Tiên Dung.
+                            Trao đổi trực tiếp, vị trụ trì chùa Chí Lý […] đến
+                            được một ngôi chùa có phối thờ Ngọc Hoàng, Thái
+                            thượng lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền
+                            Nữ, Nữ Oa, Thiên Y A Na, và công chúa Tiên Dung.
+                            Trao đổi trực tiếp, vị trụ trì chùa Chí Lý […]
+                          </p>
+                          <div class="fascinating-book__row">
+                            <div class="fascinating-book__viegazine">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"
+                                fill="#8917ee"
+                              >
+                                <path
+                                  d="M432 64L208 64c-8.8 0-16 7.2-16 16l0 16-64 0 0-16c0-44.2 35.8-80 80-80L432 0c44.2 0 80 35.8 80 80l0 224c0 44.2-35.8 80-80 80l-16 0 0-64 16 0c8.8 0 16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zM0 192c0-35.3 28.7-64 64-64l256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 192zm64 32c0 17.7 14.3 32 32 32l192 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 192c-17.7 0-32 14.3-32 32z"
+                                ></path>
+                              </svg>
+
+                              <p>Viegazine</p>
+                            </div>
+                            <p>Văn hóa</p>
+                            <p>Võ Thủy Tiên</p>
+                          </div>
+                        </article>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -359,7 +647,7 @@
             <div class="col-12">
               <div class="page-love__body-content">
                 <div class="page-love__item-content">
-                  <h2 class="page-love__heading-text">Podcas</h2>
+                  <h2 class="page-love__heading-text">Podcasts</h2>
                   <p class="page-love__desc-text">
                     Không tìm thấy nội dung phù hợp
                   </p>

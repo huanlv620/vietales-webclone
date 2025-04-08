@@ -2839,14 +2839,29 @@ h2.category__heading--small {
 
   width: 186px;
   height: 186px;
-  border-radius: 50%;
-  overflow: hidden;
 }
 
 .page-love__avatar-wrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 50%;
+}
+
+.page-love__pen-edit {
+  position: absolute;
+  right: 5px;
+  bottom: 1%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: #f3e6ff;
 }
 
 .page-love__sub {
@@ -2885,7 +2900,7 @@ h2.category__heading--small {
 }
 
 .page-love__nav-list-wrap {
-  margin: 40px auto 0;
+  margin: 60px auto 18px;
   width: min(1480px, 100%);
   padding-bottom: 10px;
   border-bottom: 1px solid #f3e6ff;
@@ -3007,6 +3022,10 @@ h2.category__heading--small {
   margin: 0 auto;
   padding-top: 60px;
   text-align: center;
+}
+
+.user-profile__fisrt {
+  padding-top: 90px;
 }
 
 .user-profile__title {
@@ -3217,8 +3236,27 @@ li.form-group__gender-user-profile-active {
     height: 56px;
   }
 }
-
 /* End of user-profile */
+
+/* Start of user-page */
+@media screen and (max-width: 640px) {
+  .user-page__img-wrap {
+    height: auto !important;
+  }
+
+  .fascinating-book__title.user-page__title {
+    margin: 16px 0;
+    font-size: 3rem;
+    text-align: left;
+    color: #0a0a0a;
+  }
+
+  .fascinating-book__desc.user-page__desc {
+    text-align: left;
+    font-size: 1.6rem;
+  }
+}
+/* End of user-page */
 
 /* ======== RESPONSIVE STYLES ======== */
 

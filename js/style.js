@@ -1,155 +1,135 @@
 $(document).ready(function () {
-  // Elements
+  // ELEMENTS
   const $modal = $(".menu-modal");
   const $iconSearch = $(".header__icon-search");
   const $modalIconArrow = $(".modal__icon-arrow");
   const $header = $(".header");
   const $logoSvg = $(".logo__svg");
-  const $buttonDecorMessage = $(".decor-message");
-  const $buttonDecorFeedback = $(".decor-feedback");
+  const $btnDecorMessage = $(".decor-message");
+  const $btnDecorFeedback = $(".decor-feedback");
   const $btnDetailShowModal = $(".reading-list-btn");
   const $modalDetail = $(".modal-detail");
-  const $btnDecorItemOne = $(".reading-list-btn__item-one");
-  const $btnDecorItemThree = $(".reading-list-btn__item-three");
-  const $navbarViegazine = $(".navbar-viegazine");
-  const $moreNewList = $(".navbar__btn-newText");
+  const $btnItemOne = $(".reading-list-btn__item-one");
+  const $btnItemThree = $(".reading-list-btn__item-three");
+  const $navbar = $(".navbar-viegazine");
+  const $btnMoreNews = $(".navbar__btn-newText");
   const $subMenu = $(".navbar__sub-menu");
-  const $iconSvgBtnMore = $(".navbar__btn-svg");
+  const $iconMoreSvg = $(".navbar__btn-svg");
   const $progressBar = $(".progress-bar");
-
-  // page-love__nav-drop-down
-  const $loveNavDropdown = $(".page-love__nav-drop-down");
-  const $loveNavDropdownContent = $(".page-love__nav-drop-content");
-
-  $loveNavDropdown.on("click", function () {
-    $loveNavDropdownContent.toggleClass("show");
-  });
-
-  // choose gender
+  const $loveNav = $(".page-love__nav-drop-down");
+  const $loveNavContent = $(".page-love__nav-drop-content");
   const $btnGender = $(".form-group__gender-user-profile-row");
-  const $bodyGender = $(".form-group__gender-user-profile-body");
-  const $output = $(".form-group__gender-user-profile-gender");
+  const $genderBody = $(".form-group__gender-user-profile-body");
+  const $genderOutput = $(".form-group__gender-user-profile-gender");
 
+  // TOGGLE LOVE NAVIGATION DROPDOWN
+  $loveNav.on("click", function () {
+    $loveNavContent.toggleClass("show");
+  });
+
+  // TOGGLE GENDER DROPDOWN
   $btnGender.on("click", function () {
-    $bodyGender.toggleClass("show");
+    $genderBody.toggleClass("show");
   });
 
-  $bodyGender.on("click", "li", function (e) {
-    const text = $(e.target).text();
-    $output.text(text);
-    $bodyGender.removeClass("show");
-    $(this).siblings().removeClass("form-group__gender-user-profile-active");
-    $(this).addClass("form-group__gender-user-profile-active");
+  $genderBody.on("click", "li", function () {
+    const text = $(this).text();
+    $genderOutput.text(text);
+    $genderBody.removeClass("show");
+    $(this)
+      .addClass("form-group__gender-user-profile-active")
+      .siblings()
+      .removeClass("form-group__gender-user-profile-active");
   });
 
-  // Events
-  $iconSearch.on("click", function () {
-    $modal.addClass("show");
-  });
-
-  $modalIconArrow.on("click", function () {
-    $modal.removeClass("show");
-  });
-
-  $moreNewList.on("click", function (e) {
-    e.stopPropagation();
-    $subMenu.toggleClass("show");
-    $iconSvgBtnMore.toggleClass("navbar__btn-svg--rotate");
-  });
-
+  // MODAL SEARCH
+  $iconSearch.on("click", () => $modal.addClass("show"));
+  $modalIconArrow.on("click", () => $modal.removeClass("show"));
   $modal.on("click", function (e) {
-    if (e.target === this) {
-      $modal.removeClass("show");
-    }
+    if (e.target === this) $modal.removeClass("show");
   });
 
+  // DETAIL MODAL
   $btnDetailShowModal.on("click", function () {
     $modalDetail.toggleClass("show");
-    $btnDecorItemOne.toggleClass("active");
-    $btnDecorItemThree.toggleClass("active");
+    $btnItemOne.toggleClass("active");
+    $btnItemThree.toggleClass("active");
   });
 
   $modalDetail.on("click", function () {
     $modalDetail.removeClass("show");
-    $btnDecorItemOne.toggleClass("active");
-    $btnDecorItemThree.toggleClass("active");
+    $btnItemOne.toggleClass("active");
+    $btnItemThree.toggleClass("active");
   });
 
-  // Click anywhere to close subMenu
+  // SUBMENU TOGGLE
+  $btnMoreNews.on("click", function (e) {
+    e.stopPropagation();
+    $subMenu.toggleClass("show");
+    $iconMoreSvg.toggleClass("navbar__btn-svg--rotate");
+  });
+
   $(window).on("click", function (e) {
     if (
       !$subMenu.is(e.target) &&
-      $subMenu.has(e.target).length === 0 &&
-      !$moreNewList.is(e.target) &&
-      $moreNewList.has(e.target).length === 0
+      !$subMenu.has(e.target).length &&
+      !$btnMoreNews.is(e.target)
     ) {
       $subMenu.removeClass("show");
-      $iconSvgBtnMore.removeClass("navbar__btn-svg--rotate");
+      $iconMoreSvg.removeClass("navbar__btn-svg--rotate");
     }
   });
 
-  // Scroll Event
+  // SCROLL EVENT
   $(window).on("scroll", function () {
-    const scrollPosition = $(this).scrollTop();
-    const windowHeight = $(window).height();
-    const documentHeight = $(document).height();
+    const scrollTop = $(this).scrollTop();
+    const winHeight = $(window).height();
+    const docHeight = $(document).height();
 
-    if (scrollPosition > 300) {
+    if (scrollTop > 300) {
       $header.css({ color: "#8917ee", background: "#fafafa" });
       $logoSvg.addClass("logo__small");
-      $buttonDecorMessage.addClass("show");
-      $navbarViegazine.addClass("navbar-viegazine--active");
+      $btnDecorMessage.addClass("show");
+      $navbar.addClass("navbar-viegazine--active");
     } else {
       $header.css({ color: "#fff", background: "transparent" });
       $logoSvg.removeClass("logo__small");
-      $buttonDecorMessage.removeClass("show");
-      $navbarViegazine.removeClass("navbar-viegazine--active");
+      $btnDecorMessage.removeClass("show");
+      $navbar.removeClass("navbar-viegazine--active");
     }
 
-    if (scrollPosition > documentHeight / 2 - windowHeight) {
-      $buttonDecorFeedback.addClass("show");
+    if (scrollTop > docHeight / 2 - winHeight) {
+      $btnDecorFeedback.addClass("show");
     }
 
     if ($progressBar.length) {
-      let progress = (scrollPosition / (documentHeight - windowHeight)) * 100;
+      const progress = (scrollTop / (docHeight - winHeight)) * 100;
       $progressBar.css("width", progress + "%");
     }
   });
 
-  // Swiper Slide Hover Effect
+  // SWIPER SLIDE HOVER EFFECT
   $(".swiper-slide").on("mouseover", function () {
-    const $items = $(".swiper-slide");
-    const index = $items.index(this);
+    const $slides = $(".swiper-slide");
+    const currentIndex = $slides.index(this);
 
-    $items.each(function (i) {
-      const gap = Math.abs(i - index);
+    $slides.each(function (i) {
       const $el = $(this);
+      const gap = Math.abs(i - currentIndex);
+      const translateX = (i < currentIndex ? 1 : -1) * (gap / 4) * 37;
+      const scale = 1 - gap * 0.1;
 
       $el.css("z-index", 10 - gap);
 
       if (gap === 0) {
         $el.addClass("swiper-slide-active").css({
-          transform: "translate3d(0,0,0) scale3d(1, 1, 1)",
+          transform: "translate3d(0,0,0) scale3d(1,1,1)",
         });
       } else {
-        $el.removeClass("swiper-slide-active");
-
-        const scale = 1 - gap * 0.1;
-        const delta = 37;
-        const sign = i < index ? 1 : -1;
-        const translateX = sign * (gap / 4) * delta;
-
-        $el.css({
-          transform: `translate3d(${translateX}px, 0, 0) scale3d(${scale}, ${scale}, ${scale})`,
+        $el.removeClass("swiper-slide-active").css({
+          transform: `translate3d(${translateX}px,0,0) scale3d(${scale},${scale},${scale})`,
         });
       }
     });
   });
-
-  // Mobile Swiper effect placeholder
-  function handleSlideMobileEffect() {
-    // Nếu muốn dùng Swiper cho mobile thì khởi tạo ở đây
-  }
-
-  handleSlideMobileEffect();
 });

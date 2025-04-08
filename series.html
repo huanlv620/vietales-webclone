@@ -393,7 +393,7 @@
     </div>
 
     <!-- Start of Modal -->
-    <div id="modal" class="menu-modal">
+    <div id="modal" class="menu-modal show">
       <div class="modal__container">
         <div class="modal__content">
           <!-- Modal Search -->
@@ -406,7 +406,7 @@
             >
               <path
                 d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
-              />
+              ></path>
             </svg>
             <input type="text" placeholder="Tìm kiếm trong Viegazine" />
           </div>
@@ -415,37 +415,43 @@
           <div class="modal__body">
             <ul class="modal__list" x-ref="listItemMenu">
               <li class="modal__item">
-                <a href="#!" class="modal__link">Khám phá</a>
+                <a href="/" class="modal__link">Khám phá</a>
               </li>
               <li class="modal__item">
-                <a href="#!" class="modal__link">Viegazine</a>
+                <a href="./viegazine.html" class="modal__link">Viegazine</a>
               </li>
               <li class="modal__item">
-                <a href="#!" class="modal__link">Comic</a>
+                <a href="/comic.html" class="modal__link">Comic</a>
               </li>
               <li class="modal__item">
-                <a href="#!" class="modal__link">Video</a>
+                <a href="/video.html" class="modal__link">Video</a>
               </li>
               <li class="modal__item">
-                <a href="#!" class="modal__link">Podcast</a>
+                <a href="/podcast.html" class="modal__link">Podcast</a>
               </li>
             </ul>
 
             <ul class="modal__list" x-ref="listItemMenu">
               <li class="modal__item">
-                <a href="#!" class="modal__link">Khám phá</a>
+                <a href="/series.html" class="modal__link">Loạt chuyện</a>
               </li>
               <li class="modal__item">
-                <a href="#!" class="modal__link">Viegazine</a>
+                <a href="/category-history.html" class="modal__link">Lịch sử</a>
               </li>
               <li class="modal__item">
-                <a href="#!" class="modal__link">Comic</a>
+                <a href="/category-creation.html" class="modal__link"
+                  >Văn hóa</a
+                >
               </li>
               <li class="modal__item">
-                <a href="#!" class="modal__link">Video</a>
+                <a href="/category-geography.html" class="modal__link"
+                  >Địa lý</a
+                >
               </li>
               <li class="modal__item">
-                <a href="#!" class="modal__link">Podcast</a>
+                <a href="/category-culture.html" class="modal__link"
+                  >Sáng tác</a
+                >
               </li>
             </ul>
           </div>
@@ -555,6 +561,8 @@
 				<ion-icon class="audio-icon hidden" id="pause-music" name="pause"></ion-icon>
 			</button>
 		</div> -->
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
