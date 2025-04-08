@@ -3088,12 +3088,16 @@ h2.category__heading--small {
   border-color: initial;
 }
 
+.user-profile__row .form-group__email-wrap input {
+  height: 56px !important;
+}
+
 .form-group__gender-user-profile {
+  flex: 1;
   position: relative;
   display: flex;
   margin-top: 28px;
   z-index: 10;
-  width: 264px;
   height: 56px;
   padding: 0 16px;
   border: 1px solid #79747e;
@@ -3202,6 +3206,16 @@ li.form-group__gender-user-profile-active {
 
 .user-profile__btn-save:hover {
   background: #6b13b6;
+}
+
+@media screen and (max-width: 640px) {
+  .user-profile__row {
+    flex-direction: column;
+  }
+
+  .form-group__gender-user-profile-row {
+    height: 56px;
+  }
 }
 
 /* End of user-profile */
