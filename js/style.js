@@ -25,6 +25,23 @@ $(document).ready(function () {
     $loveNavDropdownContent.toggleClass("show");
   });
 
+  // choose gender
+  const $btnGender = $(".form-group__gender-user-profile-row");
+  const $bodyGender = $(".form-group__gender-user-profile-body");
+  const $output = $(".form-group__gender-user-profile-gender");
+
+  $btnGender.on("click", function () {
+    $bodyGender.toggleClass("show");
+  });
+
+  $bodyGender.on("click", "li", function (e) {
+    const text = $(e.target).text();
+    $output.text(text);
+    $bodyGender.removeClass("show");
+    $(this).siblings().removeClass("form-group__gender-user-profile-active");
+    $(this).addClass("form-group__gender-user-profile-active");
+  });
+
   // Events
   $iconSearch.on("click", function () {
     $modal.addClass("show");

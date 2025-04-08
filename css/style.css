@@ -3016,6 +3016,10 @@ h2.category__heading--small {
   font-weight: 300;
 }
 
+.user-profile__desc {
+  text-align: left;
+}
+
 .form-group__label-user-profile {
   opacity: 1;
 }
@@ -3076,18 +3080,75 @@ h2.category__heading--small {
   flex: 1;
 }
 
-.form-group__sex-user-profile {
+.user-profile__row input.form-group__input {
+  border-color: initial;
+}
+
+.form-group__gender-user-profile {
+  position: relative;
+  display: flex;
   margin-top: 28px;
+  z-index: 10;
   width: 264px;
   height: 56px;
   padding: 0 16px;
-  border: 1px solid #6b13b6;
+  border: 1px solid #79747e;
   border-radius: 12px;
+  cursor: pointer;
+  background: #fff;
 }
 
-.form-group__sex-user-profile select {
+.form-group__gender-user-profile select {
   width: 100%;
   height: 100%;
+}
+
+.form-group__gender-user-profile-row {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.form-group__gender-user-profile-row p {
+  font-family: "SVN-Basis Grotesque Pro";
+  font-size: 1.4rem;
+  color: #444444;
+}
+
+.form-group__gender-user-profile-body {
+  position: absolute;
+  left: 0;
+  z-index: 9;
+  bottom: -204%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #aaa;
+  visibility: visible;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.form-group__gender-user-profile-body.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.form-group__gender-user-profile-body li {
+  line-height: 36px;
+  padding: 0 6px;
+  text-align: left;
+}
+
+.form-group__gender-user-profile-body li:hover {
+  background: rgb(107 19 182 / 1);
+  color: #fff;
+}
+
+.form-group__gender-user-profile-active {
+  background: rgb(191 120 255 / 1);
+  color: #fff;
 }
 
 .user-profile__action {
