@@ -2810,8 +2810,7 @@ h2.category__heading--small {
   position: relative;
   width: 100%;
   min-height: 460px;
-  background: red;
-  background-image: url("https://vietales.vn/static/images/cover-profile.png");
+  background-image: url("../images/cover-profile.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2867,7 +2866,7 @@ h2.category__heading--small {
   gap: 6px;
   border: 1px solid transparent;
   border-radius: 9999px;
-  transition: background 1s;
+  transition: "background" 1s;
 }
 
 .page-love__setting:hover {
@@ -2997,6 +2996,229 @@ h2.category__heading--small {
 }
 
 /* End of love-page */
+
+/* Start of user-profile */
+.user-profile__wrap {
+  padding-bottom: 100px;
+}
+
+.user-profile {
+  max-width: 560px;
+  margin: 0 auto;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.user-profile__title {
+  font-family: "SVN-Tiempos Fine";
+  font-size: 2.4rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.user-profile__desc {
+  text-align: left;
+}
+
+.form-group__label-user-profile {
+  opacity: 1;
+}
+
+.form-group__sub-user-profile {
+  position: relative;
+  margin-top: 28px;
+}
+
+.form-group__sub-user-profile input {
+  width: 100%;
+  height: 56px;
+  padding: 0 16px;
+  font-family: "SVN-Basis Grotesque Pro";
+  border-radius: 14px;
+  border: 1px solid #79747e;
+  background: transparent;
+  transition: all 0.3s;
+}
+
+.form-group__sub-user-profile:hover input {
+  border: 2px solid #e9d1ff;
+}
+
+.form-group__sub-user-profile label {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translate(17px, -45px);
+
+  font-family: SVN-Tiempos Headline;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 24px;
+  color: #525252;
+  background: #fff;
+  padding: 0 8px;
+}
+
+.user-profile__info {
+  margin: -28px 0 2px;
+}
+
+.user-profile__info-body textarea.form-group__input {
+  height: 108px;
+}
+
+.user-profile__info-body label.form-group__label-user-info {
+  top: 28px;
+}
+
+.user-profile__info-body textarea#intro {
+  padding: 16px;
+}
+
+.user-profile__row {
+  display: flex;
+  gap: 20px;
+}
+
+.user-profile__row .form-group__email-wrap {
+  flex: 1;
+}
+
+.user-profile__row input.form-group__input {
+  border-color: initial;
+}
+
+.user-profile__row .form-group__email-wrap input {
+  height: 56px !important;
+}
+
+.form-group__gender-user-profile {
+  flex: 1;
+  position: relative;
+  display: flex;
+  margin-top: 28px;
+  z-index: 10;
+  height: 56px;
+  padding: 0 16px;
+  border: 1px solid #79747e;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #fff;
+}
+
+.form-group__gender-user-profile select {
+  width: 100%;
+  height: 100%;
+}
+
+.form-group__gender-user-profile-row {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.form-group__gender-user-profile-row p {
+  font-family: "SVN-Basis Grotesque Pro";
+  font-size: 1.4rem;
+  color: #444444;
+}
+
+.form-group__gender-user-profile-body {
+  position: absolute;
+  left: 0;
+  z-index: 9;
+  bottom: -204%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #aaa;
+  visibility: visible;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.form-group__gender-user-profile-body.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.form-group__gender-user-profile-body li {
+  line-height: 36px;
+  padding: 0 6px;
+  text-align: left;
+}
+
+.form-group__gender-user-profile-body li:hover {
+  background: #6b13b6;
+  color: #fff;
+}
+
+.form-group__gender-user-profile-body li:not(:hover) {
+  color: #000;
+}
+
+li.form-group__gender-user-profile-active {
+  background: #bf78ff;
+  color: #fff;
+}
+
+.user-profile__action {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+
+  margin-top: -30px;
+}
+
+.user-profile__btn-cancel {
+  padding: 8px 12px;
+
+  border-radius: 9999px;
+
+  font-family: "SVN-Basis Grotesque Pro";
+  font-size: 1.4rem;
+  font-weight: 500;
+  background: transparent;
+  transition: background 0.3s;
+}
+
+.user-profile__btn-cancel:hover {
+  background: #e9d1ff;
+}
+
+.user-profile__btn-save {
+  width: 155px;
+  height: 40px;
+  padding: 0 16px;
+
+  background: #404040;
+  color: #fff;
+
+  border-radius: 9999px;
+
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "SVN-Basis Grotesque Pro";
+
+  transition: background 0.4s;
+}
+
+.user-profile__btn-save:hover {
+  background: #6b13b6;
+}
+
+@media screen and (max-width: 640px) {
+  .user-profile__row {
+    flex-direction: column;
+  }
+
+  .form-group__gender-user-profile-row {
+    height: 56px;
+  }
+}
+
+/* End of user-profile */
 
 /* ======== RESPONSIVE STYLES ======== */
 

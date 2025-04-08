@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vietales | User page -Vietales</title>
+    <title>Vietales | User Profile -Vietales</title>
 
     <!-- Favicon -->
     <link
@@ -193,9 +193,9 @@
                     >
                   </li>
                   <li class="avatar-active__item">
-                    <a href="/follow-page.html" class="avatar-active__link">
-                      Đang theo dõi
-                    </a>
+                    <a href="/follow-page.html" class="avatar-active__link"
+                      >Đang theo dõi</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -230,139 +230,255 @@
           </div>
         </div>
 
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="page-love__user">
-                <p class="page-love__sub">Subscriber</p>
-                <a href="#!" class="page-love__setting">
-                  <span class="page-love__setting-text">
-                    Chỉnh sửa tài khoản
-                  </span>
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      fill="none"
-                    >
-                      <path
-                        d="M0.416748 13.5846V11.1183L10.7837 0.735282C10.8959 0.620823 11.0177 0.539323 11.1491 0.490781C11.2805 0.442239 11.4159 0.417969 11.5552 0.417969C11.6945 0.417969 11.8286 0.440677 11.9574 0.486094C12.0863 0.531497 12.211 0.611886 12.3318 0.727261L13.2661 1.65353C13.3814 1.77425 13.4632 1.89928 13.5112 2.02862C13.5593 2.15793 13.5834 2.2942 13.5834 2.43741C13.5834 2.5772 13.5582 2.71281 13.5079 2.84424C13.4577 2.97568 13.377 3.09747 13.2661 3.20959L2.88306 13.5846H0.416748ZM11.3975 3.53814L12.5001 2.44357L11.5578 1.50128L10.4632 2.60384L11.3975 3.53814Z"
-                        fill="#525252"
-                      />
-                    </svg>
-                  </span>
-                </a>
+        <div>
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="page-love__user">
+                  <p class="page-love__sub">Subscriber</p>
+                  <a href="#!" class="page-love__setting">
+                    <span class="page-love__setting-text">
+                      Chỉnh sửa tài khoản
+                    </span>
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                      >
+                        <path
+                          d="M0.416748 13.5846V11.1183L10.7837 0.735282C10.8959 0.620823 11.0177 0.539323 11.1491 0.490781C11.2805 0.442239 11.4159 0.417969 11.5552 0.417969C11.6945 0.417969 11.8286 0.440677 11.9574 0.486094C12.0863 0.531497 12.211 0.611886 12.3318 0.727261L13.2661 1.65353C13.3814 1.77425 13.4632 1.89928 13.5112 2.02862C13.5593 2.15793 13.5834 2.2942 13.5834 2.43741C13.5834 2.5772 13.5582 2.71281 13.5079 2.84424C13.4577 2.97568 13.377 3.09747 13.2661 3.20959L2.88306 13.5846H0.416748ZM11.3975 3.53814L12.5001 2.44357L11.5578 1.50128L10.4632 2.60384L11.3975 3.53814Z"
+                          fill="#525252"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+        <div class="user-profile__wrap">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="user-profile">
+                  <div class="user-profile__info">
+                    <h4 class="user-profile__title">Thông tin người dùng</h4>
+                    <div class="user-profile__info-body">
+                      <!-- Display name -->
+                      <div class="form-group__email-wrap">
+                        <input
+                          type="name"
+                          class="form-group__input"
+                          id="name"
+                          placeholder=" "
+                          required=""
+                        />
+                        <label
+                          for="name"
+                          class="form-group__label form-group__label-user-profile"
+                        >
+                          Tên hiện thị</label
+                        >
+                      </div>
 
-          <div class="row">
-            <div class="col-12">
-              <div class="page-love__nav-list-wrap">
-                <div class="page-love__nav-drop-down">
-                  <p>Đang theo dõi</p>
-                  <span>
-                    <svg
-                      :class="{'rotate-180': opened === true}"
-                      class="transition"
-                      width="24"
-                      height="25"
-                      viewBox="0 0 24 25"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <mask
-                        id="mask0_5467_69407"
-                        style="mask-type: alpha"
-                        maskUnits="userSpaceOnUse"
-                        x="0"
-                        y="0"
-                        width="24"
-                        height="25"
-                      >
-                        <rect
-                          y="0.200195"
-                          width="24"
-                          height="24"
-                          fill="#D9D9D9"
-                        ></rect>
-                      </mask>
-                      <g mask="url(#mask0_5467_69407)">
-                        <path
-                          d="M12 14.854L7.59619 10.4502H16.4038L12 14.854Z"
-                          fill="#1C1B1F"
-                        ></path>
-                      </g>
-                    </svg>
-                  </span>
+                      <!-- Subscriber -->
+                      <div class="form-group__sub-user-profile">
+                        <input
+                          type="text"
+                          class=""
+                          id="subscriber"
+                          placeholder=" "
+                          required=""
+                          value="Subscriber"
+                          readonly
+                          disabled
+                        />
+                        <label for="subscriber" class=""> Loại tài khoản</label>
+                      </div>
 
-                  <div class="page-love__nav-drop-content">
-                    <ul>
-                      <li><a href="#!">Bài viết của bạn</a></li>
-                      <li><a href="/love-page.html">Yêu thích</a></li>
-                      <li><a href="/save-page.html">Đã lưu</a></li>
-                      <li><a href="/follow-page.html">Đang theo dõi</a></li>
-                    </ul>
+                      <!-- Intro -->
+                      <div class="form-group__email-wrap">
+                        <textarea
+                          name=""
+                          type="text"
+                          class="form-group__input"
+                          id="intro"
+                          placeholder=" "
+                          required=""
+                        ></textarea>
+                        <label
+                          for="intro"
+                          class="form-group__label form-group__label-user-profile form-group__label-user-info"
+                        >
+                          Giới thiệu</label
+                        >
+                      </div>
+
+                      <!-- age & gender -->
+                      <div class="user-profile__row">
+                        <div class="form-group__email-wrap">
+                          <input
+                            type="text"
+                            class="form-group__input"
+                            id="age"
+                            placeholder=" "
+                            required=""
+                          />
+                          <label
+                            for="age"
+                            class="form-group__label form-group__label-user-profile"
+                          >
+                            Ngày sinh
+                          </label>
+                        </div>
+                        <div class="form-group__gender-user-profile">
+                          <div class="form-group__gender-user-profile-row">
+                            <p class="form-group__gender-user-profile-gender">
+                              Nam
+                            </p>
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="21"
+                                viewBox="0 0 20 21"
+                                fill="none"
+                              >
+                                <mask
+                                  id="mask0_7009_136001"
+                                  style="mask-type: alpha"
+                                  maskUnits="userSpaceOnUse"
+                                  x="0"
+                                  y="0"
+                                  width="20"
+                                  height="21"
+                                >
+                                  <rect
+                                    y="0.316406"
+                                    width="20"
+                                    height="20"
+                                    fill="#D9D9D9"
+                                  />
+                                </mask>
+                                <g mask="url(#mask0_7009_136001)">
+                                  <path
+                                    d="M9.99999 12.0266L6.49683 8.52344H13.5032L9.99999 12.0266Z"
+                                    fill="#1C1B1F"
+                                  />
+                                </g>
+                              </svg>
+                            </span>
+                          </div>
+
+                          <ul class="form-group__gender-user-profile-body">
+                            <li class="form-group__gender-user-profile-active">
+                              Nam
+                            </li>
+                            <li>Nữ</li>
+                            <li>Khác</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <ul class="page-love__nav-list">
-                  <li class="page-love__nav-item">
-                    <a href="#!" class="page-love__nav-link"
-                      >Bài viết của bạn</a
-                    >
-                  </li>
-                  <li class="page-love__nav-item">
-                    <a href="/love-page.html" class="page-love__nav-link"
-                      >Yêu thích</a
-                    >
-                  </li>
-                  <li class="page-love__nav-item">
-                    <a href="/save-page.html" class="page-love__nav-link"
-                      >Đã lưu</a
-                    >
-                  </li>
-                  <li class="page-love__nav-item">
-                    <a
-                      href="/follow-page.html"
-                      class="page-love__nav-link page-love__nav-link--active"
-                      >Đăng theo dõi</a
-                    >
-                  </li>
-                </ul>
               </div>
             </div>
-          </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="user-profile">
+                  <div class="user-profile__info">
+                    <h4 class="user-profile__title">Tài khoản</h4>
+                    <div class="user-profile__info-body">
+                      <!-- Subscriber -->
+                      <div class="form-group__sub-user-profile">
+                        <input
+                          type="text"
+                          class=""
+                          id="subscriber"
+                          placeholder=" "
+                          required=""
+                          value="abc@gmail.com"
+                          readonly
+                          disabled
+                        />
+                        <label for="subscriber" class=""> Email</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="user-profile">
+                  <div class="user-profile__info">
+                    <p class="user-profile__desc">
+                      Chỉ dùng khi muốn đặt lại mật khẩu
+                    </p>
+                    <div class="user-profile__info-body">
+                      <div class="form-group__email-wrap">
+                        <input
+                          type="password"
+                          class="form-group__input"
+                          id="oldpass"
+                          placeholder=" "
+                          required=""
+                        />
+                        <label
+                          for="oldpass"
+                          class="form-group__label form-group__label-user-profile"
+                        >
+                          Mật khẩu cũ</label
+                        >
+                      </div>
+                      <div class="form-group__email-wrap">
+                        <input
+                          type="password"
+                          class="form-group__input"
+                          id="newpass"
+                          placeholder=" "
+                          required=""
+                        />
+                        <label
+                          for="newpass"
+                          class="form-group__label form-group__label-user-profile"
+                        >
+                          Mật khẩu mới</label
+                        >
+                      </div>
+                      <div class="form-group__email-wrap">
+                        <input
+                          type="password"
+                          class="form-group__input"
+                          id="confirmpass"
+                          placeholder=" "
+                          required=""
+                        />
+                        <label
+                          for="confirmpass"
+                          class="form-group__label form-group__label-user-profile"
+                        >
+                          Nhập lại mật khẩu mới</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-          <div class="row">
-            <div class="col-12">
-              <div class="page-love__body-content">
-                <div class="page-love__item-content">
-                  <h2 class="page-love__heading-text">Bài viết</h2>
-                  <p class="page-love__desc-text">
-                    Không tìm thấy nội dung phù hợp
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="page-love__body-content">
-                <div class="page-love__item-content">
-                  <h2 class="page-love__heading-text">Video</h2>
-                  <p class="page-love__desc-text">
-                    Không tìm thấy nội dung phù hợp
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="page-love__body-content">
-                <div class="page-love__item-content">
-                  <h2 class="page-love__heading-text">Podcas</h2>
-                  <p class="page-love__desc-text">
-                    Không tìm thấy nội dung phù hợp
-                  </p>
+            <div class="row">
+              <div class="col-12">
+                <div class="user-profile">
+                  <div class="user-profile__action">
+                    <button class="user-profile__btn-cancel">Hủy bỏ</button>
+                    <button class="user-profile__btn-save">Lưu thay đổi</button>
+                  </div>
                 </div>
               </div>
             </div>
