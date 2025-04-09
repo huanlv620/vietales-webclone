@@ -1,666 +1,583 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vietales | Tim kiem - Vietales</title>
-    <!-- ======== Favicon ======== -->
-    <link
-      rel="icon"
-      type="image/png"
-      href="./favicon/favicon-96x96.png"
-      sizes="96x96"
-    />
-    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
-    <link rel="shortcut icon" href="./favicon/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./favicon/apple-touch-icon.png"
-    />
-    <link rel="manifest" href="./favicon/site.webmanifest" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vietales | Tim kiem - Vietales</title>
+		<!-- ======== Favicon ======== -->
+		<link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+		<link rel="shortcut icon" href="./favicon/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+		<link rel="manifest" href="./favicon/site.webmanifest" />
 
-    <!-- ======== Meta open graph ======== -->
-    <meta property="og:title" content="Vietales | Chuyện Người Việt Kể" />
-    <meta
-      name="description"
-      content="Đưa câu chuyện Việt Nam ra thế giới và mang câu chuyện thế giới về Việt Nam"
-    />
-    <meta property="og:image" content="./favicon/favicon-96x96.png" />
-    <meta property="og:url" content="https://vietales.com" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Vietales" />
-    <meta property="og:locale" content="vi_VN" />
+		<!-- ======== Meta open graph ======== -->
+		<meta property="og:title" content="Vietales | Chuyện Người Việt Kể" />
+		<meta
+			name="description"
+			content="Đưa câu chuyện Việt Nam ra thế giới và mang câu chuyện thế giới về Việt Nam" />
+		<meta property="og:image" content="./favicon/favicon-96x96.png" />
+		<meta property="og:url" content="https://vietales.com" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Vietales" />
+		<meta property="og:locale" content="vi_VN" />
 
-    <!-- ======== CDNs Link ======== -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+		<!-- ======== CDNs Link ======== -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous" />
 
-    <!-- Embed font -->
-    <link rel="stylesheet" href="./fonts/stylesheet.css" />
+		<!-- Embed font -->
+		<link rel="stylesheet" href="./fonts/stylesheet.css" />
 
-    <!-- ======== Stylesheet CSS ======== -->
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <!-- Start of wrapper -->
-    <div class="wrapper">
-      <!--  Start of Header  -->
-      <header class="header header--sign-in">
-        <button class="header__btn-search-page">
-          <span class="header__arrow-search-page">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
-              <mask
-                id="mask0_5944_324994"
-                style="mask-type: alpha"
-                maskUnits="userSpaceOnUse"
-                x="0"
-                y="0"
-                width="24"
-                height="24"
-              >
-                <rect width="24" height="24" fill="#D9D9D9" />
-              </mask>
-              <g mask="url(#mask0_5944_324994)">
-                <path
-                  d="M7.825 13L13.425 18.6L12 20L4 12L12 4L13.425 5.4L7.825 11H20V13H7.825Z"
-                  fill="#581192"
-                />
-              </g>
-            </svg>
-          </span>
-          <span class="header__text-search">giac mo</span>
-        </button>
-        <a href="/" class="logo">
-          <svg
-            class="logo__svg logo__small"
-            width="230"
-            height="48"
-            viewBox="0 0 230 48"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g clip-path="url(#clip0_6938_173967)">
-              <path
-                d="M109.087 17.0681H115.038V10.8556H109.087V0H102.286V10.8556H97.3811V17.0681H102.286V47.0845H109.087V17.0681Z"
-                class="fill-current"
-              ></path>
-              <path
-                d="M163.757 0H156.956V47.0845H163.757V0Z"
-                class="fill-current"
-              ></path>
-              <path
-                d="M229.405 36.4251C229.405 43.5531 224.174 48 217.242 48C215.672 48 214.103 47.673 212.599 47.1499C207.402 45.3123 204.6 41.1401 204.433 35.7057H211.273C211.666 39.1756 213.51 41.7875 217.373 41.7875C220.381 41.7875 222.604 39.9564 222.604 36.8174C222.604 29.2316 206.059 33.1553 206.059 20.3379C206.059 14.1253 211.487 9.87466 217.438 9.87466C223.65 9.87466 228.424 14.1907 228.555 20.4687H221.754C221.427 17.8529 219.858 16.0872 217.111 16.0872C214.822 16.0872 212.86 17.5259 212.86 19.9455C212.86 23.1499 215.999 23.8692 218.484 24.6539C224.435 26.485 229.405 29.4278 229.405 36.4251Z"
-                class="fill-current"
-              ></path>
-              <path
-                d="M145.053 29.0354C145.053 36.0327 139.495 41.7875 132.432 41.7875C125.5 41.7875 120.073 35.8365 120.073 29.0354C120.073 21.9728 125.304 16.0872 132.498 16.0872C139.887 16.0872 145.053 21.7766 145.053 29.0354ZM144.923 47.0845H151.724V10.8556H144.923V15.9564H144.792C142.111 11.8365 137.337 9.87466 132.498 9.87466C121.511 9.87466 113.271 18.1144 113.271 29.1008C113.271 40.0218 121.642 48 132.498 48C137.468 48 142.241 45.842 144.792 41.4605H144.923V47.0845Z"
-                class="fill-current"
-              ></path>
-              <path
-                d="M58.4704 30.8665H42.2524V47.0845H58.4704V30.8665Z"
-                class="fill-current"
-              ></path>
-              <path
-                d="M91.8219 26.6812H68.4104C68.8028 20.7302 74.2306 16.0872 80.1161 16.0872C86.0017 16.0872 91.4295 20.7302 91.8219 26.6812ZM98.6229 28.5123C98.6229 18.3106 90.4486 9.87466 80.1815 9.87466C69.5875 9.87466 61.6093 18.4414 61.6093 28.9046C61.6093 39.0409 69.7183 48 80.0507 48C87.9635 48 94.6992 43.0954 97.4458 35.7057H90.6447C88.6829 39.4986 84.563 41.7875 80.3123 41.7875C74.3614 41.7875 69.7837 37.5368 68.4104 31.9128H98.4268C98.5573 30.784 98.6228 29.6486 98.6229 28.5123Z"
-                class="fill-current"
-              ></path>
-              <path
-                d="M197.108 26.6812H173.697C174.089 20.7302 179.517 16.0872 185.402 16.0872C191.288 16.0872 196.716 20.7302 197.108 26.6812ZM203.909 28.5123C203.909 18.3106 195.735 9.87466 185.468 9.87466C174.874 9.87466 166.895 18.4414 166.895 28.9046C166.895 39.0409 175.004 48 185.337 48C193.25 48 199.985 43.0954 202.732 35.7057H195.931C193.969 39.4986 189.849 41.7875 185.598 41.7875C179.647 41.7875 175.07 37.5368 173.697 31.9128H203.713C203.843 30.784 203.909 29.6486 203.909 28.5123Z"
-                class="fill-current"
-              ></path>
-              <path
-                d="M23.656 47.0845L40.8137 10.8556H33.424L20.9015 38.3215H20.7439L7.98535 10.8556H0.595703L17.9104 47.0845H23.656Z"
-                class="fill-current"
-              ></path>
-              <path
-                d="M50.3614 27.9238C55.3455 27.9238 59.386 23.8834 59.386 18.8993C59.386 13.9152 55.3455 9.87476 50.3614 9.87476C45.3773 9.87476 41.3369 13.9152 41.3369 18.8993C41.3369 23.8834 45.3773 27.9238 50.3614 27.9238Z"
-                fill="#EEB117"
-              ></path>
-            </g>
-            <defs>
-              <clipPath id="clip0_6938_173967">
-                <rect
-                  width="228.81"
-                  height="48"
-                  class="fill-current"
-                  transform="translate(0.595703)"
-                ></rect>
-              </clipPath>
-            </defs>
-          </svg>
-        </a>
+		<!-- ======== Stylesheet CSS ======== -->
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<!-- Start of wrapper -->
+		<div class="wrapper">
+			<!--  Start of Header  -->
+			<header class="header header--sign-in">
+				<button class="header__btn-search-page">
+					<span class="header__arrow-search-page">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="currentColor">
+							<mask
+								id="mask0_5944_324994"
+								style="mask-type: alpha"
+								maskUnits="userSpaceOnUse"
+								x="0"
+								y="0"
+								width="24"
+								height="24">
+								<rect width="24" height="24" fill="#D9D9D9" />
+							</mask>
+							<g mask="url(#mask0_5944_324994)">
+								<path
+									d="M7.825 13L13.425 18.6L12 20L4 12L12 4L13.425 5.4L7.825 11H20V13H7.825Z"
+									fill="#581192" />
+							</g>
+						</svg>
+					</span>
+					<span class="header__text-search">giac mo</span>
+				</button>
+				<a href="/" class="logo">
+					<svg
+						class="logo__svg logo__small"
+						width="230"
+						height="48"
+						viewBox="0 0 230 48"
+						fill="currentColor"
+						xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_6938_173967)">
+							<path
+								d="M109.087 17.0681H115.038V10.8556H109.087V0H102.286V10.8556H97.3811V17.0681H102.286V47.0845H109.087V17.0681Z"
+								class="fill-current"></path>
+							<path
+								d="M163.757 0H156.956V47.0845H163.757V0Z"
+								class="fill-current"></path>
+							<path
+								d="M229.405 36.4251C229.405 43.5531 224.174 48 217.242 48C215.672 48 214.103 47.673 212.599 47.1499C207.402 45.3123 204.6 41.1401 204.433 35.7057H211.273C211.666 39.1756 213.51 41.7875 217.373 41.7875C220.381 41.7875 222.604 39.9564 222.604 36.8174C222.604 29.2316 206.059 33.1553 206.059 20.3379C206.059 14.1253 211.487 9.87466 217.438 9.87466C223.65 9.87466 228.424 14.1907 228.555 20.4687H221.754C221.427 17.8529 219.858 16.0872 217.111 16.0872C214.822 16.0872 212.86 17.5259 212.86 19.9455C212.86 23.1499 215.999 23.8692 218.484 24.6539C224.435 26.485 229.405 29.4278 229.405 36.4251Z"
+								class="fill-current"></path>
+							<path
+								d="M145.053 29.0354C145.053 36.0327 139.495 41.7875 132.432 41.7875C125.5 41.7875 120.073 35.8365 120.073 29.0354C120.073 21.9728 125.304 16.0872 132.498 16.0872C139.887 16.0872 145.053 21.7766 145.053 29.0354ZM144.923 47.0845H151.724V10.8556H144.923V15.9564H144.792C142.111 11.8365 137.337 9.87466 132.498 9.87466C121.511 9.87466 113.271 18.1144 113.271 29.1008C113.271 40.0218 121.642 48 132.498 48C137.468 48 142.241 45.842 144.792 41.4605H144.923V47.0845Z"
+								class="fill-current"></path>
+							<path
+								d="M58.4704 30.8665H42.2524V47.0845H58.4704V30.8665Z"
+								class="fill-current"></path>
+							<path
+								d="M91.8219 26.6812H68.4104C68.8028 20.7302 74.2306 16.0872 80.1161 16.0872C86.0017 16.0872 91.4295 20.7302 91.8219 26.6812ZM98.6229 28.5123C98.6229 18.3106 90.4486 9.87466 80.1815 9.87466C69.5875 9.87466 61.6093 18.4414 61.6093 28.9046C61.6093 39.0409 69.7183 48 80.0507 48C87.9635 48 94.6992 43.0954 97.4458 35.7057H90.6447C88.6829 39.4986 84.563 41.7875 80.3123 41.7875C74.3614 41.7875 69.7837 37.5368 68.4104 31.9128H98.4268C98.5573 30.784 98.6228 29.6486 98.6229 28.5123Z"
+								class="fill-current"></path>
+							<path
+								d="M197.108 26.6812H173.697C174.089 20.7302 179.517 16.0872 185.402 16.0872C191.288 16.0872 196.716 20.7302 197.108 26.6812ZM203.909 28.5123C203.909 18.3106 195.735 9.87466 185.468 9.87466C174.874 9.87466 166.895 18.4414 166.895 28.9046C166.895 39.0409 175.004 48 185.337 48C193.25 48 199.985 43.0954 202.732 35.7057H195.931C193.969 39.4986 189.849 41.7875 185.598 41.7875C179.647 41.7875 175.07 37.5368 173.697 31.9128H203.713C203.843 30.784 203.909 29.6486 203.909 28.5123Z"
+								class="fill-current"></path>
+							<path
+								d="M23.656 47.0845L40.8137 10.8556H33.424L20.9015 38.3215H20.7439L7.98535 10.8556H0.595703L17.9104 47.0845H23.656Z"
+								class="fill-current"></path>
+							<path
+								d="M50.3614 27.9238C55.3455 27.9238 59.386 23.8834 59.386 18.8993C59.386 13.9152 55.3455 9.87476 50.3614 9.87476C45.3773 9.87476 41.3369 13.9152 41.3369 18.8993C41.3369 23.8834 45.3773 27.9238 50.3614 27.9238Z"
+								fill="#EEB117"></path>
+						</g>
+						<defs>
+							<clipPath id="clip0_6938_173967">
+								<rect
+									width="228.81"
+									height="48"
+									class="fill-current"
+									transform="translate(0.595703)"></rect>
+							</clipPath>
+						</defs>
+					</svg>
+				</a>
 
-        <!-- Header__normal -->
-        <a href="./sign-in.html" class="header__btn btn">Đăng nhập</a>
-        <a href="./sign-in.html" class="header__icon-login">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
-            viewBox="0 0 30 30"
-            fill="none"
-          >
-            <rect
-              x="0.5"
-              y="0.5"
-              width="29"
-              height="29"
-              rx="14.5"
-              fill="#6B13B6"
-            />
-            <rect
-              x="0.5"
-              y="0.5"
-              width="29"
-              height="29"
-              rx="14.5"
-              stroke="#E9D1FF"
-            />
-            <path
-              d="M26.4719 23.3933C23.8125 26.8054 19.6626 29 14.9999 29C10.3372 29 6.1873 26.8054 3.52783 23.3933C6.65584 20.8443 10.6493 19.3158 14.9999 19.3158C19.3505 19.3158 23.3439 20.8443 26.4719 23.3933Z"
-              fill="#BF78FF"
-            />
-            <path
-              d="M14.9999 15.6842C17.6755 15.6842 19.8445 13.5163 19.8445 10.8421C19.8445 8.16788 17.6755 6 14.9999 6C12.3243 6 10.1553 8.16788 10.1553 10.8421C10.1553 13.5163 12.3243 15.6842 14.9999 15.6842Z"
-              fill="#BF78FF"
-            />
-          </svg>
-        </a>
+				<!-- Header__normal -->
+				<a href="./sign-in.html" class="header__btn btn">Đăng nhập</a>
+				<a href="./sign-in.html" class="header__icon-login">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="30"
+						height="30"
+						viewBox="0 0 30 30"
+						fill="none">
+						<rect x="0.5" y="0.5" width="29" height="29" rx="14.5" fill="#6B13B6" />
+						<rect x="0.5" y="0.5" width="29" height="29" rx="14.5" stroke="#E9D1FF" />
+						<path
+							d="M26.4719 23.3933C23.8125 26.8054 19.6626 29 14.9999 29C10.3372 29 6.1873 26.8054 3.52783 23.3933C6.65584 20.8443 10.6493 19.3158 14.9999 19.3158C19.3505 19.3158 23.3439 20.8443 26.4719 23.3933Z"
+							fill="#BF78FF" />
+						<path
+							d="M14.9999 15.6842C17.6755 15.6842 19.8445 13.5163 19.8445 10.8421C19.8445 8.16788 17.6755 6 14.9999 6C12.3243 6 10.1553 8.16788 10.1553 10.8421C10.1553 13.5163 12.3243 15.6842 14.9999 15.6842Z"
+							fill="#BF78FF" />
+					</svg>
+				</a>
 
-        <!-- Header__logined -->
-        <div class="header__logined" style="display: none">
-          <!-- header__notification -->
-          <div class="header__notification">
-            <div class="header__notification-icon">
-              <img src="./images/noti.svg" alt="" />
-              <div class="header__notification-badge"><p>6</p></div>
-            </div>
-            <div class="header__notification-board">
-              <div class="header__notification-title">
-                <h3>Thông báo của bạn</h3>
-              </div>
-              <div class="header__notification-body">
-                <!-- notification-item 1 -->
-                <a href="#!" class="header__notification-item">
-                  <div class="header__notification-img-wrap">
-                    <i class="fa-solid fa-user"></i>
-                  </div>
-                  <div class="header__notification-content">
-                    <p class="header__notification-text">
-                      There is a new order 2 daysThere is a new order 2
-                      daysThere is a new order 2 days
-                    </p>
-                    <p class="header__notification-time">12 days</p>
-                  </div>
-                </a>
+				<!-- Header__logined -->
+				<div class="header__logined" style="display: none">
+					<!-- header__notification -->
+					<div class="header__notification">
+						<div class="header__notification-icon">
+							<img src="./images/noti.svg" alt="" />
+							<div class="header__notification-badge"><p>6</p></div>
+						</div>
+						<div class="header__notification-board">
+							<div class="header__notification-title">
+								<h3>Thông báo của bạn</h3>
+							</div>
+							<div class="header__notification-body">
+								<!-- notification-item 1 -->
+								<a href="#!" class="header__notification-item">
+									<div class="header__notification-img-wrap">
+										<i class="fa-solid fa-user"></i>
+									</div>
+									<div class="header__notification-content">
+										<p class="header__notification-text">
+											There is a new order 2 daysThere is a new order 2
+											daysThere is a new order 2 days
+										</p>
+										<p class="header__notification-time">12 days</p>
+									</div>
+								</a>
 
-                <!-- notification-item 2 -->
-                <a href="#!" class="header__notification-item">
-                  <div class="header__notification-img-wrap">
-                    <i class="fa-solid fa-user"></i>
-                  </div>
-                  <div class="header__notification-content">
-                    <p class="header__notification-text">
-                      There is a new order 2 days
-                    </p>
-                    <p class="header__notification-time">5 days ago</p>
-                  </div>
-                </a>
-              </div>
-              <div class="header__notification-title">
-                <h4>Hiện không có thông báo mới</h4>
-              </div>
-            </div>
-          </div>
+								<!-- notification-item 2 -->
+								<a href="#!" class="header__notification-item">
+									<div class="header__notification-img-wrap">
+										<i class="fa-solid fa-user"></i>
+									</div>
+									<div class="header__notification-content">
+										<p class="header__notification-text">
+											There is a new order 2 days
+										</p>
+										<p class="header__notification-time">5 days ago</p>
+									</div>
+								</a>
+							</div>
+							<div class="header__notification-title">
+								<h4>Hiện không có thông báo mới</h4>
+							</div>
+						</div>
+					</div>
 
-          <!-- header__avatar  -->
-          <div class="header__avatar">
-            <img
-              src="https://vietales.vn/wp-content/uploads/nsl_avatars/4b5267b9f033405201808eeb5aa10b18.jpg"
-              alt=""
-              class="header__img"
-            />
-            <!-- avatar-active -->
-            <div class="avatar-active">
-              <div class="avatar-active__img-wrap">
-                <img
-                  src="https://vietales.vn/wp-content/uploads/nsl_avatars/4b5267b9f033405201808eeb5aa10b18.jpg"
-                  alt=""
-                />
-              </div>
+					<!-- header__avatar  -->
+					<div class="header__avatar">
+						<img
+							src="https://vietales.vn/wp-content/uploads/nsl_avatars/4b5267b9f033405201808eeb5aa10b18.jpg"
+							alt=""
+							class="header__img" />
+						<!-- avatar-active -->
+						<div class="avatar-active">
+							<div class="avatar-active__img-wrap">
+								<img
+									src="https://vietales.vn/wp-content/uploads/nsl_avatars/4b5267b9f033405201808eeb5aa10b18.jpg"
+									alt="" />
+							</div>
 
-              <div class="avatar-active__body">
-                <ul class="avatar-active__list">
-                  <li class="avatar-active__item">
-                    <a href="./love-page.html" class="avatar-active__link"
-                      >Yêu thích</a
-                    >
-                  </li>
-                  <li class="avatar-active__item">
-                    <a href="/save-page.html" class="avatar-active__link"
-                      >Đã lưu</a
-                    >
-                  </li>
-                  <li class="avatar-active__item">
-                    <a href="/follow-page.html" class="avatar-active__link"
-                      >Đang theo dõi</a
-                    >
-                  </li>
-                </ul>
-              </div>
+							<div class="avatar-active__body">
+								<ul class="avatar-active__list">
+									<li class="avatar-active__item">
+										<a href="./love-page.html" class="avatar-active__link"
+											>Yêu thích</a
+										>
+									</li>
+									<li class="avatar-active__item">
+										<a href="/save-page.html" class="avatar-active__link"
+											>Đã lưu</a
+										>
+									</li>
+									<li class="avatar-active__item">
+										<a href="/follow-page.html" class="avatar-active__link"
+											>Đang theo dõi</a
+										>
+									</li>
+								</ul>
+							</div>
 
-              <div class="avatar-active__setting">
-                <ul class="avatar-active__list">
-                  <li class="avatar-active__item">
-                    <a
-                      href="/user-profile-page.html"
-                      class="avatar-active__link"
-                      >Cài đặt tài khoản</a
-                    >
-                  </li>
-                  <li class="avatar-active__item">
-                    <a href="/sign-in.html" class="avatar-active__link"
-                      >Đăng xuất</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <!-- End of Header -->
+							<div class="avatar-active__setting">
+								<ul class="avatar-active__list">
+									<li class="avatar-active__item">
+										<a
+											href="/user-profile-page.html"
+											class="avatar-active__link"
+											>Cài đặt tài khoản</a
+										>
+									</li>
+									<li class="avatar-active__item">
+										<a href="/sign-in.html" class="avatar-active__link"
+											>Đăng xuất</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- End of Header -->
 
-      <!-- Start of main -->
-      <main>
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h1 class="header__heading-search-page">giac mo</h1>
-            </div>
-          </div>
-          <div class="row" style="">
-            <div class="col-12">
-              <div class="page-love__list-content">
-                <div class="fascinating-books__body">
-                  <!-- item 1 -->
-                  <a href="./details.html">
-                    <article class="fascinating-book">
-                      <div
-                        class="fascinating-book__img-wrap search-page__img-wrap"
-                      >
-                        <img
-                          src="./images/fascinating-sac-mau-dao-giao.webp"
-                          alt=""
-                          class="fascinating-book__img"
-                        />
-                      </div>
-                      <h3 class="fascinating-book__title user-page__title">
-                        Sắc màu Đạo giáo tại chùa Chí Lý đất Nha Trang
-                      </h3>
-                      <p
-                        class="fascinating-book__desc user-page__desc line-clamp line-3"
-                      >
-                        Một lần cùng bạn đi vãng chùa đầu năm, tôi vô tình đến
-                        được một ngôi chùa có phối thờ Ngọc Hoàng, Thái thượng
-                        lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền Nữ, Nữ Oa,
-                        Thiên Y A Na, và công chúa Tiên Dung. Trao đổi trực
-                        tiếp, vị trụ trì chùa Chí Lý […] đến được một ngôi chùa
-                        có phối thờ Ngọc Hoàng, Thái thượng lão quân, Quan Thánh
-                        Đế Quân, Cửu Thiên Huyền Nữ, Nữ Oa, Thiên Y A Na, và
-                        công chúa Tiên Dung. Trao đổi trực tiếp, vị trụ trì chùa
-                        Chí Lý […]
-                      </p>
-                      <div class="fascinating-book__row">
-                        <div class="fascinating-book__viegazine">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                            fill="#8917ee"
-                          >
-                            <path
-                              d="M432 64L208 64c-8.8 0-16 7.2-16 16l0 16-64 0 0-16c0-44.2 35.8-80 80-80L432 0c44.2 0 80 35.8 80 80l0 224c0 44.2-35.8 80-80 80l-16 0 0-64 16 0c8.8 0 16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zM0 192c0-35.3 28.7-64 64-64l256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 192zm64 32c0 17.7 14.3 32 32 32l192 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 192c-17.7 0-32 14.3-32 32z"
-                            ></path>
-                          </svg>
+			<!-- Start of main -->
+			<main>
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<h1 class="header__heading-search-page">giac mo</h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="page-love__list-content">
+								<div class="fascinating-books__body">
+									<!-- item 1 -->
+									<a href="./details.html">
+										<article class="fascinating-book">
+											<div
+												class="fascinating-book__img-wrap search-page__img-wrap">
+												<img
+													src="./images/fascinating-sac-mau-dao-giao.webp"
+													alt=""
+													class="fascinating-book__img" />
+											</div>
+											<h3 class="fascinating-book__title user-page__title">
+												Sắc màu Đạo giáo tại chùa Chí Lý đất Nha Trang
+											</h3>
+											<p
+												class="fascinating-book__desc user-page__desc line-clamp line-3">
+												Một lần cùng bạn đi vãng chùa đầu năm, tôi vô tình
+												đến được một ngôi chùa có phối thờ Ngọc Hoàng, Thái
+												thượng lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền
+												Nữ, Nữ Oa, Thiên Y A Na, và công chúa Tiên Dung.
+												Trao đổi trực tiếp, vị trụ trì chùa Chí Lý […] đến
+												được một ngôi chùa có phối thờ Ngọc Hoàng, Thái
+												thượng lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền
+												Nữ, Nữ Oa, Thiên Y A Na, và công chúa Tiên Dung.
+												Trao đổi trực tiếp, vị trụ trì chùa Chí Lý […]
+											</p>
+											<div class="fascinating-book__row">
+												<div class="fascinating-book__viegazine">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512"
+														fill="#8917ee">
+														<path
+															d="M432 64L208 64c-8.8 0-16 7.2-16 16l0 16-64 0 0-16c0-44.2 35.8-80 80-80L432 0c44.2 0 80 35.8 80 80l0 224c0 44.2-35.8 80-80 80l-16 0 0-64 16 0c8.8 0 16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zM0 192c0-35.3 28.7-64 64-64l256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 192zm64 32c0 17.7 14.3 32 32 32l192 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 192c-17.7 0-32 14.3-32 32z"></path>
+													</svg>
 
-                          <p>Viegazine</p>
-                        </div>
-                        <p>Văn hóa</p>
-                        <p>Võ Thủy Tiên</p>
-                      </div>
-                    </article>
-                  </a>
+													<p>Viegazine</p>
+												</div>
+												<p>Văn hóa</p>
+												<p>Võ Thủy Tiên</p>
+											</div>
+										</article>
+									</a>
 
-                  <!-- item 2 -->
-                  <a href="./details.html">
-                    <article class="fascinating-book">
-                      <div
-                        class="fascinating-book__img-wrap search-page__img-wrap"
-                      >
-                        <img
-                          src="./images/fascinating-sac-mau-dao-giao.webp"
-                          alt=""
-                          class="fascinating-book__img"
-                        />
-                      </div>
-                      <h3 class="fascinating-book__title user-page__title">
-                        Sắc màu Đạo giáo tại chùa Chí Lý đất Nha Trang
-                      </h3>
-                      <p
-                        class="fascinating-book__desc user-page__desc line-clamp line-3"
-                      >
-                        Một lần cùng bạn đi vãng chùa đầu năm, tôi vô tình đến
-                        được một ngôi chùa có phối thờ Ngọc Hoàng, Thái thượng
-                        lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền Nữ, Nữ Oa,
-                        Thiên Y A Na, và công chúa Tiên Dung. Trao đổi trực
-                        tiếp, vị trụ trì chùa Chí Lý […] đến được một ngôi chùa
-                        có phối thờ Ngọc Hoàng, Thái thượng lão quân, Quan Thánh
-                        Đế Quân, Cửu Thiên Huyền Nữ, Nữ Oa, Thiên Y A Na, và
-                        công chúa Tiên Dung. Trao đổi trực tiếp, vị trụ trì chùa
-                        Chí Lý […]
-                      </p>
-                      <div class="fascinating-book__row">
-                        <div class="fascinating-book__viegazine">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                            fill="#8917ee"
-                          >
-                            <path
-                              d="M432 64L208 64c-8.8 0-16 7.2-16 16l0 16-64 0 0-16c0-44.2 35.8-80 80-80L432 0c44.2 0 80 35.8 80 80l0 224c0 44.2-35.8 80-80 80l-16 0 0-64 16 0c8.8 0 16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zM0 192c0-35.3 28.7-64 64-64l256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 192zm64 32c0 17.7 14.3 32 32 32l192 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 192c-17.7 0-32 14.3-32 32z"
-                            ></path>
-                          </svg>
+									<!-- item 2 -->
+									<a href="./details.html">
+										<article class="fascinating-book">
+											<div
+												class="fascinating-book__img-wrap search-page__img-wrap">
+												<img
+													src="./images/fascinating-sac-mau-dao-giao.webp"
+													alt=""
+													class="fascinating-book__img" />
+											</div>
+											<h3 class="fascinating-book__title user-page__title">
+												Sắc màu Đạo giáo tại chùa Chí Lý đất Nha Trang
+											</h3>
+											<p
+												class="fascinating-book__desc user-page__desc line-clamp line-3">
+												Một lần cùng bạn đi vãng chùa đầu năm, tôi vô tình
+												đến được một ngôi chùa có phối thờ Ngọc Hoàng, Thái
+												thượng lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền
+												Nữ, Nữ Oa, Thiên Y A Na, và công chúa Tiên Dung.
+												Trao đổi trực tiếp, vị trụ trì chùa Chí Lý […] đến
+												được một ngôi chùa có phối thờ Ngọc Hoàng, Thái
+												thượng lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền
+												Nữ, Nữ Oa, Thiên Y A Na, và công chúa Tiên Dung.
+												Trao đổi trực tiếp, vị trụ trì chùa Chí Lý […]
+											</p>
+											<div class="fascinating-book__row">
+												<div class="fascinating-book__viegazine">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512"
+														fill="#8917ee">
+														<path
+															d="M432 64L208 64c-8.8 0-16 7.2-16 16l0 16-64 0 0-16c0-44.2 35.8-80 80-80L432 0c44.2 0 80 35.8 80 80l0 224c0 44.2-35.8 80-80 80l-16 0 0-64 16 0c8.8 0 16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zM0 192c0-35.3 28.7-64 64-64l256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 192zm64 32c0 17.7 14.3 32 32 32l192 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 192c-17.7 0-32 14.3-32 32z"></path>
+													</svg>
 
-                          <p>Viegazine</p>
-                        </div>
-                        <p>Văn hóa</p>
-                        <p>Võ Thủy Tiên</p>
-                      </div>
-                    </article>
-                  </a>
+													<p>Viegazine</p>
+												</div>
+												<p>Văn hóa</p>
+												<p>Võ Thủy Tiên</p>
+											</div>
+										</article>
+									</a>
 
-                  <!-- item 3 -->
-                  <a href="./details.html">
-                    <article class="fascinating-book">
-                      <div
-                        class="fascinating-book__img-wrap search-page__img-wrap"
-                      >
-                        <img
-                          src="./images/fascinating-sac-mau-dao-giao.webp"
-                          alt=""
-                          class="fascinating-book__img"
-                        />
-                      </div>
-                      <h3 class="fascinating-book__title user-page__title">
-                        Sắc màu Đạo giáo tại chùa Chí Lý đất Nha Trang
-                      </h3>
-                      <p
-                        class="fascinating-book__desc user-page__desc line-clamp line-3"
-                      >
-                        Một lần cùng bạn đi vãng chùa đầu năm, tôi vô tình đến
-                        được một ngôi chùa có phối thờ Ngọc Hoàng, Thái thượng
-                        lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền Nữ, Nữ Oa,
-                        Thiên Y A Na, và công chúa Tiên Dung. Trao đổi trực
-                        tiếp, vị trụ trì chùa Chí Lý […] đến được một ngôi chùa
-                        có phối thờ Ngọc Hoàng, Thái thượng lão quân, Quan Thánh
-                        Đế Quân, Cửu Thiên Huyền Nữ, Nữ Oa, Thiên Y A Na, và
-                        công chúa Tiên Dung. Trao đổi trực tiếp, vị trụ trì chùa
-                        Chí Lý […]
-                      </p>
-                      <div class="fascinating-book__row">
-                        <div class="fascinating-book__viegazine">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                            fill="#8917ee"
-                          >
-                            <path
-                              d="M432 64L208 64c-8.8 0-16 7.2-16 16l0 16-64 0 0-16c0-44.2 35.8-80 80-80L432 0c44.2 0 80 35.8 80 80l0 224c0 44.2-35.8 80-80 80l-16 0 0-64 16 0c8.8 0 16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zM0 192c0-35.3 28.7-64 64-64l256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 192zm64 32c0 17.7 14.3 32 32 32l192 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 192c-17.7 0-32 14.3-32 32z"
-                            ></path>
-                          </svg>
+									<!-- item 3 -->
+									<a href="./details.html">
+										<article class="fascinating-book">
+											<div
+												class="fascinating-book__img-wrap search-page__img-wrap">
+												<img
+													src="./images/fascinating-sac-mau-dao-giao.webp"
+													alt=""
+													class="fascinating-book__img" />
+											</div>
+											<h3 class="fascinating-book__title user-page__title">
+												Sắc màu Đạo giáo tại chùa Chí Lý đất Nha Trang
+											</h3>
+											<p
+												class="fascinating-book__desc user-page__desc line-clamp line-3">
+												Một lần cùng bạn đi vãng chùa đầu năm, tôi vô tình
+												đến được một ngôi chùa có phối thờ Ngọc Hoàng, Thái
+												thượng lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền
+												Nữ, Nữ Oa, Thiên Y A Na, và công chúa Tiên Dung.
+												Trao đổi trực tiếp, vị trụ trì chùa Chí Lý […] đến
+												được một ngôi chùa có phối thờ Ngọc Hoàng, Thái
+												thượng lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền
+												Nữ, Nữ Oa, Thiên Y A Na, và công chúa Tiên Dung.
+												Trao đổi trực tiếp, vị trụ trì chùa Chí Lý […]
+											</p>
+											<div class="fascinating-book__row">
+												<div class="fascinating-book__viegazine">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512"
+														fill="#8917ee">
+														<path
+															d="M432 64L208 64c-8.8 0-16 7.2-16 16l0 16-64 0 0-16c0-44.2 35.8-80 80-80L432 0c44.2 0 80 35.8 80 80l0 224c0 44.2-35.8 80-80 80l-16 0 0-64 16 0c8.8 0 16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zM0 192c0-35.3 28.7-64 64-64l256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 192zm64 32c0 17.7 14.3 32 32 32l192 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 192c-17.7 0-32 14.3-32 32z"></path>
+													</svg>
 
-                          <p>Viegazine</p>
-                        </div>
-                        <p>Văn hóa</p>
-                        <p>Võ Thủy Tiên</p>
-                      </div>
-                    </article>
-                  </a>
+													<p>Viegazine</p>
+												</div>
+												<p>Văn hóa</p>
+												<p>Võ Thủy Tiên</p>
+											</div>
+										</article>
+									</a>
 
-                  <!-- item 1 -->
-                  <a href="./details.html">
-                    <article class="fascinating-book">
-                      <div
-                        class="fascinating-book__img-wrap search-page__img-wrap"
-                      >
-                        <img
-                          src="./images/fascinating-sac-mau-dao-giao.webp"
-                          alt=""
-                          class="fascinating-book__img"
-                        />
-                      </div>
-                      <h3 class="fascinating-book__title user-page__title">
-                        Sắc màu Đạo giáo tại chùa Chí Lý đất Nha Trang
-                      </h3>
-                      <p
-                        class="fascinating-book__desc user-page__desc line-clamp line-3"
-                      >
-                        Một lần cùng bạn đi vãng chùa đầu năm, tôi vô tình đến
-                        được một ngôi chùa có phối thờ Ngọc Hoàng, Thái thượng
-                        lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền Nữ, Nữ Oa,
-                        Thiên Y A Na, và công chúa Tiên Dung. Trao đổi trực
-                        tiếp, vị trụ trì chùa Chí Lý […] đến được một ngôi chùa
-                        có phối thờ Ngọc Hoàng, Thái thượng lão quân, Quan Thánh
-                        Đế Quân, Cửu Thiên Huyền Nữ, Nữ Oa, Thiên Y A Na, và
-                        công chúa Tiên Dung. Trao đổi trực tiếp, vị trụ trì chùa
-                        Chí Lý […]
-                      </p>
-                      <div class="fascinating-book__row">
-                        <div class="fascinating-book__viegazine">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                            fill="#8917ee"
-                          >
-                            <path
-                              d="M432 64L208 64c-8.8 0-16 7.2-16 16l0 16-64 0 0-16c0-44.2 35.8-80 80-80L432 0c44.2 0 80 35.8 80 80l0 224c0 44.2-35.8 80-80 80l-16 0 0-64 16 0c8.8 0 16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zM0 192c0-35.3 28.7-64 64-64l256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 192zm64 32c0 17.7 14.3 32 32 32l192 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 192c-17.7 0-32 14.3-32 32z"
-                            ></path>
-                          </svg>
+									<!-- item 1 -->
+									<a href="./details.html">
+										<article class="fascinating-book">
+											<div
+												class="fascinating-book__img-wrap search-page__img-wrap">
+												<img
+													src="./images/fascinating-sac-mau-dao-giao.webp"
+													alt=""
+													class="fascinating-book__img" />
+											</div>
+											<h3 class="fascinating-book__title user-page__title">
+												Sắc màu Đạo giáo tại chùa Chí Lý đất Nha Trang
+											</h3>
+											<p
+												class="fascinating-book__desc user-page__desc line-clamp line-3">
+												Một lần cùng bạn đi vãng chùa đầu năm, tôi vô tình
+												đến được một ngôi chùa có phối thờ Ngọc Hoàng, Thái
+												thượng lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền
+												Nữ, Nữ Oa, Thiên Y A Na, và công chúa Tiên Dung.
+												Trao đổi trực tiếp, vị trụ trì chùa Chí Lý […] đến
+												được một ngôi chùa có phối thờ Ngọc Hoàng, Thái
+												thượng lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền
+												Nữ, Nữ Oa, Thiên Y A Na, và công chúa Tiên Dung.
+												Trao đổi trực tiếp, vị trụ trì chùa Chí Lý […]
+											</p>
+											<div class="fascinating-book__row">
+												<div class="fascinating-book__viegazine">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512"
+														fill="#8917ee">
+														<path
+															d="M432 64L208 64c-8.8 0-16 7.2-16 16l0 16-64 0 0-16c0-44.2 35.8-80 80-80L432 0c44.2 0 80 35.8 80 80l0 224c0 44.2-35.8 80-80 80l-16 0 0-64 16 0c8.8 0 16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zM0 192c0-35.3 28.7-64 64-64l256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 192zm64 32c0 17.7 14.3 32 32 32l192 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 192c-17.7 0-32 14.3-32 32z"></path>
+													</svg>
 
-                          <p>Viegazine</p>
-                        </div>
-                        <p>Văn hóa</p>
-                        <p>Võ Thủy Tiên</p>
-                      </div>
-                    </article>
-                  </a>
+													<p>Viegazine</p>
+												</div>
+												<p>Văn hóa</p>
+												<p>Võ Thủy Tiên</p>
+											</div>
+										</article>
+									</a>
 
-                  <!-- item 2 -->
-                  <a href="./details.html">
-                    <article class="fascinating-book">
-                      <div
-                        class="fascinating-book__img-wrap search-page__img-wrap"
-                      >
-                        <img
-                          src="./images/fascinating-sac-mau-dao-giao.webp"
-                          alt=""
-                          class="fascinating-book__img"
-                        />
-                      </div>
-                      <h3 class="fascinating-book__title user-page__title">
-                        Sắc màu Đạo giáo tại chùa Chí Lý đất Nha Trang
-                      </h3>
-                      <p
-                        class="fascinating-book__desc user-page__desc line-clamp line-3"
-                      >
-                        Một lần cùng bạn đi vãng chùa đầu năm, tôi vô tình đến
-                        được một ngôi chùa có phối thờ Ngọc Hoàng, Thái thượng
-                        lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền Nữ, Nữ Oa,
-                        Thiên Y A Na, và công chúa Tiên Dung. Trao đổi trực
-                        tiếp, vị trụ trì chùa Chí Lý […] đến được một ngôi chùa
-                        có phối thờ Ngọc Hoàng, Thái thượng lão quân, Quan Thánh
-                        Đế Quân, Cửu Thiên Huyền Nữ, Nữ Oa, Thiên Y A Na, và
-                        công chúa Tiên Dung. Trao đổi trực tiếp, vị trụ trì chùa
-                        Chí Lý […]
-                      </p>
-                      <div class="fascinating-book__row">
-                        <div class="fascinating-book__viegazine">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                            fill="#8917ee"
-                          >
-                            <path
-                              d="M432 64L208 64c-8.8 0-16 7.2-16 16l0 16-64 0 0-16c0-44.2 35.8-80 80-80L432 0c44.2 0 80 35.8 80 80l0 224c0 44.2-35.8 80-80 80l-16 0 0-64 16 0c8.8 0 16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zM0 192c0-35.3 28.7-64 64-64l256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 192zm64 32c0 17.7 14.3 32 32 32l192 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 192c-17.7 0-32 14.3-32 32z"
-                            ></path>
-                          </svg>
+									<!-- item 2 -->
+									<a href="./details.html">
+										<article class="fascinating-book">
+											<div
+												class="fascinating-book__img-wrap search-page__img-wrap">
+												<img
+													src="./images/fascinating-sac-mau-dao-giao.webp"
+													alt=""
+													class="fascinating-book__img" />
+											</div>
+											<h3 class="fascinating-book__title user-page__title">
+												Sắc màu Đạo giáo tại chùa Chí Lý đất Nha Trang
+											</h3>
+											<p
+												class="fascinating-book__desc user-page__desc line-clamp line-3">
+												Một lần cùng bạn đi vãng chùa đầu năm, tôi vô tình
+												đến được một ngôi chùa có phối thờ Ngọc Hoàng, Thái
+												thượng lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền
+												Nữ, Nữ Oa, Thiên Y A Na, và công chúa Tiên Dung.
+												Trao đổi trực tiếp, vị trụ trì chùa Chí Lý […] đến
+												được một ngôi chùa có phối thờ Ngọc Hoàng, Thái
+												thượng lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền
+												Nữ, Nữ Oa, Thiên Y A Na, và công chúa Tiên Dung.
+												Trao đổi trực tiếp, vị trụ trì chùa Chí Lý […]
+											</p>
+											<div class="fascinating-book__row">
+												<div class="fascinating-book__viegazine">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512"
+														fill="#8917ee">
+														<path
+															d="M432 64L208 64c-8.8 0-16 7.2-16 16l0 16-64 0 0-16c0-44.2 35.8-80 80-80L432 0c44.2 0 80 35.8 80 80l0 224c0 44.2-35.8 80-80 80l-16 0 0-64 16 0c8.8 0 16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zM0 192c0-35.3 28.7-64 64-64l256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 192zm64 32c0 17.7 14.3 32 32 32l192 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 192c-17.7 0-32 14.3-32 32z"></path>
+													</svg>
 
-                          <p>Viegazine</p>
-                        </div>
-                        <p>Văn hóa</p>
-                        <p>Võ Thủy Tiên</p>
-                      </div>
-                    </article>
-                  </a>
+													<p>Viegazine</p>
+												</div>
+												<p>Văn hóa</p>
+												<p>Võ Thủy Tiên</p>
+											</div>
+										</article>
+									</a>
 
-                  <!-- item 3 -->
-                  <a href="./details.html">
-                    <article class="fascinating-book">
-                      <div
-                        class="fascinating-book__img-wrap search-page__img-wrap"
-                      >
-                        <img
-                          src="./images/fascinating-sac-mau-dao-giao.webp"
-                          alt=""
-                          class="fascinating-book__img"
-                        />
-                      </div>
-                      <h3 class="fascinating-book__title user-page__title">
-                        Sắc màu Đạo giáo tại chùa Chí Lý đất Nha Trang
-                      </h3>
-                      <p
-                        class="fascinating-book__desc user-page__desc line-clamp line-3"
-                      >
-                        Một lần cùng bạn đi vãng chùa đầu năm, tôi vô tình đến
-                        được một ngôi chùa có phối thờ Ngọc Hoàng, Thái thượng
-                        lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền Nữ, Nữ Oa,
-                        Thiên Y A Na, và công chúa Tiên Dung. Trao đổi trực
-                        tiếp, vị trụ trì chùa Chí Lý […] đến được một ngôi chùa
-                        có phối thờ Ngọc Hoàng, Thái thượng lão quân, Quan Thánh
-                        Đế Quân, Cửu Thiên Huyền Nữ, Nữ Oa, Thiên Y A Na, và
-                        công chúa Tiên Dung. Trao đổi trực tiếp, vị trụ trì chùa
-                        Chí Lý […]
-                      </p>
-                      <div class="fascinating-book__row">
-                        <div class="fascinating-book__viegazine">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                            fill="#8917ee"
-                          >
-                            <path
-                              d="M432 64L208 64c-8.8 0-16 7.2-16 16l0 16-64 0 0-16c0-44.2 35.8-80 80-80L432 0c44.2 0 80 35.8 80 80l0 224c0 44.2-35.8 80-80 80l-16 0 0-64 16 0c8.8 0 16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zM0 192c0-35.3 28.7-64 64-64l256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 192zm64 32c0 17.7 14.3 32 32 32l192 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 192c-17.7 0-32 14.3-32 32z"
-                            ></path>
-                          </svg>
+									<!-- item 3 -->
+									<a href="./details.html">
+										<article class="fascinating-book">
+											<div
+												class="fascinating-book__img-wrap search-page__img-wrap">
+												<img
+													src="./images/fascinating-sac-mau-dao-giao.webp"
+													alt=""
+													class="fascinating-book__img" />
+											</div>
+											<h3 class="fascinating-book__title user-page__title">
+												Sắc màu Đạo giáo tại chùa Chí Lý đất Nha Trang
+											</h3>
+											<p
+												class="fascinating-book__desc user-page__desc line-clamp line-3">
+												Một lần cùng bạn đi vãng chùa đầu năm, tôi vô tình
+												đến được một ngôi chùa có phối thờ Ngọc Hoàng, Thái
+												thượng lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền
+												Nữ, Nữ Oa, Thiên Y A Na, và công chúa Tiên Dung.
+												Trao đổi trực tiếp, vị trụ trì chùa Chí Lý […] đến
+												được một ngôi chùa có phối thờ Ngọc Hoàng, Thái
+												thượng lão quân, Quan Thánh Đế Quân, Cửu Thiên Huyền
+												Nữ, Nữ Oa, Thiên Y A Na, và công chúa Tiên Dung.
+												Trao đổi trực tiếp, vị trụ trì chùa Chí Lý […]
+											</p>
+											<div class="fascinating-book__row">
+												<div class="fascinating-book__viegazine">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512"
+														fill="#8917ee">
+														<path
+															d="M432 64L208 64c-8.8 0-16 7.2-16 16l0 16-64 0 0-16c0-44.2 35.8-80 80-80L432 0c44.2 0 80 35.8 80 80l0 224c0 44.2-35.8 80-80 80l-16 0 0-64 16 0c8.8 0 16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zM0 192c0-35.3 28.7-64 64-64l256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 192zm64 32c0 17.7 14.3 32 32 32l192 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 192c-17.7 0-32 14.3-32 32z"></path>
+													</svg>
 
-                          <p>Viegazine</p>
-                        </div>
-                        <p>Văn hóa</p>
-                        <p>Võ Thủy Tiên</p>
-                      </div>
-                    </article>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="seach-page__row">
-                <button class="search-page__btn">Khám phá thêm</button>
-              </div>
-            </div>
-          </div>
+													<p>Viegazine</p>
+												</div>
+												<p>Văn hóa</p>
+												<p>Võ Thủy Tiên</p>
+											</div>
+										</article>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="seach-page__row">
+								<button class="search-page__btn">Khám phá thêm</button>
+							</div>
+						</div>
+					</div>
 
-          <div class="row">
-            <div class="col">
-              <div class="search-page__notsuitable">
-                <p>Không tìm thấy nội dung phù hợp</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-      <!-- End of main -->
+					<div class="row">
+						<div class="col">
+							<div class="search-page__notsuitable">
+								<p>Không tìm thấy nội dung phù hợp</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!-- End of main -->
 
-      <!-- Start of Footer -->
-      <footer class="footer">
-        <a href="/" class="footer__logo">
-          <img src="./images/logo-purple.svg" alt="" />
-        </a>
-        <!-- social  -->
-        <div class="footer__social">
-          <!-- fb -->
-          <a href="#!">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 320 512"
-              fill="currentColor"
-            >
-              <path
-                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
-              />
-            </svg>
-          </a>
-          <!-- tiktok -->
-          <a href="#!">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-              fill="currentColor"
-            >
-              <path
-                d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"
-              />
-            </svg>
-          </a>
-          <!-- instagram -->
-          <a href="#!">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-              fill="currentColor"
-            >
-              <path
-                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-              />
-            </svg>
-          </a>
-        </div>
-        <p class="footer__copyright">© Vietales 2023. All Rights Reserved</p>
-        <div class="footer__desc">
-          Công ty TNHH truyền thông và giải trí VIE-X
-        </div>
-        <div class="footer__desc">MSDN: 0317508603</div>
-        <div class="footer__desc">
-          Địa Chỉ: Toà nhà Redbase – 302A Nguyễn Thượng Hiền, Phường 5, Quận Phú
-          Nhuận
-        </div>
-        <div class="footer__row">
-          <img src="./images/footer__img.png" alt="" class="footer__img" />
-        </div>
-      </footer>
-      <!-- End of Footer -->
-    </div>
-    <!-- End of Wrapper -->
-  </body>
+			<!-- Start of Footer -->
+			<footer class="footer">
+				<a href="/" class="footer__logo">
+					<img src="./images/logo-purple.svg" alt="" />
+				</a>
+				<!-- social  -->
+				<div class="footer__social">
+					<!-- fb -->
+					<a href="#!">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 320 512"
+							fill="currentColor">
+							<path
+								d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+						</svg>
+					</a>
+					<!-- tiktok -->
+					<a href="#!">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512"
+							fill="currentColor">
+							<path
+								d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z" />
+						</svg>
+					</a>
+					<!-- instagram -->
+					<a href="#!">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512"
+							fill="currentColor">
+							<path
+								d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+						</svg>
+					</a>
+				</div>
+				<p class="footer__copyright">© Vietales 2023. All Rights Reserved</p>
+				<div class="footer__desc">Công ty TNHH truyền thông và giải trí VIE-X</div>
+				<div class="footer__desc">MSDN: 0317508603</div>
+				<div class="footer__desc">
+					Địa Chỉ: Toà nhà Redbase – 302A Nguyễn Thượng Hiền, Phường 5, Quận Phú Nhuận
+				</div>
+				<div class="footer__row">
+					<img src="./images/footer__img.png" alt="" class="footer__img" />
+				</div>
+			</footer>
+			<!-- End of Footer -->
+		</div>
+		<!-- End of Wrapper -->
+	</body>
 </html>
