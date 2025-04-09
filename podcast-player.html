@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vietales | Podcast Player - Vietales</title>
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+		<link rel="shortcut icon" href="./favicon/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+		<link rel="manifest" href="./favicon/site.webmanifest" />
+
+		<!-- Meta open graph -->
+		<meta property="og:title" content="Vietales | Chuyện Người Việt Kể" />
+		<meta
+			name="description"
+			content="Đưa câu chuyện Việt Nam ra thế giới và mang câu chuyện thế giới về Việt Nam" />
+		<meta property="og:image" content="./favicon/favicon-96x96.png" />
+		<meta property="og:url" content="https://vietales.com" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Vietales" />
+		<meta property="og:locale" content="vi_VN" />
+
+		<!-- Embed font -->
+		<link rel="stylesheet" href="./fonts/stylesheet.css" />
+
+		<!-- Swiper -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+		<!-- Style CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<!--  Start of Header  -->
+			<header class="header header--podcast-player">
+				<a class="header__icon-search" href="#!">
+					<svg
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="currentColor"
+						xmlns="http://www.w3.org/2000/svg">
+						<mask
+							id="mask0_6257_79142"
+							style="mask-type: alpha"
+							maskUnits="userSpaceOnUse"
+							x="0"
+							y="0"
+							width="24"
+							height="24">
+							<rect width="24" height="24" class="fill-current"></rect>
+						</mask>
+						<g mask="url(#mask0_6257_79142)">
+							<path
+								d="M1 19.5V17.5H13V19.5H1ZM1 13.5375V11.5375H9V13.5375H1ZM1 7.46249V5.46249L9 5.46249V7.46249L1 7.46249ZM21.6 18L17.75 14.15C17.35 14.4333 16.9125 14.6458 16.4375 14.7875C15.9625 14.9292 15.4833 15 15 15C13.6167 15 12.4375 14.5125 11.4625 13.5375C10.4875 12.5625 10 11.3833 10 10C10 8.61667 10.4875 7.4375 11.4625 6.4625C12.4375 5.4875 13.6167 5 15 5C16.3833 5 17.5625 5.4875 18.5375 6.4625C19.5125 7.4375 20 8.61667 20 10C20 10.4833 19.9292 10.9625 19.7875 11.4375C19.6458 11.9125 19.4333 12.35 19.15 12.75L23 16.6L21.6 18ZM15 13C15.8333 13 16.5417 12.7083 17.125 12.125C17.7083 11.5417 18 10.8333 18 10C18 9.16667 17.7083 8.45833 17.125 7.875C16.5417 7.29167 15.8333 7 15 7C14.1667 7 13.4583 7.29167 12.875 7.875C12.2917 8.45833 12 9.16667 12 10C12 10.8333 12.2917 11.5417 12.875 12.125C13.4583 12.7083 14.1667 13 15 13Z"
+								class="fill-current"></path>
+						</g>
+					</svg>
+				</a>
+
+				<a href="/" class="logo">
+					<svg
+						class="logo__svg"
+						width="230"
+						height="48"
+						viewBox="0 0 230 48"
+						fill="currentColor"
+						xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_6938_173967)">
+							<path
+								d="M109.087 17.0681H115.038V10.8556H109.087V0H102.286V10.8556H97.3811V17.0681H102.286V47.0845H109.087V17.0681Z"
+								class="fill-current"></path>
+							<path
+								d="M163.757 0H156.956V47.0845H163.757V0Z"
+								class="fill-current"></path>
+							<path
+								d="M229.405 36.4251C229.405 43.5531 224.174 48 217.242 48C215.672 48 214.103 47.673 212.599 47.1499C207.402 45.3123 204.6 41.1401 204.433 35.7057H211.273C211.666 39.1756 213.51 41.7875 217.373 41.7875C220.381 41.7875 222.604 39.9564 222.604 36.8174C222.604 29.2316 206.059 33.1553 206.059 20.3379C206.059 14.1253 211.487 9.87466 217.438 9.87466C223.65 9.87466 228.424 14.1907 228.555 20.4687H221.754C221.427 17.8529 219.858 16.0872 217.111 16.0872C214.822 16.0872 212.86 17.5259 212.86 19.9455C212.86 23.1499 215.999 23.8692 218.484 24.6539C224.435 26.485 229.405 29.4278 229.405 36.4251Z"
+								class="fill-current"></path>
+							<path
+								d="M145.053 29.0354C145.053 36.0327 139.495 41.7875 132.432 41.7875C125.5 41.7875 120.073 35.8365 120.073 29.0354C120.073 21.9728 125.304 16.0872 132.498 16.0872C139.887 16.0872 145.053 21.7766 145.053 29.0354ZM144.923 47.0845H151.724V10.8556H144.923V15.9564H144.792C142.111 11.8365 137.337 9.87466 132.498 9.87466C121.511 9.87466 113.271 18.1144 113.271 29.1008C113.271 40.0218 121.642 48 132.498 48C137.468 48 142.241 45.842 144.792 41.4605H144.923V47.0845Z"
+								class="fill-current"></path>
+							<path
+								d="M58.4704 30.8665H42.2524V47.0845H58.4704V30.8665Z"
+								class="fill-current"></path>
+							<path
+								d="M91.8219 26.6812H68.4104C68.8028 20.7302 74.2306 16.0872 80.1161 16.0872C86.0017 16.0872 91.4295 20.7302 91.8219 26.6812ZM98.6229 28.5123C98.6229 18.3106 90.4486 9.87466 80.1815 9.87466C69.5875 9.87466 61.6093 18.4414 61.6093 28.9046C61.6093 39.0409 69.7183 48 80.0507 48C87.9635 48 94.6992 43.0954 97.4458 35.7057H90.6447C88.6829 39.4986 84.563 41.7875 80.3123 41.7875C74.3614 41.7875 69.7837 37.5368 68.4104 31.9128H98.4268C98.5573 30.784 98.6228 29.6486 98.6229 28.5123Z"
+								class="fill-current"></path>
+							<path
+								d="M197.108 26.6812H173.697C174.089 20.7302 179.517 16.0872 185.402 16.0872C191.288 16.0872 196.716 20.7302 197.108 26.6812ZM203.909 28.5123C203.909 18.3106 195.735 9.87466 185.468 9.87466C174.874 9.87466 166.895 18.4414 166.895 28.9046C166.895 39.0409 175.004 48 185.337 48C193.25 48 199.985 43.0954 202.732 35.7057H195.931C193.969 39.4986 189.849 41.7875 185.598 41.7875C179.647 41.7875 175.07 37.5368 173.697 31.9128H203.713C203.843 30.784 203.909 29.6486 203.909 28.5123Z"
+								class="fill-current"></path>
+							<path
+								d="M23.656 47.0845L40.8137 10.8556H33.424L20.9015 38.3215H20.7439L7.98535 10.8556H0.595703L17.9104 47.0845H23.656Z"
+								class="fill-current"></path>
+							<path
+								d="M50.3614 27.9238C55.3455 27.9238 59.386 23.8834 59.386 18.8993C59.386 13.9152 55.3455 9.87476 50.3614 9.87476C45.3773 9.87476 41.3369 13.9152 41.3369 18.8993C41.3369 23.8834 45.3773 27.9238 50.3614 27.9238Z"
+								fill="#EEB117"></path>
+						</g>
+						<defs>
+							<clipPath id="clip0_6938_173967">
+								<rect
+									width="228.81"
+									height="48"
+									class="fill-current"
+									transform="translate(0.595703)"></rect>
+							</clipPath>
+						</defs>
+					</svg>
+				</a>
+
+				<a href="./sign-in.html" class="header__btn btn btn">Đăng nhập</a>
+			</header>
+			<!-- End of Header -->
+
+			<!-- Start of Main -->
+			<main class="main main--podcast-player">
+				<div class="container container--podcast-player">
+					<h1 class="podcast-player__heading">Podcast</h1>
+					<section class="podcast-player">
+						<div class="podcast-player__row">
+							<div class="podcast-player__col">
+								<h2 class="podcast-player__title">Hội thề Đốn Sơn</h2>
+							</div>
+
+							<div class="podcast-player__col">
+								<a class="podcast-player__icon-link" href="#!">
+									<svg
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 512 512">
+										<path
+											d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
+									</svg>
+								</a>
+
+								<a class="podcast-player__icon-link" href="#!">
+									<svg
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 384 512">
+										<path
+											d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z" />
+									</svg>
+								</a>
+								<a class="podcast-player__icon-link" href="#!">
+									<svg
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 640 512">
+										<path
+											d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
+									</svg>
+								</a>
+								<a class="podcast-player__icon-link" href="#!">
+									<svg
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 448 512">
+										<path
+											d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z" />
+									</svg>
+								</a>
+							</div>
+						</div>
+
+						<p class="podcast-player__desc">
+							Lịch sử vốn không có chữ nếu, thế nhưng nếu sự kiện đó xảy ra thì dòng
+							chảy lịch sử có lẽ đã thay đổi theo một chiều hướng khác. Tốt đẹn hơn?
+							Hay đen tối đi? Không ai biết trước được.
+						</p>
+
+						<div class="podcast-player__media">
+							<button class="podcast-player__play">
+								<svg
+									fill="currentColor"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg">
+									<mask
+										id="mask0_5261_11459"
+										style="mask-type: alpha"
+										maskUnits="userSpaceOnUse"
+										x="0"
+										y="0"
+										width="24"
+										height="24">
+										<rect width="24" height="24" fill="currentColor" />
+									</mask>
+									<g mask="url(#mask0_5261_11459)">
+										<path d="M8 19V5L19 12L8 19Z" fill="currentColor" />
+									</g>
+								</svg>
+							</button>
+
+							<div class="podcast-player__waveform">
+								<!-- <img src="./images/icon-wave-podcast.svg" alt="" /> -->
+							</div>
+
+							<p class="podcast-player__time-display">00:00:00</p>
+						</div>
+
+						<div class="playlist">
+							<ul class="playlist__list">
+								<li class="playlist-item playlist-item--active">
+									<div class="playlist-item__media">
+										<p class="playlist-item__number">1</p>
+										<button class="playlist-item__btn">
+											<svg
+												fill="currentColor"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												xmlns="http://www.w3.org/2000/svg">
+												<mask
+													id="mask0_5261_11459"
+													style="mask-type: alpha"
+													maskUnits="userSpaceOnUse"
+													x="0"
+													y="0"
+													width="24"
+													height="24">
+													<rect
+														width="24"
+														height="24"
+														fill="currentColor" />
+												</mask>
+												<g mask="url(#mask0_5261_11459)">
+													<path
+														d="M8 19V5L19 12L8 19Z"
+														fill="currentColor" />
+												</g>
+											</svg>
+										</button>
+										<p class="playlist-item__title">Hội thề đốn sơn</p>
+									</div>
+
+									<p class="playlist-item__time">16:35</p>
+								</li>
+
+								<li class="playlist-item">
+									<div class="playlist-item__media">
+										<p class="playlist-item__number">2</p>
+										<button class="playlist-item__btn">
+											<svg
+												fill="currentColor"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												xmlns="http://www.w3.org/2000/svg">
+												<mask
+													id="mask0_5261_11459"
+													style="mask-type: alpha"
+													maskUnits="userSpaceOnUse"
+													x="0"
+													y="0"
+													width="24"
+													height="24">
+													<rect
+														width="24"
+														height="24"
+														fill="currentColor" />
+												</mask>
+												<g mask="url(#mask0_5261_11459)">
+													<path
+														d="M8 19V5L19 12L8 19Z"
+														fill="currentColor" />
+												</g>
+											</svg>
+										</button>
+										<p class="playlist-item__title">
+											Mãng xà đại đế Titanoboa: Loài rắn khổng lồ đáng sợ nhất
+										</p>
+									</div>
+
+									<p class="playlist-item__time">7:36</p>
+								</li>
+
+								<li class="playlist-item">
+									<div class="playlist-item__media">
+										<p class="playlist-item__number">3</p>
+										<button class="playlist-item__btn">
+											<svg
+												fill="currentColor"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												xmlns="http://www.w3.org/2000/svg">
+												<mask
+													id="mask0_5261_11459"
+													style="mask-type: alpha"
+													maskUnits="userSpaceOnUse"
+													x="0"
+													y="0"
+													width="24"
+													height="24">
+													<rect
+														width="24"
+														height="24"
+														fill="currentColor" />
+												</mask>
+												<g mask="url(#mask0_5261_11459)">
+													<path
+														d="M8 19V5L19 12L8 19Z"
+														fill="currentColor" />
+												</g>
+											</svg>
+										</button>
+										<p class="playlist-item__title">
+											Mái đình làng Việt: Tiếng vọng của hồn quê
+										</p>
+									</div>
+
+									<p class="playlist-item__time">27:35</p>
+								</li>
+
+								<li class="playlist-item">
+									<div class="playlist-item__media">
+										<p class="playlist-item__number">4</p>
+										<button class="playlist-item__btn">
+											<svg
+												fill="currentColor"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												xmlns="http://www.w3.org/2000/svg">
+												<mask
+													id="mask0_5261_11459"
+													style="mask-type: alpha"
+													maskUnits="userSpaceOnUse"
+													x="0"
+													y="0"
+													width="24"
+													height="24">
+													<rect
+														width="24"
+														height="24"
+														fill="currentColor" />
+												</mask>
+												<g mask="url(#mask0_5261_11459)">
+													<path
+														d="M8 19V5L19 12L8 19Z"
+														fill="currentColor" />
+												</g>
+											</svg>
+										</button>
+										<p class="playlist-item__title">Hội thề đốn sơn</p>
+									</div>
+
+									<p class="playlist-item__time">16:35</p>
+								</li>
+
+								<li class="playlist-item">
+									<div class="playlist-item__media">
+										<p class="playlist-item__number">5</p>
+										<button class="playlist-item__btn">
+											<svg
+												fill="currentColor"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												xmlns="http://www.w3.org/2000/svg">
+												<mask
+													id="mask0_5261_11459"
+													style="mask-type: alpha"
+													maskUnits="userSpaceOnUse"
+													x="0"
+													y="0"
+													width="24"
+													height="24">
+													<rect
+														width="24"
+														height="24"
+														fill="currentColor" />
+												</mask>
+												<g mask="url(#mask0_5261_11459)">
+													<path
+														d="M8 19V5L19 12L8 19Z"
+														fill="currentColor" />
+												</g>
+											</svg>
+										</button>
+										<p class="playlist-item__title">
+											Mãng xà đại đế Titanoboa: Loài rắn khổng lồ đáng sợ nhất
+										</p>
+									</div>
+
+									<p class="playlist-item__time">7:36</p>
+								</li>
+
+								<li class="playlist-item">
+									<div class="playlist-item__media">
+										<p class="playlist-item__number">6</p>
+										<button class="playlist-item__btn">
+											<svg
+												fill="currentColor"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												xmlns="http://www.w3.org/2000/svg">
+												<mask
+													id="mask0_5261_11459"
+													style="mask-type: alpha"
+													maskUnits="userSpaceOnUse"
+													x="0"
+													y="0"
+													width="24"
+													height="24">
+													<rect
+														width="24"
+														height="24"
+														fill="currentColor" />
+												</mask>
+												<g mask="url(#mask0_5261_11459)">
+													<path
+														d="M8 19V5L19 12L8 19Z"
+														fill="currentColor" />
+												</g>
+											</svg>
+										</button>
+										<p class="playlist-item__title">
+											Mái đình làng Việt: Tiếng vọng của hồn quê
+										</p>
+									</div>
+
+									<p class="playlist-item__time">27:35</p>
+								</li>
+
+								<li class="playlist-item">
+									<div class="playlist-item__media">
+										<p class="playlist-item__number">7</p>
+										<button class="playlist-item__btn">
+											<svg
+												fill="currentColor"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												xmlns="http://www.w3.org/2000/svg">
+												<mask
+													id="mask0_5261_11459"
+													style="mask-type: alpha"
+													maskUnits="userSpaceOnUse"
+													x="0"
+													y="0"
+													width="24"
+													height="24">
+													<rect
+														width="24"
+														height="24"
+														fill="currentColor" />
+												</mask>
+												<g mask="url(#mask0_5261_11459)">
+													<path
+														d="M8 19V5L19 12L8 19Z"
+														fill="currentColor" />
+												</g>
+											</svg>
+										</button>
+										<p class="playlist-item__title">Hội thề đốn sơn</p>
+									</div>
+
+									<p class="playlist-item__time">16:35</p>
+								</li>
+
+								<li class="playlist-item">
+									<div class="playlist-item__media">
+										<p class="playlist-item__number">8</p>
+										<button class="playlist-item__btn">
+											<svg
+												fill="currentColor"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												xmlns="http://www.w3.org/2000/svg">
+												<mask
+													id="mask0_5261_11459"
+													style="mask-type: alpha"
+													maskUnits="userSpaceOnUse"
+													x="0"
+													y="0"
+													width="24"
+													height="24">
+													<rect
+														width="24"
+														height="24"
+														fill="currentColor" />
+												</mask>
+												<g mask="url(#mask0_5261_11459)">
+													<path
+														d="M8 19V5L19 12L8 19Z"
+														fill="currentColor" />
+												</g>
+											</svg>
+										</button>
+										<p class="playlist-item__title">
+											Mãng xà đại đế Titanoboa: Loài rắn khổng lồ đáng sợ nhất
+										</p>
+									</div>
+
+									<p class="playlist-item__time">7:36</p>
+								</li>
+
+								<li class="playlist-item">
+									<div class="playlist-item__media">
+										<p class="playlist-item__number">9</p>
+										<button class="playlist-item__btn">
+											<svg
+												fill="currentColor"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												xmlns="http://www.w3.org/2000/svg">
+												<mask
+													id="mask0_5261_11459"
+													style="mask-type: alpha"
+													maskUnits="userSpaceOnUse"
+													x="0"
+													y="0"
+													width="24"
+													height="24">
+													<rect
+														width="24"
+														height="24"
+														fill="currentColor" />
+												</mask>
+												<g mask="url(#mask0_5261_11459)">
+													<path
+														d="M8 19V5L19 12L8 19Z"
+														fill="currentColor" />
+												</g>
+											</svg>
+										</button>
+										<p class="playlist-item__title">
+											Mái đình làng Việt: Tiếng vọng của hồn quê
+										</p>
+									</div>
+
+									<p class="playlist-item__time">27:35</p>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<div class="podcast-player__cta">
+						<a href="#!" class="btn podcast-player__btn"
+							>Nghe trên Spotify <img src="./images/icon-spotify.svg" alt=""
+						/></a>
+					</div>
+				</div>
+			</main>
+			<!-- End of Main -->
+
+			<!-- Start of Footer -->
+			<footer class="footer">
+				<a href="#!" class="footer__logo">
+					<img src="./images/logo-purple.svg" alt="" />
+				</a>
+				<!-- social  -->
+				<div class="footer__social">
+					<!-- fb -->
+					<a href="#!">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 320 512"
+							fill="currentColor">
+							<path
+								d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+						</svg>
+					</a>
+					<!-- tiktok -->
+					<a href="#!">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512"
+							fill="currentColor">
+							<path
+								d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z" />
+						</svg>
+					</a>
+					<!-- instagram -->
+					<a href="#!">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512"
+							fill="currentColor">
+							<path
+								d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+						</svg>
+					</a>
+				</div>
+				<p class="footer__copyright">© Vietales 2023. All Rights Reserved</p>
+				<div class="footer__desc">Công ty TNHH truyền thông và giải trí VIE-X</div>
+				<div class="footer__desc">MSDN: 0317508603</div>
+				<div class="footer__desc">
+					Địa Chỉ: Toà nhà Redbase – 302A Nguyễn Thượng Hiền, Phường 5, Quận Phú Nhuận
+				</div>
+			</footer>
+			<!-- End of Footer -->
+		</div>
+
+		<!-- Start of Modal -->
+		<div id="modal" class="menu-modal">
+			<div class="modal__container">
+				<div class="modal__content">
+					<!-- Modal Search -->
+					<div class="modal__search">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512"
+							fill="#581192"
+							class="modal__icon-arrow">
+							<path
+								d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+						</svg>
+						<input type="text" placeholder="Tìm kiếm trong Viegazine" />
+					</div>
+
+					<!-- Modal Body -->
+					<div class="modal__body">
+						<ul class="modal__list" x-ref="listItemMenu">
+							<li class="modal__item">
+								<a href="/" class="modal__link">Khám phá</a>
+							</li>
+							<li class="modal__item">
+								<a href="./viegazine.html" class="modal__link">Viegazine</a>
+							</li>
+							<li class="modal__item">
+								<a href="/comic.html" class="modal__link">Comic</a>
+							</li>
+							<li class="modal__item">
+								<a href="/video.html" class="modal__link">Video</a>
+							</li>
+							<li class="modal__item">
+								<a href="/podcast.html" class="modal__link">Podcast</a>
+							</li>
+						</ul>
+
+						<ul class="modal__list" x-ref="listItemMenu">
+							<li class="modal__item">
+								<a href="/series.html" class="modal__link">Loạt chuyện</a>
+							</li>
+							<li class="modal__item">
+								<a href="/category-history.html" class="modal__link">Lịch sử</a>
+							</li>
+							<li class="modal__item">
+								<a href="/category-creation.html" class="modal__link">Văn hóa</a>
+							</li>
+							<li class="modal__item">
+								<a href="/category-geography.html" class="modal__link">Địa lý</a>
+							</li>
+							<li class="modal__item">
+								<a href="/category-culture.html" class="modal__link">Sáng tác</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of Modal -->
+
+		<!-- Start of Decor -->
+		<button class="decor-message">
+			<svg
+				width="40"
+				height="35"
+				viewBox="0 0 40 35"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M12.0036 29.1189C14.825 32.0928 19.3716 34.0229 24.5 34.0229C26.6054 34.0229 28.6128 33.6976 30.443 33.1083L36.8205 34.9999L36.0955 29.9823C38.5247 27.8617 40 25.07 40 22.0114C40 19.8154 39.2395 17.757 37.9115 15.9858C36.9706 23.8492 28.639 29.9999 18.5 29.9999C16.2222 29.9999 14.0356 29.6895 12.0036 29.1189Z"
+					fill="#D4D4D4"
+					fill-opacity="0.68"></path>
+				<g filter="url(#filter0_b_2002_22360)">
+					<path
+						fill-rule="evenodd"
+						clip-rule="evenodd"
+						d="M5.05942 24.466L4.21124 30.4033L11.9785 28.0731L12.2584 28.1519C14.2062 28.7003 16.3071 29 18.5 29C28.9436 29 37 22.3062 37 14.5C37 6.69378 28.9436 0 18.5 0C8.05643 0 0 6.69378 0 14.5C0 18.1476 1.72752 21.5196 4.6557 24.109L5.05942 24.466Z"
+						fill="white"
+						fill-opacity="0.76"></path>
+				</g>
+				<path
+					d="M13.7921 8.14195L8 20.3721H10.4946L14.7219 11.1001H14.7751L19.0822 20.3721H21.5767L15.7317 8.14195L13.7921 8.14195Z"
+					fill="#727272"></path>
+				<path d="M27.2479 14.8972H21.773V20.3721H27.2479V14.8972Z" fill="#727272"></path>
+				<path
+					d="M24.5102 13.9038C26.1927 13.9038 27.5567 12.5398 27.5567 10.8573C27.5567 9.17475 26.1927 7.81079 24.5102 7.81079C22.8277 7.81079 21.4637 9.17475 21.4637 10.8573C21.4637 12.5398 22.8277 13.9038 24.5102 13.9038Z"
+					fill="#F0AB0A"></path>
+				<defs>
+					<filter
+						id="filter0_b_2002_22360"
+						x="-32"
+						y="-32"
+						width="101"
+						height="94.4033"
+						filterUnits="userSpaceOnUse"
+						color-interpolation-filters="sRGB">
+						<feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+						<feGaussianBlur in="BackgroundImageFix" stdDeviation="16"></feGaussianBlur>
+						<feComposite
+							in2="SourceAlpha"
+							operator="in"
+							result="effect1_backgroundBlur_2002_22360"></feComposite>
+						<feBlend
+							mode="normal"
+							in="SourceGraphic"
+							in2="effect1_backgroundBlur_2002_22360"
+							result="shape"></feBlend>
+					</filter>
+				</defs>
+			</svg>
+		</button>
+
+		<button class="decor-feedback">
+			<div class="decor-feedback__icon">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="22"
+					fill="none"
+					viewBox="0 0 24 22"
+					data-testid="icon-buddy">
+					<path
+						fill="#fdfdfe"
+						fill-rule="evenodd"
+						d="M22.362.827C21.72.5 20.88.5 19.2.5H3.3C1.755.5.983.5.575.819A1.5 1.5 0 000 1.969c-.01.517.453 1.135 1.38 2.371l1.14 1.52c.178.237.267.356.33.487a1.5 1.5 0 01.122.365C3 6.855 3 7.003 3 7.3v9.4c0 1.68 0 2.52.327 3.162a3 3 0 001.311 1.311c.642.327 1.482.327 3.162.327h11.4c1.68 0 2.52 0 3.162-.327a3 3 0 001.311-1.311C24 19.22 24 18.38 24 16.7V5.3c0-1.68 0-2.52-.327-3.162a3 3 0 00-1.31-1.311zM9.277 11.937a1.125 1.125 0 00-1.948 1.126 7.123 7.123 0 006.171 3.562 7.123 7.123 0 006.171-3.562 1.125 1.125 0 10-1.947-1.126 4.872 4.872 0 01-4.224 2.438 4.873 4.873 0 01-4.223-2.438zM10.5 8a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM18 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+						clip-rule="evenodd"></path>
+				</svg>
+			</div>
+			<div class="decor-feedback__text">Phản hồi</div>
+		</button>
+		<!-- End of Decor -->
+
+		<!-- Embed jQuery -->
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+		<!-- Javascript -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="./js/style.js"></script>
+	</body>
+</html>
