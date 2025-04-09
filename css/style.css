@@ -2224,7 +2224,13 @@ h2.category__heading--small {
 }
 
 .series__btn {
-  padding-top: 400px;
+  padding-top: 174px;
+}
+
+@media screen and (max-width: 991.98px) {
+  .history-grid__row.series__btn {
+    padding-top: 0;
+  }
 }
 
 /* Series Content Grid Layout */
