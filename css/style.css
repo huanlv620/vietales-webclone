@@ -594,7 +594,7 @@ p.text-details {
   background: #fafafa;
 }
 
-.header__btn btn {
+.header__btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -607,7 +607,11 @@ p.text-details {
   font-family: "SVN-Basis Grotesque Pro";
 }
 
-.header__btn btn:hover {
+.header__icon-login {
+  display: none;
+}
+
+.header__btn:hover {
   box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.05),
     0px 1px 2px 0px rgba(0, 0, 0, 0.3);
 }
@@ -782,6 +786,25 @@ p.text-details {
 .avatar-active__setting {
   padding: 8px 0;
   border-top: 1px solid #e9d1ff;
+}
+
+@media screen and (max-width: 640px) {
+  .header__btn {
+    display: none;
+  }
+
+  /* logo */
+  .logo__svg {
+    scale: 0.65;
+  }
+
+  .header__icon-login {
+    display: block;
+  }
+
+  .logo {
+    margin-left: -50px;
+  }
 }
 
 /* End header */
@@ -3472,11 +3495,6 @@ li.form-group__gender-user-profile-active {
   .header__btn btn {
     min-width: 80px;
     font-size: 1.4rem;
-  }
-
-  /* logo */
-  .logo__svg {
-    scale: 0.65;
   }
 
   /* Hero section */
