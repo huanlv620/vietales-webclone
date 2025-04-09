@@ -46,6 +46,15 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11.2.6/modules/effect-cards.min.css"
     />
 
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- Bootstrap -->
     <link
       rel="stylesheet"
@@ -150,15 +159,43 @@
         <div class="header__logined">
           <!-- header__notification -->
           <div class="header__notification">
-            <img
-              src="https://vietales.vn/static/images/icons/noti.svg"
-              alt=""
-            />
+            <div class="header__notification-icon">
+              <img src="./images/noti.svg" alt="" />
+              <div class="header__notification-badge"><p>12</p></div>
+            </div>
             <div class="header__notification-board">
-              <div class="header__notification-item">
+              <div class="header__notification-title">
                 <h3>Thông báo của bạn</h3>
               </div>
-              <div class="header__notification-item">
+              <div class="header__notification-body">
+                <!-- notification-item 1 -->
+                <a href="#!" class="header__notification-item">
+                  <div class="header__notification-img-wrap">
+                    <i class="fa-solid fa-user"></i>
+                  </div>
+                  <div class="header__notification-content">
+                    <p class="header__notification-text">
+                      There is a new order 2 daysThere is a new order 2
+                      daysThere is a new order 2 days
+                    </p>
+                    <p class="header__notification-time">12 days</p>
+                  </div>
+                </a>
+
+                <!-- notification-item 2 -->
+                <a href="#!" class="header__notification-item">
+                  <div class="header__notification-img-wrap">
+                    <i class="fa-solid fa-user"></i>
+                  </div>
+                  <div class="header__notification-content">
+                    <p class="header__notification-text">
+                      There is a new order 2 days
+                    </p>
+                    <p class="header__notification-time">5 days ago</p>
+                  </div>
+                </a>
+              </div>
+              <div class="header__notification-title">
                 <h4>Hiện không có thông báo mới</h4>
               </div>
             </div>
