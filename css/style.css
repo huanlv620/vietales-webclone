@@ -632,15 +632,10 @@ p.text-details {
   position: relative;
 }
 
-.header__notification:hover .header__notification-board {
-  visibility: visible;
-  opacity: 1;
-}
-
 .header__notification-board {
   content: "";
-  visibility: hidden;
   position: absolute;
+
   right: 0;
   top: 125%;
   box-sizing: border-box;
@@ -649,9 +644,17 @@ p.text-details {
   padding: 8px 16px;
 
   background: #fff;
+
   border-radius: 24px;
+  visibility: hidden;
   opacity: 0;
+
   transition: visibility 0.3s, opacity 0.3s;
+}
+
+.header__notification:hover .header__notification-board {
+  visibility: visible;
+  opacity: 1;
 }
 
 .header__notification-board::before {
@@ -666,16 +669,21 @@ p.text-details {
   height: 30px;
 }
 
-.header__notification-item {
+.header__notification-title {
   padding: 12px 0;
 }
 
-.header__notification-item:first-of-type {
+.header__notification-title:first-of-type {
   border-bottom: 1px solid #0003;
   padding: 16px 0;
 }
 
-.header__notification-item h3 {
+.header__notification-title:last-of-type {
+  border-top: 1px solid #0003;
+  padding: 16px 0;
+}
+
+.header__notification-title h3 {
   font-family: "SVN-Basis Grotesque Pro";
   font-size: 1.6rem;
   color: #000;
@@ -683,13 +691,61 @@ p.text-details {
   line-height: 24px;
 }
 
-.header__notification-item h4 {
+.header__notification-title h4 {
   font-family: "SVN-Tiempos Fine";
   font-size: 1.6rem;
   color: #0a0a0a;
   text-align: center;
   font-weight: 300;
   line-height: 24px;
+}
+
+.header__notification-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__notification-item {
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+
+  padding: 16px 0;
+
+  border-bottom: 1px solid #0003;
+}
+
+.header__notification-item:hover .header__notification-img-wrap {
+  opacity: 0.8;
+}
+
+.header__notification-item:last-of-type {
+  border-color: transparent;
+}
+
+.header__notification-img-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #6b13b6;
+}
+.header__notification-content {
+  color: #0a0a0a;
+  font-family: "SVN-Tiempos pro";
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.header__notification-time {
+  color: #6b13b6;
+  font-size: 1.4rem;
 }
 
 .header__logined {
