@@ -4019,3 +4019,68 @@ li.form-group__gender-user-profile-active {
     font-size: 3rem;
   }
 }
+
+/* Start of search page */
+.header__btn-search-page {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header__text-search {
+  font-family: "SVN-Tiempos Headline";
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 300;
+
+  color: #581192;
+}
+
+.header__heading-search-page {
+  margin: 136px 0 48px;
+
+  color: #525252;
+
+  font-family: "SVN-Tiempos Fine";
+  font-size: 92px;
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+  line-height: 138px;
+}
+.seach-page__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 52px 48px;
+}
+.search-page__btn {
+  width: min(450px, 100%);
+  height: 40px;
+  border: 1px solid transparent;
+
+  background-color: #f3e6ff;
+  color: #6b13b6;
+
+  font-size: 1.6rem;
+  font-family: "SVN-Basis Grotesque Pro";
+  border-radius: 9999px;
+  font-weight: 500;
+}
+
+.search-page__notsuitable {
+  display: none;
+  text-align: center;
+  font-family: "SVN-Basis Grotesque Pro";
+  font-size: 1.6rem;
+  color: #000;
+  height: 472px;
+  margin-bottom: 48px;
+}
+
+@media screen and (max-width: 640px) {
+  .search-page__img-wrap {
+    height: auto;
+  }
+}
+/* End of search page */
