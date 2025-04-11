@@ -3953,6 +3953,7 @@ li.form-group__gender-user-profile-active {
 
     .video-modal__container {
         overflow: auto;
+        height: 86vh;
     }
 
 	.video-modal__video iframe {
