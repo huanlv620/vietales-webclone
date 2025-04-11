@@ -21,6 +21,12 @@ $(document).ready(function () {
 	const $btnGender = $(".form-group__gender-user-profile-row");
 	const $genderBody = $(".form-group__gender-user-profile-body");
 	const $genderOutput = $(".form-group__gender-user-profile-gender");
+	const $mobileNavbar = $(".mobile-navbar");
+
+	// Hide mobile navbar initially
+	$mobileNavbar.css("opacity", "0");
+	$mobileNavbar.css("visibility", "hidden");
+	$mobileNavbar.css("transition", "opacity 0.3s, visibility 0.3s");
 
 	// TOGGLE LOVE NAVIGATION DROPDOWN
 	$loveNav.on("click", function () {
@@ -96,6 +102,15 @@ $(document).ready(function () {
 			$logoSvg.removeClass("logo__small");
 			$btnDecorMessage.removeClass("show");
 			$navbar.removeClass("navbar-viegazine--active");
+		}
+
+		// Show mobile navbar after scrolling down 100px
+		if (scrollTop > 100) {
+			$mobileNavbar.css("opacity", "1");
+			$mobileNavbar.css("visibility", "visible");
+		} else {
+			$mobileNavbar.css("opacity", "0");
+			$mobileNavbar.css("visibility", "hidden");
 		}
 
 		if (scrollTop > docHeight / 2 - winHeight) {
